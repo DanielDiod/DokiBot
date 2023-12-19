@@ -952,7 +952,7 @@ if (!('delete' in chat)) chat.delete = false
 if (!('modohorny' in chat)) chat.modohorny = true       
 if (!('stickers' in chat)) chat.stickers = false               
 if (!('autosticker' in chat)) chat.autosticker = false       
-if (!('audios' in chat)) chat.audios = true                
+if (!('audios' in chat)) chat.audios = false               
 if (!('antiver' in chat)) chat.antiver = false                
 if (!('antiLink' in chat)) chat.antiLink = false             
 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -963,7 +963,7 @@ if (!('antiFacebook' in chat)) chat.antiFacebook = false
 if (!('antiInstagram' in chat)) chat.antiInstagram = false
 if (!('antiTwitter' in chat)) chat.antiInstagram = false
 if (!('antifake' in chat)) chat.antifake = false
-if (!('reaction' in chat)) chat.reaction = true    
+if (!('reaction' in chat)) chat.reaction = false    
 if (!('viewonce' in chat)) chat.viewonce = false         
 if (!('modoadmin' in chat)) chat.modoadmin = false      
 if (!('antitoxic' in chat)) chat.antitoxic = false
@@ -985,7 +985,7 @@ delete: false,
 modohorny: true,
 stickers: false, 
 autosticker: false,
-audios: true,
+audios: false,
 antiver: false,
 antiLink: false,
 antiLink2: false,
@@ -996,7 +996,7 @@ antiFacebook: false,
 antiInstagram: false,
 antiTwitter: false,
 antifake: false,
-reaction: true,
+reaction: false,
 viewonce: false,
 modoadmin: false,
 antitoxic: false,
@@ -1013,22 +1013,22 @@ if (!('autoread' in settings)) settings.autoread = false
 if (!('autoread2' in settings)) settings.autoread2 = false
 if (!('restrict' in settings)) settings.restrict = false
 if (!('temporal' in settings)) settings.temporal = false
-if (!('antiPrivate' in settings)) settings.antiPrivate = false
+if (!('antiPrivate' in settings)) settings.antiPrivate = true
 if (!('antiCall' in settings)) settings.antiCall = true
-if (!('antiSpam' in settings)) settings.antiSpam = true
-if (!('antispam2' in settings)) settings.antispam2 = true
-if (!('jadibotmd' in settings)) settings.jadibotmd = true  
+if (!('antiSpam' in settings)) settings.antiSpam = false
+if (!('antispam2' in settings)) settings.antispam2 = false
+if (!('jadibotmd' in settings)) settings.jadibotmd = false  
 } else global.db.data.settings[this.user.jid] = {
 self: false,
 autoread: false,
 autoread2: false,
 restrict: false,
 temporal: false,
-antiPrivate: false,
+antiPrivate: true,
 antiCall: true,
-antiSpam: true,
-antispam2: true, 
-jadibotmd: true,
+antiSpam: false,
+antispam2: false, 
+jadibotmd: false,
 }
 } catch (e) {
 console.error(e)
