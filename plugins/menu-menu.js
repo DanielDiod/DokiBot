@@ -78,17 +78,20 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 
 let menu = `⌜ *${wm}* ⌟  
 
-*Hola ${taguser}*
+🙈 𝐌𝐎𝐍𝐊𝐈 𝐁𝐎𝐓 🙉
 
-□ *Creador: Mario*
-□ *Numero del creador: wa.me/5492266466080*
-□ *Numero del bot ofc: wa.me/528131042249*
-□ *Tiempos activos :* *${uptime}*
-□ *Usuarios:* *${Object.keys(global.db.data.users).length}*
-□ *Registrado: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ *Soy un sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
-    
-□ *COMO INSTALAR EL BOT*
-https://youtu.be/O_j2q5xCg3A
+𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘 𝚊𝚕 𝚖𝚎𝚗𝚞 𝚍𝚎 𝙼𝚘𝚗𝚔𝚒 𝙱𝚘𝚝
+
+┏━━━━━━━━━━━━━━━━┓ 
+
+┃ㅤ👤 » 𝐎𝐰𝐧𝐞𝐫 𝟏 : wa.me/51906641131
+┃ㅤ👤 » 𝐎𝐰𝐧𝐞𝐫 𝟐 : wa.me/51977835959
+┃ㅤ🫂 » 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 : 𝑫𝒂𝒏𝒊𝒆𝒍
+┃ㅤ✍🏻 » 𝐄𝐝𝐢𝐭𝐨𝐫 : 𝑺𝒐𝒑𝒊𝒊𝒙
+┃ㅤ⏱ » 𝐔𝐩𝐭𝐢𝐦𝐞 : *${uptime}*
+┃ㅤ🛎 » 𝐂𝐚𝐧𝐚𝐥 : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
+┃ㅤ
+┗━━━━━━━━━━━━━━━━┛
 
 ◉ _*INFO DEL USUARIO*_
 □ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
