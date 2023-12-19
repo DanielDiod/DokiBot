@@ -93,18 +93,23 @@ let menu = `⌜ *${wm}* ⌟
 ┃ㅤ
 ┗━━━━━━━━━━━━━━━━┛
 
-◉ _*INFO DEL USUARIO*_
-□ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
-□ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
-□ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
-□ *🎖️ Nivel:* ${level}
-□ *💎 Diamantes:* ${limit}
-□ *👾 LoliCoins:* ${money}
-□ *🪙 Tokens:* ${joincount}
-□ *🧰 Experiencia:* ${exp}
-□ *⚓ Rango:* ${role}
-${readMore}
-┌───⊷ *INFO DEL BOT*
+┏━━━━━━━━━━━━━━━━┓ 
+ㅤㅤㅤ𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐔𝐒𝐔𝐀𝐑𝐈𝐎
+┃
+┃ㅤ🔑 » 𝚁𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚍𝚘 : ${user.registered === true ? '✅' : '❌ _#verificar_'}
+┃ㅤ💳 » 𝙿𝚛𝚎𝚖𝚒𝚞𝚖 : ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
+┃ㅤ📬 » 𝙼𝚒 𝚎𝚜𝚝𝚊𝚍𝚘 : ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
+┃ㅤ🎖 » 𝙽𝚒𝚟𝚎𝚕 : ${level}
+┃ㅤ💎 » 𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎𝚜 : ${limit}
+┃ㅤ🐒 » 𝙼𝚘𝚗𝚔𝚒𝙲𝚘𝚒𝚗𝚜 : ${money}
+┃ㅤ🪙 » 𝚃𝚘𝚔𝚎𝚗𝚜 : ${joincount}
+┃ㅤ🕹 » 𝙴𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊 : ${exp}
+┃ㅤ⚜ » 𝚁𝚊𝚗𝚐𝚘 : ${role}
+┃ㅤ${readMore}
+┃ㅤ
+┗━━━━━━━━━━━━━━━━┛
+
+┌─── 𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓
 ┊□ _${usedPrefix}infobot_
 ┊□ _${usedPrefix}grupos_
 ┊□ _${usedPrefix}instalarbot_
@@ -117,27 +122,27 @@ ${readMore}
 ┊□ _Términos y condiciones_
 └─────────────
 
-┌───⊷ *UNER UN BOT A TU GRUPO*
+┌─── 𝐔𝐍𝐈𝐑 𝐔𝐍 𝐁𝐎𝐓 𝐀 𝐓𝐔 𝐆𝐑𝐔𝐏𝐎
 ┆ 🤖 _${usedPrefix}join *link del grupo*_ 
 └─────────────
 
-┌───⊷ *SERBOT & JADIBOT*
+┌─── 𝐒𝐄𝐑𝐁𝐎𝐓 𝐘 𝐉𝐀𝐃𝐈𝐁𝐎𝐓
 ┆ 🤖 _${usedPrefix}serbot_
 ┆ 🤖 _${usedPrefix}stop_
 ┆ 🤖 _${usedPrefix}bots_
 └─────────────
 
-┌───⊷ *JUEGOS*
-┆ *conando para la diversión del tu Grupos*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆🕹 _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
+┌─── 𝐉𝐔𝐄𝐆𝐎𝐒
+┆ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙿𝙰𝚁𝙰 𝙷𝙰𝙲𝙴𝚁 𝙼𝙰𝚂 𝙳𝙸𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 🎊
+┆
+┆🕹️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ┆🕹️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-┆🕹 _${usedPrefix}prostituto *<nombre / @tag>*_
+┆🕹️ _${usedPrefix}prostituto *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}prostituta *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}gay2 *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}lesbiana *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pajero *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pajera *<nombre / @tag>*_
+┆🕹️ _${usedPrefix}pajero *<nombre / @tag>*_
+┆🕹️ _${usedPrefix}pajera *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}puto *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}puta *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}manco *<nombre / @tag>*_
@@ -145,7 +150,7 @@ ${readMore}
 ┆🕹️ _${usedPrefix}rata *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}love *<nombre / @tag>*_
 ┆🕹️ _${usedPrefix}doxear *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pregunta *<texto>*_
+┆🕹️ _${usedPrefix}pregunta *<texto>*_
 ┆🕹️ _${usedPrefix}suitpvp *<@tag>*_
 ┆🕹️ _${usedPrefix}slot *<apuesta>*_
 ┆🕹️ _${usedPrefix}ttt *<nombre sala>*_
@@ -173,10 +178,9 @@ ${readMore}
 ┆🕹️ _${usedPrefix}cancion_
 ┆🕹️ _${usedPrefix}pista_
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ 💞 𝙋𝙖𝙧𝙚𝙟𝙖𝙨
+┆ 👩🏼‍❤‍💋‍👨🏼 𝙿𝙰𝚁𝙴𝙹𝙰𝚂
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *Declarate con alguien*
-┆ *para que sean Parejas!!*
+┆ 𝚂𝚒 𝚌𝚘𝚒𝚗𝚌𝚒𝚍𝚎𝚗 𝚎𝚜 𝚎𝚕 𝚖𝚘𝚖𝚎𝚗𝚝𝚘 𝚍𝚎 𝚍𝚎𝚌𝚕𝚊𝚛𝚊𝚛𝚝𝚎 🧸
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆❤️➺ _${usedPrefix}listaparejas_
 ┆❤️➺ _${usedPrefix}mipareja_
@@ -186,25 +190,25 @@ ${readMore}
 ┆❤️➺ _${usedPrefix}terminar *@tag*_
 └─────────────
 
-┌───⊷ *NUMERO DEL CREADOR*
+┌─── 𝐍𝐔𝐌𝐄𝐑𝐎 𝐃𝐄𝐋 𝐂𝐑𝐄𝐀𝐃𝐎𝐑
 ┆🤖 _${usedPrefix}owner_
 └─────────────
 
-┌───⊷ *ACTIVA O DESACTIVAR*
+┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑
 ┆ *Configura si eres Propietario(a) y/o*
 ┆ *Admin!!*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆☑️ _${usedPrefix}enable_
 └─────────────
 
-┌───⊷ *REPORTA COMANDO CON ERRORES*
+┌─── 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐂𝐎𝐍 𝐄𝐑𝐑𝐎𝐑𝐄𝐒
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *Reporta cualquier comando que falle para poder solucionarlo*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🚫 _${usedPrefix}reporte *<texto>*_
 └─────────────
 
-┌───⊷ *SER PREMIUM*
+┌─── 𝐒𝐄𝐑 𝐏𝐑𝐄𝐌𝐈𝐔𝐌
 ┆ *Convierte en un(a)*
 ┆ *Usuario(a) Premium!!*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -213,7 +217,7 @@ ${readMore}
 ┆🎟️ _${usedPrefix}pass premium_
 └─────────────
 
-┌───⊷ *DESCARGAS*
+┌─── 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒
 ┆📥 _${usedPrefix}play *<texto>*_
 ┆📥 _${usedPrefix}play.1 *<texto>*_
 ┆📥 _${usedPrefix}play.2 *<texto>*_
@@ -253,8 +257,8 @@ ${readMore}
 ┆📥 _${usedPrefix}tiktokstalk *<username>*_
 └─────────────
 
-┌───⊷ *GRUPOS*
-┆ *Mejora tú Grupo con LoliBot*
+┌─── 𝐆𝐑𝐔𝐏𝐎𝐒
+┆ 𝙼𝚎𝚓𝚘𝚛𝚊 𝚝𝚞 𝚐𝚛𝚞𝚙𝚘 𝚌𝚘𝚗 𝙼𝚘𝚗𝚔𝚒𝙱𝚘𝚝 🙊
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆💎 _${usedPrefix}add *<numero>*_
 ┆💎 _${usedPrefix}kick *<@tag>*_
@@ -281,9 +285,8 @@ ${readMore}
 ┆💎 _${usedPrefix}setpp *<imagen>*_
 └─────────────
 
-┌───⊷ *CONVERTIDORES*
-┆ *Convierte sticker en imagen!!*
-┆ *Crea enlace de archivos!!*
+┌───⊷ 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒
+┆ 𝙲𝚘𝚗𝚟𝚒𝚎𝚛𝚝𝚎 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜 𝚎𝚗 𝚒𝚖𝚊𝚐𝚎𝚗𝚎𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🧧 _${usedPrefix}togifaud *<video>*_
 ┆🧧 _${usedPrefix}robar *texto*
@@ -297,9 +300,8 @@ ${readMore}
 ┆🧧 _${usedPrefix}tts es *<texto>*_
 └─────────────
 
-┌───⊷ *EFECTOS Y LOGOS*
-┆ *Crea Logos o personaliza*
-┆ *la información del Logo!!*
+┌─── 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒
+┆ 𝙲𝚛𝚎𝚊 𝚢 𝚙𝚎𝚛𝚜𝚘𝚗𝚊𝚕𝚒𝚣𝚊 𝚕𝚘𝚐𝚘𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🖍️ _${usedPrefix}mensajefalso *<nombre|mensaje>*_
 ┆🖍️ _${usedPrefix}phmaker *<opcion> <imagen>*_
@@ -315,9 +317,8 @@ ${readMore}
 ┆🖍️ _${usedPrefix}blur_
 └─────────────
 
-┌───⊷ *FRASES Y TEXTOS*
-┆ *Enamora a tu enamorada/o*
-┆ *con esta frases/piropo uwu*
+┌─── 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒
+┆ 𝙿𝚘𝚛 𝚜𝚒 𝚎𝚛𝚎𝚜 𝚙𝚎𝚜𝚒𝚖𝚘 𝚍𝚒𝚌𝚒𝚎𝚗𝚍𝚘 𝚏𝚛𝚊𝚜𝚎𝚜 𝚢 𝚙𝚘𝚎𝚖𝚊𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ 🥀 _${usedPrefix}piropo_
 ┆🥀 _${usedPrefix}consejo_
@@ -392,39 +393,36 @@ ${readMore}
 ┆👾 _${usedPrefix}cosplay_
 └─────────────
 
-┌───⊷ *COMANDO +18*
-┆ *Usar bajo su responsabilidad*
-┆ *Nota: no sea pajero*
+┌───⊷ 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 +𝟏𝟖
+┆ 𝚄𝚜𝚊𝚕𝚘 𝚋𝚊𝚓𝚘 𝚝𝚞 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚊𝚋𝚒𝚕𝚒𝚍𝚊𝚍
+┆ • 𝚂𝚎𝚛 𝚙𝚊𝚓𝚎𝚛𝚘 𝚊𝚌𝚑𝚒𝚌𝚊 𝚎𝚕 𝚙𝚒𝚝𝚘 👀
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🔞 _${usedPrefix}hornymenu_
 └─────────────
 
-┌───⊷ *EFECTOS PARA NOTAS DE VOZ/AUDIOS*
-┆ *Realiza Modificaciones*
-┆ *al Audio o Nota de Voz!!*
+┌─── 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐏𝐀𝐑𝐀 𝐍𝐎𝐓𝐀𝐒 𝐃𝐄 𝐕𝐎𝐙
+┆ 𝚁𝚎𝚊𝚕𝚒𝚣𝚊 𝚖𝚘𝚍𝚒𝚏𝚒𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚊 𝚕𝚊𝚜 𝚗𝚘𝚝𝚊𝚜 𝚍𝚎 𝚟𝚘𝚣 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🎤 _${usedPrefix}audioefectomenu_
 └─────────────
 
-┌───⊷ *AUDIOS*
-┆ *Visita el Menú de Audios!!*
-┆ *Disfruta de una Gran Variedad*
+┌─── 𝐀𝐔𝐃𝐈𝐎𝐒
+┆ 𝚁𝚎𝚟𝚒𝚜𝚊 𝚎𝚕 𝚖𝚎𝚗𝚞 𝚍𝚎 𝚊𝚞𝚍𝚒𝚘𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🔊 _${usedPrefix}menu2_
 ┆🔊 _${usedPrefix}audios_
 └─────────────
 
-┌───⊷ *CHATS ANONIMO*
-┆ *¡Escribe con Alguien* 
-┆ *de forma Anónima!* 
+┌─── 𝐂𝐇𝐀𝐓𝐒 𝐀𝐍𝐎𝐍𝐈𝐌𝐎𝐒
+┆ 𝙼𝚊𝚗𝚍𝚊𝚕𝚎 𝚖𝚎𝚗𝚜𝚊𝚓𝚎 𝚊 𝚞𝚗𝚊 𝚙𝚎𝚛𝚜𝚘𝚗𝚊 𝚜𝚒𝚗 𝚚𝚞𝚎 𝚜𝚎𝚙𝚊 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆📳 _${usedPrefix}start_
 ┆📳 _${usedPrefix}next_
 ┆📳 _${usedPrefix}leave_
 └─────────────
 
-┌───⊷ *BUSCADORES*
-┆ *Busca lo que quieres con el Bot!!*
+┌─── 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒
+┆ 𝙱𝚞𝚜𝚌𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚜 𝚌𝚘𝚗 𝚎𝚕 𝚋𝚘𝚝 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🔍 _${usedPrefix}stickersearch *<texto>*_
 ┆🔍 _${usedPrefix}stickersearch2 *<texto>*_
@@ -441,7 +439,7 @@ ${readMore}
 ┆🔍 _${usedPrefix}playstore *<texto>*_
 └─────────────
 
-┌───⊷ *HERRAMIENTAS*
+┌─── 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒
 ┆🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ┆🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
 ┆🛠️ _${usedPrefix}clima *<país> <ciudad>*_
@@ -462,9 +460,8 @@ ${readMore}
 ┆🛠️ _${usedPrefix}horario_
 └─────────────
 
-┌───⊷ *RPG - LIMITES - ECONÓMIAS*
-┆ *Compra, Adquiere Recuersos*
-┆ *Mejora Tú Nivel y Rango!!*
+┌─── 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 - 𝐑𝐏𝐆 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒
+┆ 𝙲𝚘𝚖𝚙𝚛𝚊 𝚢 𝚖𝚎𝚓𝚘𝚛𝚊 𝚝𝚞 𝚗𝚒𝚟𝚎𝚕 𝚢 𝚛𝚊𝚗𝚐𝚘 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆💵 _${usedPrefix}verificar_
 ┆💵 _${usedPrefix}unreg *<numero de serie>*_
@@ -481,15 +478,14 @@ ${readMore}
 ┆💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
 └─────────────
 
-┌───⊷ *TOP EN LOLIBOT-MD*
-┆ *Averigua en que Top te encuentras!!*
+┌─── 𝐓𝐎𝐏 𝐄𝐍 𝐌𝐎𝐍𝐊𝐈 𝐁𝐎𝐓 🙈
+┆ 𝙳𝚎𝚜𝚌𝚞𝚋𝚛𝚎 𝚎𝚗 𝚚𝚞𝚎 𝚃𝚘𝚙 𝚎𝚜𝚝𝚊𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🏆➺ _${usedPrefix}top | lb | leaderboard_
 └─────────────
 
-┌───⊷ *STICKERS*
-┆ *Realiza stickers o crea*
-┆ *stickers con filtros!!*
+┌─── 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒
+┆ 𝚁𝚎𝚊𝚕𝚒𝚣𝚊 𝚢 𝚌𝚛𝚎𝚊 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆👽 _${usedPrefix}sticker *<responder a imagen o video>*_
 ┆👽 _${usedPrefix}sticker *<enlace / link / url>*_
@@ -516,9 +512,8 @@ ${readMore}
 ┆👽 _${usedPrefix}stickermarker *<efecto> <imagen>*_
 ┆👽 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *STICKERS DINÁMICOS*
-┆ *Realiza acciones con Stickers*
-┆ *Etiquetando a alguien!!*
+┆ 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙳𝙸𝙽𝙰𝙼𝙸𝙲𝙾𝚂
+┆ 𝚁𝚎𝚊𝚕𝚒𝚣𝚊 𝚊𝚌𝚌𝚒𝚘𝚗𝚎𝚜 𝚌𝚘𝚗 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜 𝚎𝚝𝚒𝚚𝚞𝚎𝚝𝚊𝚗𝚍𝚘 𝚊 𝚊𝚕𝚐𝚞𝚒𝚎𝚗 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆⛱️ _${usedPrefix}palmaditas | pat *@tag*_
 ┆⛱️ _${usedPrefix}bofetada | slap *@tag*_
@@ -527,8 +522,8 @@ ${readMore}
 ┆⛱️ _${usedPrefix}alimentar | food *@tag*
 └─────────────
 
-┌───⊷ *PROPIETARIO DEL BOT*
-┆ *Comando exclusivo para Propietario/owner del bot*
+┌─── 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓
+┆ 𝚂𝚘𝚕𝚘 𝚙𝚊𝚛𝚊 𝚘𝚠𝚗𝚎𝚛𝚜 𝚍𝚎𝚕 𝚋𝚘𝚝 🪽
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆👑 > *<funcion>*
 ┆👑 => *<funcion>*
