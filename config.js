@@ -11,16 +11,16 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
 
 global.owner = [ 
-['5492266466080', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩', true],
-['573026191480', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩', true],
-['593968585383'],
-['5217294888993'],
-['5492266466080'], 
-['595985451858'],
-['5492266613038']]
+['51906641131', 'Daniel', true],
+['51977835959', 'sopiix', true],
+['51977835959'],
+['51906641131'],
+['51906641131'], 
+['51977835959'],
+['51977835959']]
 
-global.mods = ['50495745934']
-global.prems = ['972529277314'],
+global.mods = ['51977835959']
+global.prems = ['51977835959'],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
@@ -92,8 +92,8 @@ global.moment = moment
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = '𝙏𝙤𝙢𝙖 𝙩𝙪 𝙨𝙩𝙞𝙘𝙠𝙚𝙧'
-global.author = '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
+global.packname = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
+global.author = 'By Sopi x Daniel'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
