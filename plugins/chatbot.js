@@ -15,7 +15,7 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^@5492266466080|@56964787183|@5492266613038$/i.test(m.text) ) { //sem prefixo
+if (/^@51907913096|@51977835959|@51907913096$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `*_[ ⚠ ️] No etiquetes a mi creador, si tiene alguna consulta o dudas, hablarle el pv solo por tema del bot_*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
@@ -28,7 +28,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 */
-if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
+/* if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `*┌───⊷ *${lb}*
 ┆ ───────•••───────
 ┆ ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️
