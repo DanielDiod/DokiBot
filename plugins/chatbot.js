@@ -42,8 +42,8 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 ╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-
-if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
+*/
+/* if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `┌───⊷ *${lb}*
 ┆ ───────•••───────
 ┆ ☆::¿𝐐𝐮𝐞́ 𝐞𝐬 𝐮𝐧 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩?::☆*
@@ -59,7 +59,8 @@ if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
 ┆ 「 🅣🅗🅔 🅛🅞🅛🅘🅑🅞🅣-🅜🅓 」
 ╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
-}  
+}
+\*
 return !0 
 }
 export default handler
