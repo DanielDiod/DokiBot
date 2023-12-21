@@ -60,7 +60,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 ╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-\*
+
 return !0 
 }
 export default handler
