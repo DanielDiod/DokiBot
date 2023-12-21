@@ -116,19 +116,19 @@ global.asistencia = 'wa.me/51906641131' //Dudas? escríbeme...
 
 //⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
 
-global.rg = '╰⊱✅ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎* ⊱✅⊱╮\n\n'
+global.rg = '*[🛑 INFORMATION 🛑]*\n\n'
 global.resultado = rg
-global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n'
+global.ag = '*[🛑 INFORMATION 🛑]*\n\n'
 global.advertencia = ag
-global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 * ⊱⊱╮\n\n'
+global.iig = '*[🛑 INFORMATION 🛑]*\n\n'
 global.informacion = iig
-global.fg = '╰⊱❌⊱ *𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n'
+global.fg = '*[🛑 INFORMATION 🛑]*\n\n'
 global.fallo = fg
-global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n'
+global.mg = '*[🛑 INFORMATION 🛑]*\n\n'
 global.mal = mg
-global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀* ⊱📩⊱╮\n\n'
+global.eeg = '*[🛑 INFORMATION 🛑]*\n\n'
 global.envio = eeg
-global.eg = '╰⊱💚⊱ *𝙀𝙓𝙄𝙏𝙊𝙎* ⊱💚⊱╮\n\n'
+global.eg = '*[🛑 INFORMATION 🛑]*\n\n'
 global.exito = eg
 
 //⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
