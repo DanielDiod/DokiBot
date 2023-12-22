@@ -19,8 +19,8 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
 let teksbio = `*𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-*Wa.me/5492266466080 (no bot)*
-*Wa.me/528131042249 (bot)*`
+*Wa.me/51907913096 (no bot)*
+*Wa.me/51904320460 (bot)*`
   let teks = ' '
 const sections = [{title: `𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝙊𝙒𝙉𝙀𝙍`, rows: [{title: "🔰 • NUMERO", rowId: ".owner bio"}, {title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"}, {title: "🙌 • GRUPOS", rowId: ".grupos"},]}, {title: `–––––––·• 𝘼𝙋𝙊𝙔𝘼 𝘼𝙇 𝘽𝙊𝙏 –––––––·•`, rows: [ {title: "🤖 • INSTALARBOT", rowId: ".instalarbot"}, {title: "🌟 • SC", rowId: "Sc"}, ]}, ]
 
