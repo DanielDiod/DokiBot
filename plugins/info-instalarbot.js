@@ -12,7 +12,7 @@ let texto = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅
 
 💛 *Si tienes dudas o necesitas ayuda en el proceso de la instalación puede escribir me a este número (No es Bot el número)*
 
-📲 *Wa.me/5492266466080*
+📲 *Wa.me/51977835959*
 
 ❗ *_Solo para temas de instalación_*
 
