@@ -1,4 +1,4 @@
-import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
+import { generateWAMessageFromContent } from '@whiskeysockets/DokiBot'
 let handler  = async (m, { conn }) => {
 let texto = `
 ╭─────────────┈⊷
