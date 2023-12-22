@@ -11,11 +11,11 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
 
 global.owner = [ 
-['51906641131', 'Daniel', true],
+['51907913096', 'Daniel', true],
 ['51977835959', 'sopiix', true],
 ['51977835959'],
-['51906641131'],
-['51906641131'], 
+['51907913096'],
+['51907913096'], 
 ['51977835959'],
 ['51977835959']]
 
