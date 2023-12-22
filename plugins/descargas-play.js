@@ -16,8 +16,6 @@ additionalText = 'video 🎥'}
 await conn.sendMessage(m.chat, {
 text: `${yt_play[0].title}
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
-
-*⏰ Duración:* ${secondString(yt_play[0].duration.seconds)}
 *👉🏻Aguarde un momento en lo que envío su ${additionalText}*`, 
 contextInfo: {
 externalAdReply: {
