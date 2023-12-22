@@ -10,11 +10,11 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = '⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻'
+additionalText = '𝐓𝐡𝐞 𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
 } else if (command === 'play2') {
 additionalText = 'video 🎥'}
 await conn.sendMessage(m.chat, {
-text: `
+text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
 *${additionalText}*`, 
 contextInfo: {
