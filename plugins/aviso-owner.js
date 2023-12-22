@@ -3,5 +3,5 @@ conn.sendMessage(m.chat, {text:'*AVISO: Yo "Daniel", he tomado la decisión de r
 }
 handler.help = ['pagina']
 handler.tags = ['info']
-handler.command = /^nuevo|comandos|comandosnuevos$/i
+handler.command = /^aviso$/i
 export default handler
