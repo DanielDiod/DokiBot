@@ -10,13 +10,12 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = 'audio 🔊'
+additionalText = 'musica 🎧'
 } else if (command === 'play2') {
 additionalText = 'video 🎥'}
 await conn.sendMessage(m.chat, {
-text: `${yt_play[0].title}
-*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
-*👉🏻Aguarde un momento en lo que envío su ${additionalText}*`, 
+text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
+*Espere un momento evita hacer spam, mientras envío su ${additionalText}*`, 
 contextInfo: {
 externalAdReply: {
 title: yt_play[0].title,
