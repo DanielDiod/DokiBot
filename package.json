@@ -1,5 +1,5 @@
 {
-"name": "LoliBot-MD",
+"name": "DokiBot",
 "version": "1.5.5",
 "description": "Super Bot WhatsApp",
 "main": "index.js",
@@ -17,16 +17,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
     
-"homepage": "https://github.com/elrebelde21/LoliBot-MD",
+"homepage": "https://github.com/DanielDiod/DokiBot",
 "author": {
-"name": "elrebelde21" },
+"name": "DanielDiod" },
     
 "repository": {
 "type": "git",
-"url": "git+https://github.com/elrebelde21/LoliBot-MD.git" },
+"url": "git+https://github.com/DanielDiod/DokiBot.git" },
 
 "bugs": {
-"url": "https://github.com/elrebelde21/LoliBot-MD/issues" },
+"url": "https://github.com/DanielDiod/DokiBot/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@whiskeysockets/baileys": "^6.5.0",
