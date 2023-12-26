@@ -28,12 +28,12 @@ global.botNumberCode = "" //Ejemplo: +59309090909
 global.confirmCode = "" 
 
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰
-//Agrega el Idioma que quieres que tenga LoliBot-MD
+//Agrega el Idioma que quieres que tenga DokiBot
 //  es = Español         id = Bahasa Indonesia
 //  en = English         pt = Português
 //  ar = عرب 
 
-global.lenguajeGB = es  //Idioma de LoliBot-MD, Ejemplo: es | en | pt...
+global.lenguajeGB = es  //Idioma de DokiBot, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
