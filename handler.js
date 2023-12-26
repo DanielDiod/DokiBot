@@ -1295,7 +1295,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)  
-m.reply(+m.money + ' 𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨 𝙪𝙨𝙖𝙙𝙤𝙨')
+m.reply(+m.money + ' 💵 Dolares usados')
 break
 }}
 } catch (e) {
