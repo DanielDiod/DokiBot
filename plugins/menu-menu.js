@@ -461,7 +461,7 @@ console.log(e)
 }}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|menú|menucompleto|allmenu|allm\?)$/i
+handler.command = /^(menucompleto\?)$/i
 //handler.register = true
 handler.exp = 50
 handler.fail = null
