@@ -80,7 +80,7 @@ let menu = `⌜ *${wm}* ⌟
 
 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘 𝚊𝚕 𝚖𝚎𝚗𝚞 𝚍𝚎 𝙼𝚘𝚗𝚔𝚒 𝙱𝚘𝚝 🐵
 
-┏━━━━━━━━━━━━━━━━┓ 
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
 👤ㅤ» 𝐎𝐰𝐧𝐞𝐫 𝟏: wa.me/51906641131
 👤ㅤ» 𝐎𝐰𝐧𝐞𝐫 𝟐: wa.me/51977835959
@@ -89,9 +89,10 @@ let menu = `⌜ *${wm}* ⌟
 ⏱ㅤ» 𝐔𝐩𝐭𝐢𝐦𝐞: ${uptime}
 🛎ㅤ» 𝐈𝐠: http://Instagram.com/monki_bot/
 ㅤ
-┗━━━━━━━━━━━━━━━━┛
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
-┏━━━━━━━━━━━━━━━━┓ 
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+
 ㅤㅤㅤ𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐔𝐒𝐔𝐀𝐑𝐈𝐎
 
 🎖 » 𝙽𝚒𝚟𝚎𝚕 : ${level}
@@ -101,55 +102,61 @@ let menu = `⌜ *${wm}* ⌟
 🕹 » 𝙴𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊 : ${exp}
 ⚜ » 𝚁𝚊𝚗𝚐𝚘 : ${role}
 ${readMore}
-┗━━━━━━━━━━━━━━━━┛
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
 ┌─── 𝐉𝐔𝐄𝐆𝐎𝐒
-┆ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙿𝙰𝚁𝙰 𝙷𝙰𝙲𝙴𝚁
-┆ 𝙼𝙰𝚂 𝙳𝙸𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆🕹️ ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
-┆🕹️ ${usedPrefix}ppt <papel / tijera /piedra>
-┆🕹️ ${usedPrefix}prostituto <nombre / @tag>
-┆🕹️ ${usedPrefix}prostituta <nombre / @tag>
-┆🕹️ ${usedPrefix}gay2 <nombre / @tag>
-┆🕹️ ${usedPrefix}lesbiana <nombre / @tag>
-┆🕹️ ${usedPrefix}pajero <nombre / @tag>
-┆🕹️ ${usedPrefix}pajera <nombre / @tag>
-┆🕹️ ${usedPrefix}puto <nombre / @tag>
-┆🕹️ ${usedPrefix}puta <nombre / @tag>
-┆🕹️ ${usedPrefix}manco <nombre / @tag>
-┆🕹️ ${usedPrefix}manca <nombre / @tag>
-┆🕹️ ${usedPrefix}rata <nombre / @tag>
-┆🕹️ ${usedPrefix}love <nombre / @tag>
-┆🕹️ ${usedPrefix}doxear <nombre / @tag>
-┆🕹️ ${usedPrefix}pregunta <texto>
-┆🕹️ ${usedPrefix}suitpvp <@tag>
-┆🕹️ ${usedPrefix}slot <apuesta>
-┆🕹️ ${usedPrefix}ttt <nombre sala>
-┆🕹️ ${usedPrefix}delttt
-┆🕹️ ${usedPrefix}simi <texto>
-┆🕹️ ${usedPrefix}top <texto>
-┆🕹️ ${usedPrefix}topotakus
-┆🕹️️ ${usedPrefix}top10gays
-┆🕹️️ ${usedPrefix}toplind@s
-┆🕹️️ ${usedPrefix}topput@s
-┆🕹️️ ${usedPrefix}toppajer@s
-┆🕹️️ ${usedPrefix}topotakus
-┆🕹️️ ${usedPrefix}topintegrantes
-┆🕹️️ ${usedPrefix}toplagrasa
-┆🕹️️ ${usedPrefix}toppanafrescos
-┆🕹️ ${usedPrefix}topshiposters
-┆🕹️️ ${usedPrefix}toppajeros
-┆🕹️️ ${usedPrefix}toplind@s
-┆🕹️️ ${usedPrefix}topfamosos
-┆🕹️️ ${usedPrefix}topsoltero
-┆🕹️️ ${usedPrefix}topparejas
-┆🕹️ ${usedPrefix}formarpareja
-┆🕹️ ${usedPrefix}verdad
-┆🕹️ ${usedPrefix}reto
-┆🕹️ ${usedPrefix}cancion
-┆🕹️ ${usedPrefix}pista
-└─────────────
+ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙿𝙰𝚁𝙰 𝙷𝙰𝙲𝙴𝚁
+ 𝙼𝙰𝚂 𝙳𝙸𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🕹️ ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
+🕹️ ${usedPrefix}ppt <papel / tijera /piedra>
+🕹️ ${usedPrefix}prostituto <nombre / @tag>
+🕹️ ${usedPrefix}prostituta <nombre / @tag>
+🕹️ ${usedPrefix}gay2 <nombre / @tag>
+🕹️ ${usedPrefix}lesbiana <nombre / @tag>
+🕹️ ${usedPrefix}pajero <nombre / @tag>
+🕹️ ${usedPrefix}pajera <nombre / @tag>
+🕹️ ${usedPrefix}puto <nombre / @tag>
+🕹️ ${usedPrefix}puta <nombre / @tag>
+🕹️ ${usedPrefix}manco <nombre / @tag>
+🕹️ ${usedPrefix}manca <nombre / @tag>
+🕹️ ${usedPrefix}rata <nombre / @tag>
+🕹️ ${usedPrefix}love <nombre / @tag>
+🕹️ ${usedPrefix}doxear <nombre / @tag>
+🕹️ ${usedPrefix}pregunta <texto>
+🕹️ ${usedPrefix}suitpvp <@tag>
+🕹️ ${usedPrefix}slot <apuesta>
+🕹️ ${usedPrefix}ttt <nombre sala>
+🕹️ ${usedPrefix}delttt
+🕹️ ${usedPrefix}simi <texto>
+🕹️ ${usedPrefix}top <texto>
+🕹️ ${usedPrefix}topotakus
+🕹️️ ${usedPrefix}top10gays
+🕹️️ ${usedPrefix}toplind@s
+🕹️️ ${usedPrefix}topput@s
+🕹️️ ${usedPrefix}toppajer@s
+🕹️️ ${usedPrefix}topotakus
+🕹️️ ${usedPrefix}topintegrantes
+🕹️️ ${usedPrefix}toplagrasa
+🕹️️ ${usedPrefix}toppanafrescos
+🕹️ ${usedPrefix}topshiposters
+🕹️️ ${usedPrefix}toppajeros
+🕹️️ ${usedPrefix}toplind@s
+🕹️️ ${usedPrefix}topfamosos
+🕹️️ ${usedPrefix}topsoltero
+🕹️️ ${usedPrefix}topparejas
+🕹️ ${usedPrefix}formarpareja
+🕹️ ${usedPrefix}verdad
+🕹️ ${usedPrefix}reto
+🕹️ ${usedPrefix}cancion
+🕹️ ${usedPrefix}pista
+🕹️ ${usedPrefix}ruleta
+🕹️ ${usedPrefix}zodiac
+🕹️ ${usedPrefix}odio
+🕹️ ${usedPrefix}ship
+🕹️ ${usedPrefix}sorteo
+🕹️ ${usedPrefix}minovi@
+𖧷 ━━━━ • • 🐵 • • ━━━━ 𖧷
 
 ┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑
 ┆🟢 ${usedPrefix}enable
