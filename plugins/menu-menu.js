@@ -104,7 +104,7 @@ let menu = `⌜ *${wm}* ⌟
 ${readMore}
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
-          𝐉𝐔𝐄𝐆𝐎𝐒
+            𝐉𝐔𝐄𝐆𝐎𝐒
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 🎮 ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
 🎮 ${usedPrefix}ppt <papel / tijera /piedra>
@@ -164,7 +164,7 @@ ${readMore}
 
 • ━━━━ • • 🐵 • • ━━━━ •
 
-     𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 
+       𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 
  
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 📥 ${usedPrefix}play <texto>
