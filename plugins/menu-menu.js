@@ -104,74 +104,69 @@ let menu = `⌜ *${wm}* ⌟
 ${readMore}
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
-┌─── 𝐉𝐔𝐄𝐆𝐎𝐒
- 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙿𝙰𝚁𝙰 𝙷𝙰𝙲𝙴𝚁
- 𝙼𝙰𝚂 𝙳𝙸𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🕹️ ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
-🕹️ ${usedPrefix}ppt <papel / tijera /piedra>
-🕹️ ${usedPrefix}prostituto <nombre / @tag>
-🕹️ ${usedPrefix}prostituta <nombre / @tag>
-🕹️ ${usedPrefix}gay2 <nombre / @tag>
-🕹️ ${usedPrefix}lesbiana <nombre / @tag>
-🕹️ ${usedPrefix}pajero <nombre / @tag>
-🕹️ ${usedPrefix}pajera <nombre / @tag>
-🕹️ ${usedPrefix}puto <nombre / @tag>
-🕹️ ${usedPrefix}puta <nombre / @tag>
-🕹️ ${usedPrefix}manco <nombre / @tag>
-🕹️ ${usedPrefix}manca <nombre / @tag>
-🕹️ ${usedPrefix}rata <nombre / @tag>
-🕹️ ${usedPrefix}love <nombre / @tag>
-🕹️ ${usedPrefix}doxear <nombre / @tag>
-🕹️ ${usedPrefix}pregunta <texto>
-🕹️ ${usedPrefix}suitpvp <@tag>
-🕹️ ${usedPrefix}slot <apuesta>
-🕹️ ${usedPrefix}ttt <nombre sala>
-🕹️ ${usedPrefix}delttt
-🕹️ ${usedPrefix}simi <texto>
-🕹️ ${usedPrefix}top <texto>
-🕹️ ${usedPrefix}topotakus
-🕹️️ ${usedPrefix}top10gays
-🕹️️ ${usedPrefix}toplind@s
-🕹️️ ${usedPrefix}topput@s
-🕹️️ ${usedPrefix}toppajer@s
-🕹️️ ${usedPrefix}topotakus
-🕹️️ ${usedPrefix}topintegrantes
-🕹️️ ${usedPrefix}toplagrasa
-🕹️️ ${usedPrefix}toppanafrescos
-🕹️ ${usedPrefix}topshiposters
-🕹️️ ${usedPrefix}toppajeros
-🕹️️ ${usedPrefix}toplind@s
-🕹️️ ${usedPrefix}topfamosos
-🕹️️ ${usedPrefix}topsoltero
-🕹️️ ${usedPrefix}topparejas
-🕹️ ${usedPrefix}formarpareja
-🕹️ ${usedPrefix}verdad
-🕹️ ${usedPrefix}reto
-🕹️ ${usedPrefix}cancion
-🕹️ ${usedPrefix}pista
-🕹️ ${usedPrefix}ruleta
-🕹️ ${usedPrefix}zodiac
-🕹️ ${usedPrefix}odio
-🕹️ ${usedPrefix}ship
-🕹️ ${usedPrefix}sorteo
-🕹️ ${usedPrefix}minovi@
+          𝐉𝐔𝐄𝐆𝐎𝐒
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+🎮 ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
+🎮 ${usedPrefix}ppt <papel / tijera /piedra>
+🎮 ${usedPrefix}prostituto <nombre / @tag>
+🎮 ${usedPrefix}prostituta <nombre / @tag>
+🎮 ${usedPrefix}gay2 <nombre / @tag>
+🎮 ${usedPrefix}lesbiana <nombre / @tag>
+🎮 ${usedPrefix}pajero <nombre / @tag>
+🎮 ${usedPrefix}pajera <nombre / @tag>
+🎮 ${usedPrefix}puto <nombre / @tag>
+🎮 ${usedPrefix}puta <nombre / @tag>
+🎮 ${usedPrefix}manco <nombre / @tag>
+🎮 ${usedPrefix}manca <nombre / @tag>
+🎮 ${usedPrefix}rata <nombre / @tag>
+🎮 ${usedPrefix}love <nombre / @tag>
+🎮 ${usedPrefix}doxear <nombre / @tag>
+🎮 ${usedPrefix}pregunta <texto>
+🎮 ${usedPrefix}suitpvp <@tag>
+🎮 ${usedPrefix}slot <apuesta>
+🎮 ${usedPrefix}ttt <nombre sala>
+🎮 ${usedPrefix}delttt
+🎮 ${usedPrefix}simi <texto>
+🎮 ${usedPrefix}top <texto>
+🎮 ${usedPrefix}topotakus
+🎮 ${usedPrefix}top10gays
+🎮 ${usedPrefix}toplind@s
+🎮 ${usedPrefix}topput@s
+🎮 ${usedPrefix}toppajer@s
+🎮 ${usedPrefix}topotakus
+🎮 ${usedPrefix}topintegrantes
+🎮 ${usedPrefix}toplagrasa
+🎮 ${usedPrefix}toppanafrescos
+🎮 ${usedPrefix}topshiposters
+🎮 ${usedPrefix}toppajeros
+🎮 ${usedPrefix}toplind@s
+🎮 ${usedPrefix}topfamosos
+🎮 ${usedPrefix}topsoltero
+🎮 ${usedPrefix}topparejas
+🎮 ${usedPrefix}formarpareja
+🎮 ${usedPrefix}verdad
+🎮 ${usedPrefix}reto
+🎮 ${usedPrefix}cancion
+🎮 ${usedPrefix}pista
+🎮 ${usedPrefix}ruleta
+🎮 ${usedPrefix}zodiac
+🎮 ${usedPrefix}odio
+🎮 ${usedPrefix}ship
+🎮 ${usedPrefix}sorteo
+🎮 ${usedPrefix}minovi@
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑
+  𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+
 🟢 ${usedPrefix}enable
 🔴 ${usedPrefix}disable
+
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐂𝐎𝐍 𝐄𝐑𝐑𝐎𝐑𝐄𝐒
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-Reporta cualquier comando que falle 
-falle para poder solucionarlo
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-❗${usedPrefix}reporte <texto>
-• ━━━━ • • 🐵 • • ━━━━ •
-
-┌─── 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒
+     𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 
+ 
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 📥 ${usedPrefix}play <texto>
 📥 ${usedPrefix}play.1 <texto>
 📥 ${usedPrefix}play.2 <texto>
