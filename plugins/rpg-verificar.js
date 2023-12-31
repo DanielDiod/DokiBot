@@ -7,12 +7,12 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
   if (user.registered === true) throw `*[🛑Información 🛑]*\n\n*Usted ya esta registrado 🤨*\n\n*Use el siguiente comando para eliminar su registro*\n\n*${usedPrefix}unreg Número de serie*\n*Si no recuerda su número de serie , usar el siguiente comando 👇🏼*\n${usedPrefix}myns`
   if (!Reg.test(text)) throw `${mg}👤 *Uso del comando correcto:* *${usedPrefix + command} nombre.edad*\n\n*•🚀 Ejemplo :* *${usedPrefix + command}* ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '✳️ 𝑬𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒆𝒔𝒕𝒂𝒓 𝒗𝒂𝒄𝒊́𝒐'
-  if (!age) throw '✳️ 𝑳𝒂 𝒆𝒅𝒂𝒅 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒆𝒔𝒕𝒂𝒓 𝒗𝒂𝒄𝒊́𝒂'
-  if (name.length >= 30) throw '✳️ 𝑷𝒇𝒇𝒇, 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔  𝒍𝒂𝒓𝒈𝒐' 
+  if (!name) throw '*[🛑 Información 🛑]*\n\n*El nombré no puede estar vacío, por favor intenta nuevamente colocando tu nombre*'
+  if (!age) throw '*[🛑 información 🛑]*\n\n*La edad no puede estar vacía*'
+  if (name.length >= 30) throw '*El nombre es demasiado largo , intenta con un nombre mas corto*' 
   age = parseInt(age)
-  if (age > 100) throw '👴🏻 𝑷𝒂 𝒆𝒔𝒕𝒂 𝒗𝒊𝒆𝒋𝒐𝒔'
-  if (age < 5) throw '🚼  𝑽𝒓𝒈 𝒍𝒐𝒔 𝒃𝒆𝒃𝒆́𝒔 𝒔𝒂𝒃𝒆𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒊𝒓 ✍️😳 '
+  if (age > 100) throw '*Este bot , no acepta a viejos 👻*'
+  if (age < 5) throw '*No te crear habil , y pon tu edad verdadera 🤨*'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
