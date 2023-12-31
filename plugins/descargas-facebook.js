@@ -9,7 +9,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}*CREO QUE TE OLVIDASTE DEL ENLACE 😴*\n\n*EJEMPLO DE USO DEL COMANDO 👇🏼*\n\n*${usedPrefix + command} https://www.facebook.com/watch?v=636541475139`, fkontak, m)
 if (!args[0].match(/www.facebook.com|fb.watch/g)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}*CREO QUE TE OLVIDASTE DEL ENLACE 😴*\n\n*EJEMPLO DE USO DEL COMANDO 👇🏼*\n\n*${usedPrefix + command} https://www.facebook.com/watch?v=636541475139*`, fkontak, m)
 try {
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}*ESPERE UN MOMENTO , MIENTRAS DESCARGO SU PEDIDO SOY ALGO LENTO...🐢`, fkontak, m)
+await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}*ESPERE UN MOMENTO , MIENTRAS DESCARGO SU PEDIDO SOY ALGO LENTO...🐢*`, fkontak, m)
 const d2ata = await facebook.v1(args[0]);
 let r2es = '';
 if (d2ata.urls && d2ata.urls.length > 0) {
