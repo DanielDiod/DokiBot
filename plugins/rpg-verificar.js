@@ -23,7 +23,7 @@ global.db.data.users[m.sender].exp += 150
 global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 await conn.sendMessage(m.chat, { 
-text: `*REGISTRO EXITOSO ✅*
+text: `*VERIFICAR 📝*
 *Nombre 👤 :* ${name}
 *Edad ⏲️* ${age} años
 *Bono 💌:* Un Diamante por Fex`, 
