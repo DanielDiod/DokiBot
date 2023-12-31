@@ -23,18 +23,10 @@ global.db.data.users[m.sender].exp += 150
 global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 await conn.sendMessage(m.chat, { 
-text: `┌───⊷ *Nombre 📑:*
-┆ ${name}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *Edad 🚻:*
-┆ ${age} años
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *Bono* 
-┆ *$4 diamantes* 💎
-┆ *$400 Monkicoins* 💴
-┆ *$150 XP*
-┆ *$2 Tokens* 💌
-╰──────────────────`, 
+text: `*REGISTRO EXITOSO ✅*
+*Nombre 🧑🏻‍🦱 :* ${name}
+*Edad ⏲️* ${age} años
+*Bono 💌:* Un Diamante por Fex`, 
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
