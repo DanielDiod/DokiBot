@@ -206,47 +206,49 @@ ${readMore}
 📥 ${usedPrefix}tiktokstalk *<username>*
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐆𝐑𝐔𝐏𝐎𝐒
-𝙼𝚎𝚓𝚘𝚛𝚊 𝚝𝚞 𝚐𝚛𝚞𝚙𝚘 𝚌𝚘𝚗 𝙼𝚘𝚗𝚔𝚒𝙱𝚘𝚝 🙊
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💎 ${usedPrefix}add <numero>
-💎 ${usedPrefix}kick <@tag>
-💎 ${usedPrefix}grupo <abrir / cerrar>
-💎 ${usedPrefix}grouptime <opcion> <tiempo>
-💎 ${usedPrefix}promote <@tag>
-💎 ${usedPrefix}demote <@tag>
-💎 admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-💎 ${usedPrefix}demote <@tag>
-💎 ${usedPrefix}infogroup
-💎 ${usedPrefix}resetlink
-💎 ${usedPrefix}link
-💎 ${usedPrefix}setname <texto>
-💎 ${usedPrefix}setdesc <texto>
-💎 ${usedPrefix}invocar <texto>
-💎 ${usedPrefix}setwelcome <texto>
-💎 ${usedPrefix}setbye <texto>
-💎 ${usedPrefix}hidetag <texto>
-💎 ${usedPrefix}warn <@tag>
-💎 ${usedPrefix}unwarn <@tag>
-💎 ${usedPrefix}listwarn
-💎 ${usedPrefix}fantasmas
-💎 ${usedPrefix}destraba
-💎 ${usedPrefix}setpp <imagen>
+ 𝐆𝐑𝐔𝐏𝐎𝐒
+
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+
+💌 ${usedPrefix}add <numero>
+💌 ${usedPrefix}kick <@tag>
+💌 ${usedPrefix}grupo <abrir / cerrar>
+💌 ${usedPrefix}grouptime <opcion> <tiempo>
+💌 ${usedPrefix}promote <@tag>
+💌 ${usedPrefix}demote <@tag>
+💌 admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+💌 ${usedPrefix}demote <@tag>
+💌 ${usedPrefix}infogroup
+💌 ${usedPrefix}resetlink
+💌 ${usedPrefix}link
+💌 ${usedPrefix}setname <texto>
+💌 ${usedPrefix}setdesc <texto>
+💌 ${usedPrefix}invocar <texto>
+💌 ${usedPrefix}setwelcome <texto>
+💌 ${usedPrefix}setbye <texto>
+💌 ${usedPrefix}hidetag <texto>
+💌 ${usedPrefix}warn <@tag>
+💌 ${usedPrefix}unwarn <@tag>
+💌 ${usedPrefix}listwarn
+💌 ${usedPrefix}fantasmas
+💌 ${usedPrefix}destraba
+💌 ${usedPrefix}setpp <imagen>
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒
-𝙲𝚘𝚗𝚟𝚒𝚎𝚛𝚝𝚎 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜 𝚎𝚗 𝚒𝚖𝚊𝚐𝚎𝚗𝚎𝚜
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🧧 ${usedPrefix}togifaud <video>
-🧧 ${usedPrefix}robar texto
-🧧 ${usedPrefix}wm texto
-🧧 ${usedPrefix}toimg <sticker>
-🧧 ${usedPrefix}tomp3 <video>
-🧧 ${usedPrefix}tomp3 <nota de voz>
-🧧 ${usedPrefix}toptt <video / audio>
-🧧 ${usedPrefix}tovideo <sticker>
-🧧 ${usedPrefix}tourl <video / imagen / audio>
-🧧 ${usedPrefix}tts es <texto>
+ 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒
+
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+
+🎭 ${usedPrefix}togifaud <video>
+🎭 ${usedPrefix}robar texto
+🎭 ${usedPrefix}wm texto
+🎭 ${usedPrefix}toimg <sticker>
+🎭 ${usedPrefix}tomp3 <video>
+🎭 ${usedPrefix}tomp3 <nota de voz>
+🎭 ${usedPrefix}toptt <video / audio>
+🎭 ${usedPrefix}tovideo <sticker>
+🎭 ${usedPrefix}tourl <video / imagen / audio>
+🎭 ${usedPrefix}tts es <texto>
 • ━━━━ • • 🐵 • • ━━━━ •
 
  𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒
@@ -333,35 +335,35 @@ ${readMore}
 
  *STICKERS*
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-👽 ${usedPrefix}sticker <responder a imagen o video>
-👽 ${usedPrefix}sticker <enlace / link / url>
-👽 ${usedPrefix}s <responder a imagen o video>
-👽 ${usedPrefix}s <enlace / link / url>
-👽 ${usedPrefix}sfull <imagen o video>
-👽 ${usedPrefix}emojimix <emoji 1>&<emoji 2>
-👽 ${usedPrefix}scircle <imagen>
-👽 ${usedPrefix}sremovebg <imagen>
-👽 ${usedPrefix}semoji <tipo> <emoji>
-👽 ${usedPrefix}attp <texto>
-👽 ${usedPrefix}attp2 <texto>
-👽 ${usedPrefix}attp3 <texto>
-👽 ${usedPrefix}ttp <texto>
-👽 ${usedPrefix}ttp2 <texto>
-👽 ${usedPrefix}ttp3 <texto>
-👽 ${usedPrefix}ttp4 <texto>
-👽 ${usedPrefix}ttp5 <texto>
-👽 ${usedPrefix}pat <@tag>
-👽 ${usedPrefix}slap <@tag>
-👽 ${usedPrefix}kiss <@tag>
-👽 ${usedPrefix}dado
-👽 ${usedPrefix}wm *<packname> <author>
-👽 ${usedPrefix}stickermarker *<efecto> <imagen>
-👽 ${usedPrefix}stickerfilter *<efecto> <imagen>
-👽 ${usedPrefix}palmaditas | pat @tag
-👽 ${usedPrefix}bofetada | slap @tag
-👽 ${usedPrefix}golpear @tag
-👽 ${usedPrefix}besar | kiss @tag
-👽 ${usedPrefix}alimentar | food @tag
+🌟 ${usedPrefix}sticker <responder a imagen o video>
+🌟 ${usedPrefix}sticker <enlace / link / url>
+🌟 ${usedPrefix}s <responder a imagen o video>
+🌟 ${usedPrefix}s <enlace / link / url>
+🌟 ${usedPrefix}sfull <imagen o video>
+🌟 ${usedPrefix}emojimix <emoji 1>&<emoji 2>
+🌟 ${usedPrefix}scircle <imagen>
+🌟 ${usedPrefix}sremovebg <imagen>
+🌟 ${usedPrefix}semoji <tipo> <emoji>
+🌟 ${usedPrefix}attp <texto>
+🌟 ${usedPrefix}attp2 <texto>
+🌟 ${usedPrefix}attp3 <texto>
+🌟 ${usedPrefix}ttp <texto>
+🌟 ${usedPrefix}ttp2 <texto>
+🌟 ${usedPrefix}ttp3 <texto>
+🌟 ${usedPrefix}ttp4 <texto>
+🌟 ${usedPrefix}ttp5 <texto>
+🌟 ${usedPrefix}pat <@tag>
+🌟 ${usedPrefix}slap <@tag>
+🌟 ${usedPrefix}kiss <@tag>
+🌟 ${usedPrefix}dado
+🌟 ${usedPrefix}wm *<packname> <author>
+🌟 ${usedPrefix}stickermarker *<efecto> <imagen>
+🌟 ${usedPrefix}stickerfilter *<efecto> <imagen>
+🌟 ${usedPrefix}palmaditas | pat @tag
+🌟 ${usedPrefix}bofetada | slap @tag
+🌟 ${usedPrefix}golpear @tag
+🌟 ${usedPrefix}besar | kiss @tag
+🌟 ${usedPrefix}alimentar | food @tag
 • ━━━━ • • 🐵 • • ━━━━ •`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 	
