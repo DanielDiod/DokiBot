@@ -266,102 +266,23 @@ ${readMore}
 🖍️ ${usedPrefix}blur
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒
-𝙿𝚘𝚛 𝚜𝚒 𝚎𝚛𝚎𝚜 𝚙𝚎𝚜𝚒𝚖𝚘 
-𝚍𝚒𝚌𝚒𝚎𝚗𝚍𝚘 𝚏𝚛𝚊𝚜𝚎𝚜 𝚢 𝚙𝚘𝚎𝚖𝚊𝚜
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+   𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒
+
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 🥀 ${usedPrefix}piropo
 🥀 ${usedPrefix}consejo
 🥀 ${usedPrefix}fraseromantica
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐑𝐀𝐍𝐃𝐎𝐌
-👾 ${usedPrefix}kpop <blackpink / exo / bts>
-👾 ${usedPrefix}cristianoronaldo
-👾 ${usedPrefix}messi
-👾 ${usedPrefix}meme
-👾 ${usedPrefix}itzy
-👾 ${usedPrefix}blackpink
-👾 ${usedPrefix}lolivid
-👾 ${usedPrefix}loli
-👾 ${usedPrefix}navidad
-👾 ${usedPrefix}ppcouple
-👾 ${usedPrefix}wpmontaña
-👾 ${usedPrefix}pubg
-👾 ${usedPrefix}wpgaming
-👾 ${usedPrefix}wpaesthetic
-👾 ${usedPrefix}wpaesthetic2
-👾 ${usedPrefix}wprandom
-👾 ${usedPrefix}wallhp
-👾 ${usedPrefix}wpvehiculo
-👾 ${usedPrefix}wpmoto
-👾 ${usedPrefix}coffee
-👾 ${usedPrefix}pentol
-👾 ${usedPrefix}caricatura
-👾 ${usedPrefix}ciberespacio
-👾 ${usedPrefix}technology
-👾 ${usedPrefix}doraemon
-👾 ${usedPrefix}hacker
-👾 ${usedPrefix}planeta
-👾 ${usedPrefix}randomprofile
-👾 ${usedPrefix}neko
-👾 ${usedPrefix}waifu
-👾 ${usedPrefix}akira
-👾 ${usedPrefix}akiyam
-👾 ${usedPrefix}anna
-👾 ${usedPrefix}asuna
-👾 ${usedPrefix}ayuzawa
-👾 ${usedPrefix}boruto
-👾 ${usedPrefix}chiho
-👾 ${usedPrefix}chitoge
-👾 ${usedPrefix}deidara
-👾 ${usedPrefix}erza
-👾 ${usedPrefix}elaina
-👾 ${usedPrefix}eba
-👾 ${usedPrefix}emilia
-👾 ${usedPrefix}hestia
-👾 ${usedPrefix}hinata
-👾 ${usedPrefix}inori
-👾 ${usedPrefix}isuzu
-👾 ${usedPrefix}itachi
-👾 ${usedPrefix}itori
-👾 ${usedPrefix}kaga
-👾 ${usedPrefix}kagura
-👾 ${usedPrefix}kaori
-👾 ${usedPrefix}keneki
-👾 ${usedPrefix}kotori
-👾 ${usedPrefix}kurumi
-👾 ${usedPrefix}madara
-👾 ${usedPrefix}mikasa
-👾 ${usedPrefix}miku
-👾 ${usedPrefix}minato
-👾 ${usedPrefix}naruto
-👾 ${usedPrefix}nezuko
-👾 ${usedPrefix}sagiri
-👾 ${usedPrefix}sasuke
-👾 ${usedPrefix}sakura
-👾 ${usedPrefix}cosplay
-• ━━━━ • • 🐵 • • ━━━━ •
+ 𝐀𝐔𝐃𝐈𝐎𝐒
 
-┌─── 𝐀𝐔𝐃𝐈𝐎𝐒
-𝚁𝚎𝚟𝚒𝚜𝚊 𝚎𝚕 𝚖𝚎𝚗𝚞 𝚍𝚎 𝚊𝚞𝚍𝚒𝚘𝚜
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 🔊 ${usedPrefix}menu2
 🔊 ${usedPrefix}audios
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐂𝐇𝐀𝐓𝐒 𝐀𝐍𝐎𝐍𝐈𝐌𝐎𝐒
-𝙼𝚊𝚗𝚍𝚊𝚕𝚎 𝚖𝚎𝚗𝚜𝚊𝚓𝚎 𝚊 𝚞𝚗𝚊
-p𝚎𝚛𝚜𝚘𝚗𝚊 𝚜𝚒𝚗 𝚚𝚞𝚎 𝚜𝚎𝚙𝚊
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-📳 ${usedPrefix}start
-📳 ${usedPrefix}next
-📳 ${usedPrefix}leave
-• ━━━━ • • 🐵 • • ━━━━ •
-
-┌─── 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒
-𝙱𝚞𝚜𝚌𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚜 𝚌𝚘𝚗 𝚎𝚕 𝚋𝚘𝚝
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 🔍 ${usedPrefix}stickersearch <texto>
 🔍 ${usedPrefix}stickersearch2 <texto>
 🔍 ${usedPrefix}xnxxsearch <texto>
@@ -377,7 +298,8 @@ p𝚎𝚛𝚜𝚘𝚗𝚊 𝚜𝚒𝚗 𝚚𝚞𝚎 𝚜𝚎𝚙𝚊
 🔍 ${usedPrefix}playstore <texto>
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒
+ 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 🛠️ ${usedPrefix}spamwa <numero|texto|cantidad>
 🛠️ ${usedPrefix}tamaño <cantidad> <imagen / video>
 🛠️ ${usedPrefix}clima <país> <ciudad>
@@ -398,32 +320,24 @@ p𝚎𝚛𝚜𝚘𝚗𝚊 𝚜𝚒𝚗 𝚚𝚞𝚎 𝚜𝚎𝚙𝚊
 🛠️ ${usedPrefix}horario
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒
-𝙲𝚘𝚖𝚙𝚛𝚊 𝚢 𝚖𝚎𝚓𝚘𝚛𝚊 𝚝𝚞 𝚗𝚒𝚟𝚎𝚕 𝚢 𝚛𝚊𝚗𝚐𝚘
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💵 ${usedPrefix}verificar
-💵 ${usedPrefix}unreg *<numero de serie>
-💵 ${usedPrefix}claim
-💵 ${usedPrefix}lb
-💵 ${usedPrefix}perfil
-💵 ${usedPrefix}minar
-💵 ${usedPrefix}buy
-💵 ${usedPrefix}balance
-💵 ${usedPrefix}myns
-💵 ${usedPrefix}work
-💵 ${usedPrefix}buyall
-💵 ${usedPrefix}transfer *<tipo> <cantidad> <@tag>
+ 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+🧾 ${usedPrefix}verificar
+🧾 ${usedPrefix}unreg *<numero de serie>
+🧾 ${usedPrefix}claim
+🧾 ${usedPrefix}lb
+🧾 ${usedPrefix}perfil
+🧾 ${usedPrefix}minar
+🧾 ${usedPrefix}buy
+🧾 ${usedPrefix}balance
+🧾 ${usedPrefix}myns
+🧾 ${usedPrefix}work
+🧾 ${usedPrefix}buyall
+🧾 ${usedPrefix}transfer *<tipo> <cantidad> <@tag>
 • ━━━━ • • 🐵 • • ━━━━ •
 
-┌─── 𝐓𝐎𝐏 𝐄𝐍 𝐌𝐎𝐍𝐊𝐈 𝐁𝐎𝐓 🙈
-𝙳𝚎𝚜𝚌𝚞𝚋𝚛𝚎 𝚎𝚗 𝚚𝚞𝚎 𝚃𝚘𝚙 𝚎𝚜𝚝𝚊𝚜
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🏆➺ ${usedPrefix}top | lb | leaderboard
-• ━━━━ • • 🐵 • • ━━━━ •
-
-┌─── 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒
-𝚁𝚎𝚊𝚕𝚒𝚣𝚊 𝚢 𝚌𝚛𝚎𝚊 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+ *STICKERS*
+🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 👽 ${usedPrefix}sticker <responder a imagen o video>
 👽 ${usedPrefix}sticker <enlace / link / url>
 👽 ${usedPrefix}s <responder a imagen o video>
