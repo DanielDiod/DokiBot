@@ -106,7 +106,7 @@ ${readMore}
 
             𝐉𝐔𝐄𝐆𝐎𝐒
 🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-🎮 ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
+🎮 ${usedPrefix}mates
 🎮 ${usedPrefix}ppt <papel / tijera /piedra>
 🎮 ${usedPrefix}prostituto <nombre / @tag>
 🎮 ${usedPrefix}prostituta <nombre / @tag>
