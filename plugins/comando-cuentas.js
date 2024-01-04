@@ -7,8 +7,8 @@ _${usedPrefix}videomp4_`.trim();
   }
 
   if (command == "cuentas") {
-    var play = `*_[ 🛑 HEY ALTO ] SE ESTAN ACTUALIZANDO LAS CUENTAS RECUERDA QUE CADA 24 HORAS SE ACTULIZA LAS CUENTAS DISPONIBLES\n_
-_${usedPrefix}By MonkiBot_*`.trim();
+    var play = `*[🟢 ACTUALIZANDO 🟢]*\n*Se actualizo con exito las cuenta de hoy*\n
+*${usedPrefix}recuerda que se actualiza las cuentas disponibles cada 24 horas*\n*Disfruta de las cuentas 👋🏼*`.trim();
     m.reply(play);
   }
 };
