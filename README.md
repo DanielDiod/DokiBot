@@ -107,4 +107,4 @@ npm start
 
 <a href="https://github.com/DanielDiod"><img src="https://github.com/DanielDiod.png" width="300" height="300" alt="Daniel🇦🇱"/></a>
 
-`© Ai Hoshino - MD / Nakano - Team _ By Daniel 🇦🇱`
+`© MonkiBot / By Daniel 🇦🇱`
