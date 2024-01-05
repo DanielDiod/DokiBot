@@ -26,18 +26,18 @@ import fetch from 'node-fetch';
  ┣┅⟣✦ *Colaboradores* 
  ┗━━━━━━━━━━━━━━━━━━┛ 
  ━━━━━━━━━━━━━━━━━━━━ 
- ┣┅⟣✦*Instagram ofc de los colaboradores 📸*
+ 🖋️*Instagram ofc de los colaboradores 📸*
   
- ┣*Creador Ofc|Daniel 🇦🇱:* https://www.instagram.com/Jxtxn17/ 
+ 🖋️ *Creador Ofc|Daniel 🇦🇱:* https://www.instagram.com/Jxtxn17/ 
   
- ┣*Colaboradora|Sopixx:* https://www.instagram.com/sophziix
+ 🖋️ *Colaboradora|Sopixx:* https://www.instagram.com/sophziix
   
- ┣*Colaboraor|Raul:* https://www.instagram.com/bu_2348
+ 🖋️ *Colaboraor|Raul:* https://www.instagram.com/bu_2348
    
  ┣┅⟣✦𝗡𝘂𝗺𝗲𝗿𝗼𝘀  
- ┣*Daniel 🇦🇱:* https://ww.me//51907913096
- ┣*Sopixx:* https://ww.me//51977835959
- ┣*Raul:* https://ww.me//528683088045
+ 🖋️ *Daniel 🇦🇱:* https://Wa.me/51907913096
+ 🖋️ *Sopixx:* https://Wa.me/51977835959
+ 🖋️*Raul:* https://Wa.me/528683088045
  ┗━━━━━━━━━━━━━━━━━━┛ 
   `.trim(); 
      if (m.isGroup) { 
