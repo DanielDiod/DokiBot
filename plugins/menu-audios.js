@@ -1,264 +1,123 @@
-import { xpRange } from '../lib/levelling.js'
-import PhoneNumber from 'awesome-phonenumber'
-import { promises } from 'fs'
-import { join } from 'path'
-import fetch from 'node-fetch'
+import fetch from 'node-fetch';
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+  try {
+    const pp = imagen4;
+    // let vn = './media/menu.mp3'
+    const img = './Larios.PNG';
+    const d = new Date(new Date + 3600000);
+    const locale = 'es';
+    const week = d.toLocaleDateString(locale, {weekday: 'long'});
+    const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
+    const _uptime = process.uptime() * 1000;
+    const uptime = clockString(_uptime);
+    const user = global.db.data.users[m.sender];
+    const {money, joincount} = global.db.data.users[m.sender];
+    const {exp, limit, level, role} = global.db.data.users[m.sender];
+    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const more = String.fromCharCode(8206);
+    const readMore = more.repeat(850);
+    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    const document = doc[Math.floor(Math.random() * doc.length)];
+    const str = `
+    𝐋𝐚𝐫𝐢𝐨𝐬 𝐕𝟐.𝟎 ⚙️
 
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-try{ 
-const { levelling } = '../lib/levelling.js'
-let { exp, limit, level, role } = global.db.data.users[m.sender]
-let { min, xp, max } = xpRange(level, global.multiplier)
+   𝐇𝐨𝐥𝐚, ${taguser}
 
-let d = new Date(new Date + 3600000)
-let locale = 'es'
-let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-let week = d.toLocaleDateString(locale, { weekday: 'long' })
-let date = d.toLocaleDateString(locale, {
-day: 'numeric',
-month: 'long',
-year: 'numeric' 
-})
-let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-}).format(d)
-let time = d.toLocaleTimeString(locale, {
-hour: 'numeric',
-minute: 'numeric',
-second: 'numeric'
-})
-let _uptime = process.uptime() * 1000
-let _muptime
-if (process.send) {
-process.send('uptime')
-_muptime = await new Promise(resolve => {
-process.once('message', resolve)
-setTimeout(resolve, 1000)
-}) * 1000
-}
-let { money } = global.db.data.users[m.sender]
-let muptime = clockString(_muptime)
-let uptime = clockString(_uptime)
-let totalreg = Object.keys(global.db.data.users).length
-let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
-let replace = {
-'%': '%',
-p: _p, uptime, muptime,
-me: conn.getName(conn.user.jid),
+𝐒𝐢 𝐃𝐞𝐬𝐞𝐚𝐬 𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐞𝐥 𝐁𝐨𝐭, 𝐏𝐥𝐚𝐭𝐚𝐟𝐨𝐫𝐦𝐚𝐬 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐮 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬
+𝐂𝐨𝐧𝐭𝐚́𝐜𝐭𝐚𝐦𝐞 𝐚𝐥 𝐒𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 𝐍𝐮́𝐦𝐞𝐫𝐨:
 
-exp: exp - min,
-maxexp: xp,
-totalexp: exp,
-xp4levelup: max - exp,
+𝐋𝐚𝐫𝐢𝐨𝐬 𝐕𝟐.𝟎 ⚙️: wa.me/50253501417
 
-level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
-readmore: readMore
-}
-text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
- 
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let mentionedJid = [who]
-let username = conn.getName(who)
-let user = global.db.data.users[m.sender]
-let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-//user.registered = false
+𝐌𝐞́𝐭𝐨𝐝𝐨𝐬 𝐝𝐞 𝐏𝐚𝐠𝐨:
+𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫𝐞𝐧𝐜𝐢𝐚 𝐌𝐞́𝐱𝐢𝐜𝐨, 𝐏𝐚𝐲𝐩𝐚𝐥, 𝐁𝐢𝐧𝐚𝐧𝐜𝐞 𝐲 𝐁𝐚𝐧𝐫𝐮𝐫𝐚𝐥
 
-let pp = gataVidMenu.getRandom()
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let fsizedoc = '1'.repeat(10)
-let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
+         𝐌𝐄𝐍𝐔 𝐃𝐄 𝐏𝐑𝐄𝐂𝐈𝐎𝐒 
 
-let str = `
-𝐌𝐄𝐍𝐔 𝐃𝐄 𝐀𝐔𝐃𝐈𝐎𝐒 
+    ⚙️ 𝐏𝐑𝐄𝐂𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⚙️ 
+   𝟑𝟎 𝐌𝐗 𝐜𝐚𝐝𝐚 𝐆𝐫𝐮𝐩𝐨 - 𝟐 𝐃𝐋𝐒
 
-𝙴𝚜𝚌𝚛𝚒𝚋𝚎 𝚕𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜 𝚜𝚒𝚗 𝚙𝚛𝚎𝚏𝚒𝚓𝚘𝚜 (#, ., *,)
+⚙️ 𝐏𝐑𝐄𝐂𝐈𝐎 𝐂𝐑𝐄𝐀𝐂𝐈𝐎𝐍 𝐃𝐄 𝐓𝐔 𝐏𝐑𝐎𝐏𝐈𝐎 𝐁𝐎𝐓 ⚙️
+    𝟐𝟎𝟎 𝐌𝐱 - 𝟏𝟐 𝐚 𝟐𝟒 𝐇𝐨𝐫𝐚𝐬 𝐝𝐞 𝐄𝐧𝐭𝐫𝐞𝐠𝐚 
 
-🔊  _Noche de paz_
-🔊  _Buenos dias_
-🔊  _Audio hentai_
-🔊  _Fiesta del admin_
-🔊  _Fiesta del admin 2_
-🔊  _Fiesta del administrador_ 
-🔊  _Viernes_
-🔊  _Mierda de Bot_
-🔊  _Me olvidé_
-🔊  _Baneado_
-🔊  _Feliz navidad_
-🔊  _A nadie le importa_
-🔊  _Sexo_
-🔊  _Vete a la vrg_
-🔊  _Ara ara_
-🔊  _Hola_
-🔊  _Un pato_
-🔊  _Nyanpasu_
-🔊  _Te amo_
-🔊 _Yamete_
-🔊  _Te diagnostico con gay_
-🔊  _Quien es tu sempai botsito 7w7_
-🔊  _Bañate_
-🔊  _Vivan los novios_
-🔊  _Marica quien_
-🔊  _Es puto_
-🔊  _La biblia_
-🔊  _Onichan_
-🔊  _Bot puto_
-🔊  _Feliz cumpleaños_
-🔊 _Pasa pack Bot_
-🔊 _Atencion grupo_
-🔊 _Homero chino_
-🔊  _Oh me vengo_
-🔊 _Murio el grupo_
-🔊 _Siuuu_
-🔊 _Rawr_
-🔊 _UwU_
-🔊 _:c_
-🔊 _a_
-🔊 _Hey_
-🔊 _Enojado_
-🔊 _Enojada_
-🔊 _Chao_
-🔊 _Hentai_
-🔊 _Triste_
-🔊 _Estoy triste_
-🔊 _Me pican los cocos_
-🔊 _Contexto_
-🔊 _Me voy_
-🔊 _Tengo los calzones del admin_
-🔊 _Entrada épica_ 
-🔊 _Esto va ser épico papus_
-🔊 _Ingresa épicamente_
-🔊 _Bv_
-🔊 _Yoshi_
-🔊 _No digas eso papu_
-🔊 _Ma ma masivo_
-🔊 _Masivo_
-🔊 _Basado_
-🔊 _Basada_
-🔊 _Fino señores_
-🔊 _Verdad que te engañe_
-🔊 _Sus_
-🔊 _Ohayo_
-🔊 _La voz de hombre_
-🔊 _Pero esto_
-🔊 _Bien pensado Woody_
-🔊 _Jesucristo_
-🔊 _Wtf_
-🔊 _Una pregunta_
-🔊 _Que sucede_
-🔊 _Hablame_
-🔊 _Pikachu_
-🔊 _Niconico_
-🔊 _Yokese_
-🔊 _Omaiga_
-🔊 _Nadie te preguntó_
-🔊 _Bueno si_
-🔊 _Usted está detenido_
-🔊 _No me hables_
-🔊 _No chu_
-🔊 _El pepe_
-🔊 _Pokémon_
-🔊 _No me hagas usar esto_
-🔊 _Esto va para ti_
-🔊 _Abduzcan_
-🔊 _Joder_
-🔊 _Hablar primos_
-🔊 _Mmm_
-🔊 _Orale_
-🔊 _Me anda buscando anonymous_
-🔊 _Blackpink in your area_
-🔊 _Cambiate a Movistar_
-🔊 _Momento equisde | Momento XD_
-🔊 _Todo bien | 😇_
-🔊 _Te gusta el Pepino | 🥒_
-🔊 _El tóxico_
-🔊 _Moshi moshi_
-🔊 _Calla Fan de BTS_
-🔊 _Que tal grupo_
-🔊 _Muchachos_
-🔊 _Está Zzzz | 😴_
-🔊 _Goku Pervertido_
-🔊 _Potaxio | 🥑_
-🔊 _Nico nico_
-🔊 _El rap de Fernanfloo_
-🔊 _Tal vez_
-🔊 _Corte corte_
-🔊 _Buenas noches_
-🔊 _Porque ta tite_
-🔊 _Eres Fuerte_
-🔊 _Bueno Master | 🫂_
-🔊 _No Rompas más | 💔_
-🔊 _Traiganle una falda_
-🔊 _Se están riendo de mí_
-🔊 _Su nivel de pendejo_
-🔊 _Bienvenido/a | 🥳 | 🤗 | 👋_
-🔊 _Elmo sabe donde vives_
-🔊 _tunometecabrasaramambiche_
-🔊 _Y este quien es_
-🔊 _Motivación_
-🔊 _En caso de una investigación_
-🔊 _Buen día grupo | 🙌_
-🔊 _mi bebito fiu fiu_
-🔊 _sabosito_
-🔊 _Freefire_
-🔊 _Aguanta_
-🔊 _Es viernes_
-🔊 _Que quede vos_
-🔊 _Feriado_
-🔊 _Me emociono | borracho_
-🔊 _Delivery_
-🔊 _Tarado | putos_
-🔊 _Bardo_
-🔊 _Saliste del grupo_
-🔊 _No agregué_
-🔊 _Quiere tener internet gratis_
-🔊 _Donde esta?_
-🔊 _Q onda | 🤪_
-🔊 _La tóxica_
-🔊 _Bebesita_
-🔊 _Tka_
-🔊 _No la pienso_
-🔊 _Taka Taka_
-🔊 _Bot canta_
-🔊  _Loli conmigo | Loli venir_
-🔊  _Grap | trap_
-🔊  _Bruno_
-🔊 _Soy guapo_
-🔊 _Dragon ball_
-🔊 _Las reglas del grupo_
-🔊 Pequeña canciones 
-🔊 Quevedo 
-🔊 Quédate 
-🔊 Fernet 
-🔊 Emilia 
-🔊 cuantros veintes
-🔊 Turrito
-🔊 Allá 
-🔊 cumbia 420
-🔊 lgante
-🔊 esaa |😎
-🔊 bar 
-🔊 Le mando fui  `.trim()
-conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
+    ⚙️ 𝐏𝐥𝐚𝐭𝐚𝐟𝐨𝐫𝐦𝐚𝐬 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 ⚙️
+      (𝐏𝐞𝐫𝐟𝐢𝐥𝐞𝐬 - 𝟏 𝐃𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨)
+      
+⚙️ 𝐇𝐛𝐨 𝐌𝐚𝐱 𝟏 𝐌𝐞𝐬 - 𝟏𝟎 𝐌𝐱
+⚙️ 𝐇𝐛𝐨 𝐌𝐚𝐱 𝟑 𝐌𝐞𝐬𝐞𝐬 - 𝟏𝟓 𝐌𝐱
+⚙️ 𝐃𝐢𝐬𝐧𝐞𝐲 𝐏𝐥𝐮𝐬 𝟏 𝐌𝐞𝐬 - 𝟏𝟐 𝐌𝐱
+⚙️ 𝐏𝐫𝐢𝐦𝐞 𝐕𝐢𝐝𝐞𝐨 𝟏 𝐌𝐞𝐬 - 𝟏𝟎 𝐌𝐱
+⚙️ 𝐏𝐚𝐫𝐚𝐦𝐨𝐮𝐧𝐭 𝟏 𝐌𝐞𝐬 - 𝟏𝟎 𝐌𝐱
+⚙️ 𝐍𝐞𝐭𝐟𝐥𝐢𝐱 𝟏 𝐌𝐞𝐬 - 𝟒𝟓 𝐌𝐱
+⚙️ 𝐂𝐫𝐮𝐧𝐜𝐡𝐲𝐫𝐨𝐥𝐥 - 𝟏𝟓 𝐌𝐱
+⚙️ 𝐕𝐢𝐱 𝐏𝐥𝐮𝐬 𝟐 𝐌𝐞𝐬𝐞𝐬 - 𝟐𝟎 𝐌𝐱
+⚙️ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝟏 𝐌𝐞𝐬 - 𝟏𝟓 𝐌𝐱
+⚙️ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐌𝐮𝐬𝐢𝐜 𝟏 𝐌𝐞𝐬 - 𝟏𝟓 𝐌𝐱
 
-} catch (e) {
-//await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)	
-}}
+   ⚙️ 𝐂𝐔𝐄𝐍𝐓𝐀𝐒 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐒 ⚙️
+   
+⚙️ 𝐇𝐛𝐨 𝐌𝐚𝐱 𝟏 𝐌𝐞𝐬 - 𝟐𝟎 𝐌𝐱
+⚙️ 𝐇𝐛𝐨 𝐌𝐚𝐱 𝟑 𝐌𝐞𝐬𝐞𝐬 - 𝟑𝟓 𝐌𝐱
+⚙️ 𝐃𝐢𝐬𝐧𝐞𝐲 𝐏𝐥𝐮𝐬 𝟏 𝐌𝐞𝐬 - 𝟒𝟓 𝐌𝐱
+⚙️ 𝐏𝐫𝐢𝐦𝐞 𝐕𝐢𝐝𝐞𝐨 𝟏 𝐌𝐞𝐬 - 𝟑𝟓 𝐌𝐱
+⚙️ 𝐏𝐚𝐫𝐚𝐦𝐨𝐮𝐧𝐭 𝟏 𝐌𝐞𝐬 - 𝟐𝟓 𝐌𝐱
+⚙️ 𝐍𝐞𝐭𝐟𝐥𝐢𝐱 𝟏 𝐌𝐞𝐬 - 𝟏𝟔𝟎 𝐌𝐱
+⚙️ 𝐂𝐫𝐮𝐧𝐜𝐡𝐲𝐫𝐨𝐥𝐥 - 𝟑𝟎 𝐌𝐱
+⚙️ 𝐕𝐢𝐱 𝐏𝐥𝐮𝐬 𝟐 𝐌𝐞𝐬𝐞𝐬 - 𝟑𝟓 𝐌𝐱
+⚙️ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝟏 𝐌𝐞𝐬n - 𝟐𝟓 𝐌𝐱
+⚙️ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐌𝐮𝐬𝐢𝐜 𝟏 𝐌𝐞𝐬 - 𝟐𝟓 𝐌𝐱
+⚙️ 𝐂𝐚𝐧𝐯𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝟒𝟓 𝐝𝐢𝐚𝐬 - 𝟐𝟓 𝐌𝐱
+⚙️ 𝐎𝐟𝐟𝐢𝐜𝐞 𝟑𝟔𝟓 𝟏 𝐌𝐞𝐬 - 𝟓𝟎 𝐌𝐱
+⚙️ 𝐂𝐥𝐚𝐫𝐨 𝐕𝐢𝐝𝐞𝐨 𝟏 𝐌𝐞𝐬 - 𝟏𝟓 𝐌𝐱
 
-handler.help = ['infomenu'].map(v => v + 'able <option>')
-handler.tags = ['group', 'owner']
-handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio)$/i
-handler.exp = 60
-//handler.register = true
-export default handler
+⚙️ 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ⚙️
 
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
+⚙️ 𝟏𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟐𝟓 𝐌𝐱
+⚙️ 𝟐𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟓𝟎 𝐌𝐱
+⚙️ 𝟑𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟕𝟓 𝐌𝐱
+⚙️ 𝟒𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟗𝟎 𝐌𝐱
+⚙️ 𝟓𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 -  𝟏𝟏𝟎 𝐌𝐱
+⚙️ 𝟏𝟎𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟐𝟎𝟎 𝐌𝐱
+⚙️ 𝟑𝟓𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟓𝟓𝟎 𝐌𝐱
+⚙️ 𝟔𝟎𝐊 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 - 𝟏𝟎𝟎𝟎 𝐌𝐱
+
+⚙️ 𝐋𝐢𝐤𝐞𝐬 𝐩𝐚𝐫𝐚 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ⚙️
+
+⚙️ 𝟏𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟏𝟎 𝐌𝐱
+⚙️ 𝟐𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟐𝟎 𝐌𝐱
+⚙️ 𝟑𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟑𝟎 𝐌𝐱
+⚙️ 𝟒𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟒𝟎 𝐌𝐱
+⚙️ 𝟓𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟓𝟎 𝐌𝐱
+⚙️ 𝟔𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟔𝟎 𝐌𝐱
+⚙️ 𝟕𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟕𝟎 𝐌𝐱
+⚙️ 𝟖𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟖𝟎 𝐌𝐱
+⚙️ 𝟗𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟗𝟎 𝐌𝐱
+⚙️ 𝟏𝟎𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟏𝟎𝟎 𝐌𝐱
+⚙️ 𝟏𝟎𝟎𝐊 𝐋𝐢𝐤𝐞𝐬 - 𝟒𝟎𝟎 𝐌𝐱
+
+𝐓𝐚𝐦𝐛𝐢𝐞́𝐧 𝐎𝐟𝐫𝐞𝐳𝐜𝐨 𝐕𝐢𝐬𝐭𝐚𝐬, 𝐋𝐢𝐤𝐞𝐬, 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬 𝐩𝐚𝐫𝐚 𝐈𝐠, 𝐅𝐛, 𝐓𝐢𝐤𝐭𝐨𝐤, 𝐓𝐰𝐢𝐭𝐜𝐡 𝐄𝐭𝐜 ⚙️
+
+𝐋𝐚𝐫𝐢𝐨𝐬 𝐕𝟐.𝟎 ⚙️`.trim();
+    if (m.isGroup) {
+      // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
+      const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
+      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+    } else {
+      // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
+      const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
+      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+    }
+  } catch {
+    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
+  }
+};
+handler.command = /^(precios|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|keyaudio|keyaudios)$/i;
+handler.exp = 50;
+handler.fail = null;
+export default handler;
 function clockString(ms) {
-let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+  const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
+  const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
+  const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
+  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':');
+}
