@@ -27,7 +27,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 𝐒𝐢 𝐃𝐞𝐬𝐞𝐚𝐬 𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐞𝐥 𝐁𝐨𝐭, 𝐏𝐥𝐚𝐭𝐚𝐟𝐨𝐫𝐦𝐚𝐬 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐮 𝐒𝐞𝐠𝐮𝐢𝐝𝐨𝐫𝐞𝐬
 𝐂𝐨𝐧𝐭𝐚́𝐜𝐭𝐚𝐦𝐞 𝐚𝐥 𝐒𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 𝐍𝐮́𝐦𝐞𝐫𝐨:
 
-𝐋𝐚𝐫𝐢𝐨𝐬 𝐕𝟐.𝟎 ⚙️: wa.me/50253501417
+𝐋𝐚𝐫𝐢𝐨𝐬 𝐕𝟐.𝟎 ⚙️: wa.me/50494401450
 
 𝐌𝐞́𝐭𝐨𝐝𝐨𝐬 𝐝𝐞 𝐏𝐚𝐠𝐨:
 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫𝐞𝐧𝐜𝐢𝐚 𝐌𝐞́𝐱𝐢𝐜𝐨, 𝐏𝐚𝐲𝐩𝐚𝐥, 𝐁𝐢𝐧𝐚𝐧𝐜𝐞 𝐲 𝐁𝐚𝐧𝐫𝐮𝐫𝐚𝐥
@@ -111,7 +111,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
   }
 };
-handler.command = /^(precios|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|keyaudio|keyaudios)$/i;
+handler.command = /^(precios|precio|precio|información|informacion|precios|precio|precio|precio|info|comprar)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
