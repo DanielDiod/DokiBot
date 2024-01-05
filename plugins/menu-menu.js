@@ -102,9 +102,8 @@ let menu = `⌜ *${wm}* ⌟
 🕹 » 𝙴𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊 : ${exp}
 ⚜ » 𝚁𝚊𝚗𝚐𝚘 : ${role}
 ${readMore}
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
 
-┌─── 𝐉𝐔𝐄𝐆𝐎𝐒
+┌─── 𝐉𝐔𝐄𝐆𝐎𝐒 ⛅
 🎮 ${usedPrefix}mates
 🎮 ${usedPrefix}ppt <papel / tijera /piedra>
 🎮 ${usedPrefix}prostituto <nombre / @tag>
@@ -155,17 +154,12 @@ ${readMore}
 🎮 ${usedPrefix}minovi@
 • ━━━━ • • ━━━━ • • ━━━━ • 
 
-  𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-
+┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⛅
 🟢 ${usedPrefix}enable
 🔴 ${usedPrefix}disable
+• ━━━━ • • ━━━━ • • ━━━━ •
 
-• ━━━━ • • 🐵 • • ━━━━ •
-
-       𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 
- 
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ⛅
 📥 ${usedPrefix}play <texto>
 📥 ${usedPrefix}play.1 <texto>
 📥 ${usedPrefix}play.2 <texto>
@@ -203,12 +197,9 @@ ${readMore}
 📥 ${usedPrefix}igstalk <nombre de usuario>
 📥 ${usedPrefix}igstory <nombre de usuario>
 📥 ${usedPrefix}tiktokstalk *<username>*
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐆𝐑𝐔𝐏𝐎𝐒
-
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-
+┌─── 𝐆𝐑𝐔𝐏𝐎𝐒 ⛅
 💌 ${usedPrefix}add <numero>
 💌 ${usedPrefix}kick <@tag>
 💌 ${usedPrefix}grupo <abrir / cerrar>
@@ -232,12 +223,9 @@ ${readMore}
 💌 ${usedPrefix}fantasmas
 💌 ${usedPrefix}destraba
 💌 ${usedPrefix}setpp <imagen>
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒
-
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-
+┌─── 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 ⛅
 🎭 ${usedPrefix}togifaud <video>
 🎭 ${usedPrefix}robar texto
 🎭 ${usedPrefix}wm texto
@@ -248,37 +236,30 @@ ${readMore}
 🎭 ${usedPrefix}tovideo <sticker>
 🎭 ${usedPrefix}tourl <video / imagen / audio>
 🎭 ${usedPrefix}tts es <texto>
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒
+ ┌─── 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 ⛅
+🖋️ ${usedPrefix}mensajefalso <nombre|mensaje>
+🖋️ ${usedPrefix}phmaker <opcion> <imagen>
+🖋️ ${usedPrefix}logos <efecto> <texto>
+🖋️ ${usedPrefix}logochristmas <texto>
+🖋️ ${usedPrefix}logocorazon <texto>
+🖋️ ${usedPrefix}ytcomment <texto>
+🖋️ ${usedPrefix}hornycard <@tag>
+🖋️ ${usedPrefix}simpcard <@tag>
+🖋️ ${usedPrefix}lolice <@tag>
+🖋️ ${usedPrefix}itssostupid
+🖋️ ${usedPrefix}pixelar
+🖋️ ${usedPrefix}blur
+• ━━━━ • • ━━━━ • • ━━━━ •
 
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-
-🖍️ ${usedPrefix}mensajefalso <nombre|mensaje>
-🖍️ ${usedPrefix}phmaker <opcion> <imagen>
-🖍️ ${usedPrefix}logos <efecto> <texto>
-🖍️ ${usedPrefix}logochristmas <texto>
-🖍️ ${usedPrefix}logocorazon <texto>
-🖍️ ${usedPrefix}ytcomment <texto>
-🖍️ ${usedPrefix}hornycard <@tag>
-🖍️ ${usedPrefix}simpcard <@tag>
-🖍️ ${usedPrefix}lolice <@tag>
-🖍️ ${usedPrefix}itssostupid
-🖍️ ${usedPrefix}pixelar
-🖍️ ${usedPrefix}blur
-• ━━━━ • • 🐵 • • ━━━━ •
-
-   𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒
-
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 ⛅
 🥀 ${usedPrefix}piropo
 🥀 ${usedPrefix}consejo
 🥀 ${usedPrefix}fraseromantica
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒
- 
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ⛅
 🔍 ${usedPrefix}stickersearch <texto>
 🔍 ${usedPrefix}stickersearch2 <texto>
 🔍 ${usedPrefix}xnxxsearch <texto>
@@ -292,10 +273,9 @@ ${readMore}
 🔍 ${usedPrefix}apkmody <texto>
 🔍 ${usedPrefix}uapkpro <texto>
 🔍 ${usedPrefix}playstore <texto>
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ⛅
 🛠️ ${usedPrefix}spamwa <numero|texto|cantidad>
 🛠️ ${usedPrefix}tamaño <cantidad> <imagen / video>
 🛠️ ${usedPrefix}clima <país> <ciudad>
@@ -314,10 +294,9 @@ ${readMore}
 🛠️ ${usedPrefix}zoom <texto>
 🛠️ ${usedPrefix}nowa <numero>
 🛠️ ${usedPrefix}horario
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 ⛅
 🧾 ${usedPrefix}verificar
 🧾 ${usedPrefix}unreg *<numero de serie>
 🧾 ${usedPrefix}claim
@@ -330,10 +309,9 @@ ${readMore}
 🧾 ${usedPrefix}work
 🧾 ${usedPrefix}buyall
 🧾 ${usedPrefix}transfer *<tipo> <cantidad> <@tag>
-• ━━━━ • • 🐵 • • ━━━━ •
+• ━━━━ • • ━━━━ • • ━━━━ •
 
- *STICKERS*
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
+┌─── 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅
 🌟 ${usedPrefix}sticker <responder a imagen o video>
 🌟 ${usedPrefix}sticker <enlace / link / url>
 🌟 ${usedPrefix}s <responder a imagen o video>
@@ -363,7 +341,7 @@ ${readMore}
 🌟 ${usedPrefix}golpear @tag
 🌟 ${usedPrefix}besar | kiss @tag
 🌟 ${usedPrefix}alimentar | food @tag
-• ━━━━ • • 🐵 • • ━━━━ •`.trim()
+• ━━━━ • • ━━━━ • • ━━━━ •`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 	
 } catch (e) {
