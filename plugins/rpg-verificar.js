@@ -27,7 +27,7 @@ text: `*VERIFICAR 📝*
 *Nombre 👤 :* ${name}
 *Edad ⏲️* ${age} años
 *Bono 💌:* Un Diamante por Fex\n
-Para ver los nuevos comandos en e bot escribe el siguiente comando 👇🏼\n\n#nuevo`, 
+*Para ver los nuevos comandos en el bot escribe lo siguiente  👇🏼*\n\n#nuevo`, 
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
