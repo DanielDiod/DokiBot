@@ -3,7 +3,7 @@ import { tiktokdl } from '@bochilteam/scraper'
 
 var handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
-if (!args[0]) throw `*🛑INGRESE EL ENLACE DE TIKTOK PARA DESCARGAR SU VIDEO*\n\n❕ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:\n${usedPrefix + command} https://vm.tiktok.com/ZMjbonqPu/`
+if (!args[0]) throw `*🛑INGRESE EL ENLACE DE TIKTOK PARA DESCARGAR SU VIDEO*\n\n❕ *EJEMPLO*:\n${usedPrefix + command} https://vm.tiktok.com/ZMjbonqPu/`
 if (!args[0].match(/tiktok/gi)) throw `*⚠️ 𝚅𝙴𝚁𝙸𝙵𝙸𝚀𝚄𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙻𝙸𝙽𝙺 𝚂𝙴𝙰 𝙲𝙾𝚁𝚁𝙴𝚃𝙾*`
 
 //m.react('❗')
@@ -18,7 +18,7 @@ await conn.sendMessage(m.chat, {text: `${waitttt}`, edit: key})
 
 try {
 let p = await fg.tiktok(args[0])
-let te = `[VIDEO DESCARGADO CON EXITO ✅]\n\n💌 *NOMBRE:* ${p.nickname}
+let te = `*[VIDEO DESCARGADO CON EXITO ✅]*\n\n💌 *NOMBRE:* ${p.nickname}
 👤 *USUARIO:* ${p.unique_id}
 ⏰ *DURACIÓN:* ${p.duration}
 📄 *DESCRIPCIÓN:* ${p.description}`
