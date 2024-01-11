@@ -103,7 +103,7 @@ let menu = `⌜ *${wm}* ⌟
 ⚜ » 𝚁𝚊𝚗𝚐𝚘 : ${role}
 ${readMore}
 
-┌─── 𝐉𝐔𝐄𝐆𝐎𝐒 ⛅
+*╭━〔  𝐉𝐔𝐄𝐆𝐎𝐒 ⛅  〕⬣*
 🎮 ${usedPrefix}mates
 🎮 ${usedPrefix}ppt <papel / tijera /piedra>
 🎮 ${usedPrefix}prostituto <nombre / @tag>
@@ -152,7 +152,7 @@ ${readMore}
 🎮 ${usedPrefix}ship
 🎮 ${usedPrefix}sorteo
 🎮 ${usedPrefix}minovi@
-• ━━━━ • • ━━━━ • • ━━━━ • 
+*╰━━━━━━━━━━━━⬣*
 
 ┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⛅
 🟢 ${usedPrefix}enable
