@@ -91,18 +91,6 @@ let menu = `⌜ *${wm}* ⌟
 ㅤ
 ┗━━━━━━━━━━━━━━━━┛
 
-🙈 ━━━━ • • 🐵 • • ━━━━ 🙉
-
-ㅤㅤㅤ𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐔𝐒𝐔𝐀𝐑𝐈𝐎
-
-🎖 » 𝙽𝚒𝚟𝚎𝚕 : ${level}
-💎 » 𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎𝚜 : ${limit}
-🐒 » 𝙼𝚘𝚗𝚔𝚒𝙲𝚘𝚒𝚗𝚜 : ${money}
-🪙 » 𝚃𝚘𝚔𝚎𝚗𝚜 : ${joincount}
-🕹 » 𝙴𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊 : ${exp}
-⚜ » 𝚁𝚊𝚗𝚐𝚘 : ${role}
-${readMore}
-
 *╭━〔  𝐉𝐔𝐄𝐆𝐎𝐒 ⛅  〕⬣*
 🎮 ${usedPrefix}mates
 🎮 ${usedPrefix}ppt <papel / tijera /piedra>
@@ -154,12 +142,12 @@ ${readMore}
 🎮 ${usedPrefix}minovi@
 *╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⛅
+*╭━〔   𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⛅  〕⬣*
 🟢 ${usedPrefix}enable
 🔴 ${usedPrefix}disable
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ⛅
+*╭━〔  𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ⛅  〕⬣*
 📥 ${usedPrefix}play <texto>
 📥 ${usedPrefix}play.1 <texto>
 📥 ${usedPrefix}play.2 <texto>
@@ -197,9 +185,9 @@ ${readMore}
 📥 ${usedPrefix}igstalk <nombre de usuario>
 📥 ${usedPrefix}igstory <nombre de usuario>
 📥 ${usedPrefix}tiktokstalk *<username>*
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐆𝐑𝐔𝐏𝐎𝐒 ⛅
+*╭━〔  𝐆𝐑𝐔𝐏𝐎𝐒 ⛅  〕⬣*
 💌 ${usedPrefix}add <numero>
 💌 ${usedPrefix}kick <@tag>
 💌 ${usedPrefix}grupo <abrir / cerrar>
@@ -294,12 +282,11 @@ ${readMore}
 🛠️ ${usedPrefix}zoom <texto>
 🛠️ ${usedPrefix}nowa <numero>
 🛠️ ${usedPrefix}horario
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 ⛅
+*╭━〔  𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 ⛅  〕⬣*
 🧾 ${usedPrefix}verificar
-🧾 ${usedPrefix}unreg *<numero de serie>
-🧾 ${usedPrefix}claim
+🧾 ${usedPrefix}unreg *<numero de serie>*
 🧾 ${usedPrefix}lb
 🧾 ${usedPrefix}perfil
 🧾 ${usedPrefix}minar
@@ -309,9 +296,9 @@ ${readMore}
 🧾 ${usedPrefix}work
 🧾 ${usedPrefix}buyall
 🧾 ${usedPrefix}transfer *<tipo> <cantidad> <@tag>
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅
+*╭━〔  𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅  〕⬣*
 🌟 ${usedPrefix}sticker <responder a imagen o video>
 🌟 ${usedPrefix}sticker <enlace / link / url>
 🌟 ${usedPrefix}s <responder a imagen o video>
@@ -341,7 +328,7 @@ ${readMore}
 🌟 ${usedPrefix}golpear @tag
 🌟 ${usedPrefix}besar | kiss @tag
 🌟 ${usedPrefix}alimentar | food @tag
-• ━━━━ • • ━━━━ • • ━━━━ •`.trim()
+*╰━━━━━━━━━━━━⬣*`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 	
 } catch (e) {
