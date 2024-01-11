@@ -78,7 +78,7 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 
 let menu = `⌜ *${wm}* ⌟  
 
-𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘 𝚊𝚕 𝚖𝚎𝚗𝚞 𝚍𝚎 𝙼𝚘𝚗𝚔𝚒 𝙱𝚘𝚝 🐵
+\`\`\`${horarioFecha}\`\`\`
 
 *╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣*
 👤ㅤ» 𝐎𝐰𝐧𝐞𝐫 𝟏: wa.me/51906641131
