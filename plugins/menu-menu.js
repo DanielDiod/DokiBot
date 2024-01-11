@@ -147,40 +147,21 @@ let menu = `⌜ *${wm}* ⌟
 📥 ${usedPrefix}play <texto>
 📥 ${usedPrefix}play.1 <texto>
 📥 ${usedPrefix}play.2 <texto>
-📥 ${usedPrefix}playdoc <texto>
 📥 ${usedPrefix}playlist <texto>
-📥 ${usedPrefix}playlist2 <texto>
 📥 ${usedPrefix}spotify <texto>
 📥 ${usedPrefix}tiktok <enlace / link / url>
 📥 ${usedPrefix}instagram <enlace / link / url>
 📥 ${usedPrefix}mediafire <enlace / link / url>
-📥 ${usedPrefix}instagram <enlace / link / url>
-📥 ${usedPrefix}gitclone <enlace / link / url>
 📥 ${usedPrefix}gdrive <enlace / link / url>
 📥 ${usedPrefix}xnxxdl <enlace / link / url>
 📥 ${usedPrefix}xvideosdl <enlace / link / url>
 📥 ${usedPrefix}twitter <enlace / link / url>
 📥 ${usedPrefix}fb <enlace / link / url>
-📥 ${usedPrefix}fb2 <enlace / link / url>
-📥 ${usedPrefix}fb3 <enlace / link / url>
-📥 ${usedPrefix}fb4 <enlace / link / url>
-📥 ${usedPrefix}fb5 <enlace / link / url>
 📥 ${usedPrefix}ytmp3 <enlace / link / url>
 📥 ${usedPrefix}ytmp4 <enlace / link / url>
-📥 ${usedPrefix}ytmp3doc <enlace / link / url>
-📥 ${usedPrefix}ytmp4doc <enlace / link / url>
-📥 ${usedPrefix}stickerpack <enlace / link / url>
-📥 ${usedPrefix}stickerly <texto>
-📥 ${usedPrefix}ringtone <texto>
-📥 ${usedPrefix}soundcloud <texto>
 📥 ${usedPrefix}imagen <texto>
 📥 ${usedPrefix}pinteret <texto>
-📥 ${usedPrefix}wallpaper <texto>
-📥 ${usedPrefix}wallpaper2 <texto>
-📥 ${usedPrefix}pptiktok <nombre de usuario>
-📥 ${usedPrefix}igstalk <nombre de usuario>
 📥 ${usedPrefix}igstory <nombre de usuario>
-📥 ${usedPrefix}tiktokstalk *<username>*
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐆𝐑𝐔𝐏𝐎𝐒 ⛅  〕⬣*
