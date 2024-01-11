@@ -78,8 +78,6 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 
 let menu = `⌜ *${wm}* ⌟  
 
-\`\`\`${horarioFecha}\`\`\`
-
 *╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣*
 👤ㅤ» 𝐎𝐰𝐧𝐞𝐫 𝟏: wa.me/51906641131
 👤ㅤ» 𝐎𝐰𝐧𝐞𝐫 𝟐: wa.me/51977835959
