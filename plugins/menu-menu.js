@@ -88,54 +88,50 @@ let menu = `⌜ *${wm}* ⌟
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐉𝐔𝐄𝐆𝐎𝐒 ⛅  〕⬣*
-🎮 ${usedPrefix}mates
-🎮 ${usedPrefix}ppt <papel / tijera /piedra>
-🎮 ${usedPrefix}prostituto <nombre / @tag>
-🎮 ${usedPrefix}prostituta <nombre / @tag>
-🎮 ${usedPrefix}gay2 <nombre / @tag>
-🎮 ${usedPrefix}lesbiana <nombre / @tag>
-🎮 ${usedPrefix}pajero <nombre / @tag>
-🎮 ${usedPrefix}pajera <nombre / @tag>
-🎮 ${usedPrefix}puto <nombre / @tag>
-🎮 ${usedPrefix}puta <nombre / @tag>
-🎮 ${usedPrefix}manco <nombre / @tag>
-🎮 ${usedPrefix}manca <nombre / @tag>
-🎮 ${usedPrefix}rata <nombre / @tag>
-🎮 ${usedPrefix}love <nombre / @tag>
-🎮 ${usedPrefix}doxear <nombre / @tag>
-🎮 ${usedPrefix}pregunta <texto>
-🎮 ${usedPrefix}suitpvp <@tag>
-🎮 ${usedPrefix}slot <apuesta>
-🎮 ${usedPrefix}ttt <nombre sala>
-🎮 ${usedPrefix}delttt
-🎮 ${usedPrefix}simi <texto>
-🎮 ${usedPrefix}top <texto>
-🎮 ${usedPrefix}topotakus
-🎮 ${usedPrefix}top10gays
-🎮 ${usedPrefix}toplind@s
-🎮 ${usedPrefix}topput@s
-🎮 ${usedPrefix}toppajer@s
-🎮 ${usedPrefix}topotakus
-🎮 ${usedPrefix}topintegrantes
-🎮 ${usedPrefix}toplagrasa
-🎮 ${usedPrefix}toppanafrescos
-🎮 ${usedPrefix}topshiposters
-🎮 ${usedPrefix}toppajeros
-🎮 ${usedPrefix}toplind@s
-🎮 ${usedPrefix}topfamosos
-🎮 ${usedPrefix}topsoltero
-🎮 ${usedPrefix}topparejas
-🎮 ${usedPrefix}formarpareja
-🎮 ${usedPrefix}verdad
-🎮 ${usedPrefix}reto
-🎮 ${usedPrefix}cancion
-🎮 ${usedPrefix}pista
-🎮 ${usedPrefix}ruleta
-🎮 ${usedPrefix}zodiac
-🎮 ${usedPrefix}odio
-🎮 ${usedPrefix}ship
-🎮 ${usedPrefix}sorteo
-🎮 ${usedPrefix}minovi@
+💨 ${usedPrefix}mates
+💨 ${usedPrefix}ppt <papel / tijera /piedra>
+💨 ${usedPrefix}prostituto <nombre / @tag>
+💨 ${usedPrefix}prostituta <nombre / @tag>
+💨 ${usedPrefix}gay2 <nombre / @tag>
+💨 ${usedPrefix}lesbiana <nombre / @tag>
+💨 ${usedPrefix}pajero <nombre / @tag>
+💨 ${usedPrefix}pajera <nombre / @tag>
+💨 ${usedPrefix}puto <nombre / @tag>
+💨 ${usedPrefix}puta <nombre / @tag>
+💨 ${usedPrefix}manco <nombre / @tag>
+💨 ${usedPrefix}manca <nombre / @tag>
+💨 ${usedPrefix}rata <nombre / @tag>
+💨 ${usedPrefix}negro <nombre / @tag>
+💨 ${usedPrefix}negra <nombre / @tag>
+💨 ${usedPrefix}fea <nombre / @tag>
+💨 ${usedPrefix}feo <nombre / tag>
+💨 ${usedPrefix}sinpoto <nombre / tag>
+💨 ${usedPrefix}sintetas <nombre / tag>
+💨 ${usedPrefix}sinpito <nombre / tag>
+💨 ${usedPrefix}adoptada <nombre / tag>
+💨 ${usedPrefix}adoptado <nombre / tag>
+💨 ${usedPrefix}love
+💨 ${usedPrefix}los10
+💨 ${usedPrefix}suitpvp
+💨 ${usedPrefix}slot
+💨 ${usedPrefix}doxear
+💨 ${usedPrefix}simisimi
+💨 ${usedPrefix}pregunta
+💨 ${usedPrefix}cuando
+💨 ${usedPrefix}ship5
+💨 ${usedPrefix}abrazo
+💨 ${usedPrefix}ship2
+💨 ${usedPrefix}formarpareja
+💨 ${usedPrefix}verdad
+💨 ${usedPrefix}reto
+💨 ${usedPrefix}cancion
+💨 ${usedPrefix}pista
+💨 ${usedPrefix}ruleta
+💨 ${usedPrefix}zodiac
+💨 ${usedPrefix}odio
+💨 ${usedPrefix}ship
+💨 ${usedPrefix}sorteo
+💨 ${usedPrefix}minovi@
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔   𝐆𝐄𝐍𝐄𝐑𝐀 𝐏𝐋𝐀𝐓𝐀𝐅𝐎𝐑𝐌𝐀𝐒 ⛅  〕⬣*
