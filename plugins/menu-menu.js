@@ -189,143 +189,76 @@ let menu = `⌜ *${wm}* ⌟
 💌 ${usedPrefix}add <numero>
 💌 ${usedPrefix}kick <@tag>
 💌 ${usedPrefix}grupo <abrir / cerrar>
-💌 ${usedPrefix}grouptime <opcion> <tiempo>
 💌 ${usedPrefix}promote <@tag>
 💌 ${usedPrefix}demote <@tag>
-💌 admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 💌 ${usedPrefix}demote <@tag>
-💌 ${usedPrefix}infogroup
-💌 ${usedPrefix}resetlink
 💌 ${usedPrefix}link
-💌 ${usedPrefix}setname <texto>
-💌 ${usedPrefix}setdesc <texto>
 💌 ${usedPrefix}invocar <texto>
 💌 ${usedPrefix}setwelcome <texto>
 💌 ${usedPrefix}setbye <texto>
 💌 ${usedPrefix}hidetag <texto>
-💌 ${usedPrefix}warn <@tag>
-💌 ${usedPrefix}unwarn <@tag>
-💌 ${usedPrefix}listwarn
 💌 ${usedPrefix}fantasmas
-💌 ${usedPrefix}destraba
-💌 ${usedPrefix}setpp <imagen>
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 ⛅
-🎭 ${usedPrefix}togifaud <video>
-🎭 ${usedPrefix}robar texto
-🎭 ${usedPrefix}wm texto
+*╭━〔  𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 ⛅  〕⬣*
 🎭 ${usedPrefix}toimg <sticker>
 🎭 ${usedPrefix}tomp3 <video>
-🎭 ${usedPrefix}tomp3 <nota de voz>
 🎭 ${usedPrefix}toptt <video / audio>
 🎭 ${usedPrefix}tovideo <sticker>
-🎭 ${usedPrefix}tourl <video / imagen / audio>
 🎭 ${usedPrefix}tts es <texto>
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
- ┌─── 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 ⛅
+*╭━〔 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 ⛅ 〕⬣*
 🖋️ ${usedPrefix}mensajefalso <nombre|mensaje>
-🖋️ ${usedPrefix}phmaker <opcion> <imagen>
 🖋️ ${usedPrefix}logos <efecto> <texto>
-🖋️ ${usedPrefix}logochristmas <texto>
 🖋️ ${usedPrefix}logocorazon <texto>
 🖋️ ${usedPrefix}ytcomment <texto>
 🖋️ ${usedPrefix}hornycard <@tag>
-🖋️ ${usedPrefix}simpcard <@tag>
-🖋️ ${usedPrefix}lolice <@tag>
 🖋️ ${usedPrefix}itssostupid
 🖋️ ${usedPrefix}pixelar
-🖋️ ${usedPrefix}blur
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 ⛅
+*╭━〔  𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 ⛅  〕⬣*
 🥀 ${usedPrefix}piropo
 🥀 ${usedPrefix}consejo
 🥀 ${usedPrefix}fraseromantica
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ⛅
-🔍 ${usedPrefix}stickersearch <texto>
-🔍 ${usedPrefix}stickersearch2 <texto>
+*╭━〔   𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ⛅  〕⬣*
 🔍 ${usedPrefix}xnxxsearch <texto>
-🔍 ${usedPrefix}animeinfo <texto>
 🔍 ${usedPrefix}google <texto>
 🔍 ${usedPrefix}letra <texto>
 🔍 ${usedPrefix}wikipedia <texto>
 🔍 ${usedPrefix}ytsearch <texto>
 🔍 ${usedPrefix}apkdone <texto>
-🔍 ${usedPrefix}apkgoogle <texto>
-🔍 ${usedPrefix}apkmody <texto>
-🔍 ${usedPrefix}uapkpro <texto>
 🔍 ${usedPrefix}playstore <texto>
-• ━━━━ • • ━━━━ • • ━━━━ •
+*╰━━━━━━━━━━━━⬣*
 
-┌─── 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ⛅
-🛠️ ${usedPrefix}spamwa <numero|texto|cantidad>
-🛠️ ${usedPrefix}tamaño <cantidad> <imagen / video>
+*╭━〔  𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ⛅  〕⬣*
 🛠️ ${usedPrefix}clima <país> <ciudad>
-🛠️ ${usedPrefix}encuesta <texto1|texto2...>
 🛠️ ${usedPrefix}afk <motivo>
 🛠️ ${usedPrefix}ocr <responde a imagen>
-🛠️ ${usedPrefix}acortar <enlace / link / url>
 🛠️ ${usedPrefix}calc <operacion math>
 🛠️ ${usedPrefix}del <mensaje>
 🛠️ ${usedPrefix}whatmusic <audio>
-🛠️ ${usedPrefix}readqr <imagen (QR)>
 🛠️ ${usedPrefix}qrcode <texto>
-🛠️ ${usedPrefix}readmore <texto1| texto2>
-🛠️ ${usedPrefix}styletext <texto>
 🛠️ ${usedPrefix}traducir <texto>
-🛠️ ${usedPrefix}zoom <texto>
-🛠️ ${usedPrefix}nowa <numero>
-🛠️ ${usedPrefix}horario
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 ⛅  〕⬣*
 🧾 ${usedPrefix}verificar
 🧾 ${usedPrefix}unreg *<numero de serie>*
-🧾 ${usedPrefix}lb
-🧾 ${usedPrefix}perfil
 🧾 ${usedPrefix}minar
 🧾 ${usedPrefix}buy
-🧾 ${usedPrefix}balance
-🧾 ${usedPrefix}myns
 🧾 ${usedPrefix}work
-🧾 ${usedPrefix}buyall
 🧾 ${usedPrefix}transfer *<tipo> <cantidad> <@tag>
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅  〕⬣*
-🌟 ${usedPrefix}sticker <responder a imagen o video>
-🌟 ${usedPrefix}sticker <enlace / link / url>
 🌟 ${usedPrefix}s <responder a imagen o video>
-🌟 ${usedPrefix}s <enlace / link / url>
-🌟 ${usedPrefix}sfull <imagen o video>
 🌟 ${usedPrefix}emojimix <emoji 1>&<emoji 2>
-🌟 ${usedPrefix}scircle <imagen>
-🌟 ${usedPrefix}sremovebg <imagen>
-🌟 ${usedPrefix}semoji <tipo> <emoji>
-🌟 ${usedPrefix}attp <texto>
-🌟 ${usedPrefix}attp2 <texto>
-🌟 ${usedPrefix}attp3 <texto>
-🌟 ${usedPrefix}ttp <texto>
-🌟 ${usedPrefix}ttp2 <texto>
-🌟 ${usedPrefix}ttp3 <texto>
-🌟 ${usedPrefix}ttp4 <texto>
-🌟 ${usedPrefix}ttp5 <texto>
-🌟 ${usedPrefix}pat <@tag>
-🌟 ${usedPrefix}slap <@tag>
-🌟 ${usedPrefix}kiss <@tag>
-🌟 ${usedPrefix}dado
-🌟 ${usedPrefix}wm *<packname> <author>
-🌟 ${usedPrefix}stickermarker *<efecto> <imagen>
-🌟 ${usedPrefix}stickerfilter *<efecto> <imagen>
-🌟 ${usedPrefix}palmaditas | pat @tag
-🌟 ${usedPrefix}bofetada | slap @tag
-🌟 ${usedPrefix}golpear @tag
-🌟 ${usedPrefix}besar | kiss @tag
-🌟 ${usedPrefix}alimentar | food @tag
+🌟 ${usedPrefix}attp<texto>
+🌟 ${usedPrefix}qc<texto>
 *╰━━━━━━━━━━━━⬣*`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 	
