@@ -13,7 +13,7 @@ let expp = Math.floor(Math.random() * 5000)
   global.db.data.users[m.sender].joincount += tok
   global.db.data.users[m.sender].exp += expp
   
-let texto = `MAPA BERMUDA FREE FIRE 2023`
+let texto = `*MAPA BERMUDA FREE FIRE 2023 🗺️*`
 
 const fkontak = {
 	"key": {
