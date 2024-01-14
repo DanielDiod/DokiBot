@@ -68,7 +68,6 @@ let user = global.db.data.users[m.sender]
 if (!canLevelUp(user.level, user.exp, global.multiplier)) {
 let { min, xp, max } = xpRange(user.level, global.multiplier)
 throw `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
-
 🍄 𝗡𝗜𝗩𝗘𝗟 𝗔𝗡𝗧𝗘𝗥𝗜𝗢𝗥: ${before}
 
 🍀 𝗡𝗜𝗩𝗘𝗟 𝗔𝗖𝗧𝗨𝗔𝗟: ${user.level}
@@ -76,7 +75,6 @@ throw `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
 ⚔ 𝗥𝗔𝗡𝗚𝗢: ${role}
 
 🗓 𝗙𝗘𝗖𝗛𝗔: ${new Date().toLocaleString('id-ID')}
-
 ╰━━━━━━━━━━━━⬣
 
 » 𝐒𝐮𝐛𝐞𝐬 𝐝𝐞 𝐧𝐢𝐯𝐞𝐥 𝐜𝐮𝐚𝐧𝐝𝐨 𝐢𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐮𝐚𝐬 𝐦𝐚𝐬 𝐜𝐨𝐧 𝐞𝐥 𝐛𝐨𝐭 ✨
@@ -88,7 +86,6 @@ while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 if (before !== user.level) {
 let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
 let str = `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
-
 🍄 𝗡𝗜𝗩𝗘𝗟 𝗔𝗡𝗧𝗘𝗥𝗜𝗢𝗥: ${before}
 
 🍀 𝗡𝗜𝗩𝗘𝗟 𝗔𝗖𝗧𝗨𝗔𝗟: ${user.level}
@@ -96,7 +93,6 @@ let str = `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
 ⚔ 𝗥𝗔𝗡𝗚𝗢: ${role}
 
 🗓 𝗙𝗘𝗖𝗛𝗔: ${new Date().toLocaleString('id-ID')}
-
 ╰━━━━━━━━━━━━⬣
 
 » 𝐒𝐮𝐛𝐞𝐬 𝐝𝐞 𝐧𝐢𝐯𝐞𝐥 𝐜𝐮𝐚𝐧𝐝𝐨 𝐢𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐮𝐚𝐬 𝐦𝐚𝐬 𝐜𝐨𝐧 𝐞𝐥 𝐛𝐨𝐭 ✨
