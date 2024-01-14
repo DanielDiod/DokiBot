@@ -5,7 +5,7 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `*🤔Que esta buscado? 🤔*\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play emilia 420`
+if (!text) throw `*[🔴 ERROR 🔴]\n\n*El uso correcto del comando es 👇🏼*\n\n#play un amor del ayer*`
 try {
 await m.react('🕓')
 const yt_play = await search(args.join(" "))
@@ -74,6 +74,7 @@ renderLargerThumbnail: true
 }  
 if (command == 'play2') {
 try {
+await m.react('✅')
 let qu = '360'
 let q = qu + 'p'
 let v = yt_play[0].url
