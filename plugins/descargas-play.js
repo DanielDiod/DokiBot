@@ -29,6 +29,7 @@ renderLargerThumbnail: true
 }}} , { quoted: m })
 if (command == 'play') {	
 try {
+await m.react('✅')
 let q = '128kbps'
 let v = yt_play[0].url
 const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
