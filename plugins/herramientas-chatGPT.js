@@ -2,45 +2,27 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 import translate from '@vitalets/google-translate-api'
 import { Configuration, OpenAIApi } from 'openai'
-
-const configuration = new Configuration({ organization: global.openai_org_id, apiKey: global.openai_key })
-const openaiii = new OpenAIApi(configuration)
-
-var handler = async (m, { conn, text, usedPrefix, command }) => {
-
-if (usedPrefix == 'a' || usedPrefix == 'A') return
-if (!text) return conn.reply(m.chat, `*🎌 Ingrese una petición*\n\nEjemplo: !ia Pasos para crear una página`, m, fake)
-
+const configuration = new Configuration({ organization: global.openai_org_id, apiKey: global.openai_key });
+const openaiii = new OpenAIApi(configuration);
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return    
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉𝘼 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉 𝙊 𝙐𝙉𝘼 𝙊𝙍𝘿𝙀𝙉 𝙋𝘼𝙍𝘼 𝙐𝙎𝘼𝙍 𝙇𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝘾𝙃𝘼𝙏𝙂𝙋𝙏\n\n❏ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉𝙀𝙎 𝙔 𝙊𝙍𝘿𝙀𝙉𝙀𝙎\n❏ ${usedPrefix + command} Recomienda un top 10 de películas de acción`     
 try {
-conn.sendPresenceUpdate('composing', m.chat)
-
-// Traducir de indonesio a español
-const translation = await translate(text, { from: 'id', to: 'es' })
-const indonesianText = translation.text
-let syms = `Eres un asistente y tu nombre es CuriosityBot-MD, el nombre de tu dueño es Azami`
-let res = await openaiii.ChatGpt(indonesianText, syms)
-
+conn.sendPresenceUpdate('composing', m.chat)  
+let syms = `Actuaras como un Bot de WhatsApp el cual fue creado por DanielDiod, tu seras apartir de ahora MonkiBot`
+let res = await gpt.ChatGpt(text, syms)
 await m.reply(res.text)
-
-} catch (err) {
-try {
+} catch {
+try {   
 let ia2 = await fetch(`https://aemt.me/openai?text=${text}`)
 let resu2 = await ia2.json()
-m.reply(resu2.result.trim())
-} catch (err) {
-try {
+m.reply(resu2.response.trim())    
+} catch {        
+try {    
 let tioress = await fetch(`https://api.lolhuman.xyz/api/openai-turbo?apikey=${lolkeysapi}&text=${text}`)
 let hasill = await tioress.json()
-conn.reply(m.chat, `${hasill.result}`, m, fake, )
-} catch (err) {
-console.error(err)
-conn.reply(m.chat, '🚩 *Error al procesar la solicitud*', m, fake, )
-}
-}}
-
-}
-handler.help = ['ia']
-handler.tags = ['ai']
+m.reply(`${hasill.result}`.trim())   
+} catch {    
+}}}}
 handler.command = ['openai', 'chatgpt', 'ia', 'robot']
-
 export default handler
