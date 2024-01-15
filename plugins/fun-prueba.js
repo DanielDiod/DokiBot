@@ -20,9 +20,9 @@ let handler = async (m, { conn, args, text, isOwner, usedPrefix, command }) => {
     }, conn.advnro[m.chat].time)
 }
 
-handler.help = ['advnro']
+handler.help = ['game']
 handler.tags = ['game']
-handler.command = /^(advnro2)$/i
+handler.command = /^(game)$/i
 handler.register = true
 
 export default handler
