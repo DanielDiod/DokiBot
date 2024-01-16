@@ -132,6 +132,7 @@ let menu = `⌜ *${wm}* ⌟
 💨 ${usedPrefix}ship
 💨 ${usedPrefix}sorteo
 💨 ${usedPrefix}minovi@
+💨 ${usedPrefix}kchero/kchera <tag /nombre>
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐀𝐃𝐐𝐔𝐈𝐄𝐑𝐄 𝐌𝐎𝐍𝐊𝐈𝐁𝐎𝐓 ⛅  〕⬣*
