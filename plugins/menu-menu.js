@@ -75,7 +75,7 @@ await m.reply(`🙈 𝙀𝙣𝙫𝙞𝙖𝙣𝙙𝙤 𝙚𝙡 𝙢𝙚𝙣𝙪 �
 
 ʚ 𝗘𝘀𝗽𝗲𝗿𝗲 𝘂𝗻 𝗺𝗼𝗺𝗲𝗻𝘁𝗼 𝗽𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 ɞ
 
-» 𝗦𝗶 𝗻𝗼 𝗲𝘀𝗽𝗲𝗿𝗮 𝗲𝘀 𝗽𝗼𝗿𝗾𝘂𝗲 𝘀𝘂 𝘁𝗶𝗼 𝗻𝗼 𝗹𝗲 𝗱𝗶𝗼 𝗮𝗻𝗼𝗰𝗵𝗲 👀`);	
+» 𝗦𝗶 𝗻𝗼 𝗲𝘀𝗽𝗲𝗿𝗮 𝗲𝘀 𝗽𝗼𝗿𝗾𝘂𝗲 𝘀𝘂 𝘁𝗶𝗼 𝗻𝗼 𝗹𝗲 𝗱𝗶𝗼 𝗮𝗻𝗼𝗰𝗵𝗲 👀`);.then(_ => m.react('⏰'))	
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(global.img)).buffer(), sourceUrl: redesMenu.getRandom() }}}
