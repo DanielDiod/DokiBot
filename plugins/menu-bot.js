@@ -11,6 +11,7 @@ let Reglas = ` *🛑INFORMACIÓN DEL MENU🛑*\n
 *se te agradecería mucho si te unes al canal de MonkiBot 👇🏼*\n
 ${md}
 `.trim()
+await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
