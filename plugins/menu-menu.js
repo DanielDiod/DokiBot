@@ -6,8 +6,7 @@ import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
-try {
-await m.react('⏰')	
+try {	
 let vn = './media/menu.mp3'
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
@@ -257,13 +256,12 @@ let menu = `⌜ *${wm}* ⌟
 🌟 ${usedPrefix}qc<texto>
 *╰━━━━━━━━━━━━⬣*`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-	
+await m.react('✅')	
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
-await m.react('✅')
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(herramientas|herramientas|herramientas|herramientas|allm\?)$/i
