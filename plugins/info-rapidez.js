@@ -26,7 +26,7 @@ let texto = `*🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝*
 *⏰ 𝐀𝐜𝐭𝐢𝐯𝐢𝐝𝐚𝐝*
 • ${muptime}
 
-*🌻 𝐂𝐡𝐚𝐭𝐬*
+*💌 𝐂𝐡𝐚𝐭𝐬*
 • ${chats.length} *Chats privados*
 • ${groups.length} *Grupos*
 
