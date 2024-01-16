@@ -41,7 +41,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 
-else throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n*RESPONDE A UNA IMAGEN, VIDEO, GIF PARA REALIZAR EL STICKERS USE* *${usedPrefix + command}*`
+else throw `*[🔴 ERROR 🔴]*\n\n*RESPONDE A UNA IMÁGEN , VIDEO O GIF CON* *${usedPrefix + command}*`
 
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
