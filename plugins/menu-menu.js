@@ -7,6 +7,7 @@ import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
+await m.react('⏰')	
 let vn = './media/menu.mp3'
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
@@ -262,6 +263,7 @@ let menu = `⌜ *${wm}* ⌟
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
+await m.react('✅')
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(herramientas|herramientas|herramientas|herramientas|allm\?)$/i
