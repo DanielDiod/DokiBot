@@ -100,10 +100,12 @@ npm start
 
 ## `Colaboradora` 
 <a href="https://github.com/Sopiix"><img src="https://github.com/Sopiix.png" width="200" height="200" alt="Sopi<3"/></a>
+<a
+href="https://github.com/Jxtxn17"><img src="https://github.com/Jxtxn17.png" width="200" height="200" alt="Jxtxn17"/></a>
 
 ---------
 <div align="center">
-  <h1 align="center">Editor y Propietario de la Bot</h1>
+  <h1 align="center">Editor y Propietario del Bot</h1>
 
 <a href="https://github.com/DanielDiod"><img src="https://github.com/DanielDiod.png" width="300" height="300" alt="Daniel🇦🇱"/></a>
 
