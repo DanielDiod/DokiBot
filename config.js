@@ -20,6 +20,7 @@ global.owner = [
 ['51977835959']]
 
 global.mods = ['51977835959']
+global.suittag = ['51907913096']
 global.prems = ['51977835959'],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
