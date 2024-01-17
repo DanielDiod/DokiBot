@@ -90,7 +90,9 @@ global.cheerio = cheerio
 global.fs = fs
 global.fetch = fetch
 global.axios = axios
-global.moment = moment	
+global.moment = moment
+global.fake = { contextInfo: { externalAdReply: {title: saludo + ` ${m.name}`, body: dev, sourceUrl: enlaces, thumbnailUrl: fotos }}}
+ } 
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
