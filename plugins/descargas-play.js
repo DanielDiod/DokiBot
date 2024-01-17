@@ -5,7 +5,7 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `*[🔴 ERROR 🔴]*\n\n*El uso correcto del comando es 👇🏼*\n\n#play un amor del ayer`
+if (!text) throw `[ ❗𝗘𝗥𝗥𝗢𝗥❗]\n\n𝙀𝙡 𝙪𝙨𝙤 𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙤 𝙙𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙚𝙨 🧸👇🏻\n\n» .𝗽𝗹𝗮𝘆 𝗠𝗮𝗿𝗴𝗮𝗿𝗲𝘁 - 𝗟𝗮𝗻𝗮 𝗗𝗲𝗹 𝗥𝗲𝘆`
 try {
 await m.react('🕓')
 const yt_play = await search(args.join(" "))
