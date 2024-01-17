@@ -10,7 +10,7 @@ let autor = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[⚠️ ERROR ⚠️]*\n\n*Intenta respondiendo una imágen , video o gif con .s`)
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[⚠️ ERROR ⚠️]*\n\n*Intenta respondiendo una imágen , video o gif con .s*`)
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ El Video No Puede Durar Mas De 6 Segundos*')
 
 if (/webp|image|video/g.test(mime)) {
