@@ -10,7 +10,7 @@ let autor = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*⚠️ 𝘏𝘦𝘺 𝘓𝘢 𝘊𝘰𝘯𝘷𝘦𝘳𝘴𝘪𝘰́𝘯 𝘏𝘢 𝘍𝘢𝘭𝘭𝘢𝘥𝘰, 𝘐𝘯𝘵𝘦𝘯𝘵𝘢 𝘌𝘯𝘷𝘪𝘢𝘳 𝘜𝘯𝘢 𝘐𝘮𝘢𝘨𝘦𝘯 𝘖 𝘝𝘪𝘥𝘦𝘰 𝘠 𝘓𝘶𝘦𝘨𝘰 𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘦 𝘊𝘰𝘯 𝘌𝘭 𝘊𝘰𝘮𝘢𝘯𝘥𝘰 .𝘴*`)
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[⚠️ ERROR ⚠️]*\n\n*Intenta respondiendo una imágen , video o gif con .s`)
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ El Video No Puede Durar Mas De 6 Segundos*')
 
 if (/webp|image|video/g.test(mime)) {
@@ -19,9 +19,9 @@ let out
 stiker = await sticker(img, false, global.packname, global.author)
 await conn.reply(m.chat, `Hey tu sticker se esta creando
 
-ten un poco de paciencia evita el spam❣️
+ten un poco de paciencia evita el spam
 
-By MonkiBot`, m)
+By MonkiBot🐒`, m)
 
 if (!stiker) {
 if (/webp/g.test(mime)) out = await webp2png(img)
