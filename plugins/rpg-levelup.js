@@ -68,7 +68,7 @@ let user = global.db.data.users[m.sender]
 if (!canLevelUp(user.level, user.exp, global.multiplier)) {
 let { min, xp, max } = xpRange(user.level, global.multiplier)
 throw `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
-🍄 𝗡𝗜𝗩𝗘𝗟 𝗔𝗡𝗧𝗘𝗥𝗜𝗢𝗥: ${before}
+🍄 *NOMBRE: ${name}
 
 🍀 𝗡𝗜𝗩𝗘𝗟 𝗔𝗖𝗧𝗨𝗔𝗟: ${user.level}
 
@@ -76,8 +76,6 @@ throw `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
 
 🗓 𝗙𝗘𝗖𝗛𝗔: ${new Date().toLocaleString('id-ID')}
 ╰━━━━━━━━━━━━⬣
-
-𝗨𝘀𝘂𝗮𝗿𝗶𝗼 𝘁𝗲 𝗳𝗮𝗹𝘁𝗮 ${max - user.exp} 𝗽𝗮𝗿𝗮 𝘀𝘂𝗯𝗶𝗿 𝗲𝗹 𝗻𝗶𝘃𝗲𝗹 𝗲𝗻 𝗠𝗼𝗻𝗸𝗶𝗕𝗼𝘁 ✨
 
 _*te falta ${max - user.exp} de XP para subir de nivel*_
 `.trim()}
