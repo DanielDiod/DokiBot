@@ -68,7 +68,7 @@ let user = global.db.data.users[m.sender]
 if (!canLevelUp(user.level, user.exp, global.multiplier)) {
 let { min, xp, max } = xpRange(user.level, global.multiplier)
 throw `╭━〔  𝐍𝐈𝐕𝐄𝐋 ⛅  〕⬣
-🍄 *NOMBRE: ${name}
+🍄 *NOMBRE*: ${name}
 
 🍀 𝗡𝗜𝗩𝗘𝗟 𝗔𝗖𝗧𝗨𝗔𝗟: ${user.level}
 
