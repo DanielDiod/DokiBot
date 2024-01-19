@@ -21,6 +21,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   if (!text) throw `*[ ⚠️ ERRROR ⚠️ ]*\n\n*INGRESE UNA PETICIÓN PARA USAR EL CHATGPT*\n\n*EJEMPLO 👇🏼*\n\n*#ia dime la primera guerra mundial*`;
   try {
+  await m.react('⏰')
         conn.sendPresenceUpdate('composing', m.chat);
         //let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
         let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Daniel, tu seras MonkiBot.`;
@@ -117,5 +118,6 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   }}
  }}
 };
+await m.react('✅')
 handler.command = /^(openai|chatgpt|ia|robot|openai2|chatgpt2|ia2|robot2|Lite|SakuraBot)$/i;
 export default handler;
