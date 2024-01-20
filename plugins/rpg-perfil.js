@@ -1,7 +1,7 @@
 import PhoneNumber from 'awesome-phonenumber' 
 import fetch from 'node-fetch' 
 let handler = async (m, { conn }) => { 
-let _pp = './storage/logos/Bailey.jpg' 
+let _pp = 'https://telegra.ph/file/9ce4d19dfbe3d4744cd89.jpg' 
 let user = db.data.users[m.sender] 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender 
 let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png') 
@@ -20,7 +20,7 @@ let str = `
  📑 • *Registrado:* ${registered ? '✅': '❌'} 
  🌟 • *Premium:* ${premium ? "✅\n⏰ • *PremiumTime:* ${clockString(user.premiumTime)}" :"❌"} 
  `.trim() 
-   //m.react(🌟)  
+  m.react(🌟)  
   conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] }) 
  } 
  handler.help = ['profile [@user]'] 
@@ -33,8 +33,8 @@ let str = `
   
  function clockString(ms) { 
  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000) 
-   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24 
-   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60 
-   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60 
-   return [d, ' *Dias ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minutos ⏰*\n ', s, ' *Segundos ⏱️* '].map(v => v.toString().padStart(2, 0)).join('') 
+ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24 
+ let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60 
+ let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60 
+ return [d, ' *Dias ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minutos ⏰*\n ', s, ' *Segundos ⏱️* '].map(v => v.toString().padStart(2, 0)).join('') 
  }
