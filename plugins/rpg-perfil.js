@@ -2,7 +2,7 @@ import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix }) => {
-let pp = 'https://telegra.ph/file/635b82df8d7abb4792eab.jpg'
+let pp = 'https://telegra.ph/file/9ce4d19dfbe3d4744cd89.jpg'
 //const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
 let user = global.db.data.users[m.sender]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
