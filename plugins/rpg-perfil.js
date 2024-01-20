@@ -1,7 +1,7 @@
 import PhoneNumber from 'awesome-phonenumber' 
  import fetch from 'node-fetch' 
  let handler = async (m, { conn }) => { 
-   let _pp = './storage/logos/Bailey.jpg' 
+   let _pp = 'https://telegra.ph/file/9ce4d19dfbe3d4744cd89.jpg' 
    let user = db.data.users[m.sender] 
    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender 
      let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png') 
