@@ -10,15 +10,15 @@ import PhoneNumber from 'awesome-phonenumber'
      let name = conn.getName(who) 
      let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}} 
      let str = ` 
- . . . *🔰 P E R F I L 🔰* . . . 
- 💌 • *Nombre:* ${username}  
- 📧 • *Tag:* @${who.replace(/@.+/, '')} 
- 📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')} 
- 🔗 • *Link:* https://wa.me/${who.split`@`[0]} 
- 🎨 • *Edad:* ${registered ? age : ''} 
- 💎 • *Limite: ${diamond} Usos*  
- 📑 • *Registrado:* ${registered ? '✅': '❌'} 
- 🌟 • *Premium:* ${premium ? "✅\n⏰ • *PremiumTime:* ${clockString(user.premiumTime)}" :"❌"} 
+ ┏━━❬ *🔰 P E R F I L 🔰*  ❭━━┓ 
+ 💌 • *Nombre:* ${username}\n\n
+ 📧 • *Tag:* @${who.replace(/@.+/, '')}\n\n 
+ 📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n\n 
+ 🔗 • *Link:* https://wa.me/${who.split`@`[0]}\n\n 
+ 🎨 • *Edad:* ${registered ? age : ''}\n\n 
+ 💎 • *Limite: ${diamond} Usos*\n\n  
+ 📑 • *Registrado:* ${registered ? '✅': '❌'}\n\n 
+ 🌟 • *Premium:* ${premium ? "✅\n⏰ • *PremiumTime:* ${clockString(user.premiumTime)}" :"❌"}\n\n 
  `.trim() 
    //m.react(🌟)  
   conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] }) 
