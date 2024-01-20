@@ -4,7 +4,7 @@ import PhoneNumber from 'awesome-phonenumber'
    let _pp = '.Menu2.jpg' 
    let user = db.data.users[m.sender] 
    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender 
-     //let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png') 
+     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png') 
      let { premium, level, diamond, exp, lastclaim, registered, regTime, age } = global.db.data.users[m.sender] 
      let username = conn.getName(who) 
      let name = conn.getName(who) 
