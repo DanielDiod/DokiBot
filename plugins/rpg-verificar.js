@@ -26,8 +26,8 @@ await conn.sendMessage(m.chat, {
 text: `*乂  R E G I S T R O  乂*
 *Nombre 👤 :* ${name}
 *Edad ⏲️* ${age} años
-*Bono 💌:* Un Diamante por Fex\n
-*Para ver los nuevos comandos en el bot escribe lo siguiente  👇🏼*\n\n#nuevo`, 
+*Bono 💌:* Un dolar\n
+manda *#menu* para ver el menu`, 
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
