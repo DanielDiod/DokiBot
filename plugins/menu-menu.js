@@ -93,7 +93,7 @@ let menu = `⌜ *${wm}* ⌟
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔  𝐉𝐔𝐄𝐆𝐎𝐒 〕*
-*┊꒱ 🕹️ཻུ ${usedPrefix}mates
+*┊꒱ 🕹️ ${usedPrefix}mates
 *┊꒱ 🕹️ཻུ ${usedPrefix}ppt <papel / tijera /piedra>*
 *┊꒱ 🕹️ཻུ ${usedPrefix}prostituto <nombre / @tag>*
 *┊꒱ 🕹️ཻུ ${usedPrefix}prostituta <nombre / @tag>*
