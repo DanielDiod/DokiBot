@@ -99,6 +99,7 @@ let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
 let img = await getBuffer(res.imagen)
+await m.react('✅')
 await conn.sendMessage(m.chat, { text: info, contextInfo: { mentionedJid: [m.sender], forwardingScore: 90, externalAdReply: { title: '𝐓𝐡𝐞 𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://www.instagram.com/jxtxn17', mediaType: 1 }}}, { quoted: m })
 } catch (error) {
 }}
