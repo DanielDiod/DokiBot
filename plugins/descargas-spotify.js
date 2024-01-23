@@ -102,6 +102,5 @@ let img = await getBuffer(res.imagen)
 await conn.sendMessage(m.chat, { text: info, contextInfo: { mentionedJid: [m.sender], forwardingScore: 90, externalAdReply: { title: '𝐓𝐡𝐞 𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://www.instagram.com/jxtxn17', mediaType: 1 }}}, { quoted: m })
 } catch (error) {
 }}
-await m.react('✅')
 handler.command = /^(spotify|music)$/i
 export default handler
