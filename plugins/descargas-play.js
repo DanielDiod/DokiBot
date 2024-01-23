@@ -11,9 +11,9 @@ await m.react('🕓')
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = '𝐓𝐡𝐞 𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
+additionalText = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
 } else if (command === 'play2') {
-additionalText = 'video 🎥'}
+additionalText = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'}
 await conn.sendMessage(m.chat, {
 text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
@@ -74,7 +74,6 @@ renderLargerThumbnail: true
 }  
 if (command == 'play2') {
 try {
-await m.react('✅')
 let qu = '360'
 let q = qu + 'p'
 let v = yt_play[0].url
@@ -82,9 +81,10 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo: ${ttl}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*Video descargado con exito 🥳`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
-try {  
+try {
+await m.react('✅')
 let mediaa = await ytMp4(yt_play[0].url)
 await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_${wm}_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })     
 } catch {  
