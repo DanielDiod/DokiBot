@@ -94,12 +94,12 @@ global.moment = moment
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
+global.packname = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
 global.author = 'By Sopi x Daniel'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.lb = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
+global.lb = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.ig = 'https://www.instagram.com/monki_bot'
