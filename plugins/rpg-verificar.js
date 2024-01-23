@@ -23,7 +23,7 @@ global.db.data.users[m.sender].exp += 150
 global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 await conn.sendMessage(m.chat, { 
-text: `*VERIFICAR 📝*
+text: `*乂  R E G I S T R O  乂*
 *Nombre 👤 :* ${name}
 *Edad ⏲️* ${age} años
 *Bono 💌:* Un Diamante por Fex\n
@@ -36,7 +36,7 @@ mentionedJid:[m.sender],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": gataImg.getRandom(), 
-"title": `𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐃𝐎`, 
+"title": `乂  R E G I S T R O  乂`, 
 "containsAutoReply": true,
 "mediaType": 1, 
 "mediaUrl": nnn, 
