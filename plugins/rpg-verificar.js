@@ -24,9 +24,9 @@ global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 await conn.sendMessage(m.chat, { 
 text: `*乂  R E G I S T R O  乂*\n
-*Nombre 👤 :* ${name}
+*Nombre 👤 :* ${name}\n
 *Edad 🈴 :* ${age} años\n
-*Bono 🧿 :* 4 Diamantes 💎\n5000 XP\n
+*Bono 🧿 :*\n4 Diamantes 💎\n5000 XP\n
 manda *#menu* para ver el menu`, 
 contextInfo:{
 forwardingScore: 9999999,
