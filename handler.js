@@ -1011,7 +1011,7 @@ if (settings) {
 if (!('self' in settings)) settings.self = false
 if (!('autoread' in settings)) settings.autoread = false
 if (!('autoread2' in settings)) settings.autoread2 = false
-if (!('restrict' in settings)) settings.restrict = false
+if (!('restrict' in settings)) settings.restrict = true
 if (!('temporal' in settings)) settings.temporal = false
 if (!('antiPrivate' in settings)) settings.antiPrivate = true
 if (!('antiCall' in settings)) settings.antiCall = true
@@ -1022,7 +1022,7 @@ if (!('jadibotmd' in settings)) settings.jadibotmd = false
 self: false,
 autoread: false,
 autoread2: false,
-restrict: false,
+restrict: true,
 temporal: false,
 antiPrivate: true,
 antiCall: true,
@@ -1157,9 +1157,9 @@ const messageNumber = user.bannedMessageCount + 1;
 const messageText = `⚠️ ESTAS BANEADO ⚠️\nAviso (${messageNumber}/3) ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : 'Motivo: (spam)'}
 *👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
 
-👉 wa.me/5492266466080
-👉 Wa.me/573026191480
-👉 wa.me/595992302861`.trim();
+👉 wa.me/51977835959
+👉 Wa.me/51907913096
+👉 wa.me/51977835959`.trim();
 m.reply(messageText);
 user.bannedMessageCount++;
 } else if (user.bannedMessageCount === 3) {
