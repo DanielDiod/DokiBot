@@ -12,7 +12,7 @@ let Reglas = ` *🛑INFORMACIÓN DEL MENU🛑*\n
 ${md}
 `.trim()
 await m.react('❌')  
-await conn.sendFile(m.chat, imagen3, 'gata.mp4', Reglas)
+await conn.sendFile(m.chat, imagen2, 'gata.mp4', Reglas)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp
