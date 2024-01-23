@@ -71,9 +71,7 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 //let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
   let pp = './Menu2.jpg'
 //let pp = gataVidMenu.getRandom()
-const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
-const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
-await conn.reply(m.chat, '🚀 𝑷𝒓𝒐𝒏𝒕𝒐 𝑺𝒆 𝑹𝒆𝒎𝒊𝒕𝒊𝒓𝒂 𝑬𝒍 𝑴𝒆𝒏𝒖 𝑫𝒆𝒍 𝑩𝒐𝒕. . . .',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝘽𝙪𝙚𝙣𝙖𝙨 𝙐𝙨𝙪𝙖𝙧𝙞𝙤💚!!', body: '⏰Eɴᴠɪᴀɴᴅᴏ EL Mᴇɴᴜ', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 let menu = `⌜ *${wm}* ⌟  
 
