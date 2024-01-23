@@ -102,8 +102,8 @@ global.author = 'By Sopi x Daniel'
 global.lb = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.ig = 'https://www.instagram.com/monki_bot'
-global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
+global.ig = 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2'
+global.md = 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2'
 global.fb = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 
 global.nna = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Actualización, información sobre el bot
