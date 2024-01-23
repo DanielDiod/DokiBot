@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 let Reglas = ` *🛑INFORMACIÓN DEL MENU🛑*\n
 📝𝗡𝗼𝘁𝗮 :𝐡𝐨𝐥𝐚 𝐮𝐬𝐮𝐚𝐫𝐢𝐨 𝐡𝐚𝐬 𝐬𝐨𝐥𝐢𝐜𝐢𝐭𝐚𝐝𝐨 𝐦𝐢 𝐦𝐞𝐧𝐮 , 𝐬𝐢 𝐝𝐞𝐬𝐞𝐚𝐬 𝐯𝐞𝐫 𝐦𝐢 𝐦𝐞𝐧𝐮 𝐦𝐚𝐧𝐝𝐚𝐫 𝐞𝐥 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 :\n
 .*herramientas*\n
-*se te agradecería mucho si te unes al canal de MonkiBot 👇🏼*\n
+*se te agradecería mucho si te unes al grupo ofc de Shana-Bot 👇🏼*\n
 ${md}
 `.trim()
 await m.react('❌')  
