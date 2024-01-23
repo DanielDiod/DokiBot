@@ -81,7 +81,7 @@ global.APIKeys = {
   'https://api-xcoders.site': 'Frieren'
 }
 
-global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen1 = fs.readFileSync('./Menu2.jpeg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
