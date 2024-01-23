@@ -259,14 +259,14 @@ let menu = `⌜ *${wm}* ⌟
 
 Sᴛᴀʀʟɪɢʜᴛꜱ Tᴇᴀᴍ || Aʟʟ Rɪɢʜᴛꜱ Rᴇꜱᴇʀᴠᴇᴅ`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/da81eaf51d7ed5f57d369.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
 mentionedJid: [m.sender],
 forwardingScore: 9, 
 externalAdReply: {
-title: '❑— Sʜᴀɴᴀ - Bᴏᴛ —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
+title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
 sourceUrl: 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2',
