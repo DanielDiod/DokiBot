@@ -10,7 +10,7 @@ let autor = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[⚠️ ERROR ⚠️]*\n\n*Intenta respondiendo una imágen , video o gif con .s*`)
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*❌ 𝖤𝖱𝖱𝖮𝖱 ❌*\n*(𝖭𝗈 𝗌𝖾 𝗉𝗎𝖽𝗈 𝖼𝗋𝖾𝖺𝗋 𝗍𝗎 𝗌𝗍𝗂𝖼𝗄𝖾𝗋)*\n\n*⚠️ 𝖨𝗇𝗍𝖾𝗇𝗍𝖺 𝗋𝖾𝗌𝗉𝗈𝗇𝖽𝗂𝖾𝗇𝖽𝗈 𝖺 𝗎𝗇𝖺 𝖿𝗈𝗍𝗈, 𝗏𝗂𝖽𝖾𝗈 𝗈 𝗀𝗂𝖿𝗍 𝖼𝗈𝗇 “.𝗌”*`)
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ El Video No Puede Durar Mas De 6 Segundos*')
 
 if (/webp|image|video/g.test(mime)) {
