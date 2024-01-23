@@ -146,9 +146,9 @@ global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.pre
 
 //⊱ ━━━━━.⋅ IMG ⋅.━━━━ ⊰
 
-global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpg')
-global.imagen2 = fs.readFileSync('./media/menus/img1.jpg')
-global.imagen3 = fs.readFileSync('./media/menus/img2.jpg')
+global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpeg')
+global.imagen2 = fs.readFileSync('./media/menus/Menu1.jpeg')
+global.imagen3 = fs.readFileSync('./media/menus/Menu2.jpeg')
 global.img = 'https://i.imgur.com/H6AofpJl.jpg'
 global.img2 = 'https://i.imgur.com/R1uVUId.jpeg'
 
