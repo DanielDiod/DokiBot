@@ -1238,7 +1238,7 @@ m.reply('Exp limit')
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 conn.sendMessage(m.chat, { 
-text: `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 Dolares`, 
+text: `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 Euros`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
 "title": `${lenguajeGB['smsAvisoAG']()}`, body: '𝐒𝐮𝐩𝐞𝐫 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
 // this.reply(m.chat, `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨`, m)
@@ -1295,7 +1295,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)  
-m.reply(+m.money + ' 💵 Dolares usados')
+m.reply(+m.money + ' Euros usados 🪙')
 break
 }}
 } catch (e) {
