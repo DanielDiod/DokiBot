@@ -29,6 +29,7 @@ renderLargerThumbnail: true
 }}} , { quoted: m })
 if (command == 'play') {	
 try {
+await m.react('✅')
 let q = '128kbps'
 let v = yt_play[0].url
 const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
@@ -38,7 +39,6 @@ const size = await yt.audio[q].fileSizeH
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: 'audio/mpeg' }, { quoted: m})
 } catch {
 try {
-await m.react('✅')
 const dataRE = await fetch(`https://api.akuari.my.id/downloader/youtube?link=${yt_play[0].url}`)
 const dataRET = await dataRE.json()
 await conn.sendMessage(m.chat, { audio: { url: dataRET.mp3[1].url }, mimetype: 'audio/mpeg' }, { quoted: m})
