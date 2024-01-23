@@ -140,7 +140,7 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐀𝐃𝐐𝐔𝐈𝐄𝐑𝐄 𝐌𝐎𝐍𝐊𝐈𝐁𝐎𝐓 〕
-*┊꒱ 💰ཻུ ${usedPrefix}precios*
+*┊꒱ 💰 ${usedPrefix}precios*
  ╰━━━━━━━━━━━━
 
 
@@ -169,7 +169,6 @@ let menu = `⌜ *${wm}* ⌟
 *┊꒱ 📥 ${usedPrefix}instagram <enlace / link / url>*
 *┊꒱ 📥 ${usedPrefix}mediafire <enlace / link / url>*
 *┊꒱ 📥 ${usedPrefix}gdrive <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}xvideosdl <enlace / link / url>*
 *┊꒱ 📥 ${usedPrefix}twitter <enlace / link / url>*
 *┊꒱ 📥 ${usedPrefix}ytmp3 <enlace / link / url>*
 *┊꒱ 📥 ${usedPrefix}ytmp4 <enlace / link / url>*
