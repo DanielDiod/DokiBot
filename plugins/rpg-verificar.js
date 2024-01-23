@@ -27,6 +27,8 @@ text: `*乂  R E G I S T R O  乂*
 *Nombre 👤 :* ${name}
 *Edad ⏲️* ${age} años
 *Bono 💌:* Un dolar\n
+*Numero 📞:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n 
+*Link 📎:* https://wa.me/${who.split`@`[0]}\n 
 manda *#menu* para ver el menu`, 
 contextInfo:{
 forwardingScore: 9999999,
