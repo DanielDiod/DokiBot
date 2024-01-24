@@ -49,7 +49,7 @@ let buttonMessage= {
 'caption': txt,
 'footer': '\nVideos de YouTube',
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
        try {
        let yt = await fg.yta(vid.url, q)
