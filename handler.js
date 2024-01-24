@@ -98,7 +98,7 @@ if (!isNumber(user.afk)) user.afk = -1
 //if (!('autolevelup' in user))  user.autolevelup = true
 if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.reporte)) user.reporte = 0
-if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
+if (!('role' in user)) user.role = '*NOVATO(A)* ðŸª¤'
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
@@ -493,7 +493,7 @@ if (!isNumber(user.wolfexp)) user.wolfexp = 0
 if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0
 if (!isNumber(user.wood)) user.wood = 0
 if (!isNumber(user.wortel)) user.wortel = 0
-if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
+if (!user.lbars) user.lbars = '[â–’â–’â–’â–’â–’â–’â–’â–’â–’]'
 if (!user.job) user.job = 'Desempleo'
 if (!user.premium) user.premium = false
 if (!user.premium) user.premiumTime = 0
@@ -759,7 +759,7 @@ lastwarpet: 0,
 lastweaponclaim: 0,
 lastweekly: 0,
 lastwork: 0,
-lbars: '[▒▒▒▒▒▒▒▒▒]',
+lbars: '[â–’â–’â–’â–’â–’â–’â–’â–’â–’]',
 legendary: 0,
 lele: 0,
 leleb: 0,
@@ -972,7 +972,7 @@ if (!('antiTraba' in chat)) chat.antiTraba = true
 if (!('autolevelup' in chat))  chat.autolevelup = false
 if (!isNumber(chat.expired)) chat.expired = 0
 } else
-//🟢 SI QUIERE CAMBIA ALGUNAS DE ESTA FUNCIÓNE DE (false a true) o (true a false), LOS PUEDE HACER. PERO DEJARLO IGUAL COMO ESTA PARA EVITAR ERRORES
+//ðŸŸ¢ SI QUIERE CAMBIA ALGUNAS DE ESTA FUNCIÃ“NE DE (false a true) o (true a false), LOS PUEDE HACER. PERO DEJARLO IGUAL COMO ESTA PARA EVITAR ERRORES
 global.db.data.chats[m.chat] = {
 isBanned: false,
 welcome: true,
@@ -1088,7 +1088,7 @@ await plugin.all.call(this, m, { chatUpdate, __dirname: ___dirname, __filename }
 console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
-//❌COMANDO FALLAS
+//âŒCOMANDO FALLAS
 if (data.exists) 
 m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
 }}}
@@ -1154,12 +1154,12 @@ user.bannedMessageCount = 0;
 }
 if (user.bannedMessageCount < 3) {
 const messageNumber = user.bannedMessageCount + 1;
-const messageText = `⚠️ ESTAS BANEADO ⚠️\nAviso (${messageNumber}/3) ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : 'Motivo: (spam)'}
-*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
+const messageText = `âš ï¸ ESTAS BANEADO âš ï¸\nAviso (${messageNumber}/3) ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : 'Motivo: (spam)'}
+*ðŸ‘‰ðŸ» Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
 
-👉 wa.me/51977835959
-👉 Wa.me/51907913096
-👉 wa.me/51977835959`.trim();
+ðŸ‘‰ wa.me/51977835959
+ðŸ‘‰ Wa.me/51907913096
+ðŸ‘‰ wa.me/51977835959`.trim();
 m.reply(messageText);
 user.bannedMessageCount++;
 } else if (user.bannedMessageCount === 3) {
@@ -1174,7 +1174,7 @@ if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() -
 if (user.commandCount === 2) {
 const remainingTime = Math.ceil((user.lastCommandTime + 3000 - Date.now()) / 1000);
 if (remainingTime > 0) {
-const messageText = `*𝙀𝙎𝙋𝙀𝙍𝘼 ${remainingTime} 𝙎𝙀𝙂𝙐𝙉𝘿𝙊 𝘼𝙉𝙏𝙀𝙎 𝘿𝙀 𝙐𝙎𝘼𝙍 𝙊𝙏𝙍𝙊 𝘾𝙊𝙈𝘼𝙉𝘿𝙊*`;
+const messageText = `*ð™€ð™Žð™‹ð™€ð™ð˜¼ ${remainingTime} ð™Žð™€ð™‚ð™ð™‰ð˜¿ð™Š ð˜¼ð™‰ð™ð™€ð™Ž ð˜¿ð™€ ð™ð™Žð˜¼ð™ ð™Šð™ð™ð™Š ð˜¾ð™Šð™ˆð˜¼ð™‰ð˜¿ð™Š*`;
 //m.reply(messageText);
 return;
 } else {
@@ -1238,10 +1238,10 @@ m.reply('Exp limit')
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 conn.sendMessage(m.chat, { 
-text: `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 Euros`, 
+text: `ðŸ«¥ ð™‰ð™¤ ð™©ð™žð™šð™£ð™š Euros`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: '𝐒𝐮𝐩𝐞𝐫 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
-// this.reply(m.chat, `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨`, m)
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
+// this.reply(m.chat, `ðŸ«¥ ð™‰ð™¤ ð™©ð™žð™šð™£ð™š ð™‡ð™¤ð™¡ð™žð˜¾ð™¤ð™žð™£ð™¨`, m)
 continue     
 }
 m.exp += xp
@@ -1249,7 +1249,7 @@ if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.li
 conn.sendMessage(m.chat, { 
 text: `*${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: '𝐒𝐮𝐩𝐞𝐫 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
 //  this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue // Limit habis
 }
@@ -1257,7 +1257,7 @@ if (plugin.level > _user.level) {
 conn.sendMessage(m.chat, { 
 text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: '𝐒𝐮𝐩𝐞𝐫 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })                
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })                
 /*this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)*/
 continue // If the level has not been reached
 }
@@ -1295,7 +1295,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)  
-m.reply(+m.money + ' Euros usados 🪙')
+m.reply(+m.money + ' Euros usados ðŸª™')
 break
 }}
 } catch (e) {
@@ -1351,7 +1351,7 @@ if (settingsREAD.autoread2) await this.readMessages([m.key])
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
 if (!m.fromMem && m.text.match(/(@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|:v)/gi)) {
-let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
+let emot = pickRandom(["ðŸ˜º", "ðŸ˜¸", "ðŸ˜¹", "ðŸ˜»", "ðŸ˜¼", "ðŸ˜½", "ðŸ™€", "ðŸ˜¿", "ðŸ˜¾", "ðŸ¤©", "ðŸ˜", "ðŸ˜³", "ðŸ¥µ", "ðŸ¤¯", "ðŸ˜±", "ðŸ˜¨", "ðŸ¤«", "ðŸ¥´", "ðŸ¤§", "ðŸ¤‘", "ðŸ¤ ", "ðŸ¤–", "ðŸ¤", "ðŸ’ª", "ðŸ‘‘", "ðŸ˜š", "ðŸ±", "ðŸˆ", "ðŸ†", "ðŸ…", "âš¡ï¸", "ðŸŒˆ", "â˜ƒï¸", "â›„ï¸", "ðŸŒ", "ðŸŒ›", "ðŸŒœ", "ðŸ“", "ðŸŽ", "ðŸŽˆ", "ðŸª„", "â¤ï¸", "ðŸ§¡", "ðŸ’›", "ðŸ’š", "ðŸ’™", "ðŸ’œ", "ðŸ–¤", "ðŸ¤", "ðŸ’˜", "ðŸ’", "ðŸ’Ÿ", "ðŸŒ", "ðŸ˜Ž", "ðŸ”¥", "ðŸ–•", "ðŸ¦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}}}
 /**
@@ -1381,10 +1381,10 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*ᴜɴ ɢʀᴜᴘᴏ ɢᴇɴɪᴀ😸*\n *sɪɴ ʀᴇɢʟᴀ 😉*') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*á´œÉ´ É¢Ê€á´œá´˜á´ É¢á´‡É´Éªá´€ðŸ˜¸*\n *sÉªÉ´ Ê€á´‡É¢ÊŸá´€ ðŸ˜‰*') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 if (chat.antifake && isBotAdminNn && action === 'add') {
-const numerosPermitidos = ["212", "265", "92", "91", "90", "210", "60", "61", "62", "40", "48", "49", "93", "94", "98", "258"] //PUEDES EDITAR LOS USUARIOS QUE SE ELIMINARÁN SI EMPIEZA POR CUALQUIER DE ESOS NÚMEROS	
+const numerosPermitidos = ["212", "265", "92", "91", "90", "210", "60", "61", "62", "40", "48", "49", "93", "94", "98", "258"] //PUEDES EDITAR LOS USUARIOS QUE SE ELIMINARÃN SI EMPIEZA POR CUALQUIER DE ESOS NÃšMEROS	
 if (numerosPermitidos.some(num => user.startsWith(num))) {	
 this.sendMessage(id, { text: `*${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsInt1']()} @${user.split("@")[0]} ${lenguajeGB['smsInt2']()}*`, mentions: [user] }, { quoted: null });          
 let responseb = await this.groupParticipantsUpdate(id, [user], 'remove')
@@ -1401,7 +1401,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, ' ' + lb + ' 🈴', '♓'].getRandom(),
+"title": [wm, ' ' + lb + ' ðŸˆ´', 'â™“'].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: [md, nna, yt, nnn, nn, ig].getRandom()}}}, { quoted: fkontak2 }) 
@@ -1465,7 +1465,7 @@ let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
 if (!msg?.isGroup) return 
-const antideleteMessage = `*[ ANTI ELIMINAR ]*\n\n@${participant.split`@`[0]} Elimino un mensaje\nEnviando el mensaje...\n\n*Para desactivar esta función escriba:*\n#disable delete`.trim();
+const antideleteMessage = `*[ ANTI ELIMINAR ]*\n\n@${participant.split`@`[0]} Elimino un mensaje\nEnviando el mensaje...\n\n*Para desactivar esta funciÃ³n escriba:*\n#disable delete`.trim();
 await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
@@ -1473,32 +1473,24 @@ console.error(e)
 }}
 
 global.dfail = (type, m, conn) => {
-let msg = {
-rowner: lenguajeGB['smsRowner'](),
-owner: lenguajeGB['smsOwner'](),
-mods: lenguajeGB['smsMods'](),
-premium: lenguajeGB['smsPremium'](),
-group: lenguajeGB['smsGroup'](),
-private: lenguajeGB['smsPrivate'](),
-admin: lenguajeGB['smsAdmin'](),
-botAdmin: lenguajeGB['smsBotAdmin'](),
-unreg: lenguajeGB['smsUnreg'](),
-restrict: lenguajeGB['smsRestrict'](),
-}[type]
-//if (msg) return m.reply(msg)
-let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, ' ' + lb + ' 🈴', '♓'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom() }}}}, tg)
-if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
+    let msg = {
+        rowner: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por el *Creador* de la Bot.`,
+        owner: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por el *Creador* de la Bot y *Sub Bots*.`,
+        mods: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Moderadores* de la Bot.`,
+        premium: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por Usuarios *Premium*.`,
+        group: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en *Grupos*.`,
+        private: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en mi Chat *Privado*.`,
+        admin: `âœ¯ Hola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
+        botAdmin: `âœ¯ Hola @${m.sender.split`@`[0]}, la bot deve ser *Administradora* para ejecutar este Comando.`,
+        unreg: `âœ¯ Hola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nPara usar el bot debes registrarte primero\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg ãŠDaná»‹el.xyzâ©.666*_\n\nNo pongas los * *`,
+        restrict: `âœ¯ Hola @${m.sender.split`@`[0]}, esta caracterÃ­stica estÃ¡ *deshabilitada*`  
+    }[type]
+    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, ' ' + lb + ' ðŸˆ´', 'â™“'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m })
 }
 
-const file = global.__filename(import.meta.url, true);
+let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
-unwatchFile(file);
-console.log(chalk.redBright('Update \'handler.js\''));
-if (global.reloadHandler) console.log(await global.reloadHandler());
-  
-if (global.conns && global.conns.length > 0 ) {
-const users = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])];
-for (const userr of users) {
-userr.subreloadHandler(false)
-}}});
+    unwatchFile(file)
+    console.log(chalk.magenta("âœ…  Se actualizo 'handler.js'"))
+    if (global.reloadHandler) console.log(await global.reloadHandler())
+})
