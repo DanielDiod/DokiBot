@@ -81,7 +81,7 @@ global.APIKeys = {
   'https://api-xcoders.site': 'Frieren'
 }
 
-global.imagen1 = fs.readFileSync('./Menu2.jpeg')
+global.imagen1 = fs.readFileSync('./Menu2.jpg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
@@ -94,16 +94,16 @@ global.moment = moment
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
+global.packname = 'Shana'
 global.author = 'By Sopi x Daniel'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.lb = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'
+global.lb = 'Shana'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.ig = 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2'
-global.md = 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2'
+global.ig = 'https://www.instagram.com/monki_bot'
+global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.fb = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 
 global.nna = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Actualización, información sobre el bot
@@ -135,20 +135,20 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
-global.wm = 'Shanabot'
-global.igfg = 'Shanabot'
+global.wm = 'Shana'
+global.igfg = 'Shana'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▭*'
-global.nomorown = 'Shanabot''
+global.nomorown = 'Shana'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //⊱ ━━━━━.⋅ IMG ⋅.━━━━ ⊰
 
 global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpg')
-global.imagen2 = fs.readFileSync('./media/menus/Menu1.jpg')
-global.imagen3 = fs.readFileSync('./media/menus/Menu2.jpg')
+global.imagen2 = fs.readFileSync('./media/menus/img1.jpg')
+global.imagen3 = fs.readFileSync('./media/menus/img2.jpg')
 global.img = 'https://i.imgur.com/H6AofpJl.jpg'
 global.img2 = 'https://i.imgur.com/R1uVUId.jpeg'
 
