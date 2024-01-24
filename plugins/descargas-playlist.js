@@ -1,7 +1,7 @@
 import yts from 'yt-search'
 
 let handler = async (m, {conn, usedPrefix, text }) => {
-   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m, adReply)
+   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m)
    await m.react('🕓')
    let results = await yts(text)
    let res = results.all.map(v => v).filter(v => v.type == "video")
