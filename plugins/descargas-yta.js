@@ -4,10 +4,10 @@ import yts from 'yt-search'
 import fetch from 'node-fetch' 
 let limit = 100
 
-let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, command }) => {
-if (!args || !args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de una música de YouTube que deseas descargar.*`, m)
-if (!args[0].match(/youtu/gi)) return conn.reply(m.chat,`Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
-let q = args[1] || '128kbps'
+let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
+if (!args || !args[0]) conn.reply(m.chat, `*🚩 Escribe la URL de un video de YouTube que deseas descargar.*`, m)
+if (!args[0].match(/youtu/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
+let q = '128kbps'
 
 await m.react('🕓')
 try {
