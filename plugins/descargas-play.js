@@ -129,7 +129,7 @@ let buttonMessage= {
 'caption': txt,
 'footer': '\nVideos de YouTube',
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
        let ytestilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${vid.title}`, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
        
@@ -193,7 +193,7 @@ let buttonMessage= {
 'caption': txt,
 'footer': '\nVideos de YouTube',
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
        try {
        let yt = await fg.yta(vid.url, q)
@@ -273,7 +273,7 @@ let buttonMessage= {
 'caption': txt,
 'footer': '\nVideos de YouTube',
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
        try {
        let yt = await fg.ytv(vid.url, q)
@@ -299,7 +299,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        let { title, dl_url, size } = yt
        let limit = 300
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
        
        await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━●────── ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
