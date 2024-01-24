@@ -13,7 +13,6 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [ 
 ['51907913096', 'Daniel', true],
 ['51977835959', 'sopiix', true],
-['51929972576'],
 ['51977835959'],
 ['51907913096'],
 ['51907913096'], 
@@ -21,7 +20,6 @@ global.owner = [
 ['51977835959']]
 
 global.mods = ['51977835959']
-global.suittag = ['51907913096']
 global.prems = ['51977835959'],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
@@ -81,7 +79,7 @@ global.APIKeys = {
   'https://api-xcoders.site': 'Frieren'
 }
 
-global.imagen1 = fs.readFileSync('./media/menus/Menu2.jpg)
+global.imagen1 = fs.readFileSync('./Menu2.jpg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
@@ -90,16 +88,16 @@ global.cheerio = cheerio
 global.fs = fs
 global.fetch = fetch
 global.axios = axios
-global.moment = moment
+global.moment = moment	
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = 'Shana'
+global.packname = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
 global.author = 'By Sopi x Daniel'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.lb = 'Shana'
+global.lb = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.ig = 'https://www.instagram.com/monki_bot'
@@ -135,13 +133,13 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
-global.wm = 'Shana'
-global.igfg = 'Shana'
+global.wm = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
+global.igfg = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▭*'
-global.nomorown = 'Shana'
+global.nomorown = '𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //⊱ ━━━━━.⋅ IMG ⋅.━━━━ ⊰
