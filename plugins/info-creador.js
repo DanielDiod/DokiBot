@@ -33,6 +33,11 @@ import fetch from 'node-fetch';
 
 𝐈𝐠: Instagram.com/sophziix/
 𝐍𝐮𝐦𝐞𝐫𝐨: Wa.me/51977835959
+
+• 𝐂𝐨𝐥𝐚𝐛𝐨𝐫𝐚𝐝𝐨𝐫 𝐨𝐟𝐜: 𝗔𝘅 ⚜
+
+𝐈𝐠: Instagram.com/Litopeax
+𝐍𝐮𝐦𝐞𝐫𝐨: Wa.me/51929972576
   `.trim(); 
      if (m.isGroup) { 
        // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
