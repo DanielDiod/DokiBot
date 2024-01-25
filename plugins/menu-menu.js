@@ -225,31 +225,31 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🔍 ${usedPrefix}pornhubsearch*
  ╰━━━━━━━━━━━━
 
- ╭━〔  𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ⛅  〕
-*┊꒱ 🍃 ${usedPrefix}clima <país> <ciudad>*
-*┊꒱ 🍃 ${usedPrefix}afk <motivo>*
-*┊꒱ 🍃 ${usedPrefix}ocr <responde a imagen>*
-*┊꒱ 🍃 ${usedPrefix}calc <operacion math>*
-*┊꒱ 🍃 ${usedPrefix}del <mensaje>*
-*┊꒱ 🍃 ${usedPrefix}whatmusic <audio>*
-*┊꒱ 🍃 ${usedPrefix}qrcode <texto>*
-*┊꒱ 🍃 ${usedPrefix}traducir <texto>*
+ ╭━〔 🌝 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 🌝 〕
+*┃➤ 🍃 ${usedPrefix}clima*
+*┃➤ 🍃 ${usedPrefix}afk*
+*┃➤ 🍃 ${usedPrefix}ocr*
+*┃➤ 🍃 ${usedPrefix}calc*
+*┃➤ 🍃 ${usedPrefix}del*
+*┃➤ 🍃 ${usedPrefix}whatmusic*
+*┃➤ 🍃 ${usedPrefix}qrcode*
+*┃➤ 🍃 ${usedPrefix}traducir*
  ╰━━━━━━━━━━━━
 
-*╭━〔  𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 ⛅  〕*
-*┊꒱ 🍁 ${usedPrefix}verificar*
-*┊꒱ 🍁 ${usedPrefix}unreg* *<numero de serie>*
-*┊꒱ 🍁 ${usedPrefix}minar*
-*┊꒱ 🍁 ${usedPrefix}buy*
-*┊꒱ 🍁 ${usedPrefix}work*
-*┊꒱ 🍁 ${usedPrefix}transfer* *<tipo> <cantidad> <@tag>*
+*╭━〔 💎 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 💎 〕*
+*┃➤ 🍁 ${usedPrefix}verificar*
+*┃➤ 🍁 ${usedPrefix}unreg*
+*┃➤ 🍁 ${usedPrefix}minar*
+*┃➤ 🍁 ${usedPrefix}buy*
+*┃➤ 🍁 ${usedPrefix}work*
+*┃➤ 🍁 ${usedPrefix}transfer*
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅  〕
-*┊꒱ ☁️ ${usedPrefix}s <responder a imagen o video>*
-*┊꒱ ☁️ ${usedPrefix}emojimix <emoji 1>&<emoji 2>*
-*┊꒱ ☁️ ${usedPrefix}attp <texto>*
-*┊꒱ ☁️ ${usedPrefix}qc <texto>*
+*┃➤ ☁️ ${usedPrefix}s*
+*┃➤ ☁️ ${usedPrefix}emojimix*
+*┃➤ ☁️ ${usedPrefix}attp*
+*┃➤ ☁️ ${usedPrefix}qc*
  ╰━━━━━━━━━━━━
 
 SHANA BOT || DANIEL X SOPIIX`.trim()
