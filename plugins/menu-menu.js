@@ -156,21 +156,24 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━
 
  ╭━〔 🈴 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 🈴 〕
-*┃➤ 📥 ${usedPrefix}play <texto>*
-*┃➤ 📥 ${usedPrefix}play.1 <texto>*
-*┃➤ 📥 ${usedPrefix}play.2 <texto>*
-*┃➤ 📥 ${usedPrefix}playlist <texto>*
-*┃➤ 📥 ${usedPrefix}spotify <texto>*
-*┃➤ 📥 ${usedPrefix}tiktok <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}instagram <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}mediafire <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}gdrive <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}twitter <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}ytmp3 <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}ytmp4 <enlace / link / url>*
-*┃➤ 📥 ${usedPrefix}imagen <texto>*
-*┃➤ 📥 ${usedPrefix}pinteret <texto>*
-*┃➤ 📥 ${usedPrefix}igstory <nombre de usuario>*
+*┃➤ 📥 ${usedPrefix}play*
+*┃➤ 📥 ${usedPrefix}play.1*
+*┃➤ 📥 ${usedPrefix}play.2*
+*┃➤ 📥 ${usedPrefix}playlist*
+*┃➤ 📥 ${usedPrefix}spotify*
+*┃➤ 📥 ${usedPrefix}spotifydl*
+*┃➤ 📥 ${usedPrefix}spotifysearch*
+*┃➤ 📥 ${usedPrefix}tiktok*
+*┃➤ 📥 ${usedPrefix}instagram*
+*┃➤ 📥 ${usedPrefix}mediafire*
+*┃➤ 📥 ${usedPrefix}gdrive*
+*┃➤ 📥 ${usedPrefix}twitter*
+*┃➤ 📥 ${usedPrefix}ytmp3*
+*┃➤ 📥 ${usedPrefix}ytmp4*
+*┃➤ 📥 ${usedPrefix}imagen*
+*┃➤ 📥 ${usedPrefix}pinteres*
+*┃➤ 📥 ${usedPrefix}igstory*
+*┃➤ 📥 ${usedPrefix}pornhubsearsh*
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐆𝐑𝐔𝐏𝐎𝐒 〕
