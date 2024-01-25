@@ -1,35 +1,45 @@
-import fs from 'fs'
-import acrcloud from 'acrcloud'
+import axios from 'axios';
+import cheerio from 'cheerio';
+import request from 'request';
+import acrcloud from 'acrcloud';
+
 let acr = new acrcloud({
-host: 'identify-eu-west-1.acrcloud.com',
-access_key: 'c33c767d683f78bd17d4bd4991955d81',
-access_secret: 'bvgaIAEtADBTbLwiPGYlxupWqkNGIjT7J9Ag2vIu'
+  host: 'identify-eu-west-1.acrcloud.com',
+  access_key: 'c33c767d683f78bd17d4bd4991955d81',
+  access_secret: 'bvgaIAEtADBTbLwiPGYlxupWqkNGIjT7J9Ag2vIu'
 })
 
-let handler = async (m) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-if (/audio|video/.test(mime)) { if ((q.msg || q).seconds > 20) return m.reply('╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\nEl archivo que carga es demasiado grande, le sugerimos que corte el archivo grande a un archivo más pequeño, 10-20 segundos Los datos de audio son suficientes para identificar')
-await conn.reply(m.chat, wait, m)
-let media = await q.download()
-let ext = mime.split('/')[1]
-fs.writeFileSync(`./tmp/${m.sender}.${ext}`, media)
-let res = await acr.identify(fs.readFileSync(`./tmp/${m.sender}.${ext}`))
-let { code, msg } = res.status
-if (code !== 0) throw msg
-let { title, artists, album, genres, release_date } = res.metadata.music[0]
-let txt = `𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 𝘿𝙀 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼𝙎 
+let handler = async (m, { conn, usedPrefix, command }) => {
+  try {
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || q.mediaType || ''
+    if (/video|audio/.test(mime)) {
+      let buffer = await q.download()
+      let { status, metadata } = await acr.identify(buffer)
+      if (status.code !== 0) {
+        buffer = await q.download() 
+        let retry = await acr.identify(buffer)
+        if (retry.status.code !== 0) {
+          throw retry.status.msg; 
+        }
+        metadata = retry.metadata;
+      }
+      let { title, artists, album, genres, release_date } = metadata.music[0]
+      let txt = `🌿⁀➷ *Titulo* : ${title}${artists ? `\n🐢⁀➷ *Artista* : ${artists.map(v => v.name).join(', ')}` : ''}`
+      txt += `${album ? `\n🌿⁀➷ *Album* : ${album.name}` : ''}${genres ? `\n🐢⁀➷ *Genero* : ${genres.map(v => v.name).join(', ')}` : ''}\n`
+      txt += `🌿⁀➷ *Fecha de lanzamiento* : ${release_date}`
+    // await conn.reply(m.chat, txt, m)
+      let img = await (await fetch(`https://i.postimg.cc/B6CDnZG3/wonder-egg-priority-icons.jpg`)).buffer()
+      await conn.sendMessage(m.chat, { text: txt, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𖡬 Aɪ Oʜᴛᴏ - MD 𖡬', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://youtube.com/@samuel_24_?si=TN9OYPtGGhhcbQ6x', mediaType: 1 }}}, { quoted: m })
+    } else {
+      return await conn.sendMessage(m.chat, { text: "*Responde a un audio o video*", contextInfo: {   mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𖡬 Aɪ Oʜᴛᴏ - MD 𖡬', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://youtube.com/@samuel_24_?si=TN9OYPtGGhhcbQ6x', mediaType: 1 }}}, { quoted: m })
+    }
+  } catch (error) {
 
-• 📌 𝙏𝙄𝙏𝙐𝙇𝙊: ${title}
-• 👨‍🎤 𝘼𝙍𝙏𝙄𝙎𝙏𝘼: ${artists !== undefined ? artists.map(v => v.name).join(', ') : 'No encontrado'}
-• 💾 𝘼𝙇𝘽𝙐𝙈: ${album.name || 'No encontrado'}
-• 🌐 𝙂𝙀𝙉𝙀𝙍𝙊: ${genres !== undefined ? genres.map(v => v.name).join(', ') : 'No encontrado'}
-• 📆 𝙁𝙀𝘾𝙃𝘼 𝘿𝙀 𝙇𝘼𝙉𝙕𝘼𝙈𝙄𝙀𝙉𝙏𝙊: ${release_date || 'No encontrado'}
-`.trim()
-fs.unlinkSync(`./tmp/${m.sender}.${ext}`)
-m.reply(txt)
-} else throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉 𝘼𝙐𝘿𝙄𝙊'
+  }
 }
-handler.command = /^quemusica|quemusicaes|whatmusic$/i
-handler.register = true
+handler.help = ['whatmusic *<audio/video>*']
+handler.tags = ['tools']
+handler.command = /^(whatmusic|shazam)$/i
+handler.limit = 2
 export default handler
