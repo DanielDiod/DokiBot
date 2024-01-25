@@ -5,7 +5,12 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 const fetch = (await import('node-fetch')).default;
 const text = args.join` `;
 if (!text) return conn.reply(m.chat, '*Ingresa lo que deseas buscar en Google.*', m);
-await conn.reply(m.chat, `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`, m).then(_ => m.react('⏰'))
+await conn.sendMessage(m.chat, {
+        text: ` *↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*.`,
+        contextInfo: { 
+          mentionedJid: [m.sender],
+        }
+      }, { quoted: m }).then(_ => m.react('⏰'))
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
 let teks = `*🔎 Resultado de* : ${text}\n\n`
