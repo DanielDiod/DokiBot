@@ -30,9 +30,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       txt += `🌿⁀➷ *Fecha de lanzamiento* : ${release_date}`
     // await conn.reply(m.chat, txt, m)
       let img = await (await fetch(`https://i.postimg.cc/B6CDnZG3/wonder-egg-priority-icons.jpg`)).buffer()
-      await conn.sendMessage(m.chat, { text: txt, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://youtube.com/@samuel_24_?si=TN9OYPtGGhhcbQ6x', mediaType: 1 }}}, { quoted: m })
+      await conn.sendMessage(m.chat, { text: txt, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://www.instagram.com/Jxtxn17/', mediaType: 1 }}}, { quoted: m })
     } else {
-      return await conn.sendMessage(m.chat, { text: "*Responde a un audio o video*", contextInfo: {   mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://youtube.com/@samuel_24_?si=TN9OYPtGGhhcbQ6x', mediaType: 1 }}}, { quoted: m })
+      return await conn.sendMessage(m.chat, { text: "*Responde a un audio o video*", contextInfo: {   mentionedJid: [m.sender], forwardingScore: 9, externalAdReply: { title: '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://www.instagram.com/Jxtxn17/', mediaType: 1 }}}, { quoted: m })
     }
   } catch (error) {
 
