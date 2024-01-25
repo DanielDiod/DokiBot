@@ -150,27 +150,27 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ ⭐ ${usedPrefix}deathnote*
  ╰━━━━━━━━━━━━
 
- ╭━〔 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 〕
-*┃➤ 🏷️ ${usedPrefix}enable*
-*┃➤ 🏷️ ${usedPrefix}disable*
+ ╭━〔 ⚙️ 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⚙️ 〕
+*┃➤ 🟢 ${usedPrefix}enable*
+*┃➤ 🔴 ${usedPrefix}disable*
  ╰━━━━━━━━━━━━
 
- ╭━〔  𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 〕
-*┊꒱ 📥 ${usedPrefix}play <texto>*
-*┊꒱ 📥 ${usedPrefix}play.1 <texto>*
-*┊꒱ 📥 ${usedPrefix}play.2 <texto>*
-*┊꒱ 📥 ${usedPrefix}playlist <texto>*
-*┊꒱ 📥 ${usedPrefix}spotify <texto>*
-*┊꒱ 📥 ${usedPrefix}tiktok <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}instagram <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}mediafire <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}gdrive <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}twitter <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}ytmp3 <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}ytmp4 <enlace / link / url>*
-*┊꒱ 📥 ${usedPrefix}imagen <texto>*
-*┊꒱ 📥 ${usedPrefix}pinteret <texto>*
-*┊꒱ 📥 ${usedPrefix}igstory <nombre de usuario>*
+ ╭━〔 🈴 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 🈴 〕
+*┃➤ 📥 ${usedPrefix}play <texto>*
+*┃➤ 📥 ${usedPrefix}play.1 <texto>*
+*┃➤ 📥 ${usedPrefix}play.2 <texto>*
+*┃➤ 📥 ${usedPrefix}playlist <texto>*
+*┃➤ 📥 ${usedPrefix}spotify <texto>*
+*┃➤ 📥 ${usedPrefix}tiktok <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}instagram <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}mediafire <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}gdrive <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}twitter <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}ytmp3 <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}ytmp4 <enlace / link / url>*
+*┃➤ 📥 ${usedPrefix}imagen <texto>*
+*┃➤ 📥 ${usedPrefix}pinteret <texto>*
+*┃➤ 📥 ${usedPrefix}igstory <nombre de usuario>*
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐆𝐑𝐔𝐏𝐎𝐒 〕
