@@ -41,7 +41,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/DanielDiod/Ai-Hoshino.git && cd Ai-Hoshino
+git clone https://github.com/DanielDiod/DokiBot.git && cd DokiBot
 ```
 
 ```bash
