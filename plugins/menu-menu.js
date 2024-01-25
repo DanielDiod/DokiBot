@@ -179,36 +179,36 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━
 
  ╭━〔 ❄️ 𝐆𝐑𝐔𝐏𝐎𝐒 ❄️〕
-*┃➤ 👥 ${usedPrefix}kick <@tag>*
-*┃➤ 👥 ${usedPrefix}grupo <abrir / cerrar>*
-*┃➤ 👥 ${usedPrefix}promote <@tag>*
-*┃➤ 👥 ${usedPrefix}demote <@tag>*
-*┃➤ 👥 ${usedPrefix}demote <@tag>*
+*┃➤ 👥 ${usedPrefix}kick*
+*┃➤ 👥 ${usedPrefix}grupo*
+*┃➤ 👥 ${usedPrefix}promote*
+*┃➤ 👥 ${usedPrefix}demote*
+*┃➤ 👥 ${usedPrefix}demote*
 *┃➤ 👥 ${usedPrefix}link*
-*┃➤ 👥 ${usedPrefix}invocar <texto>*
-*┃➤ 👥 ${usedPrefix}setwelcome <texto>*
-*┃➤ 👥 ${usedPrefix}setbye <texto>*
-*┃➤ 👥 ${usedPrefix}hidetag <texto>*
+*┃➤ 👥 ${usedPrefix}invocar*
+*┃➤ 👥 ${usedPrefix}setwelcome*
+*┃➤ 👥 ${usedPrefix}setbye*
+*┃➤ 👥 ${usedPrefix}hidetag*
 *┃➤ 👥 ${usedPrefix}fantasmas*
 *┃➤ 👥 ${usedPrefix}kickfantasmas*
  ╰━━━━━━━━━━━━
 
-*╭━〔  𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 〕*
-*┊꒱ 📍 ${usedPrefix}toimg <sticker>*
-*┊꒱ 📍 ${usedPrefix}tomp3 <video>*
-*┊꒱ 📍 ${usedPrefix}toptt <video / audio>*
-*┊꒱ 📍 ${usedPrefix}tovideo <sticker>*
-*┊꒱ 📍 ${usedPrefix}tts es <texto>*
+*╭━〔 👀 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 👀 〕*
+*┃➤ 📍 ${usedPrefix}toimg*
+*┃➤ 📍 ${usedPrefix}tomp3*
+*┃➤ 📍 ${usedPrefix}toptt*
+*┃➤ 📍 ${usedPrefix}tovideo*
+*┃➤ 📍 ${usedPrefix}tts*
  ╰━━━━━━━━━━━━
 
-*╭━〔 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 〕*
-*┊꒱ ❄️ ${usedPrefix}mensajefalso <nombre|mensaje>*
-*┊꒱ ❄️ ${usedPrefix}logos <efecto> <texto>*
-*┊꒱ ❄️ ${usedPrefix}logocorazon <texto>*
-*┊꒱ ❄️ ${usedPrefix}ytcomment <texto>*
-*┊꒱ ❄️ ${usedPrefix}hornycard <@tag>*
-*┊꒱ ❄️ ${usedPrefix}itssostupid*
-*┊꒱ ❄️ ${usedPrefix}pixelar*
+*╭━〔 ♓ 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 ♓ 〕*
+*┃➤ ❄️ ${usedPrefix}mensajefalso*
+*┃➤ ❄️ ${usedPrefix}logos*
+*┃➤ ❄️ ${usedPrefix}logocorazon*
+*┃➤ ❄️ ${usedPrefix}ytcomment*
+*┃➤ ❄️ ${usedPrefix}hornycard*
+*┃➤ ❄️ ${usedPrefix}itssostupid*
+*┃➤ ❄️ ${usedPrefix}pixelar*
  ╰━━━━━━━━━━━━
 
 *╭━〔  𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 〕*
