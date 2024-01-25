@@ -15,7 +15,7 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^@51907913096|@51977835959|@51907913096$/i.test(m.text) ) { //sem prefixo
+if (/^@51907913096|@5999977839292928272799282828299|@58292928190929282979139292992096$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `*_[ ⚠ ️] No etiquetes a mi creador, si tiene alguna consulta o dudas, hablarle el pv solo por tema del bot_*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
