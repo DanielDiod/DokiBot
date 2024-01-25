@@ -162,7 +162,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 📥 ${usedPrefix}playlist*
 *┃➤ 📥 ${usedPrefix}spotify*
 *┃➤ 📥 ${usedPrefix}spotifydl*
-*┃➤ 📥 ${usedPrefix}spotifysearch*
 *┃➤ 📥 ${usedPrefix}tiktok*
 *┃➤ 📥 ${usedPrefix}instagram*
 *┃➤ 📥 ${usedPrefix}mediafire*
@@ -174,8 +173,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 📥 ${usedPrefix}iaimagen*
 *┃➤ 📥 ${usedPrefix}pinteres*
 *┃➤ 📥 ${usedPrefix}igstory*
-*┃➤ 📥 ${usedPrefix}pornhubsearch*
-*┃➤ 📥 ${usedPrefix}mercadolibre*
  ╰━━━━━━━━━━━━
 
  ╭━〔 ❄️ 𝐆𝐑𝐔𝐏𝐎𝐒 ❄️〕
@@ -211,19 +208,21 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ ❄️ ${usedPrefix}pixelar*
  ╰━━━━━━━━━━━━
 
-*╭━〔  𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 〕*
-*┊꒱ 🥀 ${usedPrefix}piropo*
-*┊꒱ 🥀 ${usedPrefix}consejo*
-*┊꒱ 🥀 ${usedPrefix}fraseromantica*
+*╭━〔 💌 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 💌〕*
+*┃➤ 🥀 ${usedPrefix}piropo*
+*┃➤ 🥀 ${usedPrefix}consejo*
+*┃➤ 🥀 ${usedPrefix}fraseromantica*
  ╰━━━━━━━━━━━━
 
- ╭━〔   𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ⛅  〕*
-*┊꒱ 🔍 ${usedPrefix}xnxxsearch <texto>*
-*┊꒱ 🔍 ${usedPrefix}google <texto>*
-*┊꒱ 🔍 ${usedPrefix}letra <texto>*
-*┊꒱ 🔍 ${usedPrefix}wikipedia <texto>*
-*┊꒱ 🔍 ${usedPrefix}ytsearch <texto>*
-*┊꒱ 🔍 ${usedPrefix}playstore <texto>*
+ ╭━〔 ✨ 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ✨  〕*
+*┃➤ 🔍 ${usedPrefix}xnxxsearch*
+*┃➤ 🔍 ${usedPrefix}google*
+*┃➤ 🔍 ${usedPrefix}letra*
+*┃➤ 🔍 ${usedPrefix}wikipedia*
+*┃➤ 🔍 ${usedPrefix}ytsearch*
+*┃➤ 🔍 ${usedPrefix}playstore*
+*┃➤ 🔍 ${usedPrefix}mercadolibre*
+*┃➤ 🔍 ${usedPrefix}pornhubsearch*
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ⛅  〕
