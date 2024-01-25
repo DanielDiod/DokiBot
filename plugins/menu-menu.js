@@ -171,23 +171,26 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 📥 ${usedPrefix}ytmp3*
 *┃➤ 📥 ${usedPrefix}ytmp4*
 *┃➤ 📥 ${usedPrefix}imagen*
+*┃➤ 📥 ${usedPrefix}iaimagen*
 *┃➤ 📥 ${usedPrefix}pinteres*
 *┃➤ 📥 ${usedPrefix}igstory*
-*┃➤ 📥 ${usedPrefix}pornhubsearsh*
+*┃➤ 📥 ${usedPrefix}pornhubsearch*
+*┃➤ 📥 ${usedPrefix}mercadolibre*
  ╰━━━━━━━━━━━━
 
- ╭━〔  𝐆𝐑𝐔𝐏𝐎𝐒 〕
-*┊꒱ 👥 ${usedPrefix}kick <@tag>*
-*┊꒱ 👥 ${usedPrefix}grupo <abrir / cerrar>*
-*┊꒱ 👥 ${usedPrefix}promote <@tag>*
-*┊꒱ 👥 ${usedPrefix}demote <@tag>*
-*┊꒱ 👥 ${usedPrefix}demote <@tag>*
-*┊꒱ 👥 ${usedPrefix}link*
-*┊꒱ 👥 ${usedPrefix}invocar <texto>*
-*┊꒱ 👥 ${usedPrefix}setwelcome <texto>*
-*┊꒱ 👥 ${usedPrefix}setbye <texto>*
-*┊꒱ 👥 ${usedPrefix}hidetag <texto>*
-*┊꒱ 👥 ${usedPrefix}fantasmas*
+ ╭━〔 ❄️ 𝐆𝐑𝐔𝐏𝐎𝐒 ❄️〕
+*┃➤ 👥 ${usedPrefix}kick <@tag>*
+*┃➤ 👥 ${usedPrefix}grupo <abrir / cerrar>*
+*┃➤ 👥 ${usedPrefix}promote <@tag>*
+*┃➤ 👥 ${usedPrefix}demote <@tag>*
+*┃➤ 👥 ${usedPrefix}demote <@tag>*
+*┃➤ 👥 ${usedPrefix}link*
+*┃➤ 👥 ${usedPrefix}invocar <texto>*
+*┃➤ 👥 ${usedPrefix}setwelcome <texto>*
+*┃➤ 👥 ${usedPrefix}setbye <texto>*
+*┃➤ 👥 ${usedPrefix}hidetag <texto>*
+*┃➤ 👥 ${usedPrefix}fantasmas*
+*┃➤ 👥 ${usedPrefix}kickfantasmas*
  ╰━━━━━━━━━━━━
 
 *╭━〔  𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 〕*
