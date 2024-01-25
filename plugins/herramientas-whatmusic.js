@@ -29,7 +29,7 @@ const handler = async (m) => {
 `.trim();
     fs.unlinkSync(`./tmp/${m.sender}.${ext}`);
     m.reply(txt);
-  } else throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾*';
+  } else throw '*🚩 Responde a un audio o video.*';
 };
 handler.command = /^quemusica|quemusicaes|whatmusic$/i;
 export default handler;
