@@ -10,10 +10,10 @@ try {
 await m.react('🕓')
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play.1') {
+if (command === '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓') {
 additionalText = '*Shana-Bot*'
 } else if (command === 'play2.2') {
-additionalText = '*Shana-Bot*'}
+additionalText = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'}
 await conn.sendMessage(m.chat, {
 text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
