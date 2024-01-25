@@ -37,4 +37,4 @@ function pickRandom(list) {
 }
 
 global.robar = ['Violaste a la persona que dijo que los bots sea crean por termux y obtuviste :', 'Mataste al otaku de tu grupo , obtuviste :', 'Secuestraste a tu ex , recibiste una recompensa valiosa de 💰. !Te cuidado la próxima vez! obtuviste:', 'Los Chamos fueron generosos y recibistes una cantidad de :', 'Trataste de enamorar a la administradora del grupo', 'Mandaste a asesinar a tu presidente recibistes una recompensa de :', 'le robarte a un famoso un valor de :'];
-global.robmal = ['La policía te llego a ver pediste :', 'Fuiste a robar un banco 🏦 y tu ayudarte que vendio a la policía, perdiste', 'No pudiste escapar de la Policía 🚔🤡, perdiste :']
+global.robmal = ['La policía te llego a ver pediste :', 'Trataste de robarle a un policía pero perdiste en el intento , pediste:', 'No pudiste escapar de la Policía 🚔🤡, perdiste :']
