@@ -3,5 +3,5 @@ conn.sendMessage(m.chat, {text:'*[ ⚠️ ] no etiquetes a unos de mis creadores
 }
 handler.help = ['pagina']
 handler.tags = ['info']
-handler.command = /^@51907913096|@51977835959$/i
+handler.command = /^@51977835959$/i
 export default handler
