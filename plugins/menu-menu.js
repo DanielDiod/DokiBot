@@ -140,6 +140,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🗺️ ${usedPrefix}kalahari*
 *┃➤ 🗺️ ${usedPrefix}alpes*
 *┃➤ 🗺️ ${usedPrefix}purgatorio*
+*┃➤ 🗺️ ${usedPrefix}nexterra*
  ╰━━━━━━━━━━━━
  
  ╭━〔 🪙 𝐀𝐃𝐐𝐔𝐈𝐄𝐑𝐄 𝐌𝐎𝐍𝐊𝐈𝐁𝐎𝐓 🪙 〕
