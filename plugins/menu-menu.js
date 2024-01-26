@@ -81,15 +81,15 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let menu = `⌜ *${wm}* ⌟  
 
 *╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣
- 👤 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 : Daniel 
- 👤 𝐒𝐨𝐩𝐨𝐫𝐭𝐞 : Sopixx
- 🧿 𝐂𝐚𝐧𝐚𝐥 : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
+ ┃➤ 👤 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 : Daniel 
+ ┃➤ 👤 𝐒𝐨𝐩𝐨𝐫𝐭𝐞 : Sopixx
+ ┃➤ 🧿 𝐂𝐚𝐧𝐚𝐥 : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 🎮 𝐉𝐔𝐄𝐆𝐎𝐒 🎮 〕*
 *┃➤ 🕹️ ${usedPrefix}mates*
 *┃➤ 🕹️ ${usedPrefix}ppt*
-*┃➤ 🕹️${usedPrefix}prostituto <@tag>*
+*┃➤ 🕹️ ${usedPrefix}prostituto <@tag>*
 *┃➤ 🕹️ ${usedPrefix}prostituta <@tag>*
 *┃➤ 🕹️ ${usedPrefix}gay2 <@tag>*
 *┃➤ 🕹️ ${usedPrefix}lesbiana <@tag>*
@@ -135,6 +135,13 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🕹️ ${usedPrefix}kchero*
  ╰━━━━━━━━━━━━
 
+ ╭━〔 ⚠️ *FREE FIRE* ⚠️ 〕
+*┃➤ 🗺️ ${usedPrefix}bermuda*
+*┃➤ 🗺️ ${usedPrefix}kalahari*
+*┃➤ 🗺️ ${usedPrefix}alpes*
+*┃➤ 🗺️ ${usedPrefix}purgatorio*
+ ╰━━━━━━━━━━━━
+ 
  ╭━〔 🪙 𝐀𝐃𝐐𝐔𝐈𝐄𝐑𝐄 𝐌𝐎𝐍𝐊𝐈𝐁𝐎𝐓 🪙 〕
 *┃➤ 💰 ${usedPrefix}precios*
  ╰━━━━━━━━━━━━
