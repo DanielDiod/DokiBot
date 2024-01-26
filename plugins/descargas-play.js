@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `╰──────────✰\n\n`
        txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -109,7 +109,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `╰──────────✰\n\n`
        txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -171,7 +171,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        txt += `╰──────────✰\n\n`
        txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -251,7 +251,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `╰──────────✰\n\n`
        txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
