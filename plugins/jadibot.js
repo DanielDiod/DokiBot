@@ -209,7 +209,7 @@ let handler = async (_0x358e5f, {
                 if (global['db'][_0x12335b(0x1b4)] == null) loadDatabase();
                 if (_0x53de4e == 'open') {
                     _0xf19a3f[_0x12335b(0x172)] = !![], global[_0x12335b(0x15b)][_0x12335b(0x15a)](_0xf19a3f), await _0x227c40[_0x12335b(0x1b6)](_0x358e5f['chat'], {
-                        'text': _0xc266aa[0x0] ? `Conectado con exito\n\n*Nota:* Si necesitas pedir un nuevo código usa */delserbot* para eliminar tu sesión actual` : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nPuede iniciar sesión sin el codigo qr con el siguiente mensaje, envialo cuando no funcione el bot...\n\nEl número del bot puede cambiar, guarda este enlace:\nhttps://shoplinks.to/StarlightsTeam'
+                        'text': _0xc266aa[0x0] ? `Conectado con exito\n\n*Nota:* Si necesitas pedir un nuevo código usa */delserbot* para eliminar tu sesión actual` : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nPuede iniciar sesión sin el codigo qr con el siguiente mensaje, envialo cuando no funcione el bot...\n\nEl número del bot puede cambiar, guarda este enlace:\nhttps://linktr.ee/gaelstreaming'
                     }, {
                         'quoted': _0x358e5f
                     }), await sleep(0x1388);
