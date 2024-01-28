@@ -8,24 +8,34 @@ import axios from 'axios'
 import moment from 'moment-timezone'
 import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
-//---------[ Añada los numeros a ser Propietario/a ]---------
+//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
 
-global.owner = [['51907913096', 'ＰＲＯＰＩＥＴＡＲＩＯ', true], ['51907913096'], ['51907913096'], ['51907913096'], ['51907913096'], ['51907913096'], ['51907913096'], ['51977835959'], ['51907913096']]
-global.mods = ['51907913096']
-global.prems = ['51907913096'],
+global.owner = [ 
+['51907913096', 'Daniel', true],
+['51977835959', 'sopiix', true],
+['51977835959'],
+['51907913096'],
+['51907913096'], 
+['51977835959'],
+['51977835959']]
+
+global.mods = ['51977835959']
+global.prems = ['51977835959'],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
 global.botNumberCode = "" //Ejemplo: +59309090909
 global.confirmCode = "" 
 
-//---------[ IDIOMA : LENGUAJE ]---------
-//es = Español         id = Bahasa Indonesia
-//en = English         pt = Português
-//ar = عرب 
-global.lenguajeGB = es  
+//⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰
+//Agrega el Idioma que quieres que tenga DokiBot
+//  es = Español         id = Bahasa Indonesia
+//  en = English         pt = Português
+//  ar = عرب 
 
-//---------[ APIS GLOBAL ]---------
+global.lenguajeGB = es  //Idioma de DokiBot, Ejemplo: es | en | pt...
+
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.openai_key = 'sk-...OzYy' /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
 global.openai_org_id = 'HITjoN7H8pCwoncEB9e3fSyW' /* Consigue tu ID de organizacion en este enlace: https://platform.openai.com/account/org-settings */
@@ -40,30 +50,38 @@ global.lolkeysapi = 'GataDios'
 global.itsrose = ['4b146102c4d500809da9d1ff']
 global.baileys = '@whiskeysockets/baileys'
 
-global.APIs = {xteam: 'https://api.xteam.xyz', 
-dzx: 'https://api.dhamzxploit.my.id',
-lol: 'https://api.lolhuman.xyz',
-violetics: 'https://violetics.pw',
-neoxr: 'https://api.neoxr.my.id',
-zenzapis: 'https://api.zahwazein.xyz',
-akuari: 'https://api.akuari.my.id',
-akuari2: 'https://apimu.my.id',	
-fgmods: 'https://api-fgmods.ddns.net',
-botcahx: 'https://api.botcahx.biz.id',
-ibeng: 'https://api.ibeng.tech/docs',	
-rose: 'https://api.itsrose.site',
-popcat : 'https://api.popcat.xyz',
-xcoders : 'https://api-xcoders.site' },
-global.APIKeys = {'https://api.xteam.xyz': `${keysxteam}`,
-'https://api.lolhuman.xyz': `${lolkeysapi}`,
-'https://api.neoxr.my.id': `${keysneoxr}`,	
-'https://violetics.pw': 'beta',
-'https://api.zahwazein.xyz': `${keysxxx}`,
-'https://api-fgmods.ddns.net': 'fg-dylux',
-'https://api.botcahx.biz.id': 'Admin',
-'https://api.ibeng.tech/docs': 'tamvan',
-'https://api.itsrose.site': 'Rs-Zeltoria',
-'https://api-xcoders.site': 'Frieren' }
+global.APIs = {
+  xteam: 'https://api.xteam.xyz',
+  dzx: 'https://api.dhamzxploit.my.id',
+  lol: 'https://api.lolhuman.xyz',
+  violetics: 'https://violetics.pw',
+  neoxr: 'https://api.neoxr.my.id',
+  zenzapis: 'https://api.zahwazein.xyz',
+  akuari: 'https://api.akuari.my.id',
+  akuari2: 'https://apimu.my.id',	
+  fgmods: 'https://api-fgmods.ddns.net',
+  botcahx: 'https://api.botcahx.biz.id',
+  ibeng: 'https://api.ibeng.tech/docs',	
+  rose: 'https://api.itsrose.site',
+  popcat : 'https://api.popcat.xyz',
+  xcoders : 'https://api-xcoders.site'
+},
+global.APIKeys = { 
+  'https://api.xteam.xyz': `${keysxteam}`,
+  'https://api.lolhuman.xyz': `${lolkeysapi}`,
+  'https://api.neoxr.my.id': `${keysneoxr}`,	
+  'https://violetics.pw': 'beta',
+  'https://api.zahwazein.xyz': `${keysxxx}`,
+  'https://api-fgmods.ddns.net': 'fg-dylux',
+  'https://api.botcahx.biz.id': 'Admin',
+  'https://api.ibeng.tech/docs': 'tamvan',
+  'https://api.itsrose.site': 'Rs-Zeltoria',
+  'https://api-xcoders.site': 'Frieren'
+}
+
+global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
 global.mods = [] 
 global.cheerio = cheerio
@@ -72,69 +90,73 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment	
 
-//------------------------[ Stickers ]-----------------------------
+//⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
 global.packname = 'Shana'
-global.author = 'by Daniel'
+global.author = 'By Sopi x Daniel'
 
-//------------[ Versión | Nombre | cuentas ]------------
+//⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.wm = 'Shana'
+global.lb = 'Shana'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.tiktok = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.md = 'https://github.com/elrebelde21/LoliBot-MD'
+global.ig = 'https://www.instagram.com/monki_bot'
+global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.fb = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.face = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 
-global.nna = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Update
+global.nna = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Actualización, información sobre el bot
 global.nn = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Grupo 1
 global.nnn = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Grupo 2
 global.nnnt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Grupo del Colaboracion
 global.nnnt2 = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' // Grupo COL 2
 global.nnntt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Grupo COL 3
-global.nnnttt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //enlace lolibot
+global.nnnttt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Canal MonkiBot
 global.nnntttt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33' //Grupo ayuda sobre el bot
-global.bot = 'Wa.me/51907913096'
-global.asistencia = 'wa.me/51907913096'
-global.redes = [nna, nn, nnn, nnnt, nnnt2, nnntt, nnnttt, yt, md, tiktok]
+global.asistencia = 'wa.me/51906641131' //Dudas? escríbeme...
 
-//-------------------------[ IMAGEN ]------------------------------
-global.imagen = fs.readFileSync('./Menu2.jpg')
-global.imagen1 = fs.readFileSync('./media/menus/Menu1.jpg')
-global.imagen2 = fs.readFileSync('./media/menus/Menu2.jpg')
-global.imagen3 = fs.readFileSync('./media/menus/Menu3.jpg')
-global.imagen4 = fs.readFileSync('./media/menus/Menu4.jpg')
-global.imagen5 = fs.readFileSync('./media/menus/Menu5.jpg')
-global.imagen6 = fs.readFileSync('./media/menus/Menu6.jpg')
-global.vid1 = fs.readFileSync('./media/menus/Menuvid1.mp4') 
-global.img = [imagen, imagen1, imagen2, imagen3, imagen4, imagen5, imagen6]
+//⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
 
-//------------------------[ Info | Datos ]---------------------------
+global.rg = '*[🛑 INFORMATION 🛑]*\n\n'
+global.resultado = rg
+global.ag = '*[🛑 INFORMATION 🛑]*\n\n'
+global.advertencia = ag
+global.iig = '*[🛑 INFORMATION 🛑]*\n\n'
+global.informacion = iig
+global.fg = '*[🛑 INFORMATION 🛑]*\n\n'
+global.fallo = fg
+global.mg = '*[🛑 INFORMATION 🛑]*\n\n'
+global.mal = mg
+global.eeg = '*[🛑 INFORMATION 🛑]*\n\n'
+global.envio = eeg
+global.eg = '*[🛑 INFORMATION 🛑]*\n\n'
+global.exito = eg
 
+//⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
+
+global.wm = 'Shana'
+global.igfg = 'Shana'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▭*'
-global.waittttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▬*'
-global.rg = '[INFORMACION]\n\n'
-global.resultado = rg
-global.ag = '[INFORMACION]\n\n'
-global.advertencia = ag
-global.iig = '[INFORMACION]\n\n'
-global.informacion = iig
-global.fg = '[INFORMACION]\n\n'
-global.fallo = fg
-global.mg = '[INFORMACION]\n\n'
-global.mal = mg
-global.eeg = '[INFORMACION]\n\n'
-global.envio = eeg
-global.eg = '[INFORMACION]\n\n'
-global.exito = eg
-
-//----------------------------[ NIVELES | RPG ]---------------------------------
-
+global.nomorown = 'Shana'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
+
+//⊱ ━━━━━.⋅ IMG ⋅.━━━━ ⊰
+
+global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpg')
+global.imagen2 = fs.readFileSync('./media/menus/img1.jpg')
+global.imagen3 = fs.readFileSync('./media/menus/img2.jpg')
+global.img = 'https://i.imgur.com/H6AofpJl.jpg'
+global.img2 = 'https://i.imgur.com/R1uVUId.jpeg'
+
+global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, nnntttt, md, ig, lb, fb, yt]
+global.gataMenu = [img, img2]
+global.gataVidMenu = ['https://a.uguu.se/RqbiXfNg.mp4', 'https://a.uguu.se/uoZBfOyV.mp4', './media/menus/Menuvid1.mp4']
+global.gataImg = [imagen1, imagen2, imagen3]
+
+//⊱ ━━━━━.⋅ RPG ⋅.━━━━ ⊰
+
 global.flaaa = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
@@ -170,9 +192,9 @@ message: {
 'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
 }}}
 
-//----------------------------------------------------
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.multiplier = 150 // Cuanto más alto, más difícil subir de nivel
+global.multiplier = 90 // Cuanto más alto, más difícil subir de nivel
 global.rpg = {
 emoticon(string) {
 string = string.toLowerCase()
@@ -352,8 +374,6 @@ let results = Object.keys(emotttt).map(v => [v, new RegExp(v, 'gi')]).filter(v =
 if (!results.length) return ''
 else return emotttt[results[0][0]]
 }}
-
-//----------------------------------------------------
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
