@@ -147,11 +147,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🗺️ ${usedPrefix}purgatorio*
 *┃➤ 🗺️ ${usedPrefix}nexterra*
  ╰━━━━━━━━━━━━
- 
- ╭━〔 🪙 𝐀𝐃𝐐𝐔𝐈𝐄𝐑𝐄 𝐌𝐎𝐍𝐊𝐈𝐁𝐎𝐓 🪙 〕
-*┃➤ 💰 ${usedPrefix}precios*
- ╰━━━━━━━━━━━━
-
 
  ╭━〔 🧿 𝐆𝐄𝐍𝐄𝐑𝐀 𝐏𝐋𝐀𝐓𝐀𝐅𝐎𝐑𝐌𝐀𝐒 🧿 〕
 *┃➤ 🌐 ${usedPrefix}cuentas*
@@ -277,7 +272,7 @@ externalAdReply: {
 title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/GbrlQFMXcMb39vOpNaNsZ2',
+sourceUrl: 'https://chat.whatsapp.com/Bbw7JoHvMWw040uYE5GQ79',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
