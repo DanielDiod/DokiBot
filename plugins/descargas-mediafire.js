@@ -15,7 +15,7 @@ let caption = `
 *↻ Espera soy lenta. . .*
 `.trim()
 if (filesizeH.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
-await conn.reply(m.chat, caption, m, adReply)
+await conn.reply(m.chat, caption, m)
 await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 await m.react('✅')
 }
