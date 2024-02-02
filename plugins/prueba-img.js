@@ -17,7 +17,7 @@ global.pack = [
   "https://telegra.ph/file/df73fbe13f23c8367ca74.jpg",
   "https://telegra.ph/file/dce3eba5946d3962dfb70.jpg",
   "https://telegra.ph/file/ea11c90185d6caf550bcd.jpg",
-  "https://telegra.ph/file/8e398585865bc94030ce7.jpg",
+  "https://telegra.ph/file/b89bda12fe332c1bf680c.jpg",
 ];
 
 handler.limit = 3;
