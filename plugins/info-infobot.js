@@ -8,11 +8,13 @@ let format = sizeFormatter({
     std: 'JEDEC',
     decimalPlaces: 2,
     keepTrailingZeroes: false,
+    render: (literal, symbol) => `${literal} ${symbol}B`,
 })
 
 let handler = async (m, { conn, usedPrefix }) => {
    let bot = global.db.data.settings[conn.user.jid]
-   let _uptime = process.uptime() * 1000
+   let _uptime = process.uptime() * 50
+   let uptime = (_uptime).toTimeString()
    let totalreg = Object.keys(global.db.data.users).length
    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
    const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) //groups.filter(v => !v.read_only)
@@ -53,8 +55,8 @@ let handler = async (m, { conn, usedPrefix }) => {
    let latensi = speed() - timestamp
    let teks = ` –  *I N F O  B O T*
 
-┌  ✩  *Creador* : Daniel 🇦🇱
-│  ✩  *Prefijo* : / | . | #
+┌  ✩  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
+│  ✩  *Prefijo* : [  ${usedPrefix}  ]
 │  ✩  *Plataforma* : ${platform()}
 │  ✩  *Servidor* : ${hostname()}
 │  ✩  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
@@ -75,7 +77,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 *≡  _NodeJS Uso de memoria_*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}`
-await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎⭐˖ ⸙',body: false, previewType: 0, thumbnail: miniurl, sourceUrl: 'https://chat.whatsapp.com/JKTtlxj8K2U4utBtFXhd9Z'}}})
+await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎⭐˖ ⸙',body: false, previewType: 0, thumbnail: miniurl, sourceUrl: ''}}})
 }
 
 handler.help = ['info']
