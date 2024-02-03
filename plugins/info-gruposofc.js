@@ -1,35 +1,36 @@
-let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `*Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a los grupos oficiales para pasar un rato agradable usando el Bot o platicando con la familia de LoliBot-MD 😸*
+let media = './Menu2.jpg'
+let handler = async (m, { conn, command }) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let str = `*Hola usuario estos son los grupos ofc de Shana-bo*
 
-➤ Grupos oficiales del bot:
-1) *${nn}*
-
-2) *${nnn}*
-
-➤ Grupo del Colaboracion LoliBot, GataBot-MD
- *${nnnt}*
-
-➤ Grupo del colaboración LoliBot, DorratBot-MD
-*${nnnt2}*
-
-➤ Grupo del col 3 (sin limite)
-*${nnntt}*
-
-➤ Infomarte sobre las nuevas actualizaciones del bot
- *${nna}*
+📎 *Shana-Bot 🈴*
  
-➤ Grupos del ayuda sobre el bot
- *${nnntttt}*
- 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+https://chat.whatsapp.com/JKTtlxj8K2U4utBtFXhd9Z
 
-*⇶⃤꙰𝑬𝒏𝒍𝒂𝒄𝒆 𝒍𝒐𝒍𝒊𝒃𝒐𝒕ꦿ⃟⃢*
-*${nnnttt}*`.trim() 
-conn.reply(m.chat, info, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: `${wm}`,
-body: '', previewType: 0, thumbnail: imagen2, sourceUrl: nna}}})
-//conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', 'status@broadcast')
-}
-handler.command = /^linkgc|grupos|gruposgatabot|gatabotgrupos|gruposdegatabot|groupofc|gruposgb|grupogb|groupgb$/i
+📎 *Canal ⭐*
+
+https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
+
+⚙️ *Grupos En Colaboración:*
+
+1 _Shana-Bot & NovaBot_
+
+https://chat.whatsapp.com/C7g96LhthOb6I8QMye9GrI
+
+2 SakuraBot & Shana-Bot
+
+ https://chat.whatsapp.com/HjtosKShIYcE0xldUFSnkF
+
+─────────────
+🧿Si se restableció los enlaces comunicate con mi creador usa el comando #creador para comunicarte con el 🌟`
+await conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)}
+/*conn.sendHydrated(m.chat, str, `𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼\n\n\n` + wm, media, 'https://github.com', 'Shana-Bot', null, null, [
+['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', '.cuentassb'],
+['🎁 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)}*/
+
+handler.command = /^grupos|gruposofc$/i
+handler.exp = 33
+
 export default handler
