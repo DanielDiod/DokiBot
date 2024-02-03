@@ -8,8 +8,9 @@ let format = sizeFormatter({
     std: 'JEDEC',
     decimalPlaces: 2,
     keepTrailingZeroes: false,
-    render: (literal, symbol) => `${literal} ${symbol}B`,})
 
+    
+})
 let handler = async (m, { conn, usedPrefix }) => {
    let bot = global.db.data.settings[conn.user.jid]
    let _uptime = process.uptime() * 1000
