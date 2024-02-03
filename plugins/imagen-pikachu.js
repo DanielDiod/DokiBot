@@ -5,7 +5,7 @@ let handler = async (m, {conn, command}) => {
      url, 
      "gimage.jpg", 
      ` 
- Goku`.trim(), m)
+ Pikachu`.trim(), m)
 };
 handler.help = ["pikachu"];
 handler.tags = ["internet"];
