@@ -8,6 +8,8 @@ import { sizeFormatter } from 'human-readable'
 
 let handler = async (m, { conn, usedPrefix }) => {
    let bot = global.db.data.settings[conn.user.jid]
+   let _uptime = process.uptime() * 1000
+   let uptime = (_uptime).toTimeString()
    let totalreg = Object.keys(global.db.data.users).length
    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
    const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) //groups.filter(v => !v.read_only)
@@ -28,12 +30,24 @@ let handler = async (m, { conn, usedPrefix }) => {
    }, {
       speed: 0,
       total: 0,
+      times: {
          user: 0,
          nice: 0,
          sys: 0,
          idle: 0,
          irq: 0
       }
+   })
+   let _muptime
+   if (process.send) {
+      process.send('uptime')
+      _muptime = await new Promise(resolve => {
+         process.once('message', resolve)
+         setTimeout(resolve, 1000)
+      }) * 1000
+   }
+   let timestamp = speed()
+   let latensi = speed() - timestamp
    let teks = ` –  *I N F O  B O T*
 
 ┌  ✩  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
@@ -43,6 +57,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  ✩  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
 │  ✩  *FreeRAM* : ${format(freemem())}
 │  ✩  *Speed* : ${latensi.toFixed(4)} ms
+│  ✩  *Uptime* : ${uptime}
 │  ✩  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
 └  ✩  *Registrados* : ${totalreg} Usuarios
 
