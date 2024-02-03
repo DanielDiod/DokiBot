@@ -55,7 +55,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  ✩  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
 │  ✩  *FreeRAM* : ${format(freemem())}
 │  ✩  *Speed* : ${latensi.toFixed(4)} ms
-│  ✩  *Uptime* : ${uptime}
 │  ✩  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
 └  ✩  *Registrados* : ${totalreg} Usuarios
 
