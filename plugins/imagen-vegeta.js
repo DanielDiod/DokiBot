@@ -15,9 +15,7 @@ export default handler;
 global.pack = [
   "https://telegra.ph/file/1a04073abb1951612fc7f.jpg",
   "https://telegra.ph/file/541a5523424c67ca65bed.jpg",
-  "https://telegra.ph/file/260660a398e0d07360ba6.jpg",
-  "https://telegra.ph/file/aba8cbbe1a1c7dc727a19.jpg",
-  "https://telegra.ph/file/1fbb857f22b30578ae1b6.jpg",
+  "https://telegra.ph/file/ae1323315708ff728ff01.jpg",
 ];
 
 handler.limit = 3;
