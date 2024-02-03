@@ -34,9 +34,6 @@ let handler = async (m, { conn, usedPrefix }) => {
          idle: 0,
          irq: 0
       }
-   }
-   let timestamp = speed()
-   let latensi = speed() - timestamp
    let teks = ` –  *I N F O  B O T*
 
 ┌  ✩  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
