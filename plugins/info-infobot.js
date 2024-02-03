@@ -28,7 +28,6 @@ let handler = async (m, { conn, usedPrefix }) => {
    }, {
       speed: 0,
       total: 0,
-      times: {
          user: 0,
          nice: 0,
          sys: 0,
