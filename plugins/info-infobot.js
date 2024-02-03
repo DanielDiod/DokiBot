@@ -8,7 +8,6 @@ let format = sizeFormatter({
     std: 'JEDEC',
     decimalPlaces: 2,
     keepTrailingZeroes: false,
-    render: (literal, symbol) => `${literal} ${symbol}B`,
 })
 
 let handler = async (m, { conn, usedPrefix }) => {
