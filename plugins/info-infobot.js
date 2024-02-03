@@ -6,7 +6,7 @@ import { sizeFormatter } from 'human-readable'
 
 let format = sizeFormatter({
     std: 'JEDEC',
-    decimalPlaces: 2,
+    decimalPlaces: 0,
     keepTrailingZeroes: false,
 })
 
