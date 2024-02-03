@@ -55,8 +55,8 @@ let handler = async (m, { conn, usedPrefix }) => {
    let latensi = speed() - timestamp
    let teks = ` –  *I N F O  B O T*
 
-┌  ✩  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
-│  ✩  *Prefijo* : [  ${usedPrefix}  ]
+┌  ✩  *Creador* : Daniel 🇦🇱
+│  ✩  *Prefijo* : / | . | #
 │  ✩  *Plataforma* : ${platform()}
 │  ✩  *Servidor* : ${hostname()}
 │  ✩  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
