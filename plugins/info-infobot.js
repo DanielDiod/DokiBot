@@ -4,6 +4,10 @@ import speed from 'performance-now'
 import { performance } from 'perf_hooks'
 import { sizeFormatter } from 'human-readable'
 
+let format = sizeFormatter({
+    std: 'JEDEC',
+    decimalPlaces: 2,
+    keepTrailingZeroes: false,
 })
 
 let handler = async (m, { conn, usedPrefix }) => {
