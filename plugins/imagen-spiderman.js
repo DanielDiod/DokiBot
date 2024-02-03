@@ -7,9 +7,9 @@ let handler = async (m, {conn, command}) => {
      ` 
  Spiderman`.trim(), m)
 };
-handler.help = ["goku"];
+handler.help = ["spiderman"];
 handler.tags = ["internet"];
-handler.command = /^(goku)$/i;
+handler.command = /^(spiderman)$/i;
 export default handler;
 
 global.pack = [
