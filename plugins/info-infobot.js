@@ -8,7 +8,7 @@ import { sizeFormatter } from 'human-readable'
 
 let handler = async (m, { conn, usedPrefix }) => {
    let bot = global.db.data.settings[conn.user.jid]
-   let _uptime = process.uptime() * 100
+   let _uptime = process.uptime() * 1000
    let uptime = (_uptime).toTimeString()
    let totalreg = Object.keys(global.db.data.users).length
    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
