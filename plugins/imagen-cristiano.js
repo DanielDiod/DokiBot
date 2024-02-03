@@ -5,7 +5,7 @@ let handler = async (m, {conn, command}) => {
      url, 
      "gimage.jpg", 
      ` 
- Cristiano Ronaldo`.trim(), m)
+ CristianoRonaldo`.trim(), m)
 };
 handler.help = ["cristiano"];
 handler.tags = ["internet"];
@@ -13,11 +13,11 @@ handler.command = /^(cristiano)$/i;
 export default handler;
 
 global.pack = [
-  "https://telegra.ph/file/b20127fd54a1fd462faf2.jpg",
-  "https://telegra.ph/file/82b96fef625a47a4b1250.jpg",
-  "https://telegra.ph/file/9b2d2a129def992084406.jpg",
-  "https://telegra.ph/file/edb670744120a67b254d6.jpg",
-  "https://telegra.ph/file/2609b9d8006f4b96e223e.jpg",
+  "https://telegra.ph/file/f63e8fdc4b5b04e7bc20c.jpg",
+  "https://telegra.ph/file/ad094777d59bab113a2a4.jpg",
+  "https://telegra.ph/file/df2c58e93b091a1ab5055.jpg",
+  "https://telegra.ph/file/52d9768b081df6c66c028.jpg",
+  "https://telegra.ph/file/ae7d1003c7527806678df.jpg",
 ];
 
 handler.limit = 3;
