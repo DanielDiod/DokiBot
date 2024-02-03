@@ -5,15 +5,15 @@ let handler = async (m, {conn, command}) => {
      url, 
      "gimage.jpg", 
      ` 
- Goku`.trim(), m)
+ lora`.trim(), m)
 };
-handler.help = ["goku"];
+handler.help = ["lora"];
 handler.tags = ["internet"];
-handler.command = /^(goku)$/i;
+handler.command = /^(lora)$/i;
 export default handler;
 
 global.pack = [
-  "https://telegra.ph/file/df73fbe13f23c8367ca74.jpg",
+  "https://telegra.ph/file/05f973588e0d6a1eb8516.jpg",
   "https://telegra.ph/file/df73fbe13f23c8367ca74.jpg",
   "https://telegra.ph/file/dce3eba5946d3962dfb70.jpg",
   "https://telegra.ph/file/ea11c90185d6caf550bcd.jpg",
