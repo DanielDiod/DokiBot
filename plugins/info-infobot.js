@@ -19,7 +19,6 @@ let handler = async (m, { conn, usedPrefix }) => {
    const used = process.memoryUsage()
    const cpus = _cpus().map(cpu => {
       cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
-      return cpu
    })
    const cpu = cpus.reduce((last, cpu, _, { length }) => {
       last.total += cpu.total
