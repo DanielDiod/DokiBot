@@ -197,11 +197,11 @@ echo -e "\e[35m
 ────────────────────────────────────────────────────\n\e[0m"
 
 echo -e "\033[1;35m"
-git clone https://github.com/elrebelde21/The-LoliBot-MD.git
+git clone https://github.com/DanielDiod/DokiBot.git
 echo -e "\033[01;32m\033[01mLa clonación se ha descargado e instalado correctamente..\n\033[0m"
 
 echo -e "\033[01;32m\033[01mCambiando al directorio del repositorio!!\n\033[0m" 
-cd The-LoliBot-MD
+cd DokiBot
 
 echo -e "\e[36m
 ██╗███╗░░██╗░██████╗████████╗░█████╗░██╗░░░░░██╗░░░░░  ███╗░░██╗██████╗░███╗░░░███╗
@@ -219,7 +219,7 @@ if npm install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to loc
 error=$(npm install 2>&1 >/dev/null)
 echo -e "\033[0;31mError: $error\033[0m" 
 echo -e "\033[0;34mNo se pudo instalar NPM. Verifique su conexión a Internet e inténtelo de nuevo. Si el error continúa, instale de forma manual!!\nIf the error continues, install manually!!\033[0m" 
-echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn -y\npkg install npm -y\ngit clone https://github.com/elrebelde21/The-LoliBot-MD\ncd The-LoliBot-MD\nnpm install\nyarn install\nnpm start\033[0m"
+echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn -y\npkg install npm -y\ngit clone https://github.com/DanielDiod/DokiBot\ncd DokiBot\nnpm install\nyarn install\nnpm start\033[0m"
 exit 1
 else
 echo -e "\033[01;32m\033[01mNPM se ha instalado correctamente..\n\033[0m" 
@@ -241,7 +241,7 @@ if yarn install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to lo
 error=$(yarn install 2>&1 >/dev/null)
 echo -e "\033[0;31mError: $error\033[0m" 
 echo -e "\033[0;34mNo se pudo instalar Yarn. Verifique su conexión a Internet e inténtelo de nuevo. Si el error continúa, instale de forma manual!!\nIf the error continues, install manually!!\033[0m" 
-echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn\ngit clone https://github.com/elrebelde21/The-LoliBot-MD\ncd The-LoliBot-MD\nnpm install\nyarn install\nnpm start\033[0m"
+echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn\ngit clone https://github.com/DanielDiod/DokiBot\ncd DokiBot\nnpm install\nyarn install\nnpm start\033[0m"
 exit 1
 else
 echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.....\n\033[0m" 
@@ -254,7 +254,7 @@ v1="${b}\033[32m"
 b="\033[0m"
 
 menu() {
-	#The-LoliBot-MD
+	#DokiBot
 	echo -e "${v1} MENÚ DE CONFIGURACIÓN"
 	printf "\n"
 	printf "${v1}[${b}01${v1}]${v} Visistar Grupo de Actualizaciones\n"
@@ -272,7 +272,7 @@ menu_ayuda() {
 	read opcion
 	case $opcion in
             01|1)
-                am start -a android.intent.action.VIEW https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o &>> /dev/null
+                am start -a android.intent.action.VIEW https://chat.whatsapp.com/JKTtlxj8K2U4utBtFXhd9Z &>> /dev/null
                 echo -e "${b}[${v1}++${b}]${v} Accediendo al Grupo Oficial\n"
                 
                 ;;
@@ -330,5 +330,5 @@ _______░▒▓██
 _____░▒▓██\n\e[0m"
     
 sleep 15 && pkill mpv > /dev/null 2>&1 && sleep 2 && rm -f /data/data/com.termux/files/home/"$random_mp3" &
-echo -e "\033[01;32m\033[01mIniciando LoliBot!!\n\033[0m"
+echo -e "\033[01;32m\033[01mIniciando DokiBot!!\n\033[0m"
 npm start
