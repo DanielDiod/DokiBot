@@ -286,7 +286,7 @@ externalAdReply: {
 title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/Bbw7JoHvMWw040uYE5GQ79',
+sourceUrl: 'https://chat.whatsapp.com/JKTtlxj8K2U4utBtFXhd9Z',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
