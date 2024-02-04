@@ -85,13 +85,14 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 
 let menu = `⌜ *${wm}* ⌟  
 
-*╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣
- ┃➤ 👤 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 : Daniel 
- ┃➤ 👤 𝐒𝐨𝐩𝐨𝐫𝐭𝐞 : Sopixx
- ┃➤ 🧿 𝐂𝐚𝐧𝐚𝐥 : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
-*╰━━━━━━━━━━━━⬣*
+ ╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣
+*┃➤ 👤 Creador : Daniel 🇦🇱* 
+*┃➤ 👤 Soporte : Sopixx*
+*┃➤ 🧿 Canal : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP3
+*┃➤ ⌛ Tiempo activo : #uptime*
+ ╰━━━━━━━━━━━━⬣
 
-*╭━〔 🎮 𝐉𝐔𝐄𝐆𝐎𝐒 🎮 〕*
+ ╭━〔 🎮 𝐉𝐔𝐄𝐆𝐎𝐒 🎮 〕
 *┃➤ 🕹️ ${usedPrefix}mates*
 *┃➤ 🕹️ ${usedPrefix}ppt*
 *┃➤ 🕹️ ${usedPrefix}prostituto <@tag>*
