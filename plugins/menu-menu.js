@@ -157,7 +157,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🖍️ ${usedPrefix}spiderman*
 *┃➤ 🖍️ ${usedPrefix}batman*
 *┃➤ 🖍️ ${usedPrefix}hellokitty*
-*┃➤ 🖍️ ${usedPrefix}goku*
+*┃➤ 🖍️ ${usedPrefix}charmander*
  ╰━━━━━━━━━━━━
  
 
