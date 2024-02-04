@@ -146,7 +146,20 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🗺️ ${usedPrefix}alpes*
 *┃➤ 🗺️ ${usedPrefix}purgatorio*
 *┃➤ 🗺️ ${usedPrefix}nexterra*
+*┃➤ 📋 ${usedPrefix}agendasemanal*
  ╰━━━━━━━━━━━━
+
+ ╭━〔 🎭 *IMAGENES* 🎭 〕
+*┃➤ 🖍️ ${usedPrefix}goku*
+*┃➤ 🖍️ ${usedPrefix}vegeta*
+*┃➤ 🖍️ ${usedPrefix}lora*
+*┃➤ 🖍️ ${usedPrefix}cr7*
+*┃➤ 🖍️ ${usedPrefix}spiderman*
+*┃➤ 🖍️ ${usedPrefix}batman*
+*┃➤ 🖍️ ${usedPrefix}hellokitty*
+*┃➤ 🖍️ ${usedPrefix}goku*
+ ╰━━━━━━━━━━━━
+ 
 
  ╭━〔 🧿 𝐆𝐄𝐍𝐄𝐑𝐀 𝐏𝐋𝐀𝐓𝐀𝐅𝐎𝐑𝐌𝐀𝐒 🧿 〕
 *┃➤ 🌐 ${usedPrefix}cuentas*
