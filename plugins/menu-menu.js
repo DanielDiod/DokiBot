@@ -263,6 +263,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🍁 ${usedPrefix}minar*
 *┃➤ 🍁 ${usedPrefix}buy*
 *┃➤ 🍁 ${usedPrefix}work*
+*┃➤ 🍁 ${usedPrefix}mendigar*
 *┃➤ 🍁 ${usedPrefix}transfer*
  ╰━━━━━━━━━━━━
 
@@ -273,7 +274,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ ☁️ ${usedPrefix}qc*
  ╰━━━━━━━━━━━━
 
-SHANA BOT || DANIEL X SOPIIX`.trim()
+SHANA BOT || DANIEL`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
