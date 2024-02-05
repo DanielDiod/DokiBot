@@ -12,7 +12,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 global.owner = [ 
 ['51907913096', 'Daniel', true],
-['51967647592', 'Dalii', true],
+['51977835959', 'sopixx', true],
 ['51967647592'],
 ['51907913096'],
 ['51907913096'], 
