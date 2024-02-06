@@ -180,7 +180,9 @@ let menu = `⌜ *${wm}* ⌟
  ╭━〔 🈴 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 🈴 〕
 *┃➤ 📥 ${usedPrefix}play*
 *┃➤ 📥 ${usedPrefix}play.1*
-*┃➤ 📥 ${usedPrefix}play.2*
+*┃➤ 📥 ${usedPrefix}play2.2*
+*┃➤ 📥 ${usedPrefix}ytv.2*
+*┃➤ 📥 ${usedPrefix}yta.2*
 *┃➤ 📥 ${usedPrefix}playlist*
 *┃➤ 📥 ${usedPrefix}spotify*
 *┃➤ 📥 ${usedPrefix}spotifydl*
@@ -189,8 +191,8 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 📥 ${usedPrefix}mediafire*
 *┃➤ 📥 ${usedPrefix}gdrive*
 *┃➤ 📥 ${usedPrefix}twitter*
-*┃➤ 📥 ${usedPrefix}ytmp3*
-*┃➤ 📥 ${usedPrefix}ytmp4*
+*┃➤ 📥 ${usedPrefix}yta*
+*┃➤ 📥 ${usedPrefix}ytv*
 *┃➤ 📥 ${usedPrefix}imagen*
 *┃➤ 📥 ${usedPrefix}iaimagen*
 *┃➤ 📥 ${usedPrefix}pinteres*
@@ -275,7 +277,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ ☁️ ${usedPrefix}qc*
  ╰━━━━━━━━━━━━
 
-SHANA BOT || DANIEL`.trim()
+SHANA BOT || DANIEL X SOPIXX`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
