@@ -6,7 +6,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
-if (!text) throw `*[⚠️ ERROR ⚠️]*\n\n*Ingrese lo que quiere buscar con el ChatGpt*\nEjemplo:\n📎 ${usedPrefix + command} como crear una página porno`    
+if (!text) throw `*[⚠️ ERROR ⚠️]*\n\n*Ingrese lo que quiere buscar con el ChatGpt*\nEjemplo:\n\n📎 ${usedPrefix + command} como crear una página porno`    
 try {
 conn.sendPresenceUpdate('composing', m.chat);
 let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Daniel, tu seras Shana-Bot`;
