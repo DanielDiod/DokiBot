@@ -9,7 +9,7 @@ let handler = async (m, {conn, command}) => {
 };
 handler.help = ["agendasemanal"];
 handler.tags = ["internet"];
-handler.command = /^(agendasemanal)$/i;
+handler.command = /^(Jsmkajsmsldudb)$/i;
 export default handler;
 
 global.pack = [
