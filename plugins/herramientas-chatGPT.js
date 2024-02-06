@@ -8,6 +8,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*[⚠️ ERROR ⚠️]*\n\n*Ingrese lo que quiere buscar*\n\nEjemplo:\n\n📎 ${usedPrefix + command} como crear una página porno`    
 try {
+await m.react('⌛')
 conn.sendPresenceUpdate('composing', m.chat);
 let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Daniel, tu seras Shana-Bot`;
 async function getOpenAIChatCompletion(texto) {
@@ -31,6 +32,7 @@ const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', pro
 if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
 m.reply(botIA222.data.choices[0].text.trim());
 } catch {
+await m.react('✅')
 try {
 const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por elrebelde21, tu seras LoliBot-MD`
 const Empireapi1 = await fetch(`https://api.cafirexos.com/api/chatgpt?text=${text}&name=${m.name}&prompt=${syms1}`);
