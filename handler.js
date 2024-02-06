@@ -1295,7 +1295,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)  
-m.reply(+m.money + ' Euros usados ðŸª™')
+m.reply(+m.money + ' Euros usados 🪙')
 break
 }}
 } catch (e) {
@@ -1401,7 +1401,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, ' ' + lb + ' ðŸˆ´', 'â™“'].getRandom(),
+"title": [wm, ' ' + lb + ' 🈴', '♓'].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: [md, nna, yt, nnn, nn, ig].getRandom()}}}, { quoted: fkontak2 }) 
