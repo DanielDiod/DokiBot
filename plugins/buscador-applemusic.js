@@ -10,7 +10,7 @@ try {
 let searchResults = await searchPornhub(args[0]);
 let teks = searchResults.result.map((v, i) => 
 `「 *APPLE  - S E A R C H* 」
-• *Título:* ${v.title}
+• *Titulo:* ${v.name}
 • *Duración:* ${v.duration}
 • *Vistas:* ${v.views}
 • *Link:* ${v.url}
