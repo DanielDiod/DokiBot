@@ -29,7 +29,7 @@ async function searchApplemusic(search) {
     const html = response.data;
     const $ = cheerio.load(html);
     const result = [];
-    $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
+    $('ul#SearchResult > li.pcListItem').each(function(a, b) {
       const _title = $(b).find('a').attr('name');
       const _duration = $(b).find('var.duracion').text().trim();
       const _views = $(b).find('var.views').text().trim();
