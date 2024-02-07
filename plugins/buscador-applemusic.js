@@ -33,7 +33,7 @@ async function searchApplemusic(search) {
       const _title = $(b).find('a').attr('name');
       const _duration = $(b).find('var.duracion').text().trim();
       const _views = $(b).find('var.views').text().trim();
-      const _url = 'https://music.apple.com/us/browse' + $(b).find('a').attr('href');
+      const _url = 'https://music.apple.com/us' + $(b).find('a').attr('href');
       const hasil = { title: _title, duration: _duration, views: _views, url: _url };
       result.push(hasil);
     });
