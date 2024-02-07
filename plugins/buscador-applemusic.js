@@ -23,7 +23,7 @@ m.reply(teks);
 }};
 handler.command = /^(appleearch|applemusicsearch)$/i;
 export default handler;
-async function searchPornhub(search) {
+async function searchApplemusic(search) {
   try {
     const response = await axios.get(`https://music.apple.com/us/search?search=${search}`);
     const html = response.data;
