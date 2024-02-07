@@ -30,7 +30,7 @@ async function searchPornhub(search) {
     const $ = cheerio.load(html);
     const result = [];
     $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
-      const _title = $(b).find('a').attr('title');
+      const _title = $(b).find('a').attr('name');
       const _duration = $(b).find('var.duration').text().trim();
       const _views = $(b).find('var.views').text().trim();
       const _url = 'https://music.apple.com/us/browse' + $(b).find('a').attr('href');
