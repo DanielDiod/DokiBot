@@ -11,7 +11,7 @@ let searchResults = await searchPornhub(args[0]);
 let teks = searchResults.result.map((v, i) => 
 `「 *APPLE  - S E A R C H* 」
 • *Titulo:* ${v.name}
-• *Duración:* ${v.duration}
+• *Duración:* ${v.duracion}
 • *Vistas:* ${v.views}
 • *Link:* ${v.url}
 ---------------------------------------------------\n`).join('\n\n');
@@ -31,7 +31,7 @@ async function searchPornhub(search) {
     const result = [];
     $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
       const _title = $(b).find('a').attr('name');
-      const _duration = $(b).find('var.duration').text().trim();
+      const _duration = $(b).find('var.duracion').text().trim();
       const _views = $(b).find('var.views').text().trim();
       const _url = 'https://music.apple.com/us/browse' + $(b).find('a').attr('href');
       const hasil = { title: _title, duration: _duration, views: _views, url: _url };
