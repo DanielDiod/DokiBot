@@ -25,7 +25,7 @@ handler.command = /^(appleearch|applemusicsearch)$/i;
 export default handler;
 async function searchPornhub(search) {
   try {
-    const response = await axios.get(`https://music.apple.com/us/search?q=${search}`);
+    const response = await axios.get(`https://music.apple.com/us/search?search=${search}`);
     const html = response.data;
     const $ = cheerio.load(html);
     const result = [];
