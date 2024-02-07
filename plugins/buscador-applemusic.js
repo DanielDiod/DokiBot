@@ -25,9 +25,9 @@ handler.command = /^(appleearch|applemusicsearch)$/i;
 export default handler;
 async function searchApplemusic(search) {
   try {
-    const response = await axios.get(`https://music.apple.com/us/search?search=${search}`);
+    const response = await axios.get(`https://music.apple.com/us${search}`);
     const html = response.data;
-    const $ = cheerio.load(html);
+    const $ = cheerio.load(https);
     const result = [];
     $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
       const _title = $(b).find('a').attr('name');
