@@ -9,7 +9,7 @@ if (!args[0]) throw `*Formato incorrecto*\nEjemplo:\n\n${usedPrefix + command} u
 try {
 let searchResults = await searchPornhub(args[0]);
 let teks = searchResults.result.map((v, i) => 
-`「 *A P P L E - M U S I X* 」
+`「 *A P P L E - M U S I C* 」
 • *Título:* ${v.title}
 • *Duración:* ${v.duration}
 • *Vistas:* ${v.views}
@@ -25,11 +25,11 @@ handler.command = /^(applearch|applemusicsearch)$/i;
 export default handler;
 async function searchPornhub(search) {
   try {
-    const response = await axios.get(`https://music.apple.com/us/search?search==${search}`);
+    const response = await axios.get(`https://music.apple.com/video/search?search==${search}`);
     const html = response.data;
     const $ = cheerio.load(html);
     const result = [];
-    $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
+    $('ul#videoSearchResult > li.pcvideoListItem').each(function(a, b) {
       const _title = $(b).find('a').attr('title');
       const _duration = $(b).find('var.duration').text().trim();
       const _views = $(b).find('var.views').text().trim();
