@@ -25,7 +25,7 @@ handler.command = /^(appleearch|applemusicsearch)$/i;
 export default handler;
 async function searchApplemusic(search) {
   try {
-    const response = await axios.get(`https://music.apple.com/us${search}`);
+    const response = await axios.get(`https://music.apple.com/us/search?${search}`);
     const html = response.data;
     const $ = cheerio.load(https);
     const result = [];
