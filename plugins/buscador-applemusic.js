@@ -13,7 +13,7 @@ let handler = async (m, {conn, usedPrefix, text }) => {
 	  txt += `	◦  *Duración* : ${res[i].timestamp || '×'}\n`
 	  txt += `	◦  *Publicado* : ${res[i].ago}\n`
 	  txt += `	◦  *Autor* : ${res[i].author.name || '×'}\n`
-	  txt += `	◦  *Url* : ${'https://music.apple.com/us/' + res[i].audioId}\n`
+	  txt += `	◦  *Url* : ${'https://music.apple.com/us/'\n`
 	  }
    await conn.sendFile(m.chat, res[0].image, '', txt, m)
    await m.react('✅')
