@@ -1,46 +1,25 @@
-//Créditos del código Starlight team 
+import yts from 'yt-search'
 
-import cheerio from 'cheerio';
-import axios from 'axios';
-import fetch from 'node-fetch';
-
-let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!args[0]) throw `*Formato incorrecto*\nEjemplo:\n\n${usedPrefix + command} con mi prima`;
-try {
-let searchResults = await searchApplemusic(args[0]);
-let teks = searchResults.result.map((v, i) => 
-`「 *APPLE  - S E A R C H* 」
-• *Titulo:* ${v.name}
-• *Duración:* ${v.duracion}
-• *Vistas:* ${v.views}
-• *Link:* ${v.url}
----------------------------------------------------\n`).join('\n\n');
-if (searchResults.result.length === 0) {
-teks = '*Sin resultados*';
+let handler = async (m, {conn, usedPrefix, text }) => {
+   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m)
+   await m.react('🕓')
+   let results = await yts(text)
+   let res = results.all.map(v => v).filter(v => v.type == "video")
+   if (!res.length) return conn.reply(m.chat, 'No se encontraron resultados, intente con un nombre más Corto.', m).then(_ => m.react('✖️'))
+   let txt = `*Apple - Search*`
+   for (let i = 0; i < (30 <= res.length ? 30 : res.length); i++) {
+      txt += `\n\n`
+	  txt += `	◦  *Titulo* : ${res[i].title}\n`
+	  txt += `	◦  *Duración* : ${res[i].timestamp || '×'}\n`
+	  txt += `	◦  *Publicado* : ${res[i].ago}\n`
+	  txt += `	◦  *Autor* : ${res[i].author.name || '×'}\n`
+	  txt += `	◦  *Url* : ${'https://music.apple.com/us/' + res[i].videoId}\n`
+	  }
+   await conn.sendFile(m.chat, res[0].image, '', txt, m)
+   await m.react('✅')
 }
-m.reply(teks);
-} catch (e) {
-}};
-handler.command = /^(appleearch|applemusicsearch)$/i;
-export default handler;
-async function searchApplemusic(search) {
-  try {
-    const response = await axios.get(`https://music.apple.com/us/search?${search}`);
-    const html = response.data;
-    const $ = cheerio.load(https);
-    const result = [];
-    $('ul#usSearchResult > li.pcusListItem').each(function(a, b) {
-      const _title = $(b).find('a').attr('name');
-      const _duration = $(b).find('var.duracion').text().trim();
-      const _views = $(b).find('var.views').text().trim();
-      const _url = 'https://music.apple.com/us' + $(b).find('a').attr('href');
-      const hasil = { name: _title, duracion: _duration, views: _views, url: _url };
-      result.push(hasil);
-    });
-    
-    return { result };
-  } catch (error) {
-    console.error('Ocurrió un error al buscar en Pornhub:', error);
-    return { result: [] };
-  }
-      }
+handler.help = ['ytsearch']
+handler.tags = ['search']
+handler.command = ['applesearch', 'applemusicsearch']
+handler.register = true 
+export default handler
