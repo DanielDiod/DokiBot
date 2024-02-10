@@ -159,6 +159,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🖍️ ${usedPrefix}batman*
 *┃➤ 🖍️ ${usedPrefix}hellokitty*
 *┃➤ 🖍️ ${usedPrefix}charmander*
+*┃➤ 🖍️ ${usedPrefix}pokedex*
  ╰━━━━━━━━━━━━
  
 
@@ -289,7 +290,7 @@ externalAdReply: {
 title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/JKTtlxj8K2U4utBtFXhd9Z',
+sourceUrl: 'https://chat.whatsapp.com/FolexrXtQXy4v5qGjMYUmD',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
