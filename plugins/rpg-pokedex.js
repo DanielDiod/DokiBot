@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw 'Please provide a Pokemon name to search for.';
+  if (!text) throw '*Proporcione un nombre de Pokémon para buscar*.';
 
   const url = `https://some-random-api.com/pokemon/pokedex?pokemon=${encodeURIComponent(text)}`;
 
@@ -13,13 +13,13 @@ let handler = async (m, { conn, text }) => {
   }
 
   const message = `
-*Name:* ${json.name}
+*Nombre:* ${json.name}
 *ID:* ${json.id}
-*Type:* ${json.type}
-*Abilities:* ${json.abilities}
+*Tipo:* ${json.type}
+*Habilidades:* ${json.abilities}
 *Height:* ${json.height}
 *Weight:* ${json.weight}
-*Description:* ${json.description}
+*Descripción:* ${json.description}
 `;
 
   conn.sendMessage(m.chat, { text: message }, 'extendedTextMessage', { quoted: m });
