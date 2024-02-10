@@ -17,8 +17,8 @@ let handler = async (m, { conn, text }) => {
 *ID:* ${json.id}
 *Tipo:* ${json.type}
 *Habilidades:* ${json.abilities}
-*Height:* ${json.height}
-*Weight:* ${json.weight}
+*Tamaño:* ${json.height}
+*Peso:* ${json.weight}
 *Descripción:* ${json.description}
 `;
 
