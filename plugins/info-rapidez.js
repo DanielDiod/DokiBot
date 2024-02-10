@@ -33,12 +33,12 @@ let texto = `*🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝*
 *💻 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫*
 • *Ram:* ${format(totalmem() - freemem())} / ${format(totalmem())}`.trim()
 
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'MONKIBOT-MD', thumbnailUrl: 'https://telegra.ph/file/89fa6a3c8e9cedda6f5ca.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'SHANA-BOT', thumbnailUrl: 'https://telegra.ph/file/bc6464a25b50bf28bfa49.png', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
 handler.tags = ['bot']
-handler.command = ['ping', 'speed']
+handler.command = ['ping', 'velocidad']
 
 handler.register = true
 
