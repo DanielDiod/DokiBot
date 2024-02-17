@@ -11,7 +11,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
 
 global.owner = [ 
-['51907913096', 'Daniel', true],
+['51955918117', 'Daniel', true],
 ['51977835959', 'sopixx', true],
 ['5493875262116'],
 ['51967647592'],
