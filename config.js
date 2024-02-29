@@ -95,14 +95,14 @@ global.moment = moment
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
 global.packname = 'Shana'
-global.author = 'By Sopi x Daniel'
+global.author = 'By Daniel'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.lb = 'Shana'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.ig = 'https://www.instagram.com/monki_bot'
+global.ig = 'https://www.instagram.com/Jxtxn17'
 global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.fb = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 
