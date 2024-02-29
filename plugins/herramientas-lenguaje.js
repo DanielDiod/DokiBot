@@ -1,6 +1,6 @@
 const { en, es, ar, id, pt, rs} = require('./libs/idiomas/total-idiomas.js')
 	
-  let te = `✳️ ${mssg.langList}\n- es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n📌 ${mssg.example}: *${usedPrefix + command}* en\nAyudanos a traducir el bot a tu idioma\nt.me/fgsupp_bot`
+  let te = `✳️  es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n📌 : *${usedPrefix + command}* en\nAyudanos a traducir el bot a tu idioma\nt.me/fgsupp_bot`
   if (!text) throw te
   let user = global.db.data.users[m.sender]
    if (args[0] === "es") {
