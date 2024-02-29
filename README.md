@@ -126,4 +126,4 @@ href="https://github.com/Jxtxn17"><img src="https://github.com/Jxtxn17.png" widt
 
 <a href="https://github.com/DanielDiod"><img src="https://github.com/DanielDiod.png" width="300" height="300" alt="Daniel🇦🇱"/></a>
 
-`© MonkiBot / By Daniel 🇦🇱`
+`© Shana - Bot / By Daniel 🇦🇱`
