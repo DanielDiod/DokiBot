@@ -1,3 +1,5 @@
+//Este comando aun falta hacer algunos arreglos
+
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text, usedPrefix, command }) => {
