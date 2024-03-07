@@ -13,7 +13,6 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [ 
 ['51955918117', 'Daniel', true],
 ['51977835959', 'sopixx', true],
-['51929972576']
 ['5493875262116'],
 ['51967647592'],
 ['59896392749'],
@@ -25,7 +24,6 @@ global.owner = [
 
 global.mods = ['51977835959']
 global.prems = ['51977835959'],
-global.suittag = ['51955918117']
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
