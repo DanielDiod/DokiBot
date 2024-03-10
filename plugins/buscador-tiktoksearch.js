@@ -2,7 +2,7 @@
 
 const fetch = require('node-fetch');
 let handler = async (m, { conn, text, usedPrefix, command }) => {
- if (!text) throw `🚩 *Example:* ${usedPrefix + command} anime`
+ if (!text) throw `🚩 *Ejemplo:* ${usedPrefix + command} anime`
   try {
     const res = await fetch(`https://api.botcahx.eu.org/api/search/tiktoks?query=${text}&apikey=${btc}`);
     const api = await res.json(); 
