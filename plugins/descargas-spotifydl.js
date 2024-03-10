@@ -4,14 +4,14 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, command }) => {
   if (!args || !args[0]) return conn.reply(m.chat, `*• Ingresa un enlace Spotify*`, m)
   let user = global.db.data.users[m.sender]
-  await m.react('🕓')
+  await m.react('⌛')
   try {
     let response = await axios.get(`https://api.cafirexos.com/api/spotifyinfo?url=${args[0]}`)
     let { title, artist, album, year, thumbnail, url } = response.data.spty.resultado
     let downloadLink = response.data.spty.download.audio
     let img = await (await fetch(thumbnail)).buffer()
 
-    let txt = `*乂  S P O T I F Y  -  D O W N L O A D*\n\n`
+    let txt = `* >S P O T I F Y  -  D O W N L O A D*\n\n`
         txt += `	✩   *Titulo* : ${title}\n`
         txt += `	✩   *Artista* : ${artist}\n`
         txt += `	✩   *Album* : ${album}\n`
