@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, comman
     let downloadLink = response.data.spty.download.audio
     let img = await (await fetch(thumbnail)).buffer()
 
-    let txt = `> •S P O T I F Y  -  D O W N L O A D\n\n`
+    let txt = `> 🎧 S P O T I F Y  -  M U S I C A 🎧\n\n`
         txt += `	✩   *Titulo* : ${title}\n`
         txt += `	✩   *Artista* : ${artist}\n`
         txt += `	✩   *Album* : ${album}\n`
