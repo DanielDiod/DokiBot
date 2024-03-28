@@ -24,7 +24,7 @@ global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 await conn.sendMessage(m.chat, { 
 text: `┏━━━━━━━━━━━━━━━
-┃ *乂  R E G I S T R O  乂
+┃ *乂  R E G I S T R O  乂*
 ┗━━━━━━━━━━━━━━━━━━━━━━
 ┃ *Nombre 👤 :* ${name}
 ┃ *Edad 🈴 :* ${age} años
