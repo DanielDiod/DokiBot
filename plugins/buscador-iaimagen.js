@@ -1,24 +1,46 @@
-import fetch from 'node-fetch'
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*Formato incorrecto*\nEjemplo*\n* ${usedPrefix + command} Mono*`
-try {
-const tiores1 = await fetch(`https://vihangayt.me/tools/imagine?q=${text}`);
-const json1 = await tiores1.json();
-await conn.sendMessage(m.chat, {image: {url: json1.data}}, {quoted: m});
-} catch {  
-try {
-const tiores2 = await conn.getFile(`https://vihangayt.me/tools/midjourney?q=${text}`);
-await conn.sendMessage(m.chat, {image: {url: tiores2.data}}, {quoted: m});
-} catch {
-try {
-const tiores3 = await fetch(`https://vihangayt.me/tools/lexicaart?q=${text}`);
-const json3 = await tiores3.json();
-await conn.sendMessage(m.chat, {image: {url: json3.data[0].images[0].url}}, {quoted: m});
-} catch {
-try {
-const tiores4 = await conn.getFile(`https://api.lolhuman.xyz/api/dall-e?apikey=${lolkeysapi}&text=${text}`);
-await conn.sendMessage(m.chat, {image: {url: tiores4.data}}, {quoted: m});
-} catch {
-}}}}};
-handler.command = ['iaimagen']
-export default handler
+import { Configuration, OpenAIApi } from 'openai'
+
+const mySecret = process.env['key-org'] // process.env['key-org'] ubah jadi key-org kamu di openai.com
+const mySecret2 = process.env['key-apikey'] // process.env['key-apikey'] ubah jadi key-APIKEY kamu di openai.com
+
+const configuration = new Configuration({ organization: mySecret, apiKey: mySecret2 });
+// const configuration = new Configuration({ apiKey: mySecret2 });
+
+const openai = new OpenAIApi(configuration);
+
+const Nomor = 'Nomer Kamu'
+
+let handler = async (m, { conn, text, command }) => {
+    try {
+        if (!text) throw new Error(`Membuat gambar dari AI.\n\nContoh:\n.img Wooden house on snow mountain\n\n\nJika bot AI tidak dapat menjawab, silahkan donasi minimal 1k untuk menghidupkannya kembali.\n\n Dana: ${Nomor}\nGopay: ${Nomor}`);
+        
+        await m.reply(wait)
+        const response = await openai.createImage({
+            prompt: text,
+            n: 1,
+            size: "1024x1024",
+        });
+        
+        conn.sendFile(m.chat, response.data.data[0].url, 'image.png', `Done\n\n\nJika bot AI tidak dapat menjawab, silahkan donasi minimal 1k untuk menghidupkannya kembali.\n\n Dana: ${Nomor}\nGopay: ${Nomor}`, m)
+        // Or use conn.reply:
+        // conn.reply(m.chat, `Done\n\n\nJika bot AI tidak dapat menjawab, silahkan donasi minimal 1k untuk menghidupkannya kembali.\n\n Dana: ${Nomor}\nGopay: ${Nomor}`, m);
+        
+    } catch (error) {
+        if (error.response) {
+            console.log(error.response.status);
+            console.log(error.response.data);
+            console.log(`${error.response.status}\n\n${error.response.data}`);
+        } else {
+            console.log(error);
+            m.reply(error.message);
+        }
+    }
+}
+
+handler.help = ['ai-image']
+handler.tags = ['internet']
+handler.exp = 0;
+handler.command = /^(dalle|aiimg|aiimage|ai-img|openaiimage|ai-image|img)$/i 
+
+export default handler;
+    
