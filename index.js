@@ -17,7 +17,7 @@ say('ShanaBot', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`by: Daniel`, {
+say(`Creador: Daniel`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']});
