@@ -1,4 +1,4 @@
-// TheMystic-Bot-MD@BrunoSobrino - _antiprivado.js
+// TheMystic-Bot-MD @BrunoSobrino - _antiprivado.js
 
 export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
   if (m.isBaileys && m.fromMe) return !0;
