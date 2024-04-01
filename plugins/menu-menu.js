@@ -290,7 +290,7 @@ externalAdReply: {
 title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/FolexrXtQXy4v5qGjMYUmD',
+sourceUrl: 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
