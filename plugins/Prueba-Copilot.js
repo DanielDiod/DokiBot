@@ -9,5 +9,7 @@ await asta.sendMessage(from, {image: {url: `https://telegra.ph/file/93d066df4bfc
 } catch (e) {
 console.log(openia)
   return enviar('𝙚𝙧𝙧𝙤𝙧');
-}
-break
+}}}};
+handler.command = /^(openai|chatgpt|ia|openai2|chatgpt2|ia2|Gata)$/i;
+export default handler;
+
