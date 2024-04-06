@@ -8,8 +8,8 @@ let openia = await fetchJson(`https://controlled-gae-deliriusapi.koyeb.app/api/g
 await asta.sendMessage(from, {image: {url: `https://telegra.ph/file/93d066df4bfce347056e8.jpg`}, caption: `${openia.message}`}, {quoted: info})
 } catch (e) {
 console.log(openia)
-  return enviar('𝙚𝙧𝙧𝙤𝙧');
+  return enviar('𝙚𝙧𝙧𝙤𝙧')
 }}}};
-handler.command = /^(openai|chatgpt|ia|openai2|chatgpt2|ia2|Gata)$/i;
+handler.command = /^(gemini)$/i;
 export default handler;
 
