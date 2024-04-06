@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import axios from 'axios';
 
 try { 
 if(!q) return await enviar('𝙄𝙣𝙜𝙧𝙚𝙨𝙖 𝙐𝙣𝙖 𝙋𝙧𝙚𝙜𝙪𝙣𝙩𝙖 𝙀𝙟𝙥: `!geminis cuando inicio one pice`') 
