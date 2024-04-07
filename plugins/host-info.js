@@ -5,7 +5,7 @@ import { join } from 'path'*/
 let handler = async (m, { conn, usedPrefix, command}) => {
 
 
-let Host = `*`💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
+let Host = `*💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
 
 *¿Muy lento tu nokia y necesitas tener activo tu bot 24/7?*
 
