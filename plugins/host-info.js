@@ -5,7 +5,7 @@ import { join } from 'path'*/
 let handler = async (m, { conn, usedPrefix, command}) => {
 
 
-let Reglas = ` *💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
+let Reglas = ` *`💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
 
 *¿Muy lento tu nokia y necesitas tener activo tu bot 24/7?*
 
@@ -21,11 +21,12 @@ let Reglas = ` *💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
 *`Contactanos para más información o alquidir los servicios:`*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-> *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`.trim()
+> *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*
+`.trim()
 await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
-handler.customPrefix = /info|host/i
+handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp
 handler.register = true
 handler.exp = 70
