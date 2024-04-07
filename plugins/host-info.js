@@ -26,7 +26,7 @@ https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
-handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
+handler.customPrefix = /info|host/i
 handler.command = new RegExp
 handler.register = true
 handler.exp = 70
