@@ -21,8 +21,7 @@ let Reglas = ` *💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
 *`Contactanos para más información o alquidir los servicios:`*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-> *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*
-`.trim()
+> *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`.trim()
 await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
