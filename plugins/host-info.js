@@ -5,7 +5,7 @@ let text = `💫 Te presentamos un nuevo hosting: Infinity-Wa Host`
 
 *¿Muy lento tu nokia y necesitas tener activo tu bot 24/7?*
 
-> *Te tenemos la mejor opción para mantener activo tu bot 24/7, a precios muy accesibles. Es muy barato y todos pueden comprar.*
+*Te tenemos la mejor opción para mantener activo tu bot 24/7, a precios muy accesibles. Es muy barato y todos pueden comprar.*
 
 *🚩Precios:*
 * 1GB, 100 CPU = 1Dolar
@@ -17,7 +17,7 @@ let text = `💫 Te presentamos un nuevo hosting: Infinity-Wa Host`
 *Contactanos para más información o alquidir los servicios:*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-> *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`
+*Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`
 await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)}
 handler.tags = ['main']
 handler.command = /^info|host|pagos$/i
