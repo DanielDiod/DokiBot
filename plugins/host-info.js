@@ -38,7 +38,7 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 🧑‍💻 *Contacto*
 https://wa.me/51955918117
 `
-await conn.sendFile(m.chat, 'https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo.png', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
+await conn.sendFile(m.chat, 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
@@ -49,7 +49,7 @@ title: `🔰𝐈𝐧𝐟𝐢𝐧𝐢𝐭𝐲-𝐖𝐚 𝑯𝒐𝒔𝒕𝒊𝒏�
 body: `✅ Hosting de Calidad`,
 mediaType: 1,
 sourceUrl: accountsgb,
-thumbnailUrl: 'https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo_2.png'
+thumbnailUrl: 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg'
 }}
 }, { mentions: m.sender })
 
