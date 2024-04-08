@@ -1,15 +1,15 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let cafirexostxt = `
-> Optimice la implementación de *IGNA • BOT* mediante la integración en un servicio de alojamiento de alto rendimiento y mejor calidad.\n
+> INFINITY-WA HOSTING  X IGNA • BOT\n
 
-\`\`\`USA IGNA • BOT EN INFINITY HOST\`\`\`
+🟢 \`\`\`USA IGNA • BOT EN INFINITY HOST\`\`\`
 
 Que esperas para usar *IGNA • BOT* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *IGNA • BOT* sintiendo una experiencia fluida y de calidad.
 
-🔵 \`\`\`Información del Host\`\`\`
+👇🏻 \`\`\`INFORMACION DEL HOSY\`\`\`
 
 💻 *Página*
-https://www.cafirexos.com
+https://host.panel-infinitywa.store
 
 ✨ *Dashboard*
 https://dash.cafirexos.com
