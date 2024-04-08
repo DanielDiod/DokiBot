@@ -37,9 +37,6 @@ https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A
 📌 *Grupo*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-💥 *Grupo de WhatsApp*
-https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
-
 *🚩Precios :*
 * 1GB, 100 CPU = 1Dolar
 * 2GB, 120 CPU = 2Dolar
