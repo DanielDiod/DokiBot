@@ -65,7 +65,7 @@ conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title:
 }
 handler.help = ['ping']
 handler.tags = ['bot']
-handler.command = ['ping', 'velocidad']
+handler.command = ['infinity', 'prueba1000']
 
 handler.register = true
 
