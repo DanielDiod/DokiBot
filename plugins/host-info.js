@@ -6,7 +6,7 @@ let cafirexostxt = `
 
 Que esperas para usar *IGNA • BOT* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *IGNA • BOT* sintiendo una experiencia fluida y de calidad.
 
-👇🏻 \`\`\`INFORMACION DEL HOSY\`\`\`
+👇🏻 \`\`\`INFORMACION DEL HOST\`\`\`
 
 💻 *Página*
 https://host.panel-infinitywa.store
@@ -17,14 +17,15 @@ https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A
 📌 *Grupo*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-📢 *Precios*
-
-
 💥 *Grupo de WhatsApp*
 https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 
-📧 *Correo*
-contacto@cafirexos.com
+*🚩Precios :*
+* 1GB, 100 CPU = 1Dolar
+* 2GB, 120 CPU = 2Dolar
+* 3GB, 140 CPU = 3Dolar
+* 4GB, 175 CPU = 4Dolar
+* 5GB, 200 CPU = 5 Dólar. 
 
 🧑‍💻 *Contacto (Diego Flores)*
 https://wa.me/50497150165
