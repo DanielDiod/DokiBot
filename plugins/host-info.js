@@ -1,9 +1,10 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let cafirexostxt = `
-> Optimice la implementación de *IGNA • BOT* mediante la integración en un servicio de alojamiento de alto rendimiento y mejor calidad.
+> Optimice la implementación de *IGNA • BOT* mediante la integración en un servicio de alojamiento de alto rendimiento y mejor calidad.\n
 
-*🐈 Compatible con GataBot*
-Aprovecha la compatibilidad y comienza usar GataBot en servidores de alto rendimiento. El Staff de GataBot y Cafirexos hacen posible que puedas ejecutar las funciones que tanto te gusta usar sintiendo una experiencia fluida y de calidad.
+*USA IGNA • BOT EN INFINITY HOST*
+
+Que esperas para usar *IGNA • BOT* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *IGNA • BOT* sintiendo una experiencia fluida y de calidad.
 
 🔵 \`\`\`Información del Host\`\`\`
 
