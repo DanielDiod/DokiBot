@@ -11,14 +11,14 @@ Que esperas para usar *IGNA • BOT* en los mejores servidores de alto rendimien
 💻 *Página*
 https://host.panel-infinitywa.store
 
-✨ *Dashboard*
-https://dash.cafirexos.com
+✨ *Canal*
+https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A
 
-⚙️ *Panel*
-https://panel.cafirexos.com
+📌 *Grupo*
+https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
-📢 *Canal de WhatsApp*
-https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q
+📢 *Precios*
+
 
 💥 *Grupo de WhatsApp*
 https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
