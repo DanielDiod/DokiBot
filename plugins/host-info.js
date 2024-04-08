@@ -36,7 +36,7 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 *• Yape (🇵🇪)*
 
 🧑‍💻 *Contacto*
-https://wa.me/50
+https://wa.me/51955918117
 `
 await conn.sendFile(m.chat, 'https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo.png', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
 contextInfo: {
