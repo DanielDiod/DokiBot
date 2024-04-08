@@ -28,15 +28,15 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 * 5GB, 200 CPU = 5 Dólar. 
 
 🛍️ *Método de pago:*
-*• PayPal*
-*• Mercado pago*
-*• Tigo Money*
-*• Tigo Money*
+*• PayPal (🌍)*
+*• Mercado pago(🇦🇷)*
+*• Tigo Money(🇧🇴)*
+*• Cuenta Rut (🇨🇱)*
 *• Naranja x, alías*
-*• Yape (Perú)*
+*• Yape (🇵🇪)*
 
-🧑‍💻 *Contacto (Diego Flores)*
-https://wa.me/50497150165
+🧑‍💻 *Contacto*
+https://wa.me/50
 `
 await conn.sendFile(m.chat, 'https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo.png', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
 contextInfo: {
