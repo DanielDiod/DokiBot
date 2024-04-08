@@ -27,6 +27,14 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 * 4GB, 175 CPU = 4Dolar
 * 5GB, 200 CPU = 5 Dólar. 
 
+🛍️ *Método de pago:*
+*• PayPal*
+*• Mercado pago*
+*• Tigo Money*
+*• Tigo Money*
+*• Naranja x, alías*
+*• Yape (Perú)*
+
 🧑‍💻 *Contacto (Diego Flores)*
 https://wa.me/50497150165
 `
