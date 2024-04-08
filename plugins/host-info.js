@@ -35,8 +35,9 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 *• Naranja x, alías*
 *• Yape (🇵🇪)*
 
-🧑‍💻 *Contacto*
+🧑‍💻 *Contactos para mayor información*
 https://wa.me/51955918117
+https://wa.me/5492266613038
 `
 await conn.sendFile(m.chat, 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
 contextInfo: {
@@ -54,5 +55,5 @@ thumbnailUrl: 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg'
 }, { mentions: m.sender })
 
 }
-handler.command = /^(cafirexos|prueba38)$/i
+handler.command = /^(infinity|prueba38)$/i
 export default handler
