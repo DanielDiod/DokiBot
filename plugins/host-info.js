@@ -39,7 +39,7 @@ https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 https://wa.me/51955918117
 https://wa.me/5492266613038
 `
-await conn.sendFile(m.chat, 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg', 'fantasy.jpg', cafirexostxt.trim(), true, {
+await conn.sendFile(m.chat, 'https://telegra.ph/file/402a282532bc2fd2dc880.jpg', 'fantasy.jpg', cafirexostxt.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
