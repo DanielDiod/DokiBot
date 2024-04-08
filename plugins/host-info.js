@@ -1,6 +1,6 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let cafirexostxt = `
-_Optimice la implementación de *GataBot* mediante la integración en un servicio de alojamiento de alto rendimiento._
+> Optimice la implementación de *IGNA • BOT* mediante la integración en un servicio de alojamiento de alto rendimiento y mejor calidad.
 
 *🐈 Compatible con GataBot*
 Aprovecha la compatibilidad y comienza usar GataBot en servidores de alto rendimiento. El Staff de GataBot y Cafirexos hacen posible que puedas ejecutar las funciones que tanto te gusta usar sintiendo una experiencia fluida y de calidad.
@@ -35,7 +35,7 @@ contextInfo: {
 externalAdReply: {
 showAdAttribution: true,
 renderLargerThumbnail: false,
-title: `🔵 C A F I R E X O S 🔵`,
+title: `🔰𝐈𝐧𝐟𝐢𝐧𝐢𝐭𝐲-𝐖𝐚 𝑯𝒐𝒔𝒕𝒊𝒏𝒈 🔰`,
 body: `✅ Hosting de Calidad`,
 mediaType: 1,
 sourceUrl: accountsgb,
