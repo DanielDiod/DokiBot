@@ -26,7 +26,6 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*ERROR AL USAR GHATGPT SOLICITE UNA PETICIÓN*\n\n*📝 EJEMPLO DE USO*\n📌 ${usedPrefix + command} Cuando fue la primera guerra mundial\n📌 ${usedPrefix + command} Un código en JS para doxear` 
 try {
-🗣️
 conn.sendPresenceUpdate('recording', m.chat);
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
