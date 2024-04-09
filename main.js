@@ -138,29 +138,63 @@ do {
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
 opcion = await question(`╭${lineM}  
 ┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('MÉTODO DE VINCULACIÓN')}
+┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan(mid.methodCode1)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}   
 ┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow('¿CÓMO DESEA CONECTARSE?')}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opción 1:')} ${chalk.greenBright('Código QR.')}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opción 2:')} ${chalk.greenBright('Código de 8 digitos.')}
+┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow(mid.methodCode2)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 1:`)} ${chalk.greenBright(mid.methodCode4)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 2:`)} ${chalk.greenBright(mid.methodCode5)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
 ┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta('Escriba sólo el número de')}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta('la opción para conectarse.')}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode6)}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode7)}
+┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}    
+┊ ${chalk.blueBright('┊')} ${chalk.red.bgRed.bold.green(mid.methodCode8)}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode9)}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode10)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run qr ${chalk.italic.magenta(`(${mid.methodCode12})`)}`)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta(`(${mid.methodCode13})`)}`)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta(`(${mid.methodCode14})`)}`)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ╰${lineM}\n${chalk.bold.magentaBright('---> ')}`)
 if (!/^[1-2]$/.test(opcion)) {
-console.log(chalk.bold.redBright(`NO SE PERMITE NÚMEROS QUE NO SEAN ${chalk.bold.greenBright("1")} O ${chalk.bold.greenBright("2")}, TAMPOCO LETRAS O SÍMBOLOS ESPECIALES. ${chalk.bold.yellowBright("CONSEJO: COPIE EL NÚMERO DE LA OPCIÓN Y PÉGUELO EN LA CONSOLA.")}`))
+console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
-
+  
 console.info = () => {} 
+console.debug = () => {} 
+const originalConsoleWarn = console.warn
+console.warn = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("Q2xvc2luZyBzdGFsZSBvcGVu")) || message.includes(atob("Q2xvc2luZyBvcGVuIHNlc3Npb24=")) || message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleWarn.apply(console, arguments)
+}
+const originalConsoleError = console.error
+console.error = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("RmFpbGVkIHRvIGRlY3J5cHQ=")) || message.includes(atob("U2Vzc2lvbiBlcnJvcg==")) || message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleError.apply(console, arguments)
+}
+const originalConsoleLog = console.log
+console.log = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleLog.apply(console, arguments)
+}
+
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['Shana-Bot', 'Edge', '2.0.0'] : methodCodeQR ? ['Shana-Bot', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
+browser: opcion == '1' ? ['IGNA • BOT', 'Edge', '2.0.0'] : methodCodeQR ? ['IGNA • BOT', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -171,10 +205,10 @@ syncFullHistory: true,
 getMessage: async (clave) => {
 let jid = jidNormalizedUser(clave.remoteJid)
 let msg = await store.loadMessage(jid, clave.id)
-return (msg?.message || "").replace(/(?:Closing stale open|Closing open session)/g, "")
+return msg?.message || ""
 },
-msgRetryCounterCache, 
-msgRetryCounterMap, //
+msgRetryCounterCache, // Resolver mensajes en espera
+msgRetryCounterMap, // Determinar si se debe volver a intentar enviar un mensaje o no
 defaultQueryTimeoutMs: undefined,
 version,  
 }
@@ -189,7 +223,7 @@ if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
 } else {
 do {
-phoneNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`ESCRIBIR EL NÚMERO DE WHATSAPP QUE SERÁ BOT.\n${chalk.bold.yellowBright("CONSEJO: COPIE EL NÚMERO DE WHATSAPP Y PÉGUELO EN LA CONSOLA.")}\n${chalk.bold.yellowBright("EJEMPLO: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
+phoneNumber = await question(chalk.bgBlack(chalk.bold.greenBright(mid.phNumber2(chalk))))
 phoneNumber = phoneNumber.replace(/\D/g,'')
 } while (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v)))
 rl.close()
@@ -198,7 +232,7 @@ addNumber = phoneNumber.replace(/\D/g, '')
 setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-console.log(chalk.bold.white(chalk.bgMagenta(`CÓDIGO DE VINCULACIÓN:`)), chalk.bold.white(chalk.white(codeBot)))
+console.log(chalk.bold.white(chalk.bgMagenta(mid.pairingCode)), chalk.bold.white(chalk.white(codeBot)))
 }, 2000)
 }}}
 }
@@ -209,8 +243,16 @@ conn.well = false
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "GataJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
 if (global.obtenerQrWeb === 1) (await import('./server.js')).default(global.conn, PORT)
+
+async function getMessage(key) {
+if (store) {
+//const msg = store.loadMessage(key.remoteJid, key.id)
+//return msg.message
+} return {
+conversation: 'SimpleBot',
+}}
 
 async function connectionUpdate(update) {  
 const {connection, lastDisconnect, isNewLogin} = update
@@ -224,16 +266,15 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
-//opcion = '1'
 if (opcion == '1' || methodCodeQR) {
-console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
+console.log(chalk.bold.yellow(mid.mCodigoQR))}
 }
 if (connection == 'open') {
-console.log(chalk.bold.greenBright(lenguajeGB['smsConexion']()))}
+console.log(chalk.bold.greenBright(mid.mConexion))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
-await fs.unlinkSync("./ShanaSession/" + "creds.json")
-return console.log(chalk.bold.redBright("\n[ ❌ ] CONEXION REPLAZADA, POR FAVOR ESPERE UN MOMENTO ME VOY A REINICIAR...\nSI SALE ERROR VUELVE A INICIAR CON: npm start")) 
+await fs.unlinkSync("./GataBotSession/" + "creds.json")
+console.log(chalk.bold.redBright(mid.mConexionOFF)) 
 process.send('reset')}
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
@@ -257,7 +298,8 @@ console.log(chalk.bold.yellowBright(lenguajeGB['smsConexiontiem']()))
 await global.reloadHandler(true).catch(console.error) //process.send('reset')
 } else {
 console.log(chalk.bold.redBright(lenguajeGB['smsConexiondescon'](reason, connection)))
-}}}
+}}
+}
 process.on('uncaughtException', console.error);
 //process.on('uncaughtException', (err) => {
 //console.error('Se ha cerrado la conexión:\n', err)
@@ -292,14 +334,14 @@ conn.ev.off('creds.update', conn.credsUpdate);
 }
 
 //Información para Grupos
-conn.welcome = lenguajeGB['smsWelcome']() //'  ╭────────────\n┆──〘 *𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼/𝗮* 〙──\n┆──────────\n┆ ✨ *@user* _𝗔𝗹_\n┆ *@subject ✨* \n┆\n┆ *𝗘𝗻 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗽𝗼𝗱𝗿𝗮́𝘀*\n┆  *𝗘𝗻𝗰𝗼𝗻𝘁𝗿𝗮𝗿:*\n┆> *𝗔𝗺𝗶𝘀𝘁𝗮𝗱𝗲𝘀* 👥\n┆> *𝗗𝗲𝘀𝗺𝗮𝗱𝗿𝗲* 💃🕺\n┆> *𝗕𝗮𝗿𝗱𝗼*🤺\n┆> *𝙅𝙤𝙙𝙖 𝙮 𝙢𝙖𝙨* 😛\n┆> *𝗨𝗻 𝗯𝗼𝘁 𝘀𝗲𝘅𝘆*\n┆> *𝗣𝘂𝗲𝗱𝗲 𝘀𝗼𝗹𝗶𝗰𝗶𝘁𝗮𝗿 𝗺𝗶 𝗹𝗶𝘀𝘁𝗮 𝗱𝗲*\n┆> *𝗖𝗼𝗺𝗮𝗻𝗱𝗼 𝗰𝗼𝗻:*\n┆> *#menu*\n┆\n┆> *𝗔𝗾𝘂𝗶́ 𝘁𝗶𝗲𝗻𝗲 𝗹𝗮 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻* \n┆ *𝗗𝗲𝗹 𝗴𝗿𝘂𝗽𝗼, 𝗹𝗲́𝗲𝗹𝗮!! 🙌*\n┆──────────\n┆  @desc\n┆──────────\n┆ *🔰 𝗗𝗶𝘀𝗳𝗿𝘂𝘁𝗮 𝗱𝗲 𝘁𝘂*\n┆ *𝗘𝘀𝘁𝗮𝗱𝗶́𝗮 𝗲𝗻 𝗲𝗹 𝗚𝗿𝘂𝗽𝗼 🔰* \n┆\n╰─────────────️'
-conn.bye = lenguajeGB['smsBye']() //'.' //no gusta :v
-conn.spromote = lenguajeGB['smsSpromote']() //'*𝙃𝙚𝙮 @user 𝘼𝙝𝙤𝙧𝙖 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣, 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤😛!!*'
-conn.sdemote = lenguajeGB['smsSdemote']() //'*𝙃𝙚𝙮 @user 𝘿𝙀𝙅𝘼𝙔𝙖 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣😐!!*'
-conn.sDesc = lenguajeGB['smsSdesc']() //'*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n\n*𝑵𝒖𝒆𝒗𝒐 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏:*\n@desc'
-conn.sSubject = lenguajeGB['smsSsubject']() //'*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n*𝑵𝒖𝒆𝒗𝒐 𝒏𝒐𝒎𝒃𝒓𝒆:*\n@subject'
-conn.sIcon = lenguajeGB['smsSicon']() //'*𝑺𝒆 𝒉𝒂 𝒄𝒂𝒎𝒃𝒊𝒂𝒅𝒐 𝒍𝒂 𝒇𝒐𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!'
-conn.sRevoke = lenguajeGB['smsSrevoke']() //'*𝑺𝒆 𝒉𝒂 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*\n*𝑳𝒊𝒏𝒌 𝒏𝒖𝒆𝒗𝒐!!*\n\n*@revoke*'
+conn.welcome = lenguajeGB['smsWelcome']() 
+conn.bye = lenguajeGB['smsBye']() 
+conn.spromote = lenguajeGB['smsSpromote']() 
+conn.sdemote = lenguajeGB['smsSdemote']() 
+conn.sDesc = lenguajeGB['smsSdesc']() 
+conn.sSubject = lenguajeGB['smsSsubject']() 
+conn.sIcon = lenguajeGB['smsSicon']() 
+conn.sRevoke = lenguajeGB['smsSrevoke']() 
 
 conn.handler = handler.handler.bind(global.conn);
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -397,38 +439,41 @@ unlinkSync(filePath)})
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./ShanaSession")
+let directorio = readdirSync("./GataBotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./BotSession/${files}`)
-})} 
+unlinkSync(`./GataBotSession/${files}`)
+})
+} 
 
 function purgeSessionSB() {
 try {
-const listaDirectorios = readdirSync('./jadibts/');
+const listaDirectorios = readdirSync('./GataJadiBot/');
 let SBprekey = [];
 listaDirectorios.forEach(directorio => {
-if (statSync(`./jadibts/${directorio}`).isDirectory()) {
-const DSBPreKeys = readdirSync(`./jadibts/${directorio}`).filter(fileInDir => {
+if (statSync(`./GataJadiBot/${directorio}`).isDirectory()) {
+const DSBPreKeys = readdirSync(`./GataJadiBot/${directorio}`).filter(fileInDir => {
 return fileInDir.startsWith('pre-key-')
 })
 SBprekey = [...SBprekey, ...DSBPreKeys];
 DSBPreKeys.forEach(fileInDir => {
 if (fileInDir !== 'creds.json') {
-unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
-}})}})
+unlinkSync(`./GataJadiBot/${directorio}/${fileInDir}`)
+}})
+}})
 if (SBprekey.length === 0) {
 console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
 } else {
 console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
 }} catch (err) {
-console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))}}
+console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
+}}
 
 function purgeOldFiles() {
-const directories = ['./ShanaSession/', './jadibts/']
+const directories = ['./GataBotSession/', './GataJadiBot/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -440,12 +485,13 @@ if (err) {
 console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
 } else {
 console.log(chalk.bold.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
-}})}})})})}
+} }) }
+}) }) }) }
 
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 3) // 3 min 
+console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
