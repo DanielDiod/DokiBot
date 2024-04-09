@@ -97,12 +97,12 @@ global.moment = moment
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = 'Shana'
-global.author = 'By Daniel'
+global.packname = 'IGNA • BOT'
+global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Daniel",\n   "status_bot": "active"\n }\n}'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.lb = 'Shana'
+global.lb = 'IGNA • BOT'
 global.vs = '1.5.5'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.ig = 'https://www.instagram.com/Jxtxn17'
