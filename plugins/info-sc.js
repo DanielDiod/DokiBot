@@ -2,7 +2,7 @@ import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
-   let res = await fetch('https://api.github.com/repos/DanielDiod/DokiBot')
+   let res = await fetch('https://api.github.com/repos/NakanoTeam/Ai-Hoshino')
    let json = await res.json()
    let txt = `*B O T  -  S C R I P T*\n\n`
       txt += `	◦  *Nombre* : ${json.name}\n`
@@ -12,6 +12,7 @@ let handler = async (m, { conn, args }) => {
       txt += `	◦  *Url* : ${json.html_url}\n`
       txt += `	◦  *Forks* : ${json.forks_count}\n`
       txt += `	◦  *Stars* : ${json.stargazers_count}`
+   await conn.sendFile(m.chat, m)
 
 }
 
