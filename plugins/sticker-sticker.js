@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
-    if (stiker) await conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: true, title: IGNA • BOT, body: `h`, mediaType: 2, sourceUrl: group, thumbnail: miniurl}}}, { quoted: m })
+    if (stiker) await conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: true, title: 'IGNA • BOT', body: `h`, mediaType: 2, sourceUrl: group, thumbnail: gataImg.getRandom(), { quoted: m })
     else return conn.reply(m.chat, 'La conversión ha fallado, intenta enviar primero *imagen/video/gif* y luego responde con el comando', m)
   }
 }
