@@ -1,4 +1,4 @@
-<h1 align="center">‧ SHANA - BOT - MD  ‧
+<h1 align="center">‧ IGNA - BOT - MD  ‧
 </p>
 <p>
         <img src= "https://telegra.ph/file/bc6464a25b50bf28bfa49.png">
@@ -68,7 +68,7 @@ npm start
 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
 > cd DokiBot 
-> rm -rf ShanaBot
+> rm -rf IgnaSession
 > npm start
 ```
 -------
