@@ -24,7 +24,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
        txt += `*Nombre* : ${name}\n`
        txt += `*Edad* : ${age} años\n`
        txt += `*Euros* : +999 🪙`
-await conn.reply(m.chat, txt, m).then(_ => m.react('✅'))
+await conn.reply(`${sn}`).then(_ => m.react('✅'))
 }
 handler.help = ['reg'].map(v => v + ' <nombre.edad>')
 handler.tags = ['rg']
