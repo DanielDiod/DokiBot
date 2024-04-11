@@ -18,10 +18,10 @@ let handler = async (m, { args, usedPrefix, command }) => {
         let Detect = (res[2].toUpperCase() ? res[2].toUpperCase() : "US")
         let ToLang = (lang.toUpperCase())
         let caption = `*Traducción ∙* ${res[0][0][0]}`
-        await conn.reply(m.chat, caption, m, adReply)
+        await conn.reply(m.chat, caption, m)
         await m.react('✅')
     } catch (e) {
-        conn.reply(m.chat, `*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
+        conn.reply(m.chat, `*☓ Ocurrió un error inesperado*`, m).then(_ => m.react('✖️'))
     }
 }
 handler.help = ['trad <leng> <texto>']
