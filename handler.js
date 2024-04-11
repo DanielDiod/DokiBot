@@ -1485,7 +1485,7 @@ global.dfail = (type, m, conn) => {
         unreg: `âœ¯ Hola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Daniel.18*_`,
         restrict: `âœ¯ Hola @${m.sender.split`@`[0]}, esta caracterÃ­stica estÃ¡ *deshabilitada*`  
     }[type]
-    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, ' ' + lb + ' 🪙', '🈴'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m })
+    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, ' ' + lb + ' 🪙', '🈴'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m }).then(_ => m.react('✖️'))
 }
 
 let file = global.__filename(import.meta.url, true)
