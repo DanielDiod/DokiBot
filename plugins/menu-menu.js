@@ -294,7 +294,7 @@ sourceUrl: 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
-await m.react('✅')	
+await m.react('🤖')	
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
@@ -302,8 +302,8 @@ console.log(e)
 }}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(herramientas|herramientas|herramientas|herramientas|allm\?)$/i
-//handler.register = true
+handler.command = /^(menu|allmemu|herramientas|menú|comandos|allm\?)$/i
+handler.register = true
 handler.exp = 50
 handler.fail = null
 export default handler
