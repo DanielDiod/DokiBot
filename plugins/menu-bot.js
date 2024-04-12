@@ -2,7 +2,7 @@
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'*/
-let handler = async (m, { conn, usedPrefix, command}) => {
+/*let handler = async (m, { conn, usedPrefix, command}) => {
   
 
 let Reglas = ` *🛑INFORMACIÓN DEL MENU🛑*\n
@@ -14,7 +14,7 @@ ${md}
 await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
-handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
+handler.customPrefix = /herramientas/i
 handler.command = new RegExp
 handler.register = true
 handler.exp = 70
@@ -26,4 +26,4 @@ function clockString(ms) {
 let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}*/
