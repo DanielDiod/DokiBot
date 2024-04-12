@@ -104,6 +104,7 @@ global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Danie
 
 global.lb = 'IGNA • BOT'
 global.vs = '1.5.5'
+glonal.vsJB = '1.5.0'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.ig = 'https://www.instagram.com/Jxtxn17'
 global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
