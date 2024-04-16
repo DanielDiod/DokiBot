@@ -20,7 +20,7 @@ export async function before(m, {conn}) {
       {quoted: fkontak}
     );
   } else if (m.messageStubType == 22) {
-    await this.sendMessage(m.chat, {text: `_. ᩭ✎${usuario} Cambio la foto del grupo_`, mentions: [m.sender]}, {quoted: fkontak});
+    await this.sendMessage(m.chat, {text: `_.🎌${usuario} Cambio la foto del grupo_`, mentions: [m.sender]}, {quoted: fkontak});
   } else if (m.messageStubType == 24) {
     await this.sendMessage(
       m.chat,
