@@ -6,7 +6,7 @@ var handler = async (m, { conn, text, args, usedPrefix, command}) => {
 if (!args[0]) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ 𝗍іk𝗍᥆k*\n\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆, !${command} https://vm.tiktok.com/ZMYG92bUh/`, m)
 if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `🚩 *🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥒᥣᥲᥴᥱ іᥒᥴ᥆rrᥱᥴ𝗍᥆*`, m)
 
-m.react(rwait)
+await m.react('⌛')
 
 const { key } = await conn.sendMessage(m.chat, {text: `${wait}`}, {quoted: m})
 await delay(1000 * 1)
@@ -27,6 +27,7 @@ m.react(done)
 } catch {
 
 try {
+await m.react('✅')
 
 const { author: { nickname }, video, description } = await tiktokdl(args[0])
 const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
