@@ -1,41 +1,53 @@
-import fg from 'api-dylux' 
+import fg from 'api-dylux'
 import { tiktokdl } from '@bochilteam/scraper'
-let handler = async (m, { conn, text, args, usedPrefix, command}) => {
-if (!args[0]) throw `*🚩 Escribe la URL de un video de TikTok que deseas descargar.*`
-if (!args[0].match(/tiktok/gi)) throw `verifica que el link sea de TikTok`
-await m.react('🕓')
+
+var handler = async (m, { conn, text, args, usedPrefix, command}) => {
+
+if (!args[0]) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ 𝗍іk𝗍᥆k*\n\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆, !${command} https://vm.tiktok.com/ZMYG92bUh/`, m)
+if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `🚩 *🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥒᥣᥲᥴᥱ іᥒᥴ᥆rrᥱᥴ𝗍᥆*`, m)
+
+m.react(rwait)
+
+const { key } = await conn.sendMessage(m.chat, {text: `${wait}`}, {quoted: m})
+await delay(1000 * 1)
+await conn.sendMessage(m.chat, {text: `${waitt}`, edit: key})
+await delay(1000 * 1)
+await conn.sendMessage(m.chat, {text: `${waittt}`, edit: key})
+await delay(1000 * 1)
+await conn.sendMessage(m.chat, {text: `${waitttt}`, edit: key})
+
 try {
-    let p = await fg.tiktok(args[0])
-    await conn.sendFile(m.chat, p.play, "out.png", m)
-    await m.react('✅')
-    } catch {
-    try { 
-    let api = await fetch(`https://skizo.tech/api/tiktok?url=${args[0]}&apikey=${skizo}`)
-    let res = await api.json()
-    let dl_url = res.data.hdplay
-    await conn.sendFile(m.chat, "thumbnail", gataImg.getRandom(), m)
-    await m.react('✅')
-    } catch {
-    try {
-    let api = await fetch(`https://kiicodeofficial.my.id/api/downloader/tiktok?url=${args[0]}&apikey=${kiicode}`)
-    let res = await api.json()
-    let dl_url = res.data.hdplay
-    await conn.sendFile(m.chat, "thumbnail", gataImg.getRandom(), m)
-    await m.react('✅')
-    } catch {
-    try {
-	const { video } = await tiktokdl(args[0])
-    const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
-    if (!url) throw global.error
-    await conn.sendFile(m.chat, "thumbnail",  gataImg.getRandom(), m)
-    await m.react('✅')
-    } catch {
-    await conn.reply(m.chat, `${global.error}`, m).then(_ => m.react('✖️'))
-}}}}}
-handler.help = ['tiktok <url tt>']
-handler.tags = ['downloader']
+let p = await fg.tiktok(args[0])
+let te = `*Nombre:* ${p.nickname}
+*Usuario:* ${p.unique_id}
+*Duración:* ${p.duration}
+*Descripción:* ${p.description}`
+conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
+m.react(done)
+} catch {
+
+try {
+
+const { author: { nickname }, video, description } = await tiktokdl(args[0])
+const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
+
+m.react(error)
+if (!url) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *᥆ᥴᥙrrі᥆ ᥙᥒ 𝖿ᥲᥣᥣ᥆*`, m)
+conn.sendFile(m.chat, url, 'fb.mp4', `*Nombre:* ${nickname}\n*Descripción:* ${description}`, m)
+m.react(done)
+} catch {
+m.react(error)
+conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *᥆ᥴᥙrrі᥆ ᥙᥒ 𝖿ᥲᥣᥣ᥆*`, m)
+}}
+
+}
+handler.help = ['tiktok']
+handler.tags = ['descargas']
 handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
-handler.limit = 1
-handler.register = true 
+
+handler.limit = true
+handler.register = true
 
 export default handler
+
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
