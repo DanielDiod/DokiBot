@@ -13,7 +13,7 @@ try {
     let api = await fetch(`https://skizo.tech/api/tiktok?url=${args[0]}&apikey=${skizo}`)
     let res = await api.json()
     let dl_url = res.data.hdplay
-    await conn.sendFile(m.chat, dl_url, "out.png", m)
+    await conn.sendFile(m.chat, dl_url, gataImg.getRandom(), m)
     await m.react('✅')
     } catch {
     try {
