@@ -13,21 +13,21 @@ try {
     let api = await fetch(`https://skizo.tech/api/tiktok?url=${args[0]}&apikey=${skizo}`)
     let res = await api.json()
     let dl_url = res.data.hdplay
-    await conn.sendFile(m.chat, dl_url, gataImg.getRandom(), m)
+    await conn.sendFile(m.chat, "thumbnail", gataImg.getRandom(), m)
     await m.react('✅')
     } catch {
     try {
     let api = await fetch(`https://kiicodeofficial.my.id/api/downloader/tiktok?url=${args[0]}&apikey=${kiicode}`)
     let res = await api.json()
     let dl_url = res.data.hdplay
-    await conn.sendFile(m.chat, dl_url, "out.png", m)
+    await conn.sendFile(m.chat, "thumbnail", gataImg.getRandom(), m)
     await m.react('✅')
     } catch {
     try {
 	const { video } = await tiktokdl(args[0])
     const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
     if (!url) throw global.error
-    await conn.sendFile(m.chat, url, "out.png", m)
+    await conn.sendFile(m.chat, "thumbnail",  gataImg.getRandom(), m)
     await m.react('✅')
     } catch {
     await conn.reply(m.chat, `${global.error}`, m).then(_ => m.react('✖️'))
