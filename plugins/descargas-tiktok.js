@@ -1,46 +1,41 @@
-import fg from 'api-dylux'
+import fg from 'api-dylux' 
 import { tiktokdl } from '@bochilteam/scraper'
-
-var handler = async (m, { conn, text, args, usedPrefix, command}) => {
-
-if (!args[0]) throw `*🛑INGRESE EL ENLACE DE TIKTOK PARA DESCARGAR SU VIDEO*\n\n❕ *EJEMPLO*:\n${usedPrefix + command} https://vm.tiktok.com/ZMjbonqPu/`
-if (!args[0].match(/tiktok/gi)) throw `*⚠️ 𝚅𝙴𝚁𝙸𝙵𝙸𝚀𝚄𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙻𝙸𝙽𝙺 𝚂𝙴𝙰 𝙲𝙾𝚁𝚁𝙴𝚃𝙾*`
-
-//m.react('❗')
-
-const { key } = await conn.sendMessage(m.chat, {text: `${wait}`}, {quoted: m})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${waitt}`, edit: key})
-await delay(1000 * 1);
-await conn.sendMessage(m.chat, {text: `${waittt}`, edit: key})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${waitttt}`, edit: key})
-
+let handler = async (m, { conn, text, args, usedPrefix, command}) => {
+if (!args[0]) throw `*🚩 Escribe la URL de un video de TikTok que deseas descargar.*`
+if (!args[0].match(/tiktok/gi)) throw `verifica que el link sea de TikTok`
+await m.react('🕓')
 try {
-let p = await fg.tiktok(args[0])
-let te = `*[VIDEO DESCARGADO CON EXITO ✅]*\n\n💌 *NOMBRE:* ${p.nickname}
-👤 *USUARIO:* ${p.unique_id}
-⏰ *DURACIÓN:* ${p.duration}
-📄 *DESCRIPCIÓN:* ${p.description}`
-conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
-//m.react('⚠️')
-} catch {
-try {
-const { author: { nickname }, video, description } = await tiktokdl(args[0])
-const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
-if (!url) throw '*⚠️ ERROR AL DESACARGAR EL VÍDEO*'
-conn.sendFile(m.chat, url, 'fb.mp4', `• 🧃 *Nombre:* ${nickname}\n• 📄 *Descripción:* ${description}`, m)
-m.react(done)
-} catch {
-m.reply(`*⚠️ ERROR AL DESCARGAR EL VÍDEO*`)
-}}
-    
-}
-handler.help = ['tiktok']
-handler.tags = ['descargas']
-handler.command = /^(tiktok|tt|ttdl|tiktokdl|tiktoknowm)$/i
-handler.diamond = true
+    let p = await fg.tiktok(args[0])
+    await conn.sendFile(m.chat, p.play, "out.png", m)
+    await m.react('✅')
+    } catch {
+    try { 
+    let api = await fetch(`https://skizo.tech/api/tiktok?url=${args[0]}&apikey=${skizo}`)
+    let res = await api.json()
+    let dl_url = res.data.hdplay
+    await conn.sendFile(m.chat, dl_url, "out.png", m)
+    await m.react('✅')
+    } catch {
+    try {
+    let api = await fetch(`https://kiicodeofficial.my.id/api/downloader/tiktok?url=${args[0]}&apikey=${kiicode}`)
+    let res = await api.json()
+    let dl_url = res.data.hdplay
+    await conn.sendFile(m.chat, dl_url, "out.png", m)
+    await m.react('✅')
+    } catch {
+    try {
+	const { video } = await tiktokdl(args[0])
+    const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
+    if (!url) throw global.error
+    await conn.sendFile(m.chat, url, "out.png", m)
+    await m.react('✅')
+    } catch {
+    await conn.reply(m.chat, `${global.error}`, m).then(_ => m.react('✖️'))
+}}}}}
+handler.help = ['tiktok <url tt>']
+handler.tags = ['downloader']
+handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
+handler.limit = 1
+handler.register = true 
 
 export default handler
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
