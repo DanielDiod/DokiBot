@@ -962,7 +962,7 @@ if (!('antiTelegram' in chat)) chat.antiTelegram = false
 if (!('antiFacebook' in chat)) chat.antiFacebook = false
 if (!('antiInstagram' in chat)) chat.antiInstagram = false
 if (!('antiTwitter' in chat)) chat.antiInstagram = false
-if (!('antifake' in chat)) chat.antifake = true
+if (!('antifake' in chat)) chat.antifake = false
 if (!('reaction' in chat)) chat.reaction = false    
 if (!('viewonce' in chat)) chat.viewonce = false         
 if (!('modoadmin' in chat)) chat.modoadmin = false      
@@ -995,7 +995,7 @@ antiTelegram: false,
 antiFacebook: false,
 antiInstagram: false,
 antiTwitter: false,
-antifake: true,
+antifake: false,
 reaction: false,
 viewonce: false,
 modoadmin: false,
