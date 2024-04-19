@@ -10,8 +10,8 @@
         <a href="https://github.com/DanielDiod"><img title="Author"    src="https://img.shields.io/badge/Author-Daniel🇦🇱-purple.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
-
-    > Este Bot esta en desarrollo y listo para instalar en Termux y Infinity-Host
+'''bash
+ Este Bot esta en desarrollo y listo para instalar en Termux y Infinity-Host
         
 
 
