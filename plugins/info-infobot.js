@@ -12,7 +12,7 @@ let handler = async (m, {conn, usedPrefix}) => {
   const groups = chats.filter(([id]) => id.endsWith("@g.us"))
   const {restrict, antiCall, antiprivado} = global.db.data.settings[conn.user.jid] || {}
   const {autoread, gconly, pconly, self} = global.opts || {}
-  let pp = "./galeria/menudorrat3.jpg"  
+  let pp = "/Menu2.jpg"  
  let formatSize = sizeFormatter({ 
    std: "JEDEC", 
    decimalPlaces: 2, 
