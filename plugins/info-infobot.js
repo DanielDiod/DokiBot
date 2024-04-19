@@ -1,54 +1,72 @@
-import si from "systeminformation";
-import {performance} from "perf_hooks";
-import {sizeFormatter} from "human-readable";
-import {cpus as _cpus} from "os";
-let handler = async (m, {conn, usedPrefix}) => {
+import os from 'os'
+import util from 'util'
+import sizeFormatter from 'human-readable'
+let MessageType =  (await import(global.baileys)).default
+import fs from 'fs'
+import { performance } from 'perf_hooks'
+let handler = async (m, { conn, usedPrefix }) => {
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime) 
+let totalreg = Object.keys(global.db.data.users).length
+const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
+const groups = chats.filter(([id]) => id.endsWith('@g.us'))
+const used = process.memoryUsage()
+const cpus = os.cpus().map(cpu => {
+    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
+    return cpu
+  })
+const cpu = cpus.reduce((last, cpu, _, { length }) => {
+    last.total += cpu.total
+    last.speed += cpu.speed / length
+    last.times.user += cpu.times.user
+    last.times.nice += cpu.times.nice
+    last.times.sys += cpu.times.sys
+    last.times.idle += cpu.times.idle
+    last.times.irq += cpu.times.irq
+    return last
+  }, {
+    speed: 0,
+    total: 0,
+    times: {
+      user: 0,
+      nice: 0,
+      sys: 0,
+      idle: 0,
+      irq: 0
+    }
+  })
+const { restrict } = global.db.data.settings[conn.user.jid] || {}
+const { autoread } = global.opts
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let pp = './Menu2.jpg'
+//let vn = './media/infobot.mp3'
+let name = await conn.getName(m.sender)
+let old = performance.now()
+  //await m.reply('_Realizando test_')
+  let neww = performance.now()
+  let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
+  let speed = neww - old
 
-  let _uptime = process.uptime() * 1000
-  let uptime = clockString(_uptime)
-  let totalreg = Object.keys(global.db.data.users).length;
-  const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats);
-  const groupsIn = chats.filter(([id]) => id.endsWith("@g.us"))
-  const groups = chats.filter(([id]) => id.endsWith("@g.us"))
-  const {restrict, antiCall, antiprivado} = global.db.data.settings[conn.user.jid] || {}
-  const {autoread, gconly, pconly, self} = global.opts || {}
-  let pp = "/Menu2.jpg"  
- let formatSize = sizeFormatter({ 
-   std: "JEDEC", 
-   decimalPlaces: 2, 
-   keepTrailingZeroes: false, 
-   render: (literal, symbol) => `${literal} ${symbol}B`, 
- }); 
- let ram = await si.mem(); 
- let cpu = await si.cpuCurrentSpeed(); 
- let disk = await si.fsSize(); 
- let json = { 
-   memory: formatSize(ram.free) + " de " + formatSize(ram.total), 
-   memory_used: formatSize(ram.used), 
-   cpu: cpu.avg + " Ghz", 
-   disk: formatSize(disk[0].available), 
- };
-let info = `
-╭─ ❖ ── ✦ ── ✧ ── ✦ ── ❖ ──┓
-│❒  [🍁] *Creador: Daniel 🇦🇱*
-│❒  [🍁] *Numero: +51 955 918 117*
-│❒  [🍁️] *prefijo: ${usedPrefix}*
-│❒  [🍁] *Chats PRIVADOS: ${chats.length - groups.length}*
-│❒  [🍁] *Chat de Grupos: ${groups.length}* 
-│❒  [🍁] *Chats Totales: ${chats.length}* 
-│❒  [🍁] *Actividad: ${uptime}*
-│❒  [🍁] *Usuarios: ${totalreg} 𝚗𝚞𝚖𝚎𝚛𝚘𝚜*
-│❒  [🍁] *Autoread:* ${autoread ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
-│❒  [🍁] *Restrict:* ${restrict ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"} 
-│❒  [🍁] *Antiprivado*: ${antiprivado ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
-│❒  [🍁] *Antillamada:* ${antiCall ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
-│❒  [🍁] *Pconly*: ${pconly ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
-│❒  [🍁] *Gconly*: ${gconly ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
-│❒  [🍁] *Modo*: ${self ? "*𝚙𝚛𝚒𝚟𝚊𝚍𝚘*" : "*𝚙𝚞𝚋𝚕𝚒𝚌𝚘*"}
-│❒  [🔴] *Ram Usada:* ${json.memory_used}
-│❒  [🍁] *Disco Duro:*  ${json.disk}
-╰─ ❖ ── ✦ ── ✧ ── ✦ ── ❖ ──┛`.trim();
-  
+let info = `           \`『ＩＮＦＯ ＤＥＬ ＢＯＴ 』\`
+
+> 🤴🏻 *CREADOR:* Daniel 🇦🇱
+> #️⃣ *CONTACTO:* ${asistencia}
+> ✅ *VERSION ACTUAL:* ${vs}
+> 🎳 *PREFIJO:* *${usedPrefix}*
+> 🔐 *CHATS PRIVADO:* *${chats.length - groups.length}*
+> 🦜 *CHATS DE GRUPOS:* *${groups.length}* 
+> 💡 *CHATS EN TOTAL:* *${chats.length}* 
+> 🚀 *ACTIVIDAD:* *${uptime}*
+> 🎩 *USUARIOS:* *${totalreg}*
+> 🐢 *VELOCIDAD:* *${speed}*   
+> 🌎 *MODO:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
+> 💬 *ANTIPRIVADO:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Activado ✔*' : '*Desactivado ✘*'}
+> 📵 *ANTILLAMADA:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Activado ✔*' : '*Desactivado*'}
+> 🤖 *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Activado ✔' : 'Desactivado ✘'}*
+> ☑️ *AUTOREAD:*  ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}   
+> 🤖 *BOTS SECUNDARIOS ACTIVOS:* *${totaljadibot.length}*
+> ⛔ *RESTRICT:* ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'}`
 conn.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/0201b8bffdd9981043023.jpg", }, caption: info,
 contextInfo: {
 mentionedJid: [m.sender],
@@ -58,15 +76,14 @@ sourceUrl: "http://wa.me/51955918117",
 mediaType: 1,
 showAdAttribution: true,
 thumbnailUrl: "https://telegra.ph/file/0201b8bffdd9981043023.jpg",
-}}}, { quoted: m })
-}  
-handler.help = ["infobot"]
-handler.tags = ["info", "tools"]
-handler.command = /^(infobot|informacionbot|infodorrat|informacióndorrat|informaciondorrats)$/i;
+handler.help = ['infobot']
+handler.tags = ['info', 'tools']
+handler.command = /^(infobot|informacionbot|infogata|informacióngata|informaciongata)$/i
 export default handler
+
 function clockString(ms) {
-  let h = Math.floor(ms / 3600000);
-  let m = Math.floor(ms / 60000) % 60;
-  let s = Math.floor(ms / 1000) % 60;
-  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(":");
-}
+let h = Math.floor(ms / 3600000)
+let m = Math.floor(ms / 60000) % 60
+let s = Math.floor(ms / 1000) % 60
+console.log({ms,h,m,s})
+return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')}
