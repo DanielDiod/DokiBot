@@ -14,8 +14,8 @@ let handler = async (m, {conn, args, usedPrefix, command}) => {
     participant: "0@s.whatsapp.net",
   };
 
-  let texto = `_. ᩭ✎Idioma de NightcoreBot cambiado Correctamente :_ `;
-  let texto2 = `_. ᩭ✎Seleccione el idioma para NightcoreBot_`;
+  let texto = `_. ᩭ✎Idioma de Igna • Bot cambiado Correctamente :_ `;
+  let texto2 = `_. ᩭ✎Seleccione el idioma para Igna • Bot_`;
   let texto3 = `_. ᩭ✎Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje_`;
   let idioma = await translate(`${texto}`, {to: args[0], autoCorrect: true});
   let idioma2 = await translate(`${texto2}`, {to: lenguajeGB.lenguaje(), autoCorrect: true});
