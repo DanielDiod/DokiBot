@@ -321,7 +321,7 @@ await conn.sendMessage(m.chat, {
   "title": wm,   
   "containsAutoReply": true,  
   "mediaType": 1,   
-  "thumbnail": fotogodzx,  
+  "thumbnail": img,  
   "mediaUrl": `https://chat.whatsapp.com/DwousheVLXvDXb2trooFSn`,  
   "sourceUrl": `https://chat.whatsapp.com/DwousheVLXvDXb2trooFSn`  
   }  
