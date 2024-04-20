@@ -32,28 +32,29 @@ const defaultMenu = {
 
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-*╭──〔❨✧ USUARIOS ✧❩〕──╮*
-┴│✯ *📝 Nombre* : %name
+*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
+✩│✯ *📝 Nombre* : %name
 ✩│✯ *🪙 Euros* : %star
 ✩│✯ *📈 Nivel* : %level
-┬│✯ *⭐ XP* : %totalexp
-*╰──〔❨✧ USUARIOS ✧❩〕──╯*
+✩│✯ *⭐ XP* : %totalexp
+*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*
 
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-*╭──〔❨✧ INFORMACIÓN ✧❩〕──╮*
-┴│✯ *🗣️ Creador* : Daniel 🇦🇱
+*INFO BOT*
+*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
+✩│✯ *🗣️ Creador* : Daniel 🇦🇱
 ✩│✯ *📲 Número* : wa.me/51955918117
 ✩│✯ *⌛ Tiempo* : %uptime
-*╰──〔❨✧ INFORMACIÓN ✧❩〕──╯*
+*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*
 
 %readmore
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 `.trimStart(),
-  header: '╭──〔❨✧ %category ✧❩〕──╮',
+  header: '*MENÚ メ %category*\n*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*',
   body: '✩│ *%cmd*\n',
-  footer: '*╰──〔❨✧ IGNA • BOT ✧❩〕──╯*'\n\n,
+  footer: '*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*',
   after: '\n*Simple WhatsApp Bot Multi Device*',
 }
 
