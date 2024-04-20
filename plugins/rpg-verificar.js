@@ -35,7 +35,7 @@ mentionedJid:[m.sender],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": gataImg.getRandom(), 
-"title": `乂  R E G I S T R O  乂`, 
+"title": `Registro exitoso 📝: By Igna • Bot`, 
 "containsAutoReply": true,
 "mediaType": 1, 
 "mediaUrl": nnn, 
@@ -58,6 +58,7 @@ mentionedJid:[m.sender],
 ╰──────────────────`, , m)*/
 await m.reply(`${sn}`) 
 }
+await m.react('✅')	
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
