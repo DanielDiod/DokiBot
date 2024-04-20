@@ -331,7 +331,7 @@ await conn.sendMessage(m.chat, {
 if (command == "menucompleto" || command == "allmenu") {
 await m.reply(`*Enviando el menu completo...*`);                 
 var completomenu = `
-╭───❮ *⛩️Nightcore - Bot - MD⛩️* ❯───◈
+╭───❮ *⛩️Igna - Bot⛩️* ❯───◈
 ║╮
 ║├✧•• Creador : Daniel🍁
 ║├➣ ɴᴜ́ᴍᴇʀᴏ : _+51 955 918 117_
