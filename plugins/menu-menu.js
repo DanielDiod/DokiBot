@@ -280,20 +280,25 @@ let menu = `⌜ *${wm}* ⌟
 
 SHANA BOT || DANIEL X SOPIXX`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
-await conn.sendMessage(m.chat, {
-text: menu,
-contextInfo: { 
-mentionedJid: [m.sender],
-forwardingScore: 9, 
-externalAdReply: {
-title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
-//body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
-thumbnail: img,
-sourceUrl: 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33',
-mediaType: 1,
-renderLargerThumbnail: true
-}}}, { quoted: m})
+//let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
+const vi = ['https://telegra.ph/file/405daebd4bc0d69e5d165.mp4',
+'https://telegra.ph/file/1d0ad9f79f65f39895b08.mp4',
+'https://telegra.ph/file/c25afc1685b13210ce602.mp4']
+try {
+await conn.sendMessage(m.chat, { video: { url: vi.getRandom() }, gifPlayback: true, caption: menu, contextInfo: fakeChannel2 })
+//await conn.sendMessage(m.chat, { video: { url: vi.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender] }, { quoted: fkontak }) 
+} catch (error) {
+try {
+await conn.sendMessage(m.chat, { image: { url: gataMenu.getRandom() }, gifPlayback: false, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak }) 
+} catch (error) {
+try {
+await conn.sendMessage(m.chat, { image: gataImg.getRandom(), gifPlayback: false, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak }) 
+} catch (error) {
+try{
+await conn.sendFile(m.chat, imagen5, 'menu.jpg', menu, fkontak, false, { mentions: [m.sender, global.conn.user.jid] })
+} catch (error) {
+return 
+}}}} 
 await m.react('🤖')	
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
