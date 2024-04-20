@@ -26,7 +26,8 @@ await conn.sendMessage(m.chat, {
 text: `> 乂  R E G I S T R O  乂\n
 *Nombre  :* ${name}
 *Edad  :* ${age} años
-*Euros  :* 4 euros 🪙`,
+*Euros  :* 4 euros 🪙
+*Numero de serie* : ${sn}`,
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -55,8 +56,7 @@ mentionedJid:[m.sender],
 ┆ *$400 𝐋𝐨𝐥𝐢𝐜𝐨𝐢𝐧𝐬*
 ┆ *$150 𝐗𝐏*
 ┆ *$2 𝐓𝐨𝐤𝐞𝐧𝐬*
-╰──────────────────`, , m)*/
-await m.reply(`${sn}`) 
+╰──────────────────`, , m)*/ 
 await m.react('✅')	
 }	
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
