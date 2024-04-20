@@ -30,7 +30,7 @@ const defaultMenu = {
 
 Hola *%taguser*, soy *Igna • Bot*, en que puedo ayudarte hoy?
 
-*I N F O  -  U S E R*
+*U S U A R I O*
 ╭───────────────···
 ┴│✯ *📝 Nombre* : %name
 ✩│✯ *🪙 Euros* : %star
