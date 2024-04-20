@@ -57,8 +57,8 @@ mentionedJid:[m.sender],
 ┆ *$2 𝐓𝐨𝐤𝐞𝐧𝐬*
 ╰──────────────────`, , m)*/
 await m.reply(`${sn}`) 
-}
 await m.react('✅')	
+}	
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
