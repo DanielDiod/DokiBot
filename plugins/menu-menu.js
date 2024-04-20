@@ -54,7 +54,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '*MENÚ メ %category*\n*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*',
   body: '➤ *%cmd*\n',
-  footer: '*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*'\n,
+  footer: '*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*',
   after: '\n*Simple WhatsApp Bot Multi Device*',
 }
 
