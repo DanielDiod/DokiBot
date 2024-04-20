@@ -293,10 +293,8 @@ let pp = 'https://telegra.ph/file/4c3e4b782c82511b3874d.mp4'
     let pp11 = 'https://telegra.ph/file/81da492e08bfdb4fda695.mp4'
     let pp12 = 'https://telegra.ph/file/ec8393df422d40f923e00.mp4'
     let pp13 = 'https://telegra.ph/file/ba7c4a3eb7bf3d892b0c8.mp4'
-    let pp14 = 'https://tinyurl.com/ymlqb6ml'
-    let pp15 = 'https://tinyurl.com/ykv7g4zy'
     m.react('⭐')
-conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
 } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
