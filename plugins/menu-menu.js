@@ -298,10 +298,10 @@ let pp = 'https://telegra.ph/file/4c3e4b782c82511b3874d.mp4'
     m.react('⭐')
 conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
 } catch (e) {
-//await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)	
-}}
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
+    throw e
+  }
+}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(menu|allmemu|herramientas|menú|comandos|allm\?)$/i
