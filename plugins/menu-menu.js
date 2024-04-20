@@ -43,9 +43,9 @@ Hola *%taguser*, soy *Igna • Bot*, en que puedo ayudarte hoy?
 
 \t\t\t*L I S T A  -  M E N Ú S*
 `.trimStart(),
-  header: '╭───═[ *MENÚ メ %category* ]═────⋆\n│╭───────────────···',
+  header: '*MENÚ メ %category*\n│╭───────────────···',
   body: '✩│ *%cmd*\n',
-  footer: '│╰────────────────···\n╰───────────═┅═──────────\n',
+  footer: '╰────────────────···',
   after: '\n*Simple WhatsApp Bot Multi Device*',
 }
 
