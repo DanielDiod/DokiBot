@@ -28,7 +28,7 @@ const defaultMenu = {
   before: `
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-Hola *%taguser*, soy *Ai Hoshino*, en que puedo ayudarte hoy?
+Hola *%taguser*, soy *Igna • Bot*, en que puedo ayudarte hoy?
 
 ╭────═[ *I N F O  -  U S E R* ]═─────⋆
 │╭───────────────···
