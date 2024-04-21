@@ -11,7 +11,7 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(play);
   }
 };
-handler.command = ["chambear1", "chambear2", "chambearhub"];
+handler.command = ["chamba"];
 handler.tags = ["internet"];
 export default handler
 global.piropo = ["CHAMBEANDO..
