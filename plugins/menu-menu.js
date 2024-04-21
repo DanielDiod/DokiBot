@@ -168,7 +168,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp15 = 'https://tinyurl.com/ykv7g4zy'
     m.react('⭐')
    
-   await conn.reply(m.chat, '*Esperee..*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.yt, thumbnail: imagen6 }}})
+   await conn.reply(m.chat, '*Esperee..*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: [wm, 'Igna •Bot' + lb + ' Igna • Bot 🪙', 'Igna • Bot 🈴'].getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), thumbnail: gataImg.getRandom()}}})
 
    
     conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
