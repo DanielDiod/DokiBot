@@ -3,6 +3,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 const apiUrl = https://api.apis.net.pe/v2/reniec/dni?numero=${text}&token=apis-token-7946.-LODBsCL6vKrK7tS4sh0l3fgi6wK6ElW
 fetch(apiUrl).then(response => {
 if (!response.ok) {
+if (!args || !args[0]) return conn.reply(m.chat, `*🚩 Escribe un dni.*`, m)
 return console.log('La página no esta funcionando actualmente')
 }
 return response.json()
