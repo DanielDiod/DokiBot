@@ -1,23 +1,25 @@
 import fetch from 'node-fetch' 
 let handler = async function (m, { conn, text, usedPrefix }) {
-const apiUrl = https://api.apis.net.pe/v2/reniec/dni?numero=${text}&token=apis-token-7946.-LODBsCL6vKrK7tS4sh0l3fgi6wK6ElW
+if (text.length != 6) throw `El Bin tiene que contener 6 carácteres obligatoriamente.`
+const apiUrl = `https://lookup.binlist.net/${text}`
 fetch(apiUrl).then(response => {
 if (!response.ok) {
-if (!args || !args[0]) return conn.reply(m.chat, `*🚩 Escribe un dni.*`, m)
 return console.log('La página no esta funcionando actualmente')
 }
 return response.json()
 }).then(data => {
 const formattedResult = `
- DNI: ${text}
-NOMBRE: ${data.nombres}
-APELLIDO PATERNO: ${data.apellidoPaterno}
-APELLIDO MATERNO: ${data.apellidoMaterno}
+📇| BIN: ${text}
+💳| MARCA: ${data.scheme}
+🏧| TIPO: ${data.type}
+🌐| PAIS: ${data.country.name}
+🏁| BANDERA: ${data.country.emoji}
+🏦| BANCO: ${data.bank.name}
 `
 m.reply(formattedResult.trim())
 }).catch(error => {
 console.error('Error:', error)
 })
 }
-handler.command = /^(dni)$/i
+handler.command = /^(bin|card)$/i
 export default handler
