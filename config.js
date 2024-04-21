@@ -105,7 +105,7 @@ global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Danie
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.lb = 'IGNA • BOT'
-global.vs = '1.5.5'
+global.vs = '1.5.7'
 global.vsJB = '1.5.0'
 global.yt = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.ig = 'https://www.instagram.com/Jxtxn17'
@@ -141,13 +141,13 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
-global.wm = 'Shana'
-global.igfg = 'Shana'
+global.wm = 'Igna • Bot'
+global.igfg = 'Igna • Bot'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▭*'
-global.nomorown = 'Shana'
+global.nomorown = 'Igna • Bot'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //⊱ ━━━━━.⋅ IMG ⋅.━━━━ ⊰
