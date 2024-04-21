@@ -1,7 +1,7 @@
 {
 "name": "ignaBot",
-"version": "1.5.5",
-"description": "Super Bot WhatsApp",
+"version": "1.5.7",
+"description": "Super Bot WhatsApp Multi Device",
 "main": "index.js",
 "type": "module",
     
