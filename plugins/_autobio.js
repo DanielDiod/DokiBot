@@ -10,7 +10,7 @@ let handler = m => m
  let uptime = clockString(_uptime) 
  let bio = `${global.wm} ║
  ${uptime}
- para última información .aviso ║ Creador Daniel 🇦🇱` 
+ Super WhatsApp Bot Multi Device ║ By Creador Daniel 🇦🇱` 
  await this.updateProfileStatus(bio).catch(_ => _) 
  setting.status = new Date() * 1 
  }  
