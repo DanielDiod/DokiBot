@@ -9,7 +9,7 @@ await conn.sendFile(m.chat, 'thumbnail': gataImg.getRandom(), null, m)
 }}
 handler.help = ['pinterest <búsqueda>']
 handler.tags = ['img']
-handler.command = ['pinterest']
+handler.command = ['prueba']
 handler.register = true 
 //handler.limit = 1
 export default handler
