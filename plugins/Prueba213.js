@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) return m.reply('🍭 Ingresa el nombre de la imágen que estas buscando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* Yumeku`)
 try {
 let { dl_url } = await Scraper.pinterest(text)
-await conn.sendFile(m.chat, dl_url, 'thumbnail.jpg', null, m)
+await conn.reply(m.chat, 'thumbnail': gataImg.getRandom(), null, m)
 } catch {
 }}
 handler.help = ['pinterest <búsqueda>']
