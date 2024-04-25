@@ -66,8 +66,7 @@ npm start
 - Después de eso te aparecerά un código **QR** lo escaneas con el Whatsapp web y listo
 -----
 ### 🟢 INFINITY HOST
-[![blog](https://img.shields.io/badge/infinity-LoliBot-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtu.be/o6ZSpMOsvHs?si=fzwZIDN5LPE1w0pI)
+[![blog](https://github.com/DanielDiod"><img title="Author"    src="https://img.shields.io/badge/Author-Daniel🇦🇱-purple.svg?style=for-the-badge&logo=github)
 > Activar **Igna • Bot** 24/7 activo en Infinity-Host
 
 <a href="https://dashboard.infinitywa.xyz"><img src="https://qu.ax/TPhh.jpg" height="125px"></a>
