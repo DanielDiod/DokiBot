@@ -1,4 +1,4 @@
-//Créditos del código Starlight team 
+//Créditos del código DanielDiod 
 
 import cheerio from 'cheerio';
 import axios from 'axios';
