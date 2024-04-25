@@ -69,6 +69,8 @@ npm start
 </a>
 <a href="https://instagram.com/Jxtxn17">
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+</a>
+
 ### Información del Host
 
 - **Página:** [`Click aqui`](https://dashboard.infinitywa.xyz)
