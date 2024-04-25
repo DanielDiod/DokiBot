@@ -67,7 +67,7 @@ npm start
 -----
 ### 🟢 INFINITY HOST
 </a>
-<img src= "https://telegra.ph/file/0b94a2f3955859ea6fbdc.jpg">
+<img src= "https://telegra.ph/file/a6b20ccc56d1a9bb0cc23.jpg">
     </p>
 </a>  
 <a href="https://instagram.com/Jxtxn17">
