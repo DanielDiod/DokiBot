@@ -69,9 +69,6 @@ npm start
 </a>
 <img src= "https://telegra.ph/file/a6b20ccc56d1a9bb0cc23.jpg">
     </p>
-</a>  
-<a href="https://instagram.com/Jxtxn17">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
 </a>
 
 ### Información del Host
