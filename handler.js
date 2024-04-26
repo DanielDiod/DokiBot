@@ -1017,7 +1017,7 @@ if (!('antiPrivate' in settings)) settings.antiPrivate = true
 if (!('antiCall' in settings)) settings.antiCall = true
 if (!('antiSpam' in settings)) settings.antiSpam = false
 if (!('antispam2' in settings)) settings.antispam2 = false
-if (!('jadibotmd' in settings)) settings.jadibotmd = false  
+if (!('jadibotmd' in settings)) settings.jadibotmd = true  
 } else global.db.data.settings[this.user.jid] = {
 self: false,
 autoread: false,
@@ -1028,7 +1028,7 @@ antiPrivate: true,
 antiCall: true,
 antiSpam: false,
 antispam2: false, 
-jadibotmd: false,
+jadibotmd: true,
 }
 } catch (e) {
 console.error(e)
