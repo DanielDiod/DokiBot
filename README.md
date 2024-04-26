@@ -65,7 +65,7 @@ npm start
 
 - Después de eso te aparecerά un código **QR** lo escaneas con el Whatsapp web y listo
 -----
-### 🟢 INFINITY HOST
+### 🟢 INFINITY HOST 
 </a>
 <img src= "https://telegra.ph/file/a6b20ccc56d1a9bb0cc23.jpg">
     </p>
