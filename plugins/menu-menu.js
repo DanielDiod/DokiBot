@@ -39,6 +39,7 @@ const defaultMenu = {
 *➤🗣️ Creador* : Daniel 🇦🇱
 *➤📲 Número* : wa.me/51955918117
 *➤⌛ Tiempo* : %uptime
+*➤🎌 Grupo* :https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv
 *╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*
 
 %readmore
