@@ -46,7 +46,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_reminder",
-                 "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Recordatorio\",\"id\":\"message\"}"
               },
               {
                  "name": "cta_cancel_reminder",
