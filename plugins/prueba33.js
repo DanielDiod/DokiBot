@@ -11,6 +11,6 @@ let msg = generateWAMessageFromContent(m.chat, {
 await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 
 }
-handler.command = /^(plist)$/i
+handler.command = /^(boton)$/i
 
 export default handler  
