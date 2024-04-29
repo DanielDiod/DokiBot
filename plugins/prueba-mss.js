@@ -12,13 +12,13 @@ let msg = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: "test"
+            text: "Igna"
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "test"
+            text: "Bot"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "test",
+            title: "El mejor",
             subtitle: "test",
             hasMediaAttachment: false
           }),
