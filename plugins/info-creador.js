@@ -62,7 +62,7 @@ rows: [
 ]}
 ]})
 const interactiveMessage = {
-body: { text: menu },
+body: { text: colaboradores},
 footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu2*` },
 header: { title: `⭐ *------- NUEVO MENÚ -------* ⭐\n${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
@@ -71,8 +71,7 @@ buttonParamsJson
 }]
 }}
 const message = { messageContextInfo: { deviceListMetadata: {}, deviceListMetadataVersion: 2 }, interactiveMessage }
-await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})
- }}                                                                                      
+await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})                                                                                   
  if (m.isGroup) { 
        // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
        const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}; 
