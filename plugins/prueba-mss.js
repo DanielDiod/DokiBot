@@ -12,13 +12,13 @@ let msg = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: "Igna"
+            text: "El mejor"
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
             text: "Bot"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "El mejor",
+            title: "Igna",
             subtitle: "test",
             hasMediaAttachment: false
           }),
@@ -46,7 +46,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_reminder",
-                 "buttonParamsJson": "{\"display_text\":\"cta_reminder\",\"id\":\"message\"}"
+                 "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
               },
               {
                  "name": "cta_cancel_reminder",
