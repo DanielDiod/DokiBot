@@ -70,7 +70,9 @@ buttonParamsJson
 }]
 }}
 const message = { messageContextInfo: { deviceListMetadata: {}, deviceListMetadataVersion: 2 }, interactiveMessage }
-await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})                                                                                   
+await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {}) 
+} else { 
+let menu = `BIENVENIDO AL MENU DE IGNA BOT ELIGA ALGUNA DE LAS SIGUIENTES OPCIONES`.trim()  
 await conn.sendFile(m.chat, gataImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: 'Igna  - Bot ', previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu}}}) 
 await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m }) 
 //conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
