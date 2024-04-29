@@ -429,7 +429,7 @@ console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
 console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))}}
 
 function purgeOldFiles() {
-const directories = ['./IgnaSession/', './jadibts/']
+const directories = ['./GataBotSession/', './jadibts/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
