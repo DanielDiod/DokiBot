@@ -16,7 +16,7 @@ const fkontak = {
 
 let user = global.db.data.users[m.sender]
 let premium = user.premium  
-let minar = `${pickRandom(['Que crak eres 👻 has minado',
+let minar = `${pickRandom(['Que pro 😎 has minado',
 '🌟✨ Genial!! Obtienes',
 'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
 'Has Minado!!',
@@ -53,7 +53,7 @@ let xp = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640, 6
 let exppremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1
 
 let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `[ ❗️𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢𝗡 ❗️]\n\n*VUELVA EN ${msToTime(time - new Date())} PARS CONTINUAR MINANDO ${global.rpgshopp.emoticon('exp')}⏰*`, fkontak,  m)
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('exp')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('exp')}⛏️*`,/* fkontak,*/  m, { contextInfo: { 'forwardingScore': 0, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: cnl, thumbnail: imagen1}}}, { quoted: m })
 user.exp += premium ? exppremium : xp  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
@@ -61,15 +61,15 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
-/*conn.sendHydrated(m.chat, `*${minar} ${xp} 𝙓𝙋*`, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
+/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${xp} ${global.rpgshop.emoticon('exp')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
-['𝙈𝙞𝙣𝙖𝙧 𝗠𝗼𝗻𝗸𝗶𝗰𝗼𝗶𝗻𝘀', `.minar2`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `.menu`]
+['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
 ], m,)*/
-m.reply(`*${minar} ${xp} XP*`)
+await conn.reply(m.chat, `*${minar} ${xp} XP*`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: cnl, thumbnail: imagen1}}}, { quoted: m })
 user.lastmiming = new Date * 1  
 }
-handler.help = ['minar']
+handler.help = ['inar']
 handler.tags = ['xp']
 handler.command = ['minar', 'miming', 'mine', 'minarxp', 'minarexp', 'minarexperiencia'] 
 handler.fail = null
@@ -91,4 +91,3 @@ return minutes + " m y " + seconds + " s "
 
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]}
-
