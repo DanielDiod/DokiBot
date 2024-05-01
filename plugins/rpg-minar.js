@@ -66,7 +66,7 @@ texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 ['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
 ], m,)*/
-await conn.reply(m.chat, `> RPG - MINAR\n\n> ${minar} ${xp} XP`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: global.md, thumbnail: imagen1}}}, { quoted: m })
+await conn.reply(m.chat, `> R P G - M I N A R\n\n> ${minar} ${xp} XP\n\n> BY IGNA - BOT`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: global.md, thumbnail: imagen1}}}, { quoted: m })
 user.lastmiming = new Date * 1  
 }
 handler.help = ['inar']
