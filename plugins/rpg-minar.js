@@ -53,7 +53,7 @@ let xp = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640, 6
 let exppremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1
 
 let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `> VUELVA EN ${msToTime(time - new Date())} PARA VOLVER A MINAR ${global.rpgshopp.emoticon('exp')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('exp')}⛏️*`,/* fkontak,*/  m, { contextInfo: { 'forwardingScore': 0, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `By Daniel`, mediaType: 3, sourceUrl: global.ig, thumbnail: imagen1}}}, { quoted: m })
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `> VUELVA EN ${msToTime(time - new Date())} PARA VOLVER A MINAR ${global.rpgshopp.emoticon('exp')}`, /* fkontak,*/  m, { contextInfo: { 'forwardingScore': 0, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `By Daniel`, mediaType: 3, sourceUrl: global.md, thumbnail: imagen1}}}, { quoted: m })
 user.exp += premium ? exppremium : xp  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
@@ -66,7 +66,7 @@ texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 ['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
 ], m,)*/
-await conn.reply(m.chat, `> RPG - MINAR\n\n*${minar} ${xp} XP*`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: global.ig, thumbnail: imagen1}}}, { quoted: m })
+await conn.reply(m.chat, `> RPG - MINAR\n\n> ${minar} ${xp} XP`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: global.md, thumbnail: imagen1}}}, { quoted: m })
 user.lastmiming = new Date * 1  
 }
 handler.help = ['inar']
