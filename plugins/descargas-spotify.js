@@ -80,14 +80,14 @@ if (!songInfo.length) throw `*No se encontró una canción.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
-let info = `*╭━〔  SPOTIFY 💚  〕⬣*\n  
-⭐ *Nombre:* ${res.name}\n
-⭐ *Artista:* ${res.artista.join(', ')}\n
-⭐ *Album:* ${res.album}\n
-⭐ *Duracion:* ${res.duracion}\n
-⭐ *Fuente:* *Spotify*\n
-⭐ *Enlace:* ${shortURL}\n
-*╰━━━━━━━━━━━━⬣*`
+let info = `> S P O T I F Y \n  
+• *Nombre:* ${res.name}\n
+• *Artista:* ${res.artista.join(', ')}\n
+• *Album:* ${res.album}\n
+• *Duracion:* ${res.duracion}\n
+• *Fuente:* *Spotify*\n
+• *Enlace:* ${shortURL}\n\n
+*enviando audio espere un momento soy lenta..*`
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
 let { videos } = await search(res.name)
@@ -99,7 +99,7 @@ let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
 let img = await getBuffer(res.imagen)
-await conn.sendMessage(m.chat, { text: info, contextInfo: { mentionedJid: [m.sender], forwardingScore: 90, externalAdReply: { title: '𝐓𝐡𝐞 𝐌𝐨𝐧𝐤𝐢 𝐁𝐨𝐭', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: 'https://www.instagram.com/jxtxn17', mediaType: 1 }}}, { quoted: m })
+await conn.sendMessage(m.chat, { text: info, contextInfo: { mentionedJid: [m.sender], forwardingScore: 90, externalAdReply: { title: 'Igna • Bot', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: global.md, mediaType: 1 }}}, { quoted: m })
 await m.react('✅')  
 } catch (error) {
 }}
