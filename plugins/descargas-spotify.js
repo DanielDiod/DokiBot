@@ -81,13 +81,13 @@ let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
 let info = `> S P O T I F Y \n  
-• *Nombre:* ${res.name}\n
-• *Artista:* ${res.artista.join(', ')}\n
-• *Album:* ${res.album}\n
-• *Duracion:* ${res.duracion}\n
-• *Fuente:* *Spotify*\n
-• *Enlace:* ${shortURL}\n\n
-*enviando audio espere un momento soy lenta..*`
+✩ *Nombre:* ${res.name}\n
+✩ *Artista:* ${res.artista.join(', ')}\n
+✩ *Album:* ${res.album}\n
+✩ *Duracion:* ${res.duracion}\n
+✩ *Fuente:* *Spotify*\n
+✩ *Enlace:* ${shortURL}\n\n
+*- ↻enviando audio espere un momento soy lenta..*`
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
 let { videos } = await search(res.name)
