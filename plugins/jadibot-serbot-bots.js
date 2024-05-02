@@ -7,8 +7,8 @@ async function handler(m, { conn, usedPrefix }) {
       const userJid = user.user.jid.replace(/[^0-9]/g, '');
       if (!addedNumbers.has(userJid)) {
         addedNumbers.add(userJid);
-        const userName = user.user.name || "Shana - Bot"
-        connectedUsers.add(`Wa.me/${userJid}?text=${usedPrefix}menu (${userName})`)
+        const userName = user.user.name || "Igna - Bot"
+        connectedUsers.add(`> SUDBOTS ACTIVOS\n\nWa.me/${userJid}?text=${usedPrefix}menu (${userName})`)
       }
     })
   const connectedUserCount = connectedUsers.size
