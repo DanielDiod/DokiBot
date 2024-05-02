@@ -13,7 +13,7 @@ let exppremium = `${pickRandom([1000, 1500, 1800, 2100, 2500, 2900, 3300, 3600, 
 *✒ Has recibido:*
 🆙 *XP* : +${isPrems ? exppremium : exp}
 💎 *DIAMANTE* : +${d}`)*/
-conn.sendMessage(m.chat, {image: imagen1, caption: `🎁 *RECOMPENSA DIARIA*\n\n*✒ Has recibido:*\n🆙 *XP* : +${isPrems ? exppremium : exp}\n💎 *DIAMANTE* : +${d}`.trim()}, {quoted: m})
+conn.sendMessage(m.chat, {image: imagen1, caption: `🎁 *RECOMPENSA DIARIA*\n\n*✒ Has recibido:*\n🆙 *XP* : +${isPrems ? exppremium : exp}\n🪙 *EUROS* : +${d}`.trim()}, {quoted: m})
  global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
