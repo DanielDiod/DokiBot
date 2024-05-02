@@ -3,7 +3,7 @@ let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
 else who = m.sender
 let name = conn.getName(who) 
-m.reply(`> R P G - B A L A N C E
+m.reply(`> R P G - B A L A N C E\n\n
 *Nombre:* ${name}
 *Euros:* ${global.db.data.users[who].limit}🪙\n\n
 
