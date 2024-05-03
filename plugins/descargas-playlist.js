@@ -1,6 +1,6 @@
 import yts from 'yt-search';
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-if (!text) conn.reply(m.chat,  `🚩 Ingresa lo que deseas buscar en YouTube.*`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: mg, body: wm, previewType: 0, thumbnail: img.getRandom(), sourceUrl: redes.getRandom()}}})    
+if (!text) conn.reply(m.chat,  `🚩 Ingresa lo que deseas buscar en YouTube.*`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: mg, body: wm, previewType: 0, thumbnail: img.getRandom(), sourceUrl: global.md}}})    
     let result = await yts(text);
     let ytres = result.videos;
     
