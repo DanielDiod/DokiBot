@@ -1,25 +1,37 @@
-import yts from 'yt-search'
+import yts from 'yt-search';
+let handler = async (m, { conn, usedPrefix, text, args, command }) => {
+if (!text) conn.reply(m.chat,  `🚩 Ingresa lo que deseas buscar en YouTube.*`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: mg, body: wm, previewType: 0, thumbnail: img.getRandom(), sourceUrl: redes.getRandom()}}})    
+    let result = await yts(text);
+    let ytres = result.videos;
+    
+let listSections = [];
+    for (let index in ytres) {
+        let v = ytres[index];
+        listSections.push({
+            title: `• Opción : [ ${index} ]`,
+            rows: [
+                {
+                    header: 'Audio',
+                    title: "",
+                    description: `✩ *Titul:* ${v.title}\n✩ *Duracion:* ${v.timestamp}\n✩ *Vistas* ${v.views}\n✩ *Subido* ${v.ago}\n`, 
+                    id: `${usedPrefix}ytmp3 ${v.url}`
+                },
+                {
+                    header: "Video",
+                    title: "" ,
+                    description: `✩ *Titulo:* ${v.title}\n✩ *Duracion:* ${v.timestamp}\n✩ *Vistas:* ${v.views}\n✩ *Subido:* ${v.ago}\n`, 
+                    id: `${usedPrefix}ytmp4 ${v.url}`
+                }
+            ]
+        });
+    }
 
-let handler = async (m, {conn, usedPrefix, text }) => {
-   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m)
-   await m.react('🕓')
-   let results = await yts(text)
-   let res = results.all.map(v => v).filter(v => v.type == "video")
-   if (!res.length) return conn.reply(m.chat, 'No se encontraron resultados, intente con un nombre más Corto.', m, adReply).then(_ => m.react('✖️'))
-   let txt = `*YouTube - Search*`
-   for (let i = 0; i < (30 <= res.length ? 30 : res.length); i++) {
-      txt += `\n\n`
-	  txt += `	◦  *Titulo* : ${res[i].title}\n`
-	  txt += `	◦  *Duración* : ${res[i].timestamp || '×'}\n`
-	  txt += `	◦  *Publicado* : ${res[i].ago}\n`
-	  txt += `	◦  *Autor* : ${res[i].author.name || '×'}\n`
-	  txt += `	◦  *Url* : ${'https://youtu.be/' + res[i].videoId}\n`
-	  }
-   await conn.sendFile(m.chat, res[0].image, '', txt, m)
-   await m.react('✅')
-}
-handler.help = ['ytsearch']
-handler.tags = ['search']
-handler.command = ['ytsearch', 'yts']
-handler.register = true 
+    await conn.sendList(m.chat, `Busqueda de 🔎: ${text}`, `\n${wm}`, `Seleciones Aqui`, listSections, m);
+};
+handler.help = ['playlist']
+handler.tags = ['dl']
+handler.command = /^playlist|ytbuscar|yts(earch)?$/i
+handler.limit = 1
+handler.level = 3
+
 export default handler
