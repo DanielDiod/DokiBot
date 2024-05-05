@@ -2,7 +2,7 @@ import axios from 'axios'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, command }) => {
-  if (!args || !args[0]) return conn.reply(m.chat, `*• Ingresa un enlace Spotify*`, m)
+  if (!args || !args[0]) return conn.reply(m.chat, `*• Ingresa un enlace Spotify*`, m, fake,)
   let user = global.db.data.users[m.sender]
   await m.react('⌛')
   try {
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, comman
         txt += `	✩   *Album* : ${album}\n`
         txt += `	✩   *Fecha de lanzamiento ∙* ${year}\n\n`
         txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
-await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fake,)
 await conn.sendFile(m.chat, downloadLink, title + '.mp3', `
     `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: user.useDocument })
 await m.react('✅')
@@ -33,7 +33,7 @@ let response = await axios.get(`https://api.botcahx.eu.org/api/download/spotify?
         txt += `	✩   *Artista* : ${artist}\n`
         txt += `	✩   *Duración* : ${duration}\n\n`
         txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
-await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fake,)
 await conn.sendFile(m.chat, downloadLink, title + '.mp3', `
     `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: user.useDocument })
 await m.react('✅')
@@ -51,7 +51,7 @@ try {
         txt += `	✩   *Fecha de lanzamiento ∙* ${year}\n\n`
         txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 
-await await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
+await await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fake,)
 await conn.sendFile(m.chat, downloadLink, title + '.mp3', `
     `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: user.useDocument })
 await m.react('✅')
