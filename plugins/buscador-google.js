@@ -4,7 +4,7 @@ import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
 const fetch = (await import('node-fetch')).default;
 const text = args.join` `;
-if (!text) return conn.reply(m.chat, '*Ingresa lo que deseas buscar en Google.*', m);
+if (!text) return conn.reply(m.chat, '*Ingresa lo que deseas buscar en Google.*', m, fake,);
 await conn.sendMessage(m.chat, {
         text: ` *↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*.`,
         contextInfo: { 
@@ -17,7 +17,7 @@ let teks = `*🔎 Resultado de* : ${text}\n\n`
 for (let g of res) {
 teks += `*Titulo💌*: ${g.title}\n*Link📎*: ${g.link}\n*Info🧿*: ${g.snippet}\n\n`
 }
-conn.reply(m.chat, teks, m).then(_ => m.react('✅'))
+conn.reply(m.chat, teks, m, fake,).then(_ => m.react('✅'))
 })
 }
 handler.help = ['google <búsqueda>'];
