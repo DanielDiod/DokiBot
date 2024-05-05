@@ -10,7 +10,7 @@ let autor = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`> ERROR A SU SOLICITUD SELECCIONE UNA DE ESTAS OPCIONES DE STICKER 🈴\n\n#s\n\n#attp\n\n#attp2\n\n#attp3\n\n#qc`, m, fake, )}
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`> ERROR A SU SOLICITUD SELECCIONE UNA DE ESTAS OPCIONES DE STICKER 🈴\n\n#s\n\n#attp\n\n#attp2\n\n#attp3\n\n#qc`
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ El Video No Puede Durar Mas De 6 Segundos*')
 
 if (/webp|image|video/g.test(mime)) {
