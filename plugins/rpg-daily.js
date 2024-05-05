@@ -13,7 +13,7 @@ let exppremium = `${pickRandom([1000, 1500, 1800, 2100, 2500, 2900, 3300, 3600, 
 *✒ Has recibido:*
 🆙 *XP* : +${isPrems ? exppremium : exp}
 💎 *DIAMANTE* : +${d}`)*/
-conn.sendMessage(m.chat, `>R P G - C L A I M\n\n🎁 *RECOMPENSA DIARIA*\n\n*✒ Has recibido:*\n🆙 *XP* : +${isPrems ? exppremium : exp}\n🪙 *EUROS* : +${d}`, /*fkontak,*/  m, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Canal de WhatsApp`, mediaType: 3, sourceUrl: global.md, thumbnail: imagen1}}}, { quoted: m })
+conn.sendMessage(m.chat, {image: imagen1, caption: `🎁 *RECOMPENSA DIARIA*\n\n*✒ Has recibido:*\n🆙 *XP* : +${isPrems ? exppremium : exp}\n🪙 *EUROS* : +${d}`.trim()}, {quoted: m})
  global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
