@@ -18,7 +18,7 @@ if (!img) throw `uso del comando incorrecto responde una imagen u video con ${us
 let out
 try {
 stiker = await sticker(img, false, global.packname, global.author)
-await conn.reply(m.chat, `> creando tu sticker espere un momento..`, m)
+await conn.reply(m.chat, `> creando tu sticker espere un momento..`, m , fake,)
 } catch (e) {
 console.error(e)
 } finally {
