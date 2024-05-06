@@ -18,7 +18,7 @@ if (media === 'text4') return m.reply(`〔🚓〕${pickRandom(global.robmal)}\n\
 }
 handler.help = ['robar'];
 handler.tags = ['xp'];
-handler.command = /^(crime|Crime)$/i
+handler.command = /^(crime|Crime|crimen)$/i
 handler.register = true
 export default handler;
 
