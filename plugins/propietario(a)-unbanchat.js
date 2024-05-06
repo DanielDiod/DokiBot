@@ -7,6 +7,6 @@ let handler = async (m, { conn }) => {
 }
 handler.command = /^unbanchat$/i
 handler.botAdmin = true
-handler.admin = true
+handler.admin = false
 
 export default handler
