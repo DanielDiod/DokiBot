@@ -167,7 +167,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp13 = 'https://telegra.ph/file/ba7c4a3eb7bf3d892b0c8.mp4'
     let pp14 = 'https://tinyurl.com/ymlqb6ml'
     let pp15 = 'https://tinyurl.com/ykv7g4zy'
-    m.react('⭐')
+    m.react('☔')
    
    await conn.reply(m.chat, '*Espere un momento estoy enviando el menu..*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: 'WhatsApp Bot Multi Device', body: [wm, '' + lb + '🪙', '🈴'].getRandom(), sourceUrl: global.ig, thumbnail: gataImg.getRandom()}}})
 
