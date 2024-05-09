@@ -7,7 +7,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 if (!text) throw `𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝙊 𝙏𝙄𝙏𝙐𝙇𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Billie Eilish - Bellyache*\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙍 𝙏𝙄𝙏𝙇𝙀\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Billie Eilish - Bellyache*`
 try { 
 const yt_play = await search(args.join(' '))
-const texto1 = `*✧═════ ${vs} ═════✧*
+const texto1 = `*✧═════ ═════✧*
 
 ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 »  ${yt_play[0].title}
@@ -24,9 +24,9 @@ const texto1 = `*✧═════ ${vs} ═════✧*
 ও 𝙐𝙍𝙇
 » ${yt_play[0].url}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও 𝙀𝙉𝙑𝙄𝘼𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊
+ও 𝙀𝙉𝙑𝙄𝘼𝘿𝙊  𝘼𝙂𝙐𝘼𝙍𝘿𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊
 
-*✧═════ ${vs} ══════✧*`.trim()
+*✧═════  ══════✧*`.trim()
 
 await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝗠 𝗘 𝗡 𝗨 ☘️', `${usedPrefix}menu`]], null, null, m)
 
