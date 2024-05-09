@@ -19,37 +19,17 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
-    let txt = `╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
-let buttonMessage= {
-'document': { url: `https://github.com/DanielDiod/DokiBot` },
-'mimetype': `application/pdf`,
-'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
-'fileLength': 99999999999999,
-'pageCount': 200,
-'contextInfo': {
-'mentionedJid': [m.sender],
-'forwardingScore': 200,
-'isForwarded': true,
-'externalAdReply': {
-'mediaUrl': `${vid.url}`,
-'mediaType': 2,
-'previewType': 'VIDEO',
-'title': `${vid.title}`,
-'body': null,
-'thumbnail': await (await fetch(vid.thumbnail)).buffer(),
-'sourceUrl': 'https://youtube.com/' }},
-'caption': txt,
-'footer': '\nVideos de YouTube',
-'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+    const yt_play = await search(args.join(' '))
+const texto1 = `╭──────────✰\n
+	│🍭 *Título ∙* ${vid.title}\n
+        │🕜 *Duración ∙* ${vid.timestamp}\n
+        │👁 *Visitas ∙* ${vid.views}\n
+        │📚 *Autor ∙* ${vid.author.name}\n
+        │📅 *Publicado ∙* ${vid.ago}\n
+        │⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n
+        ╰──────────✰\n\n`.trim()
+		
+await conn.sendButton(m.chat, wm, txt, yt_play[0].thumbnail, [['menu', `${usedPrefix}menu`]], null, null, m)
        
        try {
        let yt = await fg.yta(vid.url, q)
