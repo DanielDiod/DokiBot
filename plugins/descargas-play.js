@@ -7,26 +7,38 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused4}\n*${usedPrefix + command} Billie Eilish - Bellyache*`
 try { 
 const yt_play = await search(args.join(' '))
-const texto1 = `*╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`.trim()
+const texto1 = `*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
+
+ও ${mid.smsYT1}
+» ${yt_play[0].title}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও ${mid.smsYT15}
+» ${yt_play[0].ago}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও ${mid.smsYT5}
+» ${secondString(yt_play[0].duration.seconds)}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও  ${mid.smsYT10}
+» ${MilesNumber(yt_play[0].views)}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও  ${mid.smsYT2}
+» ${yt_play[0].author.name}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও ${mid.smsYT4}
+» ${yt_play[0].url}
+
+*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`.trim()
 
 await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝗠 𝗘 𝗡 𝗨 ☘️', `${usedPrefix}menu`]], null, null, m)
 
 let listSections = [];             
 listSections.push({
 title: comienzo + ' 📡 𝗧𝗜𝗣𝗢𝗦 𝗗𝗘 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦 ' + fin,
-rows: [{ header: " 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 1)", title: "", id: `${usedPrefix}yta ${yt_play[0].url}`, description: `${yt_play[0].title}\n` }, { header: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 2)", title: "", id: `${usedPrefix}play.1 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: " 𝗔 𝗨 𝗗 𝗜 𝗢   𝗗 𝗢 𝗖", title: "", id: `${usedPrefix}ytmp3doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: " 𝗩 𝗜 𝗗 𝗘 𝗢 (Opcion 1)", title: "", id: `${usedPrefix}ytv ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: "𝗩 𝗜 𝗗 𝗘 𝗢 (Opcion 2)", title: "", id: `${usedPrefix}play.2 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{header: "𝗩 𝗜 𝗗 𝗘 𝗢   𝗗 𝗢 𝗖", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
+rows: [{ header: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 1)", title: "", id: `${usedPrefix}yta ${yt_play[0].url}`, description: `${yt_play[0].title}\n` }, { header: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 2)", title: "", id: `${usedPrefix}play.1 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
+{ header: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢   𝗗 𝗢 𝗖", title: "", id: `${usedPrefix}ytmp3doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
+{ header: "𓃠 𝗩 𝗜 𝗗 𝗘 𝗢 (Opcion 1)", title: "", id: `${usedPrefix}ytv ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
+{ header: "𓃠 𝗩 𝗜 𝗗 𝗘 𝗢 (Opcion 2)", title: "", id: `${usedPrefix}play.2 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
+{header: "𓃠 𝗩 𝗜 𝗗 𝗘 𝗢   𝗗 𝗢 𝗖", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
 ]});
 
 /*listSections.push({
@@ -73,4 +85,4 @@ const hDisplay = h > 0 ? h + (h == 1 ? ' hora, ' : ' horas, ') : '';
 const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
 const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
 return dDisplay + hDisplay + mDisplay + sDisplay;
-				 }
+}
