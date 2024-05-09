@@ -19,7 +19,6 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
-    const yt_play = await search(args.join(' '))
 const texto1 = `╭──────────✰\n
 	│🍭 *Título ∙* ${vid.title}\n
         │🕜 *Duración ∙* ${vid.timestamp}\n
@@ -29,7 +28,7 @@ const texto1 = `╭──────────✰\n
         │⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n
         ╰──────────✰\n\n`.trim()
 		
-await conn.sendButton(m.chat, wm, txt, yt_play[0].thumbnail, [['menu', `${usedPrefix}menu`]], null, null, m)
+await conn.sendButton(m.chat, wm, txt, res.videos[0].thumbnail, [['menu', `${usedPrefix}menu`]], null, null, m)
        
        try {
        let yt = await fg.yta(vid.url, q)
