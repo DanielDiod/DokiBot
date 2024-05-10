@@ -29,8 +29,8 @@ const texto1 = `╭──────────✰\n
         ╰──────────✰\n\n`.trim()
 		
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
-	['mp4 doc', `${usedPrefix}ytmp3doc`],
-	['mp3 doc', `${usedPrefix}ytmp3doc`]
+	['mp4 doc', `${usedPrefix}ytmp3doc ${url}`],
+	['mp3 doc', `${usedPrefix}ytmp3doc ${url}`]
   ], null, [['Canal', `${md}`]], m)
        
        try {
