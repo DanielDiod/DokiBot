@@ -28,7 +28,10 @@ const texto1 = `╭──────────✰\n
         │⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n
         ╰──────────✰\n\n`.trim()
 		
-await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [['mp4 doc', `${usedPrefix}ytmp3doc`]] , [['mp3 doc', `${usedPrefix}ytmp3doc`]],, null, null, m)
+await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
+	['mp4 doc', `${usedPrefix}ytmp3doc`],
+	['mp3 doc', `${usedPrefix}ytmp3doc`]
+  ], null, [['Canal', `${md}`]], m)
        
        try {
        let yt = await fg.yta(vid.url, q)
