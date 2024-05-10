@@ -51,12 +51,6 @@ const defaultMenu = {
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
-  
-  await conn.sendButton(m.chat, wm, defaultMenu, wm, thumbnail, [
-	['Creador', `${usedPrefix}creador`],
-	['tiempo', `${usedPrefix}uptime`]
-  ], null, [['Canal', `${md}`]], m)
-  
  try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, star, level } = global.db.data.users[m.sender]
