@@ -12,12 +12,12 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let play = `
 	≡ *FG MUSIC*
 ┌──────────────
-▢ 📌 *${mssg.title}:* ${vid.title}
-▢ 📆 *${mssg.aploud}:* ${vid.ago}
-▢ ⌚ *${mssg.duration}:* ${vid.timestamp}
-▢ 👀 *${mssg.views}:* ${vid.views.toLocaleString()}
+▢ 📌 *Titulo* ${vid.title}
+▢ 📆 *Publicado* ${vid.ago}
+▢ ⌚ *Duracion* ${vid.timestamp}
+▢ 👀 *Autor* ${vid.author.name}}
 └──────────────`
- await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
+ await conn.sendButton2(m.chat, play, res.videos[0].thumbnail, [
     ['Audio mp3', `${usedPrefix}ytmp3 ${url}`],
     ['video mp4', `${usedPrefix}ytmp4 ${url}`]
   ], null, [['Canal', `${md}`]], m)
