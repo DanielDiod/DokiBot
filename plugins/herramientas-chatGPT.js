@@ -34,7 +34,7 @@ m.reply(botIA222.data.choices[0].text.trim());
 } catch {
 try {
 const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Daniel, tu seras Shana-Bot`
-const Empireapi1 = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=hello${text}&name=${m.name}&prompt=${syms1}`);
+const Empireapi1 = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}&name=${m.name}&prompt=${syms1}`);
 const empireApijson1 = await Empireapi1.json();
 if (empireApijson1.resultado == 'error' || empireApijson1.resultado == '' || !empireApijson1.resultado) return XD; // causar error undefined para lanzar msg de error
 m.reply(`${empireApijson1.resultado}`.trim());
