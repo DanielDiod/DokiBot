@@ -37,7 +37,42 @@ await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
        let yt = await fg.yta(vid.url, q)
        let { title, dl_url, size } = yt
        let limit = 100
-	       
+       
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
+       
+await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': true,
+externalAdReply:{
+showAdAttribution: false,
+title: `${vid.title}`,
+body: `${vid.author.name}`,
+mediaType: 2, 
+sourceUrl: `${vid.url}`,
+thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
+       await m.react('✅')
+       } catch {
+       try {
+       let yt = await fg.ytmp3(vid.url, q)
+       let { title, dl_url, size } = yt
+       let limit = 100
+       
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
+       
+       await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': true,
+externalAdReply:{
+showAdAttribution: false,
+title: `${vid.title}`,
+body: `${vid.author.name}`,
+mediaType: 2, 
+sourceUrl: `${vid.url}`,
+thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
+       await m.react('✅')
+       } catch (error) {
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, fake,).then(_ => m.react('✖️'))
+        console.error(error)
     }}}
         
         if (feature == "mp4") {
