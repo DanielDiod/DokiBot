@@ -19,8 +19,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 └──────────────`
  await conn.sendButton(m.chat, play, res.videos[0].thumbnail, [
     ['Audio mp3', `${usedPrefix}ytmp3 ${url}`],
-    ['video mp4', `${usedPrefix}ytmp4 ${url}`]
-  ], null, null, m)
+    ['video mp4', `${usedPrefix}ytmp4 ${url}`] ], null, null, m)
 }
 handler.help = ['play']
 handler.tags = ['dl']
