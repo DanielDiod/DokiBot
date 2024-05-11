@@ -8,6 +8,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `Error ingrese una peticion para usar Chatgpt`    
 try {
+await m.reply('> C A R G A N D O ⏳️\n🛑 Buscando Su Información')
 await m.react('⌛')
 conn.sendPresenceUpdate('composing', m.chat);
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
