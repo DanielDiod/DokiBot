@@ -1392,21 +1392,7 @@ if (responseb[0].status === "404") return
 return    
 }}    
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-this.sendMessage(id, { text: text, 
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[user],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": true,
-"thumbnail": apii.data, 
-"title": [wm, ' ' + lb + ' 🈴', '♓'].getRandom(),
-"containsAutoReply": true,
-"mediaType": 1, 
-sourceUrl: [md, nna, yt, nnn, nn, ig].getRandom()}}}, { quoted: fkontak2 }) 
-//this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: fkontak2 })
-}}}
+            this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": '乂 Bᴏᴛ Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ 乂', "body": `${packname}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
 			    
 break
 case 'promote':
