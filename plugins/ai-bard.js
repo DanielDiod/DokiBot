@@ -7,7 +7,7 @@ if (!text) throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽𝙰 𝙿𝙴𝚃�
 
 try {
 
-//await m.reply('*🚀 C A R G A N D O*')
+await m.reply('*🚀 C A R G A N D O*')
 conn.sendPresenceUpdate('composing', m.chat)
 var apii = await fetch(`https://aemt.me/gemini?text=${text}`)
 var res = await apii.json()
