@@ -55,7 +55,7 @@ para ver el Menu del bot escribe
 }
 handler.help = ['join <chat.whatsapp.com> <dias>']
 handler.tags = ['owner']
-handler.command = ['join', 'invite'] 
+handler.command = ['bottemporal', 'termporalbot'] 
 
 handler.premium = true 
 
