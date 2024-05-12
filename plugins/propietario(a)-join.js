@@ -8,7 +8,7 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
 let handler = async (m, { conn, command, usedPrefix, text, isAdmin, isOwner, isROwner, participants, groupMetadata  }) => {
 
-const isCommand1 = /^(join|nuevogrupo|newgrupo|unete)$/i.test(command)
+
 
 async function reportError(e) {
 await m.reply(`🍃 Error`)
