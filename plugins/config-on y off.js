@@ -582,8 +582,10 @@ ${wm}`, fkontak, { mentions: [aa,] })
 //conn.sendMessage(m.chat, texto, {quoted: fkontak})	
 throw false
 }
-await conn.reply(m.chat, `*${isEnable ? '🟢' : '🔴'} La función ${type} se a ${isEnable ? 'activado' : 'desactivado'} en ${isAll ? 'este bot*\n\n> By Igna - Bot' : isUser ? '' : 'este chat*\n\n> By Igna - Bot'}`, fkontak, m, fake,)}
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
+ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
+ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], null, null, m)}
+handler.help = ['en', 'dis'].map(v => v + 'able <option>')z
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler
