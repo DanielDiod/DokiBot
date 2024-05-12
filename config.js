@@ -101,6 +101,7 @@ global.moment = moment
 
 global.packname = 'IGNA • BOT'
 global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Daniel",\n   "status_bot": "active"\n }\n}'
+global.fgig = By Igna • Bot
 
 
 //* *******Tiempo***************
