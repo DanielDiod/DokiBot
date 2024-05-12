@@ -26,7 +26,7 @@ try {
 if ( isOwner || m.fromMe) {
 await m.reply(lenguajeGB.smsJoin2())
 let res1 = await conn.groupAcceptInvite(code1)
-await conn.sendMessage(res1, { text: lenguajeGB.smsJoin(user), mentions: (await conn.groupMetadata(`${res1}`)).participants.map(v => v.id) }, [user], { quoted: fkontak })
+await conn.sendMessage(res1, { text: lenguajeGB.smsJoin(user), mentions: (await conn.groupMetadata(`${res1}`)).participants.map(v => v.id) }, [user], { quoted: m })
 }} catch (e) {
 reportError(e)
 }        
