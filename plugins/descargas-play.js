@@ -1,7 +1,7 @@
 import yts from 'yt-search'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
 	
-  if (!text) throw `error intenta de nuevo`
+  if (!text) throw `📱 *Que es lo que buscas?*`
 	let res = await yts(text)
 	let vid = res.videos[0]
 	if (!vid) throw `🚩 *Lo que buscas no se encontró*`
