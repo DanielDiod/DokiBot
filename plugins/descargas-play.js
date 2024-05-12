@@ -12,15 +12,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let play = `
 	≡ *FG MUSIC*
 ┌──────────────
-▢ 📌 *${mssg.title}:* ${vid.title}
-▢ 📆 *${mssg.aploud}:* ${vid.ago}
-▢ ⌚ *${mssg.duration}:* ${vid.timestamp}
-▢ 👀 *${mssg.views}:* ${vid.views.toLocaleString()}
+▢ 📌 *Titulo:* ${vid.title}
+▢ 📆 *fecha:* ${vid.ago}
+▢ ⌚ *duración:* ${vid.timestamp}
+▢ 👀 *vistas:* ${vid.views.toLocaleString()}
 └──────────────`
- await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], null, [['Canal', `${fgcanal}`]], m)
+ await conn.sendButton(m.chat, play, mssg.ig, thumbnail, [
+    ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
+    ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
+  ],
 }
 handler.help = ['botones']
 handler.tags = ['dl']
