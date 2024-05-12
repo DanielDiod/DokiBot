@@ -10,14 +10,14 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	//const url = 'https://www.youtube.com/watch?v=' + videoId
 	m.react('🎧') 
   let play = `
-	≡ *FG MUSIC*
+	≡ ${packname}
 ┌──────────────
 ▢ 📌 *Titulo:* ${vid.title}
 ▢ 📆 *fecha:* ${vid.ago}
 ▢ ⌚ *duración:* ${vid.timestamp}
 ▢ 👀 *vistas:* ${vid.views.toLocaleString()}
 └──────────────`
- await conn.sendButton(m.chat, play, mssg.ig, thumbnail, [
+ await conn.sendButton(m.chat, play, fgig, thumbnail, [
     ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
     ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
   ],
