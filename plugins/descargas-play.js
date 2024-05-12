@@ -12,7 +12,6 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	≡ ${packname}
 ┌──────────────
 ▢ 📌 *Titulo:* ${vid.title}
-▢ 📆 *fecha:* ${vid.ago}
 ▢ ⌚ *duración:* ${vid.timestamp}
 ▢ 👀 *vistas:* ${vid.views.toLocaleString()}
 └──────────────`
