@@ -6,7 +6,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	let vid = res.videos[0]
 	if (!vid) throw `✳️ Vídeo/Audio no encontrado`
 	let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
-	const url = 'https://www.youtube.com/watch?v=' + videoId
+	//const url = 'https://www.youtube.com/watch?v=' + videoId
 	m.react('🎧') 
   let play = `
 	≡ ${packname}
@@ -23,6 +23,6 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 handler.help = ['botones']
 handler.tags = ['dl']
 handler.command = ['botones', 'playvid']
-//handler.disabled = false
+handler.disabled = false
 
 export default handler
