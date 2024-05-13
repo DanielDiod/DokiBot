@@ -1469,10 +1469,10 @@ global.dfail = (type, m, conn) => {
         private: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en mi Chat *Privado*.`,
         admin: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
         botAdmin: `>AVISO\n\nHola @${m.sender.split`@`[0]}, la bot debe ser *Administradora* para ejecutar este Comando.`,
-        unreg: `> AVISO\n\nHola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Kevin.25*_`,
+        unreg: `> AVISO\n\nHola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Daniel.25*_`,
         restrict: `> AVISO\n\nHola @${m.sender.split`@`[0]}, esta caracterÃ­stica estÃ¡ *deshabilitada*`  
     }[type]
-    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 - 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞', body: [wm, 'Igna •Bot' + lb + '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊 𝙓', '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊 𝙓'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m }).then(_ => m.react('❌'))
+    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 - 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞', body: [wm, 'Igna •Bot' + lb + 'Igna × Shana', 'Igna × Daniel'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m }).then(_ => m.react('🛑'))
 }
 
 let file = global.__filename(import.meta.url, true)
