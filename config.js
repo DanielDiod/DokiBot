@@ -101,8 +101,6 @@ global.moment = moment
 
 global.packname = 'IGNA • BOT'
 global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Daniel",\n   "status_bot": "active"\n }\n}'
-global.fgig = 'By Igna • Bot'
-global.mssg = Igna Bot
 
 
 //* *******Tiempo***************
@@ -123,10 +121,9 @@ global.lb = 'IGNA • BOT'
 global.vs = '1.5.7'
 global.vsJB = '1.5.0'
 global.yt = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv'
-global.ig = 'https://www.instagram.com/Daniel01'
+global.ig = 'https://www.instagram.com/Jxtxn17'
 global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.fb = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv'
-global.tiktok = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv'
 
 global.nna = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv' //Actualización, información sobre el bot
 global.nn = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv' //Grupo 1
