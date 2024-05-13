@@ -505,7 +505,7 @@ afk: -1,
 afkReason: '',
 reporte: 0,
 age: 0,
-muto: false,
+//muto: false,
 genero: 0,
 identidad: 0,
 pasatiempo: 0,
@@ -513,6 +513,7 @@ tiempo: 0,
 premLimit: 0,
 miestado: 0,
 agility: 16,
+muto: false,
 anakanjing: 0,
 anakcentaur: 0,
 anakgriffin: 0,
@@ -1319,6 +1320,7 @@ await conn.sendMessage(m.chat, {
 delete: {
 remoteJid: m.chat, fromMe: false, id: bang, participant: cancellazzione
 }})
+}
 if (m.sender && (user = global.db.data.users[m.sender])) {
 user.exp += m.exp
 user.limit -= m.limit * 1
