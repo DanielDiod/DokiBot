@@ -1393,10 +1393,7 @@ return
 }}    
 let byegc = 'https://qu.ax/WUEu.webp'
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-            this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": '乂 Bᴏᴛ Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ 乂', "body": `${packname}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
-
-this.sendMessage(id, byegc, 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: '乂 ＡＤＩＯ́Ｓ 乂', body: `${name.split("@")[0]}`, mediaType: 2, sourceUrl: `${pickRandom([md, nna])}`, thumbnail: apii.data}}})
-
+            this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": `${action === 'add' ? '乂 𝖶 𝖤 𝖫 𝖢 𝖮 𝖬 𝖤 乂' : '乂 𝖠 𝖣 𝖨 𝖮 𝖲 乂'}`, "body": wm, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": `https://wa.me/50232432639`}}})
 }}}
 
 break
