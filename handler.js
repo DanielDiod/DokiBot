@@ -7,7 +7,7 @@ import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
 import fetch from 'node-fetch' 
 import mddd5 from 'md5'
-
+ 
 /**
  * @type {import('@adiwajshing/baileys')}  
  */
@@ -34,9 +34,9 @@ if (!m) {
 return;
 }
 if (global.db.data == null) await global.loadDatabase()
-/*------------------------------------------------*/             
-if (global.chatgpt.data === null) await global.loadChatgptDB();        
-/*------------------------------------------------*/        
+/*------------------------------------------------*/	     
+if (global.chatgpt.data === null) await global.loadChatgptDB();	
+/*------------------------------------------------*/	
 try {
 m = smsg(this, m) || m;
 if (!m) {
@@ -49,7 +49,7 @@ m.money = false
 try {
 // use el bucle para insertar datos en lugar de esto
 let user = global.db.data.users[m.sender]
-/*------------------------------------------------*/                    
+/*------------------------------------------------*/	            
 let chatgptUser = global.chatgpt.data.users[m.sender];
 if (typeof chatgptUser !== "object")
 global.chatgpt.data.users[m.sender] = [];
@@ -908,7 +908,7 @@ wolf: 0,
 wolfexp: 0,
 wolflastfeed: 0,
 wood: 0,
-wortel: 0,        
+wortel: 0,	
 }
 let akinator = global.db.data.users[m.sender].akinator
 if (typeof akinator !== 'object')
@@ -934,12 +934,12 @@ question: null,
 progression: null,
 step: null, 
 soal: null
-}                   
+}   		
 let chat = global.db.data.chats[m.chat] //guarda datos del chat
 if (typeof chat !== 'object')
 global.db.data.chats[m.chat] = {}
 //false = off (apagado)
-//true = on (activado)                                 
+//true = on (activado) 				
 if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false      
 if (!('welcome' in chat)) chat.welcome = true            
@@ -1088,7 +1088,7 @@ await plugin.all.call(this, m, { chatUpdate, __dirname: ___dirname, __filename }
 console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
-//â�ŒCOMANDO FALLAS
+//âŒCOMANDO FALLAS
 if (data.exists) 
 m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
 }}}
@@ -1154,8 +1154,8 @@ user.bannedMessageCount = 0;
 }
 if (user.bannedMessageCount < 3) {
 const messageNumber = user.bannedMessageCount + 1;
-const messageText = `âš ï¸� ESTAS BANEADO âš ï¸�\nAviso (${messageNumber}/3) ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : 'Motivo: (spam)'}
-*ðŸ‘‰ðŸ�» Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
+const messageText = `âš ï¸ ESTAS BANEADO âš ï¸\nAviso (${messageNumber}/3) ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : 'Motivo: (spam)'}
+*ðŸ‘‰ðŸ» Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
 
 ðŸ‘‰ wa.me/51977835959
 ðŸ‘‰ Wa.me/51907913096
@@ -1169,12 +1169,12 @@ return;
 }
 return;
 }
-
+		
 if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() - user.lastCommandTime) < 3000 && !isROwner) {
 if (user.commandCount === 2) {
 const remainingTime = Math.ceil((user.lastCommandTime + 3000 - Date.now()) / 1000);
 if (remainingTime > 0) {
-const messageText = `*ð�™€ð�™Žð�™‹ð�™€ð�™�ð�˜¼ ${remainingTime} ð�™Žð�™€ð�™‚ð�™�ð�™‰ð�˜¿ð�™Š ð�˜¼ð�™‰ð�™�ð�™€ð�™Ž ð�˜¿ð�™€ ð�™�ð�™Žð�˜¼ð�™� ð�™Šð�™�ð�™�ð�™Š ð�˜¾ð�™Šð�™ˆð�˜¼ð�™‰ð�˜¿ð�™Š*`;
+const messageText = `*ð™€ð™Žð™‹ð™€ð™ð˜¼ ${remainingTime} ð™Žð™€ð™‚ð™ð™‰ð˜¿ð™Š ð˜¼ð™‰ð™ð™€ð™Ž ð˜¿ð™€ ð™ð™Žð˜¼ð™ ð™Šð™ð™ð™Š ð˜¾ð™Šð™ˆð˜¼ð™‰ð˜¿ð™Š*`;
 //m.reply(messageText);
 return;
 } else {
@@ -1238,10 +1238,10 @@ m.reply('Exp limit')
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 conn.sendMessage(m.chat, { 
-text: `ðŸ«¥ ð�™‰ð�™¤ ð�™©ð�™žð�™šð�™£ð�™š Euros`, 
+text: `ðŸ«¥ ð™‰ð™¤ ð™©ð™žð™šð™£ð™š Euros`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð��’ð��®ð��©ð��žð��« ð���ð��¨ð��­ ð���ð��ž ð��–ð��¡ð��šð��­ð��¬ð��šð��©ð��©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
-// this.reply(m.chat, `ðŸ«¥ ð�™‰ð�™¤ ð�™©ð�™žð�™šð�™£ð�™š ð�™‡ð�™¤ð�™¡ð�™žð�˜¾ð�™¤ð�™žð�™£ð�™¨`, m)
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
+// this.reply(m.chat, `ðŸ«¥ ð™‰ð™¤ ð™©ð™žð™šð™£ð™š ð™‡ð™¤ð™¡ð™žð˜¾ð™¤ð™žð™£ð™¨`, m)
 continue     
 }
 m.exp += xp
@@ -1249,7 +1249,7 @@ if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.li
 conn.sendMessage(m.chat, { 
 text: `*${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð��’ð��®ð��©ð��žð��« ð���ð��¨ð��­ ð���ð��ž ð��–ð��¡ð��šð��­ð��¬ð��šð��©ð��©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })       
 //  this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue // Limit habis
 }
@@ -1257,7 +1257,7 @@ if (plugin.level > _user.level) {
 conn.sendMessage(m.chat, { 
 text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, 
 contextInfo: {externalAdReply : {mediaUrl: null, mediaType: 1, description: null, 
-"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð��’ð��®ð��©ð��žð��« ð���ð��¨ð��­ ð���ð��ž ð��–ð��¡ð��šð��­ð��¬ð��šð��©ð��©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })                
+"title": `${lenguajeGB['smsAvisoAG']()}`, body: 'ð’ð®ð©ðžð« ðð¨ð­ ððž ð–ð¡ðšð­ð¬ðšð©ð©', previewType: 0, "thumbnail": gataImg.getRandom(), sourceUrl: [nna, md, yt, nn, nnn].getRandom()}}}, { quoted: m })                
 /*this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)*/
 continue // If the level has not been reached
 }
@@ -1351,7 +1351,7 @@ if (settingsREAD.autoread2) await this.readMessages([m.key])
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
 if (!m.fromMem && m.text.match(/(@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|:v)/gi)) {
-let emot = pickRandom(["ðŸ˜º", "ðŸ˜¸", "ðŸ˜¹", "ðŸ˜»", "ðŸ˜¼", "ðŸ˜½", "ðŸ™€", "ðŸ˜¿", "ðŸ˜¾", "ðŸ¤©", "ðŸ˜�", "ðŸ˜³", "ðŸ¥µ", "ðŸ¤¯", "ðŸ˜±", "ðŸ˜¨", "ðŸ¤«", "ðŸ¥´", "ðŸ¤§", "ðŸ¤‘", "ðŸ¤ ", "ðŸ¤–", "ðŸ¤�", "ðŸ’ª", "ðŸ‘‘", "ðŸ˜š", "ðŸ�±", "ðŸ�ˆ", "ðŸ�†", "ðŸ�…", "âš¡ï¸�", "ðŸŒˆ", "â˜ƒï¸�", "â›„ï¸�", "ðŸŒ�", "ðŸŒ›", "ðŸŒœ", "ðŸ�“", "ðŸ�Ž", "ðŸŽˆ", "ðŸª„", "â�¤ï¸�", "ðŸ§¡", "ðŸ’›", "ðŸ’š", "ðŸ’™", "ðŸ’œ", "ðŸ–¤", "ðŸ¤�", "ðŸ’˜", "ðŸ’�", "ðŸ’Ÿ", "ðŸŒ�", "ðŸ˜Ž", "ðŸ”¥", "ðŸ–•", "ðŸ�¦"])
+let emot = pickRandom(["ðŸ˜º", "ðŸ˜¸", "ðŸ˜¹", "ðŸ˜»", "ðŸ˜¼", "ðŸ˜½", "ðŸ™€", "ðŸ˜¿", "ðŸ˜¾", "ðŸ¤©", "ðŸ˜", "ðŸ˜³", "ðŸ¥µ", "ðŸ¤¯", "ðŸ˜±", "ðŸ˜¨", "ðŸ¤«", "ðŸ¥´", "ðŸ¤§", "ðŸ¤‘", "ðŸ¤ ", "ðŸ¤–", "ðŸ¤", "ðŸ’ª", "ðŸ‘‘", "ðŸ˜š", "ðŸ±", "ðŸˆ", "ðŸ†", "ðŸ…", "âš¡ï¸", "ðŸŒˆ", "â˜ƒï¸", "â›„ï¸", "ðŸŒ", "ðŸŒ›", "ðŸŒœ", "ðŸ“", "ðŸŽ", "ðŸŽˆ", "ðŸª„", "â¤ï¸", "ðŸ§¡", "ðŸ’›", "ðŸ’š", "ðŸ’™", "ðŸ’œ", "ðŸ–¤", "ðŸ¤", "ðŸ’˜", "ðŸ’", "ðŸ’Ÿ", "ðŸŒ", "ðŸ˜Ž", "ðŸ”¥", "ðŸ–•", "ðŸ¦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}}}
 /**
@@ -1381,37 +1381,38 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*á´œÉ´ É¢Ê€á´œá´˜á´� É¢á´‡É´Éªá´€ðŸ˜¸*\n *sÉªÉ´ Ê€á´‡É¢ÊŸá´€ ðŸ˜‰*') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*á´œÉ´ É¢Ê€á´œá´˜á´ É¢á´‡É´Éªá´€ðŸ˜¸*\n *sÉªÉ´ Ê€á´‡É¢ÊŸá´€ ðŸ˜‰*') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 if (chat.antifake && isBotAdminNn && action === 'add') {
-const numerosPermitidos = ["212", "265", "92", "91", "90", "210", "60", "61", "62", "40", "48", "49", "93", "94", "98", "258"] //PUEDES EDITAR LOS USUARIOS QUE SE ELIMINARÃ�N SI EMPIEZA POR CUALQUIER DE ESOS NÃšMEROS        
-if (numerosPermitidos.some(num => user.startsWith(num))) {        
+const numerosPermitidos = ["212", "265", "92", "91", "90", "210", "60", "61", "62", "40", "48", "49", "93", "94", "98", "258"] //PUEDES EDITAR LOS USUARIOS QUE SE ELIMINARÃN SI EMPIEZA POR CUALQUIER DE ESOS NÃšMEROS	
+if (numerosPermitidos.some(num => user.startsWith(num))) {	
 this.sendMessage(id, { text: `*${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsInt1']()} @${user.split("@")[0]} ${lenguajeGB['smsInt2']()}*`, mentions: [user] }, { quoted: null });          
 let responseb = await this.groupParticipantsUpdate(id, [user], 'remove')
 if (responseb[0].status === "404") return      
 return    
 }}    
-let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
 let vn = 'https://qu.ax/cUYg.mp3'
-let or = ['texto', 'audio'];
-let media = or[Math.floor(Math.random() * 2)]
-if (media === 'texto')
-this.sendMessage(id, { text: text, 
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
+            this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": '乂 Bᴏᴛ Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ 乂', "body": `${packname}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
+			    
+sock.sendMessage(anu.id, { text: `\`\`\`[!] C fue alv : @${name.split("@")[0]} 😹\`\`\``,
 contextInfo:{
+forwardedNewsletterMessageInfo: { 
+newsletterJid: '120363160031023229@newsletter', 
+serverMessageId: '', 
+newsletterName: 'INFINITY-WA 💫' }, 
 forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[user],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": true,
-"thumbnail": apii.data, 
-"title": [wm, ' ' + wm + '😊', '🌟'].getRandom(),
+isForwarded: true,  
+mentionedJid:[num],
+"externalAdReply": {"showAdAttribution": true,
 "containsAutoReply": true,
-"mediaType": 1, 
-sourceUrl: [md, nna, yt, nnn, nn, tiktok].getRandom()}}}, { quoted: fkontak2 }) 
-if (media === 'audio')
-this.sendMessage(id, { audio: { url: vn }, contextInfo:{ mentionedJid:[user], "externalAdReply": { "thumbnail": apii.data, "title": `乂 ＷＥＬＣＯＭＥ 乂`, "body": [wm, ' ' + wm + '😊', '🌟'].getRandom(), "previewType": "PHOTO", "thumbnailUrl": null, "showAdAttribution": true,  sourceUrl: [md, nna, yt, nn, tiktok].getRandom()}},  ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: fkontak2 })
-//this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: fkontak2 })
+"title": '乂 ＡＤＩＯ́Ｓ 乂', 
+body: `Esperemos que no vuelva -_-`,
+"previewType": "PHOTO",
+"thumbnailUrl": ``,
+"thumbnail": leave,
+"sourceUrl": `${pickRandom([nna, md, nn])}`}}}, {quoted: null, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+
 }}}
 
 break
@@ -1488,10 +1489,10 @@ global.dfail = (type, m, conn) => {
         private: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en mi Chat *Privado*.`,
         admin: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
         botAdmin: `>AVISO\n\nHola @${m.sender.split`@`[0]}, la bot debe ser *Administradora* para ejecutar este Comando.`,
-        unreg: `> AVISO\n\nHola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Daniel.25*_`,
+        unreg: `> AVISO\n\nHola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Daniel.18*_`,
         restrict: `> AVISO\n\nHola @${m.sender.split`@`[0]}, esta caracterÃ­stica estÃ¡ *deshabilitada*`  
     }[type]
-    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 - 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞', body: [wm, 'Igna •Bot' + lb + 'Igna × Shana', 'Igna × Daniel'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m }).then(_ => m.react('🛑'))
+    if (msg) return conn.sendMessage(m.chat, { text: msg, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true, externalAdReply: { title: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 - 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞', body: [wm, 'Igna •Bot' + lb + ' Igna • Bot 🪙', 'Igna • Bot 🈴'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, yt, nnn, nn, fb, ig].getRandom(), mediaType: 1}}}, { quoted: m }).then(_ => m.react('❌'))
 }
 
 let file = global.__filename(import.meta.url, true)
