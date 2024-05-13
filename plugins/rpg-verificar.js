@@ -6,7 +6,7 @@ let totalreg = Object.keys(global.db.data.users).length
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
   let name2 = conn.getName(m.sender)
   if (user.registered === true) throw `Ya eatas registrado pdj 😎`
-  if (!Reg.test(text)) throw `𝐔𝐬𝐨 𝐃𝐞𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨:* ${usedPrefix + command} nombre.edad*\n💻 Nota: *${usedPrefix + command}* ${name2}.16`
+  if (!Reg.test(text)) throw `𝐔𝐬𝐨 𝐃𝐞𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨: ${usedPrefix + command} nombre.edad\n💻 Nota: ${usedPrefix + command} ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '🚩 El nombre no puede estar vacio'
   if (!age) throw '🚩 La edad en necesaria'
@@ -35,7 +35,7 @@ global.db.data.users[m.sender].joincount += 20
 • 500 Experiencia 💸
 • 20 Tokens 🪙
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-Usuarios Registrados: ${rtotalreg}`, fkontak, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: '> 乂  R E G I S T R O  乂',  body: 'Registro exitoso 📝: By Igna • Bot', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: [channel, md, yt, fb].getRandom()}}})
+Usuarios Registrados: ${rtotalreg}`, m, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: '> 乂  R E G I S T R O  乂',  body: 'Registro exitoso 📝: By Igna • Bot', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: [channel, md, yt, fb].getRandom()}}})
 await m.reply(`${sn}`)}
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
