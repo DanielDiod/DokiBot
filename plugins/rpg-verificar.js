@@ -23,7 +23,7 @@ global.db.data.users[m.sender].limit += 50
 global.db.data.users[m.sender].exp += 500
 global.db.data.users[m.sender].joincount += 20
   let sn = createHash('md5').update(m.sender).digest('hex')
-  await conn.reply(m.chat,  `> 乂  R E G I S T R O  乂
+  await conn.reply(m.chat,  ` 乂  R E G I S T R O  乂
 
 • Usuario: ${name}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
