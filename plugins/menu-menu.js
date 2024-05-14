@@ -26,7 +26,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
- > Igna • Bot future
+ > IGNA BOT FUTURE
 
 *╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
 *➤📝 Nombre* : %name
