@@ -86,8 +86,8 @@ let info = `> S P O T I F Y 乂 D E S C A R G A S\n
 ✩ *Album:* ${res.album}\n
 ✩ *Duracion:* ${res.duracion}\n
 ✩ *Fuente:* *Spotify*\n
-✩ *Enlace:* ${shortURL}\n\n
-*- ↻enviando audio espere un momento soy lenta..*`
+✩ *Enlace:* ${shortURL}\n\n`
+'`- ↻enviando audio espere un momento soy lenta..`'
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
 let { videos } = await search(res.name)
