@@ -99,7 +99,7 @@ let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
 let img = await getBuffer(res.imagen)
-await conn.sendButton(m.chat, wm, texto1, songInfo[0].thumbnail, [
+await conn.sendButton(m.chat, wm, info, songInfo[0].thumbnail, [
 	['Creador', `${usedPrefix}creador`],
 	['Menu', `${usedPrefix}menu`]
   ], null, [['Canal', `${md}`]], m)
