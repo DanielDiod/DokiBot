@@ -80,7 +80,7 @@ if (!songInfo.length) throw `*No se encontró una canción.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
-let info = `> S P O T I F Y  乂  D E S C A R G A S\n  
+const info = `> S P O T I F Y  乂  D E S C A R G A S\n  
 ✩ *Nombre:* ${res.name}\n
 ✩ *Artista:* ${res.artista.join(', ')}\n
 ✩ *Album:* ${res.album}\n
@@ -97,10 +97,13 @@ let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
 let dl_url = await yt.audio[q].download()
 let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
-await conn.sendButton(m.chat, wm, info, songInfo[0].thumbnail, [
+conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
+let img = await getBuffer(res.imagen)
+await conn.sendButton(m.chat, wm, texto1, songInfo[0].thumbnail, [
 	['Creador', `${usedPrefix}creador`],
 	['Menu', `${usedPrefix}menu`]
   ], null, [['Canal', `${md}`]], m)
+} catch (error) {
 }}
 handler.command = /^(spotify|music)$/i
 export default handler
