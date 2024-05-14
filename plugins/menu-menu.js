@@ -26,7 +26,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
-*「 ✦ Igna • Bot ✦ 」*
+ `Igna • Bot` 
 
 *╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
 *➤📝 Nombre* : %name
@@ -47,7 +47,7 @@ const defaultMenu = {
   header: '*MENU X %category*\n\n*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*',
   body: '➤ *%cmd*\n',
   footer: '*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*',
-  after: '\n*Simple WhatsApp Bot Multi Device*',
+  after: '\n`Simple WhatsApp Bot Multi Device`',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
