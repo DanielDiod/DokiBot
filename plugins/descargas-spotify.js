@@ -80,7 +80,7 @@ if (!songInfo.length) throw `*No se encontró una canción.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
-let info = `> S P O T I F Y 乂 D E S C A R G A S\n  
+let info = `> S P O T I F Y  乂  D E S C A R G A S\n  
 ✩ *Nombre:* ${res.name}\n
 ✩ *Artista:* ${res.artista.join(', ')}\n
 ✩ *Album:* ${res.album}\n
