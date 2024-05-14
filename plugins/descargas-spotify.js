@@ -97,11 +97,10 @@ let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
 let dl_url = await yt.audio[q].download()
 let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
-conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
-let img = await getBuffer(res.imagen)
-await conn.sendMessage(m.chat, { text: info, contextInfo: { mentionedJid: [m.sender], forwardingScore: 90, externalAdReply: { title: 'Igna • Bot', body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ', thumbnail: img, thumbnailUrl: img, sourceUrl: global.md, mediaType: 1 }}}, { quoted: m })
-await m.react('✅')  
-} catch (error) {
+await conn.sendButton(m.chat, wm, info, songInfo[0].thumbnail, [
+	['Creador', `${usedPrefix}creador`],
+	['Menu', `${usedPrefix}menu`]
+  ], null, [['Canal', `${md}`]], m)
 }}
 handler.command = /^(spotify|music)$/i
 export default handler
