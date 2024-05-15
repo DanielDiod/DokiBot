@@ -1,25 +1,47 @@
-import yts from 'yt-search'
+import yts from 'yt-search';
+import fs from 'fs';
 
-let handler = async (m, {conn, usedPrefix, text }) => {
-   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m, fake,)
-   await m.react('🕓')
-   let results = await yts(text)
-   let res = results.all.map(v => v).filter(v => v.type == "video")
-   if (!res.length) return conn.reply(m.chat, 'No se encontraron resultados, intente con un nombre más Corto.', m, fake,).then(_ => m.react('✖️'))
-   let txt = `*YouTube - Search*`
-   for (let i = 0; i < (30 <= res.length ? 30 : res.length); i++) {
-      txt += `\n\n`
-	  txt += `	◦  *Titulo* : ${res[i].title}\n`
-	  txt += `	◦  *Duración* : ${res[i].timestamp || '×'}\n`
-	  txt += `	◦  *Publicado* : ${res[i].ago}\n`
-	  txt += `	◦  *Autor* : ${res[i].author.name || '×'}\n`
-	  txt += `	◦  *Url* : ${'https://youtu.be/' + res[i].videoId}\n`
-	  }
-   await conn.sendFile(m.chat, res[0].image, '', txt, m, fake,)
-   await m.react('✅')
-}
-handler.help = ['ytsearch']
-handler.tags = ['search']
-handler.command = ['ytsearch', 'yts']
-handler.register = true 
-export default handler
+
+
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+
+
+  if (!text) throw `Hola Bienvenido al playlist para busca la musica \n*${usedPrefix + command} I am Happy*`;
+  try {
+    const vids_ = {
+      from: m.sender,
+      urls: [],
+    };
+    if (!global.videoList) {
+      global.videoList = [];
+    }
+    if (global.videoList[0]?.from == m.sender) {
+      global.videoList.splice(0, global.videoList.length);
+    }
+    const results = await yts(text);
+    const textoInfo = `Selecione cual quiere
+◉ ${usedPrefix}audio <numero>
+◉ ${usedPrefix}video <numero> 
+
+Para Descargar precione al boton o colocar el numero 
+*◉ ${usedPrefix}audio 5*
+*◉ ${usedPrefix}video 8*`.trim();
+    const teks = results.all.map((v, i) => {
+      const link = v.url;
+      vids_.urls.push(link);
+      return `[${i + 1}] ${v.title}
+↳ *Link🔗:* ${v.url}
+↳ *Duración🕐:* ${v.timestamp}
+↳ *Subido📆:* ${v.ago}
+↳ *Visualizaciones🔍:* ${v.views}`;
+    }).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
+    conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, m);
+    global.videoList.push(vids_);
+  } catch {
+    await m.reply(`Su archivo esta listo`);
+  }
+};
+handler.help = ['playlist *<texto>*'];
+handler.tags = ['search'];
+handler.command = /^playlist|playlist2$/i;
+export default handler;
