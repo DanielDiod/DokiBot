@@ -1,43 +1,97 @@
+/*
 
+- Agradecimiento a la comunidad de "WSApp • Developers"
+ * https://chat.whatsapp.com/FaQunmlp9BmDRk6lEEc9FJ
+- Agradecimiento especial a Carlos (PT) por los codigos de interactiveMessage (botones)
+- Agradecimiento a Darlyn1234 por la estructura de uso en este codigo y quoted
+ * https://github.com/darlyn1234
+- Adaptacion de imagen en tipo lista, codigo y funcionamiento por BrunoSobrino
+ * https://github.com/BrunoSobrino
+
+*/
+import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys'
 import yts from 'yt-search';
-let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-    if (!text) throw `✳️ Seleccióne el archivo *${usedPrefix + command}* Lil Peep hate my life`;
-    m.react('📀');
-    
-    let result = await yts(text);
-    let ytres = result.videos;
-    
+import fs from 'fs';
 
-    let listSections = [];
-    for (let index in ytres) {
-        let v = ytres[index];
-        listSections.push({
-            title: `${index}┃ ${v.title}`,
-            rows: [
+const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
+    const datas = global;
+    const device = await getDevice(m.key.id);
+    
+  if (!text) throw `⚠️ *Error*`;
+    
+  if (device !== 'desktop' || device !== 'web') {      
+    
+  const results = await yts(text);
+  const videos = results.videos.slice(0, 20);
+  const randomIndex = Math.floor(Math.random() * videos.length);
+  const randomVideo = videos[randomIndex];
+
+  var messa = await prepareWAMessageMedia({ image: {url: randomVideo.thumbnail}}, { upload: conn.waUploadToServer })
+  const interactiveMessage = {
+    body: { text: `*—◉ Resultados obtenidos:* ${results.videos.length}\n*—◉ Video aleatorio:*\n*-› Title:* ${randomVideo.title}\n*-› Author:* ${randomVideo.author.name}\n*-› Views:* ${randomVideo.views}\n*-› Url:* ${randomVideo.url}\n*-› Imagen:* ${randomVideo.thumbnail}`.trim() },
+    footer: { text: `${global.wm}`.trim() },  
+      header: {
+          title: `*< YouTube Search />*\n`,
+          hasMediaAttachment: true,
+          imageMessage: messa.imageMessage,
+      },
+    nativeFlowMessage: {
+      buttons: [
+        {
+          name: 'single_select',
+          buttonParamsJson: JSON.stringify({
+            title: 'OPCIONES DISPONIBLES',
+            sections: videos.map((video) => ({
+              title: video.title,
+              rows: [
                 {
-                    header: '🎶 MP3',
-                    title: "",
-                    description: `${v.timestamp}\n▢ ${v.views}\n ${v.title}\n ${v.ago}\n`, 
-                    
-                    id: `${usedPrefix}ytmp3 ${v.url}`
+                  header: video.title,
+                  title: video.author.name,
+                  description: 'Descargar MP3',
+                  id: `${prefijo}play.1 ${video.url}`
                 },
                 {
-                    header: "🎥 MP4",
-                    title: "" ,
-                    description: `${v.timestamp}\n▢ ${v.views}\n: ${v.title}\n▢ ${v.ago}\n`, 
-                    
-                    id: `${usedPrefix}ytmp4 ${v.url}`
+                  header: video.title,
+                  title: video.author.name,
+                  description: 'Descargar MP4',
+                  id: `${prefijo}play.2 ${video.url}`
                 }
-            ]
-        });
+              ]
+            }))
+          })
+        }
+      ],
+      messageParamsJson: ''
     }
+  };        
+            
+        let msg = generateWAMessageFromContent(m.chat, {
+            viewOnceMessage: {
+                message: {
+                    interactiveMessage,
+                },
+            },
+        }, { userJid: conn.user.jid, quoted: m })
+      conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
 
-    await conn.sendList(m.chat, '  ≡ *IGNA MUSIC*🔎', `\n 📀 Resultados de:\n *${text}*`, `Click Aqui`, ytres[0].image, listSections, m);
+  } else {
+  const datas = global; 
+  const results = await yts(text);
+  const tes = results.all;
+  const teks = results.all.map((v) => {
+    switch (v.type) {
+      case 'video': return `
+° *_${v.title}_*
+↳ 🫐 *_Url_* ${v.url}
+↳ 🕒 *_Fecha_* ${v.timestamp}
+↳ 📥 *_fecha_* ${v.ago}
+↳ 👁 *_Vista_* ${v.views}`;
+    }
+  }).filter((v) => v).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
+  conn.sendFile(m.chat, tes[0].thumbnail, 'error.jpg', teks.trim(), m);      
+  }    
 };
-
-handler.help = ['play2']
-handler.tags = ['dl']
-handler.command = ['play2', 'playvid2', 'playlist', 'playlista'] 
-handler.disabled = false
-
-export default handler
+handler.help = ['ytsearch <texto>'];
+handler.tags = ['search'];
+handler.command = /^(playlist|yts|searchyt|buscaryt|videosearch|audiosearch)$/i;
+export default handler;
