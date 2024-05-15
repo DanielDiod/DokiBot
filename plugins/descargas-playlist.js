@@ -1,47 +1,41 @@
+
 import yts from 'yt-search';
-import fs from 'fs';
+let handler = async (m, { conn, usedPrefix, text, args, command }) => {
+    if (!text) throw `✳️ Seleccióne el archivo *${usedPrefix + command}* Lil Peep hate my life`;
+    m.react('📀');
+    
+    let result = await yts(text);
+    let ytres = result.videos;
+    
 
-
-
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-
-
-  if (!text) throw `Hola Bienvenido al playlist para busca la musica \n*${usedPrefix + command} I am Happy*`;
-  try {
-    const vids_ = {
-      from: m.sender,
-      urls: [],
-    };
-    if (!global.videoList) {
-      global.videoList = [];
+    let listSections = [];
+    for (let index in ytres) {
+        let v = ytres[index];
+        listSections.push({
+            title: `${index}┃ ${v.title}`,
+            rows: [
+                {
+                    header: '🎶 MP3',
+                    title: "",
+                    description: `▢ ⌚ *Duración:* ${v.timestamp}\n▢ 👀 *Visualizaciónes* ${v.views}\n▢ 📌 *Titulo* : ${v.title}\n▢ 📆 *Fecha:* ${v.ago}\n`, 
+                    id: `${usedPrefix}fgmp3 ${v.url}`
+                },
+                {
+                    header: "🎥 MP4",
+                    title: "" ,
+                    description: `▢ ⌚ *Duración:* ${v.timestamp}\n▢ 👀 *Visualizaciónes* ${v.views}\n▢ 📌 *Titulo* : ${v.title}\n▢ 📆 *Fecha:* ${v.ago}\n`, 
+                    id: `${usedPrefix}fgmp4 ${v.url}`
+                }
+            ]
+        });
     }
-    if (global.videoList[0]?.from == m.sender) {
-      global.videoList.splice(0, global.videoList.length);
-    }
-    const results = await yts(text);
-    const textoInfo = `Selecione cual quiere
-◉ ${usedPrefix}audio <numero>
-◉ ${usedPrefix}video <numero> 
 
-Para Descargar precione al boton o colocar el numero 
-*◉ ${usedPrefix}audio 5*
-*◉ ${usedPrefix}video 8*`.trim();
-    const teks = results.all.map((v, i) => {
-      const link = v.url;
-      vids_.urls.push(link);
-      return `[${i + 1}] ${v.title}
-↳ *Link🔗:* ${v.url}
-↳ *Duración🕐:* ${v.timestamp}
-↳ *Subido📆:* ${v.ago}
-↳ *Visualizaciones🔍:* ${v.views}`;
-    }).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
-    conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, m);
-    global.videoList.push(vids_);
-  } catch {
-    await m.reply(`Su archivo esta listo`);
-  }
+    await conn.sendList(m.chat, '  ≡ *IGNA MUSIC*🔎', `\n 📀 Resultados de:\n *${text}*`, `Click Aqui`, ytres[0].image, listSections, m);
 };
-handler.help = ['playlist *<texto>*'];
-handler.tags = ['search'];
-handler.command = /^playlist|playlist2$/i;
-export default handler;
+
+handler.help = ['play2']
+handler.tags = ['dl']
+handler.command = ['play2', 'playvid2', 'playlist', 'playlista'] 
+handler.disabled = false
+
+export default handler
