@@ -48,13 +48,13 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                   header: video.title,
                   title: video.author.name,
                   description: 'Descargar MP3',
-                  id: `${prefijo}ytmp3 ${video.url}`
+                  id: `${prefijo}fgmp3 ${video.url}`
                 },
                 {
                   header: video.title,
                   title: video.author.name,
                   description: 'Descargar MP4',
-                  id: `${prefijo}ytmp4 ${video.url}`
+                  id: `${prefijo}fgmp4 ${video.url}`
                 }
               ]
             }))
@@ -75,7 +75,6 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
       conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
 
   } else {
-  const datas = global; 
   const results = await yts(text);
   const tes = results.all;
   const teks = results.all.map((v) => {
