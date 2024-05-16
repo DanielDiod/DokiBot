@@ -99,7 +99,6 @@ if (!isNumber(user.afk)) user.afk = -1
 if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '*NOVATO(A)* ðŸª¤'
-if (!('muto' in user)) user.muto = false
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
@@ -505,14 +504,13 @@ afk: -1,
 afkReason: '',
 reporte: 0,
 age: 0,
-agility: 16,
-muto: false,
 genero: 0,
 identidad: 0,
 pasatiempo: 0,
 tiempo: 0,
 premLimit: 0,
 miestado: 0,
+agility: 16,
 anakanjing: 0,
 anakcentaur: 0,
 anakgriffin: 0,
@@ -1309,17 +1307,7 @@ if (quequeIndex !== -1)
 this.msgqueque.splice(quequeIndex, 1)
 } //console.log(global.db.data.users[m.sender])
 let user, stats = global.db.data.stats
-    //if (m) {
-      if (m) { 
-        let utente = global.db.data.users[m.sender]
-if (utente.muto == true) {
-let bang = m.key.id
-let cancellazzione = m.key.participant
-await conn.sendMessage(m.chat, {
-delete: {
-remoteJid: m.chat, fromMe: false, id: bang, participant: cancellazzione
-}})
-}
+if (m) {
 if (m.sender && (user = global.db.data.users[m.sender])) {
 user.exp += m.exp
 user.limit -= m.limit * 1
@@ -1404,13 +1392,8 @@ if (responseb[0].status === "404") return
 return    
 }}    
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-              return;
-            }
-            await m.conn.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] });
-          }
-        }
-      }
-
+            this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": '乂 Bᴏᴛ Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ 乂', "body": `${packname}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
+			    
 break
 case 'promote':
 case 'daradmin':
