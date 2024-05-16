@@ -1404,7 +1404,7 @@ if (responseb[0].status === "404") return
 return    
 }}    
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-              //return;
+              return;
             }
             await m.conn.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] });
           }
