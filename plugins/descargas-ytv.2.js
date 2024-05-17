@@ -29,6 +29,3 @@ const handler = async (m, {conn, args}) => {
 };
 handler.command = /^ytmp4doc|ytvdoc|ytmp4.2|ytv.2$/i;
 export default handler;
-handler.star = 2
-handler.register = true 
-export default handler
