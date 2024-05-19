@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) return conn.reply(m.chat, `*🚩 Ingresa que imagen deseas buscar en Google.*`, m)
 await m.react('🕓')
 let res = await googleImage(text)
-conn.sendButton2(m.chat, "*I M A G E N*", wm, [["⚽ SIGUIENTE ⚽", `${usedPrefix + command}`]], m);
+await conn.sendButton(m.chat, "*I M A G E N*", wm, [["⚽ SIGUIENTE ⚽", `${usedPrefix + command}`]], m);
 await m.react('✅')
 }
 handler.help = ['imagen <texto>']
