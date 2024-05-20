@@ -10,7 +10,7 @@ let tags = {
   'rpg': 'ECONOMÍA',
   'rg': 'REGISTRO',
   'downloader': 'DESCARGAS',
-//  'marker': 'LOGO - MAKER',
+  'marker': 'LOGO - MAKER',
   'nable': 'ACTIVADORES',
   'group': 'GRUPOS',
   'search': 'BUSCADOR',
@@ -28,26 +28,26 @@ const defaultMenu = {
   before: `
  > IGNA BOT FUTURE
 
-*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
-*➤📝 Nombre* : %name
-*➤🪙 Euros* : %limit
-*➤📈Nivel* : %level
-*➤⭐ XP* : %totalexp
-*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*
+╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮
+➤📝 *Nombre* : %name
+➤🪙 *Euros* : %limit
+➤🤖 *User* : %taguser
+➤📈 *Nivel* : %level
+➤⭐ *XP* : %totalexp
+╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯
 
-*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*
-*➤🗣️ Creador* : Daniel 🇦🇱
-*➤📲 Número* : wa.me/51955918117
-*➤⌛ Tiempo* : %uptime
-*➤🎌 Grupo* :https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv
-*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*
+╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮
+➤🗣️ *Creador* : Daniel 🇦🇱
+➤📲 *Número* : Wa.me/51955918117
+➤⌛ *Tiempo* : %uptime
+╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯
 
 %readmore
 `.trimStart(),
-  header: '`MENU X %category`\n\n*╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮*',
+  header: '`MENU X %category`\n\n╭━━━━━━━∙⋆⋅⋆∙━━━━━━━━╮',
   body: '➤ *%cmd*\n',
-  footer: '*╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯*\n',
-  after: '\n`Simple WhatsApp Bot Multi Device`',
+  footer: '╰━━━━━━━∙⋆⋅⋆∙━━━━━━━━╯\n',
+  after: '',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -156,23 +156,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp2 = 'https://telegra.ph/file/d8c5e18ab0cfc10511f63.mp4'
     let pp3 = 'https://telegra.ph/file/96e471a87971e2fb4955f.mp4'
     let pp4 = 'https://telegra.ph/file/09b920486c3c291f5a9e6.mp4'
-    let pp5 = 'https://telegra.ph/file/4948429d0ab0212e9000f.mp4'
-    let pp6 = 'https://telegra.ph/file/cab0bf344ba83d79c1a47.mp4'
-    let pp7 = 'https://telegra.ph/file/6d89bd150ad55db50e332.mp4'
-    let pp8 = 'https://telegra.ph/file/e2f791011e8d183bd6b50.mp4'
-    let pp9 = 'https://telegra.ph/file/546a6a2101423efcce4bd.mp4'
-    let pp10 = 'https://telegra.ph/file/930b9fddde1034360fd86.mp4'
-    let pp11 = 'https://telegra.ph/file/81da492e08bfdb4fda695.mp4'
-    let pp12 = 'https://telegra.ph/file/ec8393df422d40f923e00.mp4'
-    let pp13 = 'https://telegra.ph/file/ba7c4a3eb7bf3d892b0c8.mp4'
-    let pp14 = 'https://tinyurl.com/ymlqb6ml'
-    let pp15 = 'https://tinyurl.com/ykv7g4zy'
-    m.react('☔')
+    m.react('💻')
    
-   await conn.reply(m.chat, '*Espere un momento estoy enviando el menu..*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: 'WhatsApp Bot Multi Device', body: [wm, '' + lb + '🪙', '🈴'].getRandom(), sourceUrl: global.ig, thumbnail: gataImg.getRandom()}}})
-
-   
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+    conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
     
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
