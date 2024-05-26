@@ -1,7 +1,7 @@
 var handler = async (m, {command, conn, args, usedPrefix, text}) => {
-  if (command == "ytmp4" || command == "ytvmp4") {
+  if (command == "serbot" || command == "serbot") {
     let mp4 = `*_[🛑 hey alto ] este comando cambio, ahora es :_
-_${usedPrefix}videomp4_`.trim();
+_${usedPrefix}code_`.trim();
 
     m.reply(mp4);
   }
