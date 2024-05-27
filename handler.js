@@ -99,6 +99,7 @@ if (!isNumber(user.afk)) user.afk = -1
 if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '*NOVATO(A)* ðŸª¤'
+if (!('muto' in user)) user.muto = false
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
@@ -504,6 +505,7 @@ afk: -1,
 afkReason: '',
 reporte: 0,
 age: 0,
+muto: false,
 genero: 0,
 identidad: 0,
 pasatiempo: 0,
@@ -1307,7 +1309,17 @@ if (quequeIndex !== -1)
 this.msgqueque.splice(quequeIndex, 1)
 } //console.log(global.db.data.users[m.sender])
 let user, stats = global.db.data.stats
-if (m) {
+    //if (m) {
+      if (m) { 
+        let utente = global.db.data.users[m.sender]
+if (utente.muto == true) {
+let bang = m.key.id
+let cancellazzione = m.key.participant
+await conn.sendMessage(m.chat, {
+delete: {
+remoteJid: m.chat, fromMe: false, id: bang, participant: cancellazzione
+}})
+}
 if (m.sender && (user = global.db.data.users[m.sender])) {
 user.exp += m.exp
 user.limit -= m.limit * 1
