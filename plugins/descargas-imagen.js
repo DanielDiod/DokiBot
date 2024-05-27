@@ -8,7 +8,7 @@ const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
 await delay(1000)
-conn.sendButton(m.chat, `💞 Imagen: ${text}`, wm, link, [['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 | 𝙉𝙚𝙭𝙩', `/imagen ${text}]]`, null, null, m)
+conn.sendButton(m.chat, `💞 Imagen: ${text}`, wm, link, [['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 | 𝙉𝙚𝙭𝙩', `/imagen ${text}`]], null, null, m)
 }
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
