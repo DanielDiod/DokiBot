@@ -42,6 +42,6 @@ global.cred = Buffer.from(credit, 'base64')
 global.nombre = conn.getName(m.sender)
 global.taguser = '@' + m.sender.split("@s.whatsapp.net")
 
-global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: '👋 Hola ' + nombre, body: wm, sourceUrl: nombre, thumbnailUrl: imagen2 }}} //Fake simple
+global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: '👋 Hola ' + nombre, body: wm, sourceUrl: md, thumbnailUrl: imagen2 }}} //Fake simple
 
 export default handler
