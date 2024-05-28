@@ -99,7 +99,7 @@ global.moment = moment
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = 'IGNA • BOT'
+global.packname = 'IGNA - BOT - MD 💮🌺'
 global.author = '{\n "bot": {\n   "name": "Igna • Bot",\n     "author": "Daniel",\n   "status_bot": "active"\n }\n}'
 
 
