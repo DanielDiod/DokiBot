@@ -42,7 +42,7 @@ global.cred = Buffer.from(credit, 'base64')
 global.nombre = conn.getName(m.sender)
 global.taguser = '@' + m.sender.split("@s.whatsapp.net")
 
-global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: '👋 Hola ' + nombre, body: wm, sourceUrl: yt, thumbnailUrl: imagen6 }}} //Fake simple
+global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: '👋 Hola ' + nombre, body: wm, sourceUrl: yt, thumbnailUrl: imagen1 }}} //Fake simple
 
 //global.fake = { contextInfo: { mentionedJid: conn.parseMention(wm), forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363206717994793@newsletter', serverMessageId: '', newsletterName: 'IGNA BOT FUTURE ' }, externalAdReply: { title: packname, body: saludo, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: imagen1, thumbnail: imagen1, sourceUrl: global.md }}}, { quoted: m } //fake con reenviado de canal
 }
