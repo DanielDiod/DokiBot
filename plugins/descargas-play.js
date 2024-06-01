@@ -87,12 +87,12 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         ✩ *Autor ∙* ${vid.author.name}\n
         ✩ *Publicado ∙* ${vid.ago}\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-	
+	/*
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
 	['Creador', `${usedPrefix}creador`],
 	['Menu', `${usedPrefix}menu`]
   ], null, [['Canal', `${md}`]], m)
-       
+       */
        try {
        let yt = await fg.ytv(vid.url, q)
        let { title, dl_url, size } = yt
@@ -130,12 +130,12 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        ✩ *Autor ∙* ${vid.author.name}\n
        ✩ *Publicado ∙* ${vid.ago}\n
        ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-	    
+	   /* 
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
 	['Creador', `${usedPrefix}creador`],
 	['Menu', `${usedPrefix}menu`]
   ], null, [['Canal', `${md}`]], m)
-	    
+	    */
        try {
        let yt = await fg.yta(vid.url, q)
        let { title, dl_url, size } = yt
@@ -191,11 +191,12 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         ✩ *Autor ∙* ${vid.author.name}\n
         ✩ *Publicado ∙* ${vid.ago}\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-	    
+	    /*
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
 	['Creador', `${usedPrefix}creador`],
 	['Menu', `${usedPrefix}menu`]
   ], null, [['Canal', `${md}`]], m)
+  */
        
        try {
        let yt = await fg.ytv(vid.url, q)
