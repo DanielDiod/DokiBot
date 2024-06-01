@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
             if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`,  m, fake,)
     await m.react('🕓')
     var res = await yts(text)
-    var vid = res.videos[0]
+    var vid = res.videos[1]
     var q = '128kbps'
 const texto1 = `Y O U T U B E 乂 M U S I C\n
 	✩ *Título ∙* ${vid.title}\n
