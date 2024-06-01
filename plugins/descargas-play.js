@@ -32,7 +32,7 @@ await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
   ], null, [['Canal', `${md}`]], m)
 	  }
   
-            if (command == "mp3") {   
+            if (command == "mp3") {
        try {
        let yt = await fg.yta(vid.url, q)
        let { title, dl_url, size } = yt
@@ -237,7 +237,7 @@ sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        await m.react('✅')
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*\n\n` + error, m).then(_ => m.react('✖️'))
         console.error(error)
 }}}
 }
