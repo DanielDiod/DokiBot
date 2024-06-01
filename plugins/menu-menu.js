@@ -167,7 +167,7 @@ rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para 
 { header: "Play", title: "", id: `.play`, description: `Nose\n` },
 { header: "Nose", title: "", id: `a`, description: `Nose` }
 ]})
-await conn.sendList(m.chat, wm, null, `Menu`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, text.trim(), null, `Menu`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
