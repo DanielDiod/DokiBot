@@ -26,7 +26,7 @@ const texto1 = `Y O U T U B E 乂 M U S I C\n
         ✩ *Publicado ∙* ${vid.ago}\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
 		
-await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
+await conn.sendButton(m.chat, texto1, wm, res.videos[0].thumbnail, [
 	['Audio', `${usedPrefix}mp3 ${text}`],
 	['Video', `${usedPrefix}mp4 ${text}`]
   ], null, [['Canal', `${md}`]], m)
