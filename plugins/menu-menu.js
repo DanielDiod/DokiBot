@@ -165,7 +165,7 @@ title: '',
 rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "Estado", title: "", id: `.estado`, description: `Para ver el status del Bot\n` },
 { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
 { header: "Play", title: "", id: `.play`, description: `Para descargar musica\n` },
-{ header: "Nose", title: "", id: `a`, description: `Nose` }
+{ header: "creador", title: "", id: `creador`, description: `comunicate con mi creador` }
 ]})
 await conn.sendList(m.chat, 'Bienvenido al menu de < IGNA BOT\nSelecione la opcion que desee para interactuar con el bot', null, `Menu`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
