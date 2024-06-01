@@ -27,7 +27,7 @@ const texto1 = `Y O U T U B E 乂 M U S I C\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
 		
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
-	['Video', `${usedPrefix}mp3 ${text}`],
+	['Audio', `${usedPrefix}mp3 ${text}`],
 	['Video', `${usedPrefix}mp4 ${text}`]
   ], null, [['Canal', `${md}`]], m)
 	  }
@@ -71,7 +71,7 @@ sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        await m.react('✅')
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, fake,).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*\n\n` + error, m, fake,).then(_ => m.react('✖️'))
         console.error(error)
     }}}
         
