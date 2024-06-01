@@ -27,11 +27,11 @@ const texto1 = `Y O U T U B E 乂 M U S I C\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
 		
 await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
-	['Creador', `${usedPrefix}creador`],
-	['Menu', `${usedPrefix}menu`]
+	['Video', `${usedPrefix}mp3 ${text}`],
+	['Video', `${usedPrefix}mp4 ${text}`]
   ], null, [['Canal', `${md}`]], m)
   
-            if (feature == "mp3") {   
+            if (command == "mp3") {   
        try {
        let yt = await fg.yta(vid.url, q)
        let { title, dl_url, size } = yt
@@ -74,7 +74,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         console.error(error)
     }}}
         
-        if (feature == "mp4") {
+        if (command == "mp4") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, fake,)
     await m.react('🕓')
     let res = await yts(text)
@@ -117,7 +117,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
         console.error(error)
     }}}
     
-    if (feature == "mp3doc") {
+    if (command == "mp3doc") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`,  m, fake,)
     await m.react('🕓')
     let res = await yts(text)
@@ -178,7 +178,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         console.error(error)
     }}}
     
-    if (feature == "mp4doc") {
+    if (command == "mp4doc") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
     await m.react('🕓')
     let res = await yts(text)
