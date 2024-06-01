@@ -158,8 +158,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp4 = 'https://telegra.ph/file/09b920486c3c291f5a9e6.mp4'
     m.react('💻')
    
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
-    
+  //  conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+let listSections = []    
+listSections.push({
+title: '',
+rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "Estado", title: "", id: `.estado`, description: `Para ver el status del Bot\n` },
+{ header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
+{ header: "Play", title: "", id: `.play`, description: `Nose\n` },
+{ header: "Nose", title: "", id: `a`, description: `Nose` }
+]})
+await conn.sendList(m.chat, wm, null, `Menu`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
