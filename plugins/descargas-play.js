@@ -33,7 +33,12 @@ await conn.sendButton(m.chat, wm, texto1, res.videos[0].thumbnail, [
 	  }
   
             if (command == "mp3") {
+	 if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, fake,)
+		
        try {
+    const res = await yts(text)
+    const vid = res.videos[0]
+    const q = '128kbps'
        let yt = await fg.yta(vid.url, q)
        let { title, dl_url, size } = yt
        let limit = 100
@@ -48,7 +53,7 @@ showAdAttribution: false,
 title: `${vid.title}`,
 body: `${vid.author.name}`,
 mediaType: 2, 
-sourceUrl: null,
+sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        await m.react('✅')
        } catch {
@@ -73,10 +78,11 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*\n\n` + error, m, fake,).then(_ => m.react('✖️'))
         console.error(error)
-    }}}
+    }}
+    }
         
         if (command == "mp4") {
-            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, fake,)
+            if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, fake,)
     await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
