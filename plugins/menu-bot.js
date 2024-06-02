@@ -89,7 +89,7 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━⬣
 
  ╭━〔 🎮 𝐉𝐔𝐄𝐆𝐎𝐒 🎮 〕
-*┃➤ 🕹️ ${usedPrefix}ppt*
+*┃➤ 🕹️ ${usedPrefix}pokedex*
 *┃➤ 🕹️ ${usedPrefix}prostituto <@tag>*
 *┃➤ 🕹️ ${usedPrefix}prostituta <@tag>*
 *┃➤ 🕹️ ${usedPrefix}gay2 <@tag>*
@@ -125,33 +125,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🕹️ ${usedPrefix}minovio*
 *┃➤ 🕹️ ${usedPrefix}kchero*
 *┃➤ 🕹️ ${usedPrefix}kchero*
- ╰━━━━━━━━━━━━
-
- ╭━〔 ⚠️ *FREE FIRE* ⚠️ 〕
-*┃➤ 🗺️ ${usedPrefix}bermuda*
-*┃➤ 🗺️ ${usedPrefix}kalahari*
-*┃➤ 🗺️ ${usedPrefix}alpes*
-*┃➤ 🗺️ ${usedPrefix}purgatorio*
-*┃➤ 🗺️ ${usedPrefix}nexterra*
-*┃➤ 📋 ${usedPrefix}agendasemanal*
- ╰━━━━━━━━━━━━
-
- ╭━〔 🎭 *IMAGENES* 🎭 〕
-*┃➤ 🖍️ ${usedPrefix}goku*
-*┃➤ 🖍️ ${usedPrefix}vegeta*
-*┃➤ 🖍️ ${usedPrefix}lora*
-*┃➤ 🖍️ ${usedPrefix}cr7*
-*┃➤ 🖍️ ${usedPrefix}spiderman*
-*┃➤ 🖍️ ${usedPrefix}batman*
-*┃➤ 🖍️ ${usedPrefix}hellokitty*
-*┃➤ 🖍️ ${usedPrefix}charmander*
-*┃➤ 🖍️ ${usedPrefix}pokedex*
- ╰━━━━━━━━━━━━
- 
- ╭━〔 👾 𝐆𝐑𝐔𝐏𝐎 𝐃𝐄 𝐒𝐎𝐑𝐓𝐄𝐎𝐒 👾 〕
-*┃➤ ⭐ ${usedPrefix}sorteo*
-*┃➤ ⭐ ${usedPrefix}ruleta*
-*┃➤ ⭐ ${usedPrefix}deathnote*
  ╰━━━━━━━━━━━━
 
  ╭━〔 ⚙️ 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 ⚙️ 〕
