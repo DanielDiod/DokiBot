@@ -87,13 +87,11 @@ let menu = `⌜ *${wm}* ⌟
 
  ╭━〔  𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 ⛅  〕⬣
 *┃➤ 👤 Creador : Daniel 🇦🇱* 
-*┃➤ 👤 Soporte : Sopixx*
-*┃➤ 🧿 Canal : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP3
+*┃➤ 🧿 Canal : https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
 *┃➤ ⌛ Tiempo activo : #uptime*
  ╰━━━━━━━━━━━━⬣
 
  ╭━〔 🎮 𝐉𝐔𝐄𝐆𝐎𝐒 🎮 〕
-*┃➤ 🕹️ ${usedPrefix}mates*
 *┃➤ 🕹️ ${usedPrefix}ppt*
 *┃➤ 🕹️ ${usedPrefix}prostituto <@tag>*
 *┃➤ 🕹️ ${usedPrefix}prostituta <@tag>*
@@ -162,11 +160,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🖍️ ${usedPrefix}pokedex*
  ╰━━━━━━━━━━━━
  
-
- ╭━〔 🧿 𝐆𝐄𝐍𝐄𝐑𝐀 𝐏𝐋𝐀𝐓𝐀𝐅𝐎𝐑𝐌𝐀𝐒 🧿 〕
-*┃➤ 🌐 ${usedPrefix}cuentas*
- ╰━━━━━━━━━━━━
-
  ╭━〔 👾 𝐆𝐑𝐔𝐏𝐎 𝐃𝐄 𝐒𝐎𝐑𝐓𝐄𝐎𝐒 👾 〕
 *┃➤ ⭐ ${usedPrefix}sorteo*
 *┃➤ ⭐ ${usedPrefix}ruleta*
@@ -215,24 +208,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 👥 ${usedPrefix}kickfantasmas*
  ╰━━━━━━━━━━━━
 
-*╭━〔 👀 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 👀 〕*
-*┃➤ 📍 ${usedPrefix}toimg*
-*┃➤ 📍 ${usedPrefix}tomp3*
-*┃➤ 📍 ${usedPrefix}toptt*
-*┃➤ 📍 ${usedPrefix}tovideo*
-*┃➤ 📍 ${usedPrefix}tts*
- ╰━━━━━━━━━━━━
-
-*╭━〔 ♓ 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 ♓ 〕*
-*┃➤ ❄️ ${usedPrefix}mensajefalso*
-*┃➤ ❄️ ${usedPrefix}logos*
-*┃➤ ❄️ ${usedPrefix}logocorazon*
-*┃➤ ❄️ ${usedPrefix}ytcomment*
-*┃➤ ❄️ ${usedPrefix}hornycard*
-*┃➤ ❄️ ${usedPrefix}itssostupid*
-*┃➤ ❄️ ${usedPrefix}pixelar*
- ╰━━━━━━━━━━━━
-
 *╭━〔 💌 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 💌〕*
 *┃➤ 🥀 ${usedPrefix}piropo*
 *┃➤ 🥀 ${usedPrefix}consejo*
@@ -241,6 +216,7 @@ let menu = `⌜ *${wm}* ⌟
 
  ╭━〔 ✨ 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ✨  〕*
 *┃➤ 🔍 ${usedPrefix}xnxxsearch*
+*┃➤ 🔍 ${usedPrefix}tiktoksearch*
 *┃➤ 🔍 ${usedPrefix}google*
 *┃➤ 🔍 ${usedPrefix}letra*
 *┃➤ 🔍 ${usedPrefix}wikipedia*
@@ -252,8 +228,7 @@ let menu = `⌜ *${wm}* ⌟
 
  ╭━〔 🌝 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 🌝 〕
 *┃➤ 🍃 ${usedPrefix}clima*
-*┃➤ 🍃 ${usedPrefix}afk*
-*┃➤ 🍃 ${usedPrefix}ocr*
+*┃➤ 🍃 ${usedPrefix}trad*
 *┃➤ 🍃 ${usedPrefix}calc*
 *┃➤ 🍃 ${usedPrefix}del*
 *┃➤ 🍃 ${usedPrefix}whatmusic*
@@ -262,8 +237,8 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━
 
 *╭━〔 💎 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 💎 〕*
-*┃➤ 🍁 ${usedPrefix}verificar*
-*┃➤ 🍁 ${usedPrefix}unreg*
+*┃➤ 🍁 ${usedPrefix}crimen*
+*┃➤ 🍁 ${usedPrefix}reg*
 *┃➤ 🍁 ${usedPrefix}minar*
 *┃➤ 🍁 ${usedPrefix}buy*
 *┃➤ 🍁 ${usedPrefix}work*
@@ -278,7 +253,7 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ ☁️ ${usedPrefix}qc*
  ╰━━━━━━━━━━━━
 
-SHANA BOT || DANIEL X SOPIXX`.trim()
+🏳️ By Daniel`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
@@ -287,10 +262,10 @@ contextInfo: {
 mentionedJid: [m.sender],
 forwardingScore: 9, 
 externalAdReply: {
-title: '❑— 𝐒𝐇𝐀𝐍𝐀-𝐁𝐎𝐓 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
+title: '❑— IGNA - BOR - MD —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/FolexrXtQXy4v5qGjMYUmD',
+sourceUrl: 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
