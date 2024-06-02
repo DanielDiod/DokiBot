@@ -162,12 +162,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 let listSections = []    
 listSections.push({
 title: '',
-rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "SuDBot", title: "", id: `.code`, description: `Para volverte sudbot\n` },
+rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "SudBot", title: "", id: `.code`, description: `Para volverte sudbot 🤖\n` },
 { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
-{ header: "Play", title: "", id: `.play`, description: `Para descargar musica\n` },
+{ header: "Play", title: "", id: `.play`, description: `Para descargar musica 🎧\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador` }
 ]})
-await conn.sendList(m.chat, 'Bienvenido al menu de\n\n`IGNA - BOT - MD`\n\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, '🏳️ Bienvenido al menu de\n\n`IGNA - BOT - MD`\n\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
