@@ -162,12 +162,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 let listSections = []    
 listSections.push({
 title: '',
-rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "Estado", title: "", id: `.estado`, description: `Para ver el status del Bot\n` },
+rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "SusBot", title: "", id: `.code`, description: `Para volverte sudbot\n` },
 { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
 { header: "Play", title: "", id: `.play`, description: `Para descargar musica\n` },
-{ header: "creador", title: "", id: `creador`, description: `comunicate con mi creador` }
+{ header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador` }
 ]})
-await conn.sendList(m.chat, 'Bienvenido al menu de < IGNA BOT\nSelecione la opcion que desee para interactuar con el bot', null, `Menu`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, 'Bienvenido al menu de > IGNA BOT\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
