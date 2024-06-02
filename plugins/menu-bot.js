@@ -255,14 +255,14 @@ let menu = `⌜ *${wm}* ⌟
 
 🏳️ By Daniel`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/f7b99f499f16d1d136ab8.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/940ac494d7ca5ca132fea.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
 mentionedJid: [m.sender],
 forwardingScore: 9, 
 externalAdReply: {
-title: '❑— IGNA - BOR - MD —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
+title: '❑— IGNA - BOT - MD —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
 sourceUrl: 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv',
