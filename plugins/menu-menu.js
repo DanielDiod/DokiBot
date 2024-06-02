@@ -165,7 +165,7 @@ title: '',
 rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "SudBot", title: "", id: `.code`, description: `Para volverte sudbot 🤖\n` },
 { header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
 { header: "Play", title: "", id: `.play`, description: `Para descargar musica 🎧\n` },
-{ header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador` }
+{ header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
 await conn.sendList(m.chat, '🏳️ Bienvenido al sud menu de:\n\nIGNA - BOT - MD\n\n`INFORMACION`\n\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
