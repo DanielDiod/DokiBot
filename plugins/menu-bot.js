@@ -255,7 +255,7 @@ let menu = `⌜ *${wm}* ⌟
 
 🏳️ By Daniel`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/f7b99f499f16d1d136ab8.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
