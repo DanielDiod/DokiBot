@@ -110,21 +110,12 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🕹️ ${usedPrefix}sinpito <@tag>*
 *┃➤ 🕹️ ${usedPrefix}adoptada <@tag>*
 *┃➤ 🕹️ ${usedPrefix}adoptado <@tag>*
-*┃➤ 🕹️ ${usedPrefix}love*
-*┃➤ 🕹️ ${usedPrefix}los10*
-*┃➤ 🕹️ ${usedPrefix}suitpvp*
-*┃➤ 🕹️ ${usedPrefix}slot*
 *┃➤ 🕹️ ${usedPrefix}simisimi*
 *┃➤ 🕹️ ${usedPrefix}pregunta*
 *┃➤ 🕹️ ${usedPrefix}cuando*
 *┃➤ 🕹️ ${usedPrefix}ship5*
 *┃➤ 🕹️ ${usedPrefix}abrazo*
 *┃➤ 🕹️ ${usedPrefix}ship2*
-*┃➤ 🕹️ ${usedPrefix}formarpareja*
-*┃➤ 🕹️ ${usedPrefix}verdad*
-*┃➤ 🕹️ ${usedPrefix}reto*
-*┃➤ 🕹️ ${usedPrefix}cancion*
-*┃➤ 🕹️ ${usedPrefix}pista*
 *┃➤ 🕹️ ${usedPrefix}ruleta*
 *┃➤ 🕹️ ${usedPrefix}zodiac*
 *┃➤ 🕹️ ${usedPrefix}odio*
@@ -205,12 +196,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 👥 ${usedPrefix}kickfantasmas*
  ╰━━━━━━━━━━━━
 
-*╭━〔 💌 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 💌〕*
-*┃➤ 🥀 ${usedPrefix}piropo*
-*┃➤ 🥀 ${usedPrefix}consejo*
-*┃➤ 🥀 ${usedPrefix}fraseromantica*
- ╰━━━━━━━━━━━━
-
  ╭━〔 ✨ 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 ✨  〕*
 *┃➤ 🔍 ${usedPrefix}xnxxsearch*
 *┃➤ 🔍 ${usedPrefix}tiktoksearch*
@@ -224,13 +209,11 @@ let menu = `⌜ *${wm}* ⌟
  ╰━━━━━━━━━━━━
 
  ╭━〔 🌝 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 🌝 〕
-*┃➤ 🍃 ${usedPrefix}clima*
+*┃➤ 🍃 ${usedPrefix}mute*
 *┃➤ 🍃 ${usedPrefix}trad*
 *┃➤ 🍃 ${usedPrefix}calc*
 *┃➤ 🍃 ${usedPrefix}del*
 *┃➤ 🍃 ${usedPrefix}whatmusic*
-*┃➤ 🍃 ${usedPrefix}qrcode*
-*┃➤ 🍃 ${usedPrefix}traducir*
  ╰━━━━━━━━━━━━
 
 *╭━〔 💎 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀𝐒 💎 〕*
@@ -240,7 +223,6 @@ let menu = `⌜ *${wm}* ⌟
 *┃➤ 🍁 ${usedPrefix}buy*
 *┃➤ 🍁 ${usedPrefix}work*
 *┃➤ 🍁 ${usedPrefix}mendigar*
-*┃➤ 🍁 ${usedPrefix}transfer*
  ╰━━━━━━━━━━━━
 
  ╭━〔  𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ⛅  〕
