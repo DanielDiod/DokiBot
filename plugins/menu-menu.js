@@ -167,7 +167,7 @@ rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para 
 { header: "Play", title: "", id: `.play`, description: `Para descargar musica\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador` }
 ]})
-await conn.sendList(m.chat, 'Bienvenido al menu de > IGNA BOT\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, 'Bienvenido al menu de\n\n`IGNA - BOT - MD`\n\nCreador : Daniel', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
     throw e
