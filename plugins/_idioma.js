@@ -1,4 +1,4 @@
-let handler = async (m, { conn, isAdmin }) => {
+let handler = async (m, { conn, text }) => {
 
 let _idioma = '🚩 *Seleccione su idioma*\n\n> Idiomas disponibles:\nes _(Español)_\nen _(Inglés)_\n\n`Ejemplo:`\n.idioma es'
 if (!text) {
