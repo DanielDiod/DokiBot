@@ -14,5 +14,4 @@ return m.reply(choice === 'es' ? 'Idioma configurado a Español 🇲🇽' : 'Lan
 }
 handler.command = /^lenguage|lenguaje|idioma$/i
 handler.rowner = true
-handler.botAdmin = true
 export default handler
