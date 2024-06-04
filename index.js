@@ -17,7 +17,7 @@ say('IGNA\nBOT', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Bot desarrollado por Daniel\n\ncolaboradora:Sopi\ncolaborador:Ax\ncolaborador:Alba\n\nNaye x Daniel`, {
+say(`Bot desarrollado por Daniel\n\ncolaboradora:Sopi\ncolaborador:Ax\ncolaborador:Alba\n\nBot dedicado para aixa`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']});
