@@ -294,9 +294,9 @@ conn.ev.off('creds.update', conn.credsUpdate)
 }
 
 //información de los grupos
-conn.welcome = ''*Hello :V Bienvenid@ al grupo¡!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *Nombre:* @user\n🍃 *Grupo:* @subject\n\n- *recuerda leer las reglas del grupo* -''
+conn.welcome = '*Hello :V Bienvenid@ al grupo¡!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *Nombre:* @user\n🍃 *Grupo:* @subject\n\n- *recuerda leer las reglas del grupo* -'
 
-conn.bye = ''*👋 ¡Adios Hermano Nadien Te Estrañará, xD!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *Nombre:* @user\n\n*Salúdame a San Predro Hermano*''
+conn.bye = '*👋 ¡Adios Hermano Nadien Te Estrañará, xD!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *Nombre:* @user\n\n*Salúdame a San Predro Hermano*'
 
 conn.spromote = '*𝙃𝙚𝙮 @user 𝘼𝙝𝙤𝙧𝙖 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣, 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤😛!!*'
 
