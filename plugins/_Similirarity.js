@@ -1,5 +1,4 @@
-
-import didyoumean from 'didyoumean'
+/*import didyoumean from 'didyoumean'
 
 import similarity from 'similarity'
 
@@ -21,4 +20,4 @@ export async function before(m, { conn, match, usedPrefix, command }) {
  if (mean) this.reply(m.chat, `${caption}`, m)
       }
 }
-export const disabled = false
+export const disabled = false*/
