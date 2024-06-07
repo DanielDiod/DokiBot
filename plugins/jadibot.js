@@ -78,7 +78,8 @@ msgRetry,
 msgRetryCache,
 version,
 syncFullHistory: true,
-browser: mcode ? ['Ubuntu', 'Edge', '20.0.4'] : ['IgnaBot-MD', 'Edge', '2.0.0'],
+browser: Browsers.ubuntu('Chrome')
+//browser: mcode ? ['Ubuntu', 'Edge', '20.0.4'] : ['IgnaBot-MD', 'Edge', '2.0.0'],
 defaultQueryTimeoutMs: undefined,
 getMessage: async (key) => {
 if (store) {
