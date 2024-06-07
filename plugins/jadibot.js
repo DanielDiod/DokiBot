@@ -33,14 +33,14 @@ else global.conns = []
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 let parentw = conn
 if (conn.user.jid !== global.conn.user.jid) return parentw.reply(m.chat, `🔵 *Yo soy subbot para hacerte subbot* *Ingresa al siguiente link!*: Wa.me/${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}\n`, fkontak)
-const mcode = args[0] && args[0].includes('code') ? true : args[1] && args[1].includes('code') ? true : false
+const mcode = args[0] && args[0].includes('--code') ? true : args[1] && args[1].includes('--code') ? true : false
 
 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? parentw.user.jid : m.sender
 let id = `${who.split`@`[0]}`
 if (mcode) {
-args[0] = args[0].replace('code', '').trim()
-if (args[1]) args[1] = args[1].replace('code', '').trim()
+args[0] = args[0].replace('--code', '').trim()
+if (args[1]) args[1] = args[1].replace('--code', '').trim()
 if (args[0] == '') args[0] = undefined
 console.log(args[0])}
 if (!fs.existsSync('./IgnaJadiBot/'+ id)){
@@ -238,7 +238,7 @@ jddt()
 })
 
 } 
-handler.help = [`jadibot`, `serbot`, `getcode`, `rentbot`, `code`]
+handler.help = [`jadibot`, `serbot`, `getcode`, `rentbot`, `jadibot --code`]
 handler.tags = [`jadibot`]
 handler.command = /^(jadibot|serbot|rentbot)/i
 handler.register = false
