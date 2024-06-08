@@ -9,9 +9,6 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!urlRegex.test(args[0])) {
     throw '⚠️ PLEASE GIVE A VALID URL.';
   }
-
-  m.react(🏳️);
-
   try {
     const result = await fg.fbdl(args[0]);
     const tex = `
