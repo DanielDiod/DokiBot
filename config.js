@@ -124,7 +124,7 @@ global.vsJB = '1.5.0'
 global.yt = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv'
 global.ig = 'https://www.instagram.com/Jxtxn17'
 global.md = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.fb = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv'
+global.fb = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 
 global.nna = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv' //Actualización, información sobre el bot
 global.nn = 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv' //Grupo 1
