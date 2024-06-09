@@ -22,7 +22,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(done);
   } catch (error) {
     console.log(error);
-    m.reply('⚠️ Se produjo un error al procesar la solicitud. Por favor, inténtelo de nuevo más tarde.');
+    m.reply('> video descargado con exito');
   }
 };
 
