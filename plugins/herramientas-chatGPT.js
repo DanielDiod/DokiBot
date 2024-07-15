@@ -6,21 +6,41 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
-if (!text) throw `Error ingrese una peticion para usar Chatgpt`    
-try {
-await m.reply('> C A R G A N D O ⏳️\n🛑 Buscando Su Información')
-await m.react('⌛')
-conn.sendPresenceUpdate('composing', m.chat);
-let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
+if (!text) return m.reply(`*Hola cómo esta 😊, El que te puedo ayudar?*, ingrese una petición o orden para usar la función de chagpt\n*Ejemplo:*\n${usedPrefix + command} Recomienda un top 10 de películas de acción`) 
+let syst = `Actuaras como un Bot de WhatsApp el cual fue creado por Daniel, tu seras Igna Bot.`
+
+if (command == 'ia' || command == 'chatgpt') {
+try {      
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gptweb?text=${text}`) 
 let res = await gpt.json()
 await m.reply(res.gpt)
 } catch {
 try {
-let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/chatgpt?q=${text}`)
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/chatgpt?q=${text}`)
 let res = await gpt.json()
 await m.reply(res.data)
-await m.react('✅')
 } catch {
 }}}
-handler.command = /^(openai|chatgpt|ia|ai|openai2|chatgpt2|ia2)$/i;
+
+if (command == 'openai' || command == 'igna' || command == 'chatgpt2') {
+conn.sendPresenceUpdate('composing', m.chat);
+let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
+let res = await gpt.json()
+await m.reply(res.gpt)
+}
+
+if (command == 'gemini2') {
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
+let res = await gpt.json()
+await m.reply(res.message)
+}
+
+if (command == 'copilot' || command == 'bing') {
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/bingia?query=${text}`)
+let res = await gpt.json()
+await m.reply(res.message)
+}}
+handler.help = ["chagpt", "ia", "openai", "gemini", "copilot"]
+handler.tags = ["buscadores"]
+handler.command = /^(openai|chatgpt|ia|ai|igna|chatgpt2|ia2|gemini|copilot|bing)$/i;
 export default handler;
